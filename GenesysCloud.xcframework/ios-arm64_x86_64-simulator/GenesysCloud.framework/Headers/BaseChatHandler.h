@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.11.2
+// GenesysCloud version number: v1.12.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -35,4 +35,5 @@ FOUNDATION_EXPORT NSString * _Nonnull const StartChatKey;
 - (void)updateChatState:(ChatStateEvent *_Nullable)event;
 - (void)resetChatUIWithCompletionHandler:(void(^_Nonnull)(void))completionHandler;
 - (void)updateFileProfile:(ChatSettings*_Nonnull)settings profile:(AttachmentProfile *_Nullable)profile;
+- (void)agentDidType:(NSDictionary<NSString *,id> * _Nullable)params;
 @end

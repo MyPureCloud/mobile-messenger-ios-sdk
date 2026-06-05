@@ -27,9 +27,10 @@ import _SwiftConcurrencyShims
   @objc dynamic public func destroyPublisher()
   @objc dynamic public func updateViewModel(with element: any GenesysCloud.StorableChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
   @objc dynamic public func replaceInViewModel(element: any GenesysCloud.StorableChatElement, originalId: Swift.String)
-  @objc dynamic public func addElementToViewModel(_ element: any GenesysCloud.StorableChatElement)
+  @objc dynamic public func addElementToViewModel(_ element: any GenesysCloud.StorableChatElement, scrollToBottom: Swift.Bool = false)
   @objc dynamic public func addElementsToViewModel(_ elements: [any GenesysCloud.StorableChatElement], isPrecedingStatements: Swift.Bool)
   @objc dynamic public func clearViewModel(hasMore: Swift.Bool)
+  @objc dynamic public func removeTypingIndicator() throws
   @objc dynamic public func removeLastQuickReplayElement()
   @objc dynamic public func updateAttachment(file: GenesysCloudCore.DownloadableFile)
 }
@@ -49,7 +50,7 @@ extension GenesysCloud.ChatConfiguration {
   @objc public func addElements(contentsOf newElements: [GenesysCloud.ContentChatElement], isPrecedingStatements: Swift.Bool)
   @objc public func replace(newElement: GenesysCloud.ContentChatElement, using elementId: Swift.String) -> GenesysCloud.ContentChatElement?
   @objc public func updateStatus(element: GenesysCloud.ContentChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
-  public func removeLastElementMatching(with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool)
+  public func removeLastElementMatching(with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool) throws
   @objc public func updateElement(with file: GenesysCloudCore.DownloadableFile, completion: ((GenesysCloud.ContentChatElement?) -> Swift.Void))
   @objc public func removeAll()
   @objc deinit
@@ -60,7 +61,7 @@ public protocol ChatRepositoryProtocol : AnyObject {
   func addElements(contentsOf newElements: [GenesysCloud.ContentChatElement], isPrecedingStatements: Swift.Bool)
   func replace(newElement: GenesysCloud.ContentChatElement, using elementId: Swift.String) -> GenesysCloud.ContentChatElement?
   func updateStatus(element: GenesysCloud.ContentChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
-  func removeLastElementMatching(with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool)
+  func removeLastElementMatching(with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool) throws
   func removeAll()
   func updateElement(with file: GenesysCloudCore.DownloadableFile, completion: ((GenesysCloud.ContentChatElement?) -> Swift.Void))
 }
@@ -99,14 +100,14 @@ extension GenesysCloud.ChatUIViewController : QuickLook.QLPreviewControllerDeleg
   @_Concurrency.MainActor @preconcurrency @objc final public func previewControllerDidDismiss(_ controller: QuickLook.QLPreviewController)
 }
 extension GenesysCloud.ChatUIViewController {
-  @_Concurrency.MainActor @preconcurrency final public func isTyping(_ isTyping: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency final public func userDidType()
   @_Concurrency.MainActor @preconcurrency final public func didSubmit(text: Swift.String)
 }
 @_inheritsConvenienceInitializers @objc public class ChatUIViewModel : ObjectiveC.NSObject {
   @objc public var hasMoreHistory: Swift.Bool
   @objc public var chatHandlerProvider: (any GenesysCloud.ChatHandlerProvider)?
   @objc override dynamic public init()
-  public func removeLastElement(with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool)
+  public func removeLastElement(updateUI: Swift.Bool = false, with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool) throws
   @objc public func updateConfiguration(with repository: GenesysCloud.ConfigurationRepository)
   @objc public func showErrorView(errorMessage: Swift.String, image: UIKit.UIImage? = nil, buttonImage: UIKit.UIImage? = nil)
   @objc deinit
@@ -164,6 +165,7 @@ public class DownloadableFileHandler {
 extension GenesysCloud.MessengerHandler {
   @objc override dynamic public func updateFileProfile(_ settings: GenesysCloudCore.ChatSettings, profile: GenesysCloudMessenger.AttachmentProfile?)
   public func subscribeToAttachmentFetcher()
+  @objc override dynamic open func agentDidType(_ params: [Swift.String : Any]?)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers final public class OutgoingConfiguration : GenesysCloud.MessageConfiguration {
   @objc override dynamic public init()

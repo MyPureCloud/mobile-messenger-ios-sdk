@@ -78,6 +78,7 @@ public protocol ChatEngine {
   func reconnect()
   func refreshAttachment(fileId: Swift.String)
   func logoutFromAuthenticatedSession()
+  func indicateTyping()
   init(configLoader: any GenesysCloudCore.ConfigurationLoader)
 }
 public enum MimeType : Swift.String {
@@ -284,6 +285,8 @@ public enum DownloadableFileStatus {
   case conversationDisconnect
   case supportContentProfiles
   case authentication
+  case agentTypingIndicator
+  case userTypingIndicator
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -343,6 +346,11 @@ public enum ChatStatementsError : Swift.Error {
   @objc override public init(text: Swift.String?, elementId: Swift.String)
   @objc deinit
 }
+@objc public class TypingEventStatement : GenesysCloudCore.EventStatement {
+  @objc public static let elementId: Swift.String
+  public init()
+  @objc deinit
+}
 @objc public class QuickRepliesChatStatement : GenesysCloudCore.TimedChatStatement {
   @objc public var quickReplies: [Swift.String]
   @objc public init(quickReplies: [Swift.String], chatStatement: GenesysCloudCore.ChatStatement)
@@ -389,6 +397,7 @@ public enum ChatStatementsError : Swift.Error {
   case typing
   case endTyping
   case unavailable
+  case agentTyping
   case readmore
   case chatReady
   case agentAccepted
@@ -437,6 +446,7 @@ public enum ChatStatementsError : Swift.Error {
   public func postQuickRepliesMessage(_ chatStatement: GenesysCloudCore.QuickRepliesChatStatement)
   public func endChat(forceClose: Swift.Bool)
   public func logoutFromAuthenticatedSession()
+  public func indicateTyping()
   @objc deinit
 }
 extension GenesysCloudCore.LogType : Swift.Equatable {}

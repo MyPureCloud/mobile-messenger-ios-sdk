@@ -135,6 +135,7 @@ extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatEngin
   @objc dynamic public func endChat(forceClose: Swift.Bool = false)
   @objc dynamic public func resume()
   @objc dynamic public func logoutFromAuthenticatedSession()
+  @objc dynamic public func indicateTyping()
 }
 extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ConfigurationLoaderDelegate {
   @objc dynamic public func didFetchChatSettings(settings: GenesysCloudCore.ChatSettings)

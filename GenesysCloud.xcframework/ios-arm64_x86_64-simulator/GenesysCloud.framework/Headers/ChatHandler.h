@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.11.2
+// GenesysCloud version number: v1.12.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -203,11 +203,6 @@ Read text using TTS.
  */
 - (void)postQuickReplyStatement:(id<StorableChatElement> _Nonnull)statement;
 
-/**
- Indicates if typing was started.
- */
-- (void)didStartTyping:(BOOL)isTyping;
-
 @optional
 /**
  The history provider.
@@ -236,5 +231,7 @@ The placeholder text.
 Updating custom attributes
 */
 - (void)updateCustomAttributes:(NSDictionary<NSString *, NSString *> *_Nonnull)customAttributes;
+
+- (void)userDidType;
 
 @end
