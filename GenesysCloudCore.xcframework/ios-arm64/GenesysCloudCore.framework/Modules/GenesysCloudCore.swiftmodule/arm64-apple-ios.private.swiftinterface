@@ -1,9 +1,10 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GenesysCloudCore
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-bare-slash-regex -module-name GenesysCloudCore
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVKit
 import Combine
+import CryptoKit
 import Foundation
 import MobileCoreServices
 import Swift
@@ -12,83 +13,157 @@ import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-final public class UIConfiguration {
-  final public let primaryColor: UIKit.UIColor
-  final public let secondaryColor: UIKit.UIColor
-  public init(primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor)
-  @objc deinit
-}
-final public class EventData {
-  final public var chatState: GenesysCloudCore.ChatState
-  final public var isNewSession: Swift.Bool
-  final public var isAutostart: Swift.Bool
-  final public var isResumed: Swift.Bool
-  public init(state: GenesysCloudCore.ChatState, isNewSession: Swift.Bool = false, isAutostart: Swift.Bool = false, isResumed: Swift.Bool = false)
-  @objc deinit
-}
-extension Swift.String {
-  public func mimeType() -> GenesysCloudCore.MimeType?
-}
-extension Swift.String {
-  public func fileExtension() -> Swift.String
-  public func withoutFileExtension() -> Swift.String
-}
-@_hasMissingDesignatedInitializers final public class FormField {
-  public static let extraData: Swift.String
-  public static let customAttributes: Swift.String
-  public static let language: Swift.String
-  @objc deinit
-}
-public protocol AttachmentFetcherProtocol {
+public protocol AttachmentFetcherProtocol : Swift.Sendable {
   var currentFileToUpload: GenesysCloudCore.UploadableFile? { get }
+  var fetchStream: _Concurrency.AsyncStream<Swift.Result<GenesysCloudCore.DownloadableFile, any Swift.Error>> { get }
+  var refreshStream: _Concurrency.AsyncStream<Swift.Result<GenesysCloudCore.DownloadableFile, any Swift.Error>> { get }
   func fetch(_ file: GenesysCloudCore.DownloadableFile)
   func getPreview(_ file: GenesysCloudCore.DownloadableFile)
   func getFileSize(_ file: GenesysCloudCore.DownloadableFile)
-  func subscribeToFetchPublisher(receiveValue: @escaping (GenesysCloudCore.DownloadableFile?, Foundation.NSError?) -> Swift.Void)
-  func subscribeToRefreshPublisher(receiveValue: @escaping (GenesysCloudCore.DownloadableFile?, Foundation.NSError?) -> Swift.Void)
   func updateRefreshedFile(fileId: Swift.String, newDownloadUrl: Swift.String)
   func storeFile(_ file: GenesysCloudCore.UploadableFile)
   func removeFile() -> Swift.String?
   func updateStatus(status: GenesysCloudCore.UploadableFileStatus)
   func updateDownloadUrl(_ downloadUrl: Swift.String)
-  func convertCurrentFileToDownloadable(messageId: Swift.String) -> GenesysCloudCore.DownloadableFile?
+  func convertCurrentFileToDownloadable(messageId: Swift.String) async -> GenesysCloudCore.DownloadableFile?
   func updateUploadProgress(_ progress: Swift.Double)
+  func setCurrentFileToUpload(file: GenesysCloudCore.UploadableFile?)
 }
-final public class AttachmentFetcher : GenesysCloudCore.AttachmentFetcherProtocol {
-  final public var currentFileToUpload: GenesysCloudCore.UploadableFile?
+final public class AttachmentFetcher : GenesysCloudCore.AttachmentFetcherProtocol, @unchecked Swift.Sendable {
+  final public let fetchStream: _Concurrency.AsyncStream<Swift.Result<GenesysCloudCore.DownloadableFile, any Swift.Error>>
+  final public let refreshStream: _Concurrency.AsyncStream<Swift.Result<GenesysCloudCore.DownloadableFile, any Swift.Error>>
+  @GenesysCloudCore.Locked final public var currentFileToUpload: GenesysCloudCore.UploadableFile? {
+    get
+    set
+    _modify
+  }
   public init()
   final public func getPreview(_ file: GenesysCloudCore.DownloadableFile)
-  final public func subscribeToFetchPublisher(receiveValue: @escaping (GenesysCloudCore.DownloadableFile?, Foundation.NSError?) -> Swift.Void)
-  final public func subscribeToRefreshPublisher(receiveValue: @escaping (GenesysCloudCore.DownloadableFile?, Foundation.NSError?) -> Swift.Void)
   final public func fetch(_ file: GenesysCloudCore.DownloadableFile)
   final public func updateRefreshedFile(fileId: Swift.String, newDownloadUrl: Swift.String)
   final public func getFileSize(_ file: GenesysCloudCore.DownloadableFile)
-  final public func storeFile(_ file: GenesysCloudCore.UploadableFile)
   final public func removeFile() -> Swift.String?
   final public func updateStatus(status: GenesysCloudCore.UploadableFileStatus)
   final public func updateDownloadUrl(_ downloadUrl: Swift.String)
-  final public func convertCurrentFileToDownloadable(messageId: Swift.String) -> GenesysCloudCore.DownloadableFile?
+  final public func convertCurrentFileToDownloadable(messageId: Swift.String) async -> GenesysCloudCore.DownloadableFile?
   final public func updateUploadProgress(_ progress: Swift.Double)
   @objc deinit
 }
-@objc public class BaseFile : ObjectiveC.NSObject {
-  public var previewImage: UIKit.UIImage? {
+extension GenesysCloudCore.AttachmentFetcher {
+  final public func setCurrentFileToUpload(file: GenesysCloudCore.UploadableFile?)
+  final public func storeFile(_ file: GenesysCloudCore.UploadableFile)
+}
+public enum DownloadableFileStatus : Swift.Sendable {
+  case none
+  case downloading
+  case downloaded
+  case refreshing
+  case refreshed
+  case error
+  public static func == (a: GenesysCloudCore.DownloadableFileStatus, b: GenesysCloudCore.DownloadableFileStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
-  public var downloadURL: Swift.String? {
+}
+@objc final public class DownloadableFile : ObjectiveC.NSObject, GenesysCloudCore.FileRepresentable, @unchecked Swift.Sendable {
+  @GenesysCloudCore.Locked final public var fileName: Swift.String {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var fileData: Foundation.Data? {
     get
   }
-  public var fileData: Foundation.Data? {
+  @GenesysCloudCore.Locked final public var fileSizeInBytes: Swift.Int? {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var refreshAttempts: Swift.Int {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var videoFrameFetcher: any GenesysCloudCore.VideoFrameFetching {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var previewImage: UIKit.UIImage? {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var previewFailed: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var downloadURL: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var downloadTask: Foundation.URLSessionDataTask? {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var parentMessageId: Swift.String {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var fileId: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var currentStatus: GenesysCloudCore.DownloadableFileStatus {
+    get
+    set
+    _modify
+  }
+  final public let status: _Concurrency.AsyncStream<GenesysCloudCore.DownloadableFileStatus>
+  required public init(fileName: Swift.String, fileSizeInBytes: Swift.Int?, downloadUrl: Swift.String?)
+  convenience public init(parentMessageId: Swift.String, fileName: Swift.String, fileId: Swift.String, downloadURL: Swift.String?, fileSizeInBytes: Swift.Int?)
+  convenience public init?(from uploadableFile: GenesysCloudCore.UploadableFile, messageId: Swift.String) async
+  final public func updateStatus(_ newStatus: GenesysCloudCore.DownloadableFileStatus)
+  final public func updateDownloadProgress(_ progress: Swift.Double)
+  final public func setPreviewImage(_ image: UIKit.UIImage)
+  final public func setFileData(_ data: Foundation.Data?) async
+  final public var downloadProgress: _Concurrency.AsyncStream<Swift.Double> {
     get
   }
-  public var fileSizeInBytes: Swift.Int? {
-    get
-  }
-  public var fileName: Swift.String {
-    get
-  }
-  public var requiresPreview: Swift.Bool
-  public var previewFailed: Swift.Bool
+  @objc deinit
+}
+public protocol PreviewGenerating {
+  var videoFrameFetcher: any GenesysCloudCore.VideoFrameFetching { get set }
+  var previewImage: UIKit.UIImage? { get set }
+  var requiresPreview: Swift.Bool { get }
+  var previewFailed: Swift.Bool { get set }
+  func setPreviewImage(_ image: UIKit.UIImage)
+}
+public protocol DownloadManaging {
+  var downloadURL: Swift.String? { get }
+  var downloadTask: Foundation.URLSessionDataTask? { get set }
+  var downloadProgress: _Concurrency.AsyncStream<Swift.Double> { get }
+}
+public protocol UploadManaging {
+  var uploadProgress: _Concurrency.AsyncStream<Swift.Double> { get }
+  func updateUploadProgress(_ progress: Swift.Double)
+}
+public protocol FileRepresentable : AnyObject, GenesysCloudCore.DownloadManaging, GenesysCloudCore.PreviewGenerating, Swift.Equatable, Swift.Sendable {
+  var fileName: Swift.String { get }
+  var fileData: Foundation.Data? { get }
+  var fileSizeInBytes: Swift.Int? { get }
+  var fileId: Swift.String? { get set }
+  var refreshAttempts: Swift.Int { get set }
+  func setFileData(_ data: Foundation.Data?) async
+  init(fileName: Swift.String, fileSizeInBytes: Swift.Int?, downloadUrl: Swift.String?)
+}
+extension GenesysCloudCore.FileRepresentable {
   public var isFlexibleSize: Swift.Bool {
     get
   }
@@ -98,73 +173,234 @@ final public class AttachmentFetcher : GenesysCloudCore.AttachmentFetcherProtoco
   public var fileMimeType: GenesysCloudCore.MimeType? {
     get
   }
-  public var progressSubject: Combine.CurrentValueSubject<Swift.Double, Swift.Never> {
+  public var requiresPreview: Swift.Bool {
     get
   }
-  public init(fileName: Swift.String, fileSizeInBytes: Swift.Int?, downloadUrl: Swift.String? = nil)
-  public func setFileData(_ data: Foundation.Data?)
-  public func setFileSize(_ size: Swift.Int?)
-  @objc deinit
+  public func resetRefreshAttempts()
 }
-public enum LogType {
-  case success
+extension GenesysCloudCore.DownloadManaging {
+  public var downloadProgress: _Concurrency.AsyncStream<Swift.Double> {
+    get
+  }
+}
+public enum MimeType : Swift.String, Swift.Sendable {
+  case image
+  case video
+  case audio
+  case file
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol URLSessionProtocol : Swift.Sendable {
+  func data(for request: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.URLResponse)
+}
+extension Foundation.URLSession : GenesysCloudCore.URLSessionProtocol {
+}
+public enum UploadableFileStatus : Swift.Sendable {
+  case none
+  case uploadDelayed
+  case validated
+  case preSigned
+  case uploading
+  case uploaded
   case failure
-  case info
-  public static func == (a: GenesysCloudCore.LogType, b: GenesysCloudCore.LogType) -> Swift.Bool
+  public static func == (a: GenesysCloudCore.UploadableFileStatus, b: GenesysCloudCore.UploadableFileStatus) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-public func printLog(_ message: Swift.String? = nil, logType: GenesysCloudCore.LogType = .info, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
-public func printLog(_ error: any Swift.Error, context: Swift.String? = nil, logType: GenesysCloudCore.LogType = .failure, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
-public func printLog(_ downloadableFile: GenesysCloudCore.DownloadableFile, context: Swift.String? = nil, logType: GenesysCloudCore.LogType = .failure, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+final public class UploadableFile : GenesysCloudCore.FileRepresentable, GenesysCloudCore.UploadManaging, @unchecked Swift.Sendable {
+  @GenesysCloudCore.Locked final public var localUrl: Foundation.URL! {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var fileName: Swift.String {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var fileData: Foundation.Data? {
+    get
+  }
+  @GenesysCloudCore.Locked final public var fileSizeInBytes: Swift.Int? {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var refreshAttempts: Swift.Int {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var fileId: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var currentStatus: GenesysCloudCore.UploadableFileStatus {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var currentUploadProgress: Swift.Double {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var downloadTask: Foundation.URLSessionDataTask? {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var downloadURL: Swift.String? {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var videoFrameFetcher: any GenesysCloudCore.VideoFrameFetching {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var previewImage: UIKit.UIImage? {
+    get
+    set
+    _modify
+  }
+  @GenesysCloudCore.Locked final public var previewFailed: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  final public let status: _Concurrency.AsyncStream<GenesysCloudCore.UploadableFileStatus>
+  final public let uploadProgress: _Concurrency.AsyncStream<Swift.Double>
+  required public init(fileName: Swift.String, fileSizeInBytes: Swift.Int?, downloadUrl: Swift.String?)
+  convenience public init(from url: Foundation.URL, fileId: Swift.String?, data: Foundation.Data) async
+  final public func updateStatus(_ newStatus: GenesysCloudCore.UploadableFileStatus)
+  final public func updateUploadProgress(_ progress: Swift.Double)
+  final public func setPreviewImage(_ image: UIKit.UIImage)
+  final public func setFileData(_ data: Foundation.Data?) async
+  @objc deinit
+}
+extension GenesysCloudCore.UploadableFile {
+  public static func == (lhs: GenesysCloudCore.UploadableFile, rhs: GenesysCloudCore.UploadableFile) -> Swift.Bool
+}
+public protocol VideoFrameFetching : Swift.Sendable {
+  func getThumbnailImage(from videoData: Foundation.Data) async -> UIKit.UIImage?
+  func getThumbnailImage(for file: any GenesysCloudCore.FileRepresentable) async -> (any GenesysCloudCore.FileRepresentable)?
+}
+@objc final public class Card : ObjectiveC.NSObject {
+  @objc final public let title: Swift.String
+  @objc final public let cardDescription: Swift.String
+  @objc final public let imageUrl: Swift.String?
+  @objc final public let actions: [GenesysCloudCore.CardAction]
+  final public var image: Combine.CurrentValueSubject<UIKit.UIImage?, any Swift.Error>
+  @objc public init(title: Swift.String, cardDescription: Swift.String, imageUrl: Swift.String?, image: UIKit.UIImage? = nil, actions: [GenesysCloudCore.CardAction])
+  @objc deinit
+}
+@objc final public class CardAction : ObjectiveC.NSObject {
+  @objc final public let text: Swift.String
+  @objc final public let url: Foundation.URL?
+  @objc final public let payload: Swift.String
+  @objc public init(text: Swift.String, url: Foundation.URL?, payload: Swift.String)
+  @objc deinit
+}
 @objc final public class CarouselChatElement : GenesysCloudCore.ChatElement {
   @objc final public let cards: [GenesysCloudCore.Card]
   final public var scrollOffset: CoreFoundation.CGFloat
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, cards: [GenesysCloudCore.Card])
   @objc deinit
 }
-public protocol ChatEngineDelegate : AnyObject {
-  func messageDidArrive(chatElement: GenesysCloudCore.ChatElement)
-  func didFail(error: GenesysCloudCore.GCError)
-  func didFetchConfiguration(remoteConfig: GenesysCloudCore.RemoteConfiguration)
-  func event(with chatState: GenesysCloudCore.ChatState, withParams params: [Swift.String : Any]?)
-  func didReceiveChatData(_ request: GenesysCloudCore.ChatDataRequest, completion: (() -> Swift.Void)?)
-  func shouldNotifyIndicator(isActive: Swift.Bool)
-  func didRefreshAttachment(attachmentId: Swift.String, downloadUrl: Swift.String)
-  func didReceiveAttachmentId(_ attachmentId: Swift.String, fileURL: Foundation.URL, fileData: Foundation.Data)
-  func didUploadAttachment(attachmentId: Swift.String, downloadUrl: Swift.String)
-  func updateAttachmentStatus(_ status: GenesysCloudCore.UploadableFileStatus)
-  func didUpdateUploadProgress(_ progress: Swift.Double)
-  func didDelayAttachment(fileData: Foundation.Data, fileURL: Foundation.URL)
-  func didEnableFileUpload()
+@objc public enum UserChatElementState : Swift.Int {
+  case none
+  case pending
+  case inProcess
+  case success
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
-public protocol ChatEngineProtocol {
-  var delegate: (any GenesysCloudCore.ChatEngineDelegate)? { get set }
-  var configurationLoader: any GenesysCloudCore.ConfigurationLoader { get set }
-  func prepare(account: GenesysCloudCore.Account)
-  func create()
-  func start()
-  func postMessage(_ chatElement: GenesysCloudCore.ChatElement)
-  func endChat(forceClose: Swift.Bool)
-  func reconnect()
-  func refreshAttachment(fileId: Swift.String)
-  func logoutFromAuthenticatedSession()
-  func attach(fileData: Foundation.Data, fileName: Swift.String, fileURL: Foundation.URL)
-  func detach(attachmentId: Swift.String)
-  func clearConversation()
-  func indicateTyping()
-  func disconnect()
-  func updateCustomAttributes(_: [Swift.String : Swift.String])
-  func resume()
-  func produceChatData(_ request: GenesysCloudCore.ChatDataRequest) -> Swift.Bool
-  func authorize()
-  init(configLoader: any GenesysCloudCore.ConfigurationLoader)
-  @available(*, deprecated, message: "Function not utilized, will be removed. Use reconnect instead.")
-  func clearConversationConnect()
-  @available(*, deprecated, message: "Function not utilized, will be removed. Use reconnect instead.")
-  func connectFromBackground()
+@objc public enum ChatElementKind : Swift.Int {
+  case agent
+  case system
+  case user
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc open class ChatElement : ObjectiveC.NSObject {
+  @objc public var id: Swift.String
+  @objc public var isLoadedFromHistory: Swift.Bool
+  @objc public var timestamp: Foundation.Date
+  @objc public var kind: GenesysCloudCore.ChatElementKind
+  @objc dynamic public var userState: GenesysCloudCore.UserChatElementState
+  @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind)
+  @objc deinit
+}
+extension GenesysCloudCore.ChatElement {
+  public func getText() -> Swift.String?
+  public func setText(_ text: Swift.String)
+  public func convertToFileElement(file: GenesysCloudCore.DownloadableFile) -> GenesysCloudCore.ChatElement
+}
+@objc final public class FileChatElement : GenesysCloudCore.ChatElement {
+  final public var file: GenesysCloudCore.DownloadableFile
+  final public var text: Swift.String?
+  @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind, file: GenesysCloudCore.DownloadableFile, text: Swift.String? = nil)
+  @objc deinit
+}
+@objc final public class QuickRepliesChatElement : GenesysCloudCore.ChatElement {
+  final public var quickReplies: [Swift.String]
+  @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, quickReplies: [Swift.String])
+  @objc deinit
+}
+@objc final public class SystemChatElement : GenesysCloudCore.ChatElement {
+  final public var type: GenesysCloudCore.SystemChatElementType
+  final public var text: Swift.String?
+  @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, type: GenesysCloudCore.SystemChatElementType, text: Swift.String? = nil)
+  @objc deinit
+}
+@objc public enum SystemChatElementType : Swift.Int {
+  case autoStart
+  case newConversation
+  case startConversation
+  case conversationStarted
+  case conversationEnded
+  case conversationResumed
+  case conversationDisconnect
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc final public class TextChatElement : GenesysCloudCore.ChatElement {
+  @objc final public var text: Swift.String
+  final public var type: GenesysCloudCore.TextChatElementType
+  @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind, text: Swift.String)
+  @objc deinit
+}
+public enum TextChatElementType : Swift.Equatable {
+  case normal
+  case quickReplyResponse
+  case cardReply(payload: Swift.String)
+  public var transportResponseType: Swift.String {
+    get
+  }
+  public static func == (a: GenesysCloudCore.TextChatElementType, b: GenesysCloudCore.TextChatElementType) -> Swift.Bool
+}
+@objc final public class TypingIndicatorChatElement : GenesysCloudCore.ChatElement {
+  @objc public init()
+  @objc deinit
 }
 @objc final public class AttachmentProfile : ObjectiveC.NSObject {
   public init(allowedFiles: [Swift.String] = [], blockedFiles: [Swift.String] = [], enabled: Swift.Bool? = nil, hasWildCard: Swift.Bool? = nil, maxFileSizeKB: Swift.Int64 = 0, pickerModes: Swift.Set<GenesysCloudCore.PickerMode> = [])
@@ -176,182 +412,6 @@ public protocol ChatEngineProtocol {
   final public var pickerModes: Swift.Set<GenesysCloudCore.PickerMode>
   final public func isEnabled() -> Swift.Bool
   @objc deinit
-}
-public enum MimeType : Swift.String {
-  case image
-  case video
-  case audio
-  case file
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum DownloadError : Swift.Error {
-  case invalidUrl
-  case generalError
-  case invalidData
-  public static func == (a: GenesysCloudCore.DownloadError, b: GenesysCloudCore.DownloadError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public protocol FileDownloaderProtocol : AnyObject {
-  func download(from urlString: Swift.String) async throws -> Foundation.Data
-}
-final public actor FileDownloader : GenesysCloudCore.FileDownloaderProtocol {
-  public init(session: any GenesysCloudCore.URLSessionProtocol = URLSession.shared)
-  final public func download(from urlString: Swift.String) async throws -> Foundation.Data
-  @objc deinit
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
-    get
-  }
-}
-final public class LanguageConfiguration {
-  final public var translations: [GenesysCloudCore.TranslationKey : Swift.String]
-  final public var supportedLanguages: [Swift.String]
-  final public let defaultLanguage: Swift.String
-  final public var activeLanguage: Swift.String
-  public init(translations: [GenesysCloudCore.TranslationKey : Swift.String] = [:], supportedLanguages: [Swift.String], defaultLanguage: Swift.String, activeLanguage: Swift.String)
-  @objc deinit
-}
-@objc public enum ChatError : Swift.Int {
-  case failedToLoad = 5001
-  case failedToEnd = 5002
-  case accountIsNotValid = 5003
-  case chatGeneralError = 5004
-  case failedToLoadData = 5005
-  case failedToFetchAccountConfiguration = 5006
-  case failedToSendMessage = 5007
-  case failedToLoadHistory = 5008
-  case failedNoAccessKeyForLiveChat = 5009
-  case failedNoImplementationForHandOver = 5010
-  case failedMessengerChatErrorDisableState = 5011
-  case failedToChangeLanguage = 5012
-  case failedGeneralErrorType = 5013
-  case sessionExpiration = 5014
-  case connectionError = 5015
-  case failedToReconnect = 5016
-  case failedToAutostartConversation = 5017
-  case failedToSendCustomAttributes = 5018
-  case conversationCreationError = 5019
-  case attachmentDownloadError = 5020
-  case clientNotAuthenticatedError = 5021
-  case authLogoutFailed = 5022
-  case attachmentValidationError = 5023
-  case attachmentUploadError = 5024
-  case clearConversationDisabled = 5025
-  case clearConversationFailure = 5026
-  case pushDeploymentIdMismatch = 5027
-  case deviceAlreadyRegistered = 5028
-  case authorizationRequired = 5029
-  public static let ClientErrorReconnectDescription: Swift.String
-  public static let IllegalStateErrorReconnectDescription: Swift.String
-  public static let ConfigurationLoadErrorDescription: Swift.String
-  public static let ClientConnectErrorDescription: Swift.String
-  public static let conversationAutostartErrorDescription: Swift.String
-  public static let ConversationCreationErrorDescription: Swift.String
-  public static let AttachmentDownloadErrorDescription: Swift.String
-  public static let AttachmentRefreshErrorDescription: Swift.String
-  public static let ClientNotAuthenticatedErrorAuthenticatedMessagesDescription: Swift.String
-  public static let AuthLogoutFailedAuthenticatedMessagesDescription: Swift.String
-  public static func AttachmentSizeValidationErrorDescription(limit: Swift.String) -> Swift.String
-  public static let AttachmentTypeValidationErrorDescription: Swift.String
-  public static let AttachmentGeneralValidationErrorDescription: Swift.String
-  public static let ClearConversationDisabledDescription: Swift.String
-  public static let ClearConversationFailureDescription: Swift.String
-  public static let AuthorizationRequiredDescription: Swift.String
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc final public class GCError : ObjectiveC.NSObject, Swift.Error {
-  @objc final public var error: (any Swift.Error)?
-  @objc final public var errorType: GenesysCloudCore.ChatError
-  @objc final public var errorDescription: Swift.String?
-  @objc public init(error: (any Swift.Error)? = nil, errorType: GenesysCloudCore.ChatError, errorDescription: Swift.String? = nil)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc final public class ChatDataRequest : ObjectiveC.NSObject {
-  final public var id: Foundation.UUID
-  final public var reason: GenesysCloudCore.RequestReason
-  final public var requestStatus: GenesysCloudCore.RequestStatus
-  final public var chatDataResponse: GenesysCloudCore.ChatDataResponse?
-  @objc override dynamic public init()
-  @objc deinit
-}
-final public class ChatDataResponse {
-  final public var elements: [GenesysCloudCore.ChatElement]
-  final public var hasMore: Swift.Bool
-  public init()
-  @objc deinit
-}
-public enum RequestReason {
-  case initialRequest
-  case reconnectionRequest
-  case userRequest
-  public static func == (a: GenesysCloudCore.RequestReason, b: GenesysCloudCore.RequestReason) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum RequestStatus {
-  case idle
-  case canLoad
-  case success
-  case timeout
-  case error
-  case canceledBusy
-  case canceledInactive
-  case canceledRedundant
-  public static func == (a: GenesysCloudCore.RequestStatus, b: GenesysCloudCore.RequestStatus) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@objc public protocol ConfigurationLoaderDelegate {
-  @objc func didFailLoad(error: (any Swift.Error)?)
-  @objc func didFetchChatSettings(remoteConfig: GenesysCloudCore.RemoteConfiguration)
-}
-@objc public protocol ConfigurationLoader {
-  @objc var parser: any GenesysCloudCore.ConfigurationParser { get set }
-  @objc var delegate: (any GenesysCloudCore.ConfigurationLoaderDelegate)? { get set }
-  @objc func load(account: GenesysCloudCore.Account)
-}
-@objc public protocol ConfigurationParser {
-  @objc func parse(data: Any?) -> GenesysCloudCore.RemoteConfiguration?
-}
-@objc @_inheritsConvenienceInitializers final public class DefaultConnectionHandler : ObjectiveC.NSObject, GenesysCloudCore.ConnectionHandler {
-  final public func open(request: Foundation.URLRequest, completion: @escaping (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
-  final public func open(request: Foundation.URLRequest, progress: ((Swift.Float) -> Swift.Void)?, completion: @escaping (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension GenesysCloudCore.DefaultConnectionHandler : Foundation.URLSessionDataDelegate {
-  @objc final public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didSendBodyData bytesSent: Swift.Int64, totalBytesSent: Swift.Int64, totalBytesExpectedToSend: Swift.Int64)
-}
-@objc public enum EndedReason : Swift.Int {
-  public static let endedReasonKey: Swift.String
-  case unknown = 0
-  case `operator`
-  case visitor
-  case disconnected
-  case app
-  case sessionLimitReached
-  case conversationCleared
-  case logout
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
 }
 public enum Feature {
   case autostart
@@ -368,14 +428,129 @@ public enum Feature {
     get
   }
 }
-public enum TextChatElementType : Swift.Equatable {
-  case normal
-  case quickReplyResponse
-  case cardReply(payload: Swift.String)
-  public var transportResponseType: Swift.String {
+final public class LanguageConfiguration {
+  final public var translations: [GenesysCloudCore.TranslationKey : Swift.String]
+  final public var supportedLanguages: [Swift.String]
+  final public let defaultLanguage: Swift.String
+  final public var activeLanguage: Swift.String
+  public init(translations: [GenesysCloudCore.TranslationKey : Swift.String] = [:], supportedLanguages: [Swift.String], defaultLanguage: Swift.String, activeLanguage: Swift.String)
+  @objc deinit
+}
+public enum PickerMode : Swift.String {
+  case image
+  case video
+  case file
+  case cameraPhoto
+  case cameraVideo
+  public static func from(mimeType: Swift.String) -> [GenesysCloudCore.PickerMode]
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
-  public static func == (a: GenesysCloudCore.TextChatElementType, b: GenesysCloudCore.TextChatElementType) -> Swift.Bool
+}
+@objc final public class RemoteConfiguration : ObjectiveC.NSObject {
+  final public let isChatEnabled: Swift.Bool
+  final public var featureFlags: [GenesysCloudCore.Feature : Swift.Bool]
+  final public let uiConfig: GenesysCloudCore.UIConfiguration
+  final public let languageConfig: GenesysCloudCore.LanguageConfiguration
+  final public var fileAttachmentProfile: GenesysCloudCore.AttachmentProfile?
+  public init(isChatEnabled: Swift.Bool, featureFlags: [GenesysCloudCore.Feature : Swift.Bool], uiConfig: GenesysCloudCore.UIConfiguration, languageConfig: GenesysCloudCore.LanguageConfiguration, fileAttachmentProfile: GenesysCloudCore.AttachmentProfile? = nil)
+  final public func isFeatureEnabled(name: GenesysCloudCore.Feature, defaultValue: Swift.Bool) -> Swift.Bool
+  final public func addFeature(_ feature: GenesysCloudCore.Feature, enabled: Swift.Bool)
+  @objc deinit
+}
+final public class UIConfiguration {
+  final public let primaryColor: UIKit.UIColor
+  final public let secondaryColor: UIKit.UIColor
+  public init(primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor)
+  @objc deinit
+}
+public protocol ConnectionHandler {
+  func open(request: Foundation.URLRequest, completion: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+  func open(request: Foundation.URLRequest, progress: ((Swift.Float) -> Swift.Void)?, completion: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+}
+@objc @_inheritsConvenienceInitializers final public class DefaultConnectionHandler : ObjectiveC.NSObject, @unchecked Swift.Sendable, GenesysCloudCore.ConnectionHandler {
+  final public func open(request: Foundation.URLRequest, completion: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+  final public func open(request: Foundation.URLRequest, progress: ((Swift.Float) -> Swift.Void)?, completion: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GenesysCloudCore.DefaultConnectionHandler : Foundation.URLSessionDataDelegate {
+  @objc final public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didSendBodyData bytesSent: Swift.Int64, totalBytesSent: Swift.Int64, totalBytesExpectedToSend: Swift.Int64)
+}
+@propertyWrapper public struct Locked<Value> where Value : Swift.Sendable {
+  public init(wrappedValue: Value)
+  public var wrappedValue: Value {
+    get
+    set
+  }
+}
+public protocol LogOutputProtocol {
+  func write(_ message: Swift.String)
+}
+public struct LogMessage : Swift.ExpressibleByStringInterpolation, Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public init(stringLiteral value: Swift.String)
+  public init(stringInterpolation: GenesysCloudCore.LogMessage.StringInterpolation)
+  public struct StringInterpolation : Swift.StringInterpolationProtocol {
+    public init(literalCapacity: Swift.Int, interpolationCount: Swift.Int)
+    public mutating func appendLiteral(_ literal: Swift.String)
+    public mutating func appendInterpolation<T>(public value: T)
+    public mutating func appendInterpolation<T>(private value: T)
+    public typealias StringLiteralType = Swift.String
+  }
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+public enum LogFlow : Swift.CaseIterable {
+  case authentication
+  case autostart
+  case conversationDisconnect
+  case conversationClear
+  case typingIndicator
+  case markdown
+  case contentProfiles
+  case messaging
+  case attachment
+  case quickReply
+  case carousel
+  case push
+  case connection
+  case api
+  case configuration
+  case session
+  public static func == (a: GenesysCloudCore.LogFlow, b: GenesysCloudCore.LogFlow) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [GenesysCloudCore.LogFlow]
+  nonisolated public static var allCases: [GenesysCloudCore.LogFlow] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class GCLogger {
+  public static var isLoggingEnabled: Swift.Bool
+  public static func info(_ message: GenesysCloudCore.LogMessage, fileName: Swift.String = #fileID, lineNumber: Swift.UInt = #line, flows: [GenesysCloudCore.LogFlow]? = nil)
+  public static func warning(_ message: GenesysCloudCore.LogMessage, fileName: Swift.String = #fileID, lineNumber: Swift.UInt = #line, flows: [GenesysCloudCore.LogFlow]? = nil)
+  public static func error(_ message: GenesysCloudCore.LogMessage, fileName: Swift.String = #fileID, lineNumber: Swift.UInt = #line, flows: [GenesysCloudCore.LogFlow]? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class LanguageUtility : ObjectiveC.NSObject {
+  @objc public func getDeviceLanguage() -> Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Swift.String {
+  public func mimeType() -> GenesysCloudCore.MimeType?
+}
+extension Swift.String {
+  public func fileExtension() -> Swift.String
+  public func withoutFileExtension() -> Swift.String
 }
 public enum TranslationKey {
   case startConversationMessage
@@ -437,159 +612,6 @@ public enum TranslationKey {
 extension GenesysCloudCore.TranslationKey {
   public static func from(systemChatElementType: GenesysCloudCore.SystemChatElementType) -> GenesysCloudCore.TranslationKey
 }
-public enum MessageSendingError : Swift.Error {
-  case timeout
-  case sendFailure
-  case customAttributesTooLarge
-  case invalidElement
-  case customAttributesMissing
-  public var rawValue: Swift.String {
-    get
-  }
-  public static func == (a: GenesysCloudCore.MessageSendingError, b: GenesysCloudCore.MessageSendingError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum UploadableFileStatus {
-  case none
-  case uploadDelayed
-  case validated
-  case preSigned
-  case uploading
-  case uploaded
-  case failure
-  public static func == (a: GenesysCloudCore.UploadableFileStatus, b: GenesysCloudCore.UploadableFileStatus) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@objc final public class UploadableFile : GenesysCloudCore.BaseFile {
-  final public var localUrl: Foundation.URL {
-    get
-  }
-  final public let status: Combine.CurrentValueSubject<GenesysCloudCore.UploadableFileStatus, Swift.Never>
-  final public var fileId: Swift.String?
-  public init(from url: Foundation.URL, fileId: Swift.String?, data: Foundation.Data)
-  @objc deinit
-}
-public protocol ConnectionHandler {
-  func open(request: Foundation.URLRequest, completion: @escaping (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
-  func open(request: Foundation.URLRequest, progress: ((Swift.Float) -> Swift.Void)?, completion: @escaping (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
-}
-public enum DownloadableFileStatus {
-  case none
-  case downloading
-  case downloaded
-  case refreshing
-  case refreshed
-  case error
-  public static func == (a: GenesysCloudCore.DownloadableFileStatus, b: GenesysCloudCore.DownloadableFileStatus) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@objc final public class DownloadableFile : GenesysCloudCore.BaseFile {
-  final public var parentMessageId: Swift.String
-  @objc final public var fileId: Swift.String {
-    get
-  }
-  final public let status: Combine.CurrentValueSubject<GenesysCloudCore.DownloadableFileStatus, Swift.Never>
-  public init(parentMessageId: Swift.String, fileName: Swift.String, fileId: Swift.String, downloadURL: Swift.String?, fileSizeInBytes: Swift.Int?)
-  convenience public init?(from uploadableFile: GenesysCloudCore.UploadableFile, messageId: Swift.String)
-  @objc deinit
-}
-public enum StatementType {
-  case outgoing
-  case incoming
-  case system
-  case none
-  public static func == (a: GenesysCloudCore.StatementType, b: GenesysCloudCore.StatementType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@objc final public class TextChatElement : GenesysCloudCore.ChatElement {
-  @objc final public var text: Swift.String
-  final public var type: GenesysCloudCore.TextChatElementType
-  @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind, text: Swift.String)
-  @objc deinit
-}
-@objc public enum SystemChatElementType : Swift.Int {
-  case autoStart
-  case newConversation
-  case startConversation
-  case conversationStarted
-  case conversationEnded
-  case conversationResumed
-  case conversationDisconnect
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc final public class FileChatElement : GenesysCloudCore.ChatElement {
-  final public var file: GenesysCloudCore.DownloadableFile
-  final public var text: Swift.String?
-  @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind, file: GenesysCloudCore.DownloadableFile, text: Swift.String? = nil)
-  @objc deinit
-}
-@objc public enum UserChatElementState : Swift.Int {
-  case none
-  case pending
-  case inProcess
-  case success
-  case error
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public enum ChatElementKind : Swift.Int {
-  case agent
-  case system
-  case user
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc open class ChatElement : ObjectiveC.NSObject {
-  @objc public var id: Swift.String
-  @objc public var isLoadedFromHistory: Swift.Bool
-  @objc public var timestamp: Foundation.Date
-  @objc public var kind: GenesysCloudCore.ChatElementKind
-  @objc dynamic public var userState: GenesysCloudCore.UserChatElementState
-  @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind)
-  @objc deinit
-}
-extension GenesysCloudCore.ChatElement {
-  public func getText() -> Swift.String?
-  public func setText(_ text: Swift.String)
-  public func convertToFileElement(file: GenesysCloudCore.DownloadableFile) -> GenesysCloudCore.ChatElement
-}
-@objc final public class QuickRepliesChatElement : GenesysCloudCore.ChatElement {
-  final public var quickReplies: [Swift.String]
-  @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, quickReplies: [Swift.String])
-  @objc deinit
-}
-@objc final public class SystemChatElement : GenesysCloudCore.ChatElement {
-  final public var type: GenesysCloudCore.SystemChatElementType
-  final public var text: Swift.String?
-  @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, type: GenesysCloudCore.SystemChatElementType, text: Swift.String? = nil)
-  @objc deinit
-}
-@objc final public class TypingIndicatorChatElement : GenesysCloudCore.ChatElement {
-  @objc public init()
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers open class Account : ObjectiveC.NSObject {
   public var apiKey: Swift.String?
   public var info: [Swift.String : [Swift.String : Swift.String]]?
@@ -597,54 +619,87 @@ extension GenesysCloudCore.ChatElement {
   @objc override dynamic public init()
   @objc deinit
 }
-public protocol URLSessionProtocol {
-  func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionDataTask
-  func data(from url: Foundation.URL) async throws -> (Foundation.Data, Foundation.URLResponse)
-}
-extension Foundation.URLSession : GenesysCloudCore.URLSessionProtocol {
-}
-@objc final public class Card : ObjectiveC.NSObject {
-  @objc final public let title: Swift.String
-  @objc final public let cardDescription: Swift.String
-  @objc final public let imageUrl: Swift.String?
-  @objc final public let actions: [GenesysCloudCore.CardAction]
-  final public var image: Combine.CurrentValueSubject<UIKit.UIImage?, any Swift.Error>
-  @objc public init(title: Swift.String, cardDescription: Swift.String, imageUrl: Swift.String?, image: UIKit.UIImage? = nil, actions: [GenesysCloudCore.CardAction])
+@_hasMissingDesignatedInitializers final public class FormField {
+  public static let extraData: Swift.String
+  public static let customAttributes: Swift.String
+  public static let language: Swift.String
   @objc deinit
 }
-@objc final public class RemoteConfiguration : ObjectiveC.NSObject {
-  final public let isChatEnabled: Swift.Bool
-  final public var featureFlags: [GenesysCloudCore.Feature : Swift.Bool]
-  final public let uiConfig: GenesysCloudCore.UIConfiguration
-  final public let languageConfig: GenesysCloudCore.LanguageConfiguration
-  final public var fileAttachmentProfile: GenesysCloudCore.AttachmentProfile?
-  public init(isChatEnabled: Swift.Bool, featureFlags: [GenesysCloudCore.Feature : Swift.Bool], uiConfig: GenesysCloudCore.UIConfiguration, languageConfig: GenesysCloudCore.LanguageConfiguration, fileAttachmentProfile: GenesysCloudCore.AttachmentProfile? = nil)
-  final public func isFeatureEnabled(name: GenesysCloudCore.Feature, defaultValue: Swift.Bool) -> Swift.Bool
-  final public func addFeature(_ feature: GenesysCloudCore.Feature, enabled: Swift.Bool)
+@_inheritsConvenienceInitializers @objc final public class ChatDataRequest : ObjectiveC.NSObject {
+  final public var id: Foundation.UUID
+  final public var reason: GenesysCloudCore.RequestReason
+  final public var requestStatus: GenesysCloudCore.RequestStatus
+  final public var chatDataResponse: GenesysCloudCore.ChatDataResponse?
+  @objc override dynamic public init()
   @objc deinit
 }
-final public class SessionInfo : Swift.Equatable {
-  public init(id: Swift.String = "")
-  public init(info: GenesysCloudCore.SessionInfo)
-  final public func addExtraData(data: [Swift.String : Any])
-  final public func getExtraData(key: Swift.String) -> Any?
-  public static func == (lhs: GenesysCloudCore.SessionInfo, rhs: GenesysCloudCore.SessionInfo) -> Swift.Bool
+final public class ChatDataResponse {
+  final public var elements: [GenesysCloudCore.ChatElement]
+  final public var hasMore: Swift.Bool
+  public init()
   @objc deinit
 }
-@objc final public class CardAction : ObjectiveC.NSObject {
-  @objc final public let text: Swift.String
-  @objc final public let url: Foundation.URL?
-  @objc final public let payload: Swift.String
-  @objc public init(text: Swift.String, url: Foundation.URL?, payload: Swift.String)
-  @objc deinit
-}
-@objc public enum UnavailableReason : Swift.Int {
-  case queueFull, noOperators, visitorBlocked, outsideHours, unknown, answerTimeout, unsecure, error, noConnection, serviceUnavailable, serviceDisabled, noReason
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+public enum RequestReason {
+  case initialRequest
+  case reconnectionRequest
+  case userRequest
+  public static func == (a: GenesysCloudCore.RequestReason, b: GenesysCloudCore.RequestReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
+}
+public enum RequestStatus {
+  case idle
+  case canLoad
+  case success
+  case timeout
+  case error
+  case canceledBusy
+  case canceledInactive
+  case canceledRedundant
+  public static func == (a: GenesysCloudCore.RequestStatus, b: GenesysCloudCore.RequestStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol ChatEngineDelegate : AnyObject {
+  func messageDidArrive(chatElement: GenesysCloudCore.ChatElement)
+  func didFail(error: GenesysCloudCore.GCError)
+  func didFetchConfiguration(remoteConfig: GenesysCloudCore.RemoteConfiguration)
+  func event(with chatState: GenesysCloudCore.ChatState, withParams params: [Swift.String : Any]?)
+  func didReceiveChatData(_ request: GenesysCloudCore.ChatDataRequest, completion: (() -> Swift.Void)?)
+  func shouldNotifyIndicator(isActive: Swift.Bool)
+  func didRefreshAttachment(attachmentId: Swift.String, downloadUrl: Swift.String)
+  func didReceiveAttachmentId(_ attachmentId: Swift.String, fileURL: Foundation.URL, fileData: Foundation.Data)
+  func didUploadAttachment(attachmentId: Swift.String, downloadUrl: Swift.String)
+  func updateAttachmentStatus(_ status: GenesysCloudCore.UploadableFileStatus)
+  func didUpdateUploadProgress(_ progress: Swift.Double)
+  func didDelayAttachment(fileData: Foundation.Data, fileURL: Foundation.URL)
+  func didEnableFileUpload()
+}
+public protocol ChatEngineProtocol {
+  var delegate: (any GenesysCloudCore.ChatEngineDelegate)? { get set }
+  var configurationLoader: any GenesysCloudCore.ConfigurationLoader { get set }
+  func prepare(account: GenesysCloudCore.Account)
+  func create()
+  func start()
+  func postMessage(_ chatElement: GenesysCloudCore.ChatElement)
+  func endChat(forceClose: Swift.Bool)
+  func reconnect()
+  func refreshAttachment(fileId: Swift.String)
+  func logoutFromAuthenticatedSession()
+  func attach(fileData: Foundation.Data, fileName: Swift.String, fileURL: Foundation.URL)
+  func detach(attachmentId: Swift.String)
+  func clearConversation()
+  func indicateTyping()
+  func disconnect()
+  func updateCustomAttributes(_: [Swift.String : Swift.String])
+  func resume()
+  func produceChatData(_ request: GenesysCloudCore.ChatDataRequest) -> Swift.Bool
+  func authorize()
+  init(configLoader: any GenesysCloudCore.ConfigurationLoader)
 }
 @objc public enum ChatState : Swift.Int {
   case unknown = 0
@@ -664,30 +719,6 @@ final public class SessionInfo : Swift.Equatable {
   case endTyping
   case unavailable
   case agentTyping
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case readmore
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case chatReady
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case agentAccepted
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case refresh
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case stickyMsgUpdate
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case fileUploadQueuePosition
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case fileUploadStateChanged
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case chatPending
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case startQueue
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case operatorChanged
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case chatInQueue
-  @available(*, deprecated, message: "Case not used, will be removed.")
-  case chatAccepted
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -701,68 +732,209 @@ final public class SessionInfo : Swift.Equatable {
   @objc public init(state: GenesysCloudCore.ChatState)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class LanguageUtility : ObjectiveC.NSObject {
-  @objc public func getDeviceLanguage() -> Swift.String?
-  @objc override dynamic public init()
-  @objc deinit
+public protocol ConfigurationLoaderDelegate : AnyObject {
+  func didFailLoad(error: (any Swift.Error)?)
+  func didFetchChatSettings(remoteConfig: GenesysCloudCore.RemoteConfiguration)
 }
-public enum PickerMode : Swift.String {
-  case image
-  case video
-  case file
-  case cameraPhoto
-  case cameraVideo
-  public static func from(mimeType: Swift.String) -> [GenesysCloudCore.PickerMode]
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+public protocol ConfigurationLoader {
+  var parser: any GenesysCloudCore.ConfigurationParser { get set }
+  var delegate: (any GenesysCloudCore.ConfigurationLoaderDelegate)? { get set }
+  func load(account: GenesysCloudCore.Account)
+}
+public protocol ConfigurationParser {
+  func parse(data: Any?) -> GenesysCloudCore.RemoteConfiguration?
+}
+@objc public enum EndedReason : Swift.Int {
+  public static let endedReasonKey: Swift.String
+  case unknown = 0
+  case `operator`
+  case visitor
+  case disconnected
+  case app
+  case sessionLimitReached
+  case conversationCleared
+  case logout
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
-extension GenesysCloudCore.LogType : Swift.Equatable {}
-extension GenesysCloudCore.LogType : Swift.Hashable {}
+@objc public enum ChatError : Swift.Int {
+  case failedToLoad = 5001
+  case failedToEnd = 5002
+  case accountIsNotValid = 5003
+  case chatGeneralError = 5004
+  case failedToLoadData = 5005
+  case failedToFetchAccountConfiguration = 5006
+  case failedToSendMessage = 5007
+  case failedToLoadHistory = 5008
+  case failedNoAccessKeyForLiveChat = 5009
+  case failedNoImplementationForHandOver = 5010
+  case failedMessengerChatErrorDisableState = 5011
+  case failedToChangeLanguage = 5012
+  case failedGeneralErrorType = 5013
+  case sessionExpiration = 5014
+  case connectionError = 5015
+  case failedToReconnect = 5016
+  case failedToAutostartConversation = 5017
+  case failedToSendCustomAttributes = 5018
+  case conversationCreationError = 5019
+  case attachmentDownloadError = 5020
+  case clientNotAuthenticatedError = 5021
+  case authLogoutFailed = 5022
+  case attachmentValidationError = 5023
+  case attachmentUploadError = 5024
+  case clearConversationDisabled = 5025
+  case clearConversationFailure = 5026
+  case pushDeploymentIdMismatch = 5027
+  case deviceAlreadyRegistered = 5028
+  case authorizationRequired = 5029
+  public static let ClientErrorReconnectDescription: Swift.String
+  public static let IllegalStateErrorReconnectDescription: Swift.String
+  public static let ConfigurationLoadErrorDescription: Swift.String
+  public static let ClientConnectErrorDescription: Swift.String
+  public static let conversationAutostartErrorDescription: Swift.String
+  public static let ConversationCreationErrorDescription: Swift.String
+  public static let AttachmentDownloadErrorDescription: Swift.String
+  public static let AttachmentRefreshErrorDescription: Swift.String
+  public static let ClientNotAuthenticatedErrorAuthenticatedMessagesDescription: Swift.String
+  public static let AuthLogoutFailedAuthenticatedMessagesDescription: Swift.String
+  public static func AttachmentSizeValidationErrorDescription(limit: Swift.String) -> Swift.String
+  public static let AttachmentTypeValidationErrorDescription: Swift.String
+  public static let AttachmentGeneralValidationErrorDescription: Swift.String
+  public static let ClearConversationDisabledDescription: Swift.String
+  public static let ClearConversationFailureDescription: Swift.String
+  public static let AuthorizationRequiredDescription: Swift.String
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc final public class GCError : ObjectiveC.NSObject, Swift.Error {
+  @objc final public var error: (any Swift.Error)?
+  @objc final public var errorType: GenesysCloudCore.ChatError
+  @objc final public var errorDescription: Swift.String?
+  @objc public init(error: (any Swift.Error)? = nil, errorType: GenesysCloudCore.ChatError, errorDescription: Swift.String? = nil)
+  @objc deinit
+}
+final public class EventData {
+  final public var chatState: GenesysCloudCore.ChatState
+  final public var isNewSession: Swift.Bool
+  final public var isAutostart: Swift.Bool
+  final public var isResumed: Swift.Bool
+  public init(state: GenesysCloudCore.ChatState, isNewSession: Swift.Bool = false, isAutostart: Swift.Bool = false, isResumed: Swift.Bool = false)
+  @objc deinit
+}
+public enum DownloadError : Swift.Error {
+  case invalidUrl
+  case generalError
+  case invalidData
+  public static func == (a: GenesysCloudCore.DownloadError, b: GenesysCloudCore.DownloadError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol FileDownloaderProtocol : AnyObject {
+  func download(from urlString: Swift.String) async throws -> Foundation.Data
+}
+final public actor FileDownloader : GenesysCloudCore.FileDownloaderProtocol {
+  public init(session: any GenesysCloudCore.URLSessionProtocol = URLSession.shared)
+  final public func download(from urlString: Swift.String) async throws -> Foundation.Data
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
+public enum MessageSendingError : Swift.Error {
+  case timeout
+  case sendFailure
+  case customAttributesTooLarge
+  case invalidElement
+  case customAttributesMissing
+  public var rawValue: Swift.String {
+    get
+  }
+  public static func == (a: GenesysCloudCore.MessageSendingError, b: GenesysCloudCore.MessageSendingError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+final public class SessionInfo : Swift.Equatable {
+  public init(id: Swift.String = "")
+  public init(info: GenesysCloudCore.SessionInfo)
+  final public func addExtraData(data: [Swift.String : Any])
+  final public func getExtraData(key: Swift.String) -> Any?
+  public static func == (lhs: GenesysCloudCore.SessionInfo, rhs: GenesysCloudCore.SessionInfo) -> Swift.Bool
+  @objc deinit
+}
+public enum StatementType {
+  case outgoing
+  case incoming
+  case system
+  case none
+  public static func == (a: GenesysCloudCore.StatementType, b: GenesysCloudCore.StatementType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc public enum UnavailableReason : Swift.Int {
+  case queueFull, noOperators, visitorBlocked, outsideHours, unknown, answerTimeout, unsecure, error, noConnection, serviceUnavailable, serviceDisabled, noReason
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension GenesysCloudCore.DownloadableFileStatus : Swift.Equatable {}
+extension GenesysCloudCore.DownloadableFileStatus : Swift.Hashable {}
 extension GenesysCloudCore.MimeType : Swift.Equatable {}
 extension GenesysCloudCore.MimeType : Swift.Hashable {}
 extension GenesysCloudCore.MimeType : Swift.RawRepresentable {}
-extension GenesysCloudCore.DownloadError : Swift.Equatable {}
-extension GenesysCloudCore.DownloadError : Swift.Hashable {}
-extension GenesysCloudCore.ChatError : Swift.Equatable {}
-extension GenesysCloudCore.ChatError : Swift.Hashable {}
-extension GenesysCloudCore.ChatError : Swift.RawRepresentable {}
-extension GenesysCloudCore.RequestReason : Swift.Equatable {}
-extension GenesysCloudCore.RequestReason : Swift.Hashable {}
-extension GenesysCloudCore.RequestStatus : Swift.Equatable {}
-extension GenesysCloudCore.RequestStatus : Swift.Hashable {}
-extension GenesysCloudCore.EndedReason : Swift.Equatable {}
-extension GenesysCloudCore.EndedReason : Swift.Hashable {}
-extension GenesysCloudCore.EndedReason : Swift.RawRepresentable {}
-extension GenesysCloudCore.Feature : Swift.Equatable {}
-extension GenesysCloudCore.Feature : Swift.Hashable {}
-extension GenesysCloudCore.TranslationKey : Swift.Equatable {}
-extension GenesysCloudCore.TranslationKey : Swift.Hashable {}
-extension GenesysCloudCore.MessageSendingError : Swift.Equatable {}
-extension GenesysCloudCore.MessageSendingError : Swift.Hashable {}
 extension GenesysCloudCore.UploadableFileStatus : Swift.Equatable {}
 extension GenesysCloudCore.UploadableFileStatus : Swift.Hashable {}
-extension GenesysCloudCore.DownloadableFileStatus : Swift.Equatable {}
-extension GenesysCloudCore.DownloadableFileStatus : Swift.Hashable {}
-extension GenesysCloudCore.StatementType : Swift.Equatable {}
-extension GenesysCloudCore.StatementType : Swift.Hashable {}
-extension GenesysCloudCore.SystemChatElementType : Swift.Equatable {}
-extension GenesysCloudCore.SystemChatElementType : Swift.Hashable {}
-extension GenesysCloudCore.SystemChatElementType : Swift.RawRepresentable {}
 extension GenesysCloudCore.UserChatElementState : Swift.Equatable {}
 extension GenesysCloudCore.UserChatElementState : Swift.Hashable {}
 extension GenesysCloudCore.UserChatElementState : Swift.RawRepresentable {}
 extension GenesysCloudCore.ChatElementKind : Swift.Equatable {}
 extension GenesysCloudCore.ChatElementKind : Swift.Hashable {}
 extension GenesysCloudCore.ChatElementKind : Swift.RawRepresentable {}
-extension GenesysCloudCore.UnavailableReason : Swift.Equatable {}
-extension GenesysCloudCore.UnavailableReason : Swift.Hashable {}
-extension GenesysCloudCore.UnavailableReason : Swift.RawRepresentable {}
-extension GenesysCloudCore.ChatState : Swift.Equatable {}
-extension GenesysCloudCore.ChatState : Swift.Hashable {}
-extension GenesysCloudCore.ChatState : Swift.RawRepresentable {}
+extension GenesysCloudCore.SystemChatElementType : Swift.Equatable {}
+extension GenesysCloudCore.SystemChatElementType : Swift.Hashable {}
+extension GenesysCloudCore.SystemChatElementType : Swift.RawRepresentable {}
+extension GenesysCloudCore.Feature : Swift.Equatable {}
+extension GenesysCloudCore.Feature : Swift.Hashable {}
 extension GenesysCloudCore.PickerMode : Swift.Equatable {}
 extension GenesysCloudCore.PickerMode : Swift.Hashable {}
 extension GenesysCloudCore.PickerMode : Swift.RawRepresentable {}
+extension GenesysCloudCore.LogFlow : Swift.Equatable {}
+extension GenesysCloudCore.LogFlow : Swift.Hashable {}
+extension GenesysCloudCore.TranslationKey : Swift.Equatable {}
+extension GenesysCloudCore.TranslationKey : Swift.Hashable {}
+extension GenesysCloudCore.RequestReason : Swift.Equatable {}
+extension GenesysCloudCore.RequestReason : Swift.Hashable {}
+extension GenesysCloudCore.RequestStatus : Swift.Equatable {}
+extension GenesysCloudCore.RequestStatus : Swift.Hashable {}
+extension GenesysCloudCore.ChatState : Swift.Equatable {}
+extension GenesysCloudCore.ChatState : Swift.Hashable {}
+extension GenesysCloudCore.ChatState : Swift.RawRepresentable {}
+extension GenesysCloudCore.EndedReason : Swift.Equatable {}
+extension GenesysCloudCore.EndedReason : Swift.Hashable {}
+extension GenesysCloudCore.EndedReason : Swift.RawRepresentable {}
+extension GenesysCloudCore.ChatError : Swift.Equatable {}
+extension GenesysCloudCore.ChatError : Swift.Hashable {}
+extension GenesysCloudCore.ChatError : Swift.RawRepresentable {}
+extension GenesysCloudCore.DownloadError : Swift.Equatable {}
+extension GenesysCloudCore.DownloadError : Swift.Hashable {}
+extension GenesysCloudCore.MessageSendingError : Swift.Equatable {}
+extension GenesysCloudCore.MessageSendingError : Swift.Hashable {}
+extension GenesysCloudCore.StatementType : Swift.Equatable {}
+extension GenesysCloudCore.StatementType : Swift.Hashable {}
+extension GenesysCloudCore.UnavailableReason : Swift.Equatable {}
+extension GenesysCloudCore.UnavailableReason : Swift.Hashable {}
+extension GenesysCloudCore.UnavailableReason : Swift.RawRepresentable {}
