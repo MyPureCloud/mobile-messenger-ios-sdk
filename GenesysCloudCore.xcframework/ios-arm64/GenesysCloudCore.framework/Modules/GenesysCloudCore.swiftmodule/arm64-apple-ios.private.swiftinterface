@@ -358,6 +358,9 @@ public enum TranslationKey {
   case attached
   case removeFile
   case retryDownload
+  case attachingFile
+  case fileAttached
+  case fileRemoved
   case cancel
   case settings
   case preparing
@@ -370,6 +373,12 @@ public enum TranslationKey {
   case agentMessageAccessibilityPrefix
   case userMessageAccessibilityPrefix
   case typingIndicator
+  case newMessageReceived
+  case messageSent
+  case messageDeliveryFailed
+  case messageDelivered
+  case participantTyping
+  case selectOption
   case cameraPermissionsDialogTitle
   case cameraPermissionsDialogBody
   public static func == (a: GenesysCloudCore.TranslationKey, b: GenesysCloudCore.TranslationKey) -> Swift.Bool

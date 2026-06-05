@@ -39,50 +39,6 @@ public class TranslationsRepositoryImplementation : GenesysCloudMessenger.Transl
 extension UIKit.UIColor {
   convenience public init(_ hex: Swift.String, alpha: CoreFoundation.CGFloat = 1.0)
 }
-@_inheritsConvenienceInitializers @objc public class TranslationsKeys : ObjectiveC.NSObject {
-  @objc public static let startConversationMessage: Swift.String
-  @objc public static let conversationStartedMessage: Swift.String
-  @objc public static let inputMessagePlaceholder: Swift.String
-  @objc public static let inputMessageSpeechPlaceholder: Swift.String
-  @objc public static let conversationRecoveryFailure: Swift.String
-  @objc public static let conversationHasEnded: Swift.String
-  @objc public static let startNewConversation: Swift.String
-  @objc public static let conversationHasResumed: Swift.String
-  @objc public static let startNew: Swift.String
-  @objc public static let resumeConversation: Swift.String
-  @objc public static let startNewConversationError: Swift.String
-  @objc public static let attachCamera: Swift.String
-  @objc public static let attachMedia: Swift.String
-  @objc public static let attachFile: Swift.String
-  @objc public static let attachButton: Swift.String
-  @objc public static let attachMediaButton: Swift.String
-  @objc public static let attachError: Swift.String
-  @objc public static let image: Swift.String
-  @objc public static let audio: Swift.String
-  @objc public static let video: Swift.String
-  @objc public static let document: Swift.String
-  @objc public static let file: Swift.String
-  @objc public static let attaching: Swift.String
-  @objc public static let attached: Swift.String
-  @objc public static let removeFile: Swift.String
-  @objc public static let retryDownload: Swift.String
-  @objc public static let cancel: Swift.String
-  @objc public static let settings: Swift.String
-  @objc public static let preparing: Swift.String
-  @objc public static let send: Swift.String
-  @objc public static let pending: Swift.String
-  @objc public static let sent: Swift.String
-  @objc public static let delivered: Swift.String
-  @objc public static let deliveryError: Swift.String
-  @objc public static let scrollToTheBottom: Swift.String
-  @objc public static let agentMessageAccessibilityPrefix: Swift.String
-  @objc public static let userMessageAccessibilityPrefix: Swift.String
-  @objc public static let typingIndicator: Swift.String
-  @objc public static let cameraPermissionsDialogTitle: Swift.String
-  @objc public static let cameraPermissionsDialogBody: Swift.String
-  @objc override dynamic public init()
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers final public class AuthenticationInfo {
   @objc deinit
 }

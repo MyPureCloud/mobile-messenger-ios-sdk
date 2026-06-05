@@ -31,7 +31,10 @@
     "attaching": "attaching",
     "attached": "attached",
     "removeFile": "Remove file",
-    "retryDownload" "retry download"
+    "retryDownload": "retry download",
+    "attachingFile": "Attaching file.",
+    "fileAttached": "File attached.",
+    "fileRemoved": "File removed."
   },
   "commons": {
     "cancel": "Cancel",
@@ -45,7 +48,13 @@
     "scrollToTheBottom": "Scroll to the bottom",
     "agentMessageAccessibilityPrefix": "Message:",
     "userMessageAccessibilityPrefix": "Your message:",
-    "typingIndicator": "Typing"
+    "typingIndicator": "Typing",
+    "newMessageReceived": "New message received.",
+    "messageSent": "Message sent.",
+    "messageDeliveryFailed": "Message delivery failed.",
+    "messageDelivered": "Message delivered.",
+    "participantTyping": "Participant is typing.",
+    "selectOption": "Please select an option:"
   },
   "permissions": {
     "cameraPermissionsDialogTitle": "\"%s\" Would Like to Access the Camera",

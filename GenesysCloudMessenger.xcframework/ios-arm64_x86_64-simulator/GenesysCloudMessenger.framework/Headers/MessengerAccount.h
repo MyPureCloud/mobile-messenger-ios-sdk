@@ -1,5 +1,5 @@
 
-// GenesysCloudMessenger version number: v1.16.1
+// GenesysCloudMessenger version number: v1.17.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
