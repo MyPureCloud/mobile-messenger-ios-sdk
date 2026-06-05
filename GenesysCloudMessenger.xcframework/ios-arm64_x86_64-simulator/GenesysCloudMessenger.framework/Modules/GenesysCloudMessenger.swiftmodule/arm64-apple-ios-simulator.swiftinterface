@@ -77,6 +77,10 @@ public class TranslationsParser {
   @objc deinit
 }
 extension GenesysCloudMessenger.MessengerChatEngine {
+  @objc dynamic public func disconnect()
+  @objc dynamic public func connectFromBackground()
+}
+extension GenesysCloudMessenger.MessengerChatEngine {
   @objc dynamic public func updateCustomAttributes(_ newValue: [Swift.String : Swift.String])
 }
 extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatEngine {

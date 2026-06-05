@@ -33,7 +33,7 @@ import _SwiftConcurrencyShims
 @objc public protocol ChatElementDelegate {
   @objc func didReceive(chatElement: GenesysCloudCore.ChatElement)
   @available(*, deprecated, message: "StoreableChatElement is replaced by ChatElement")
-  @objc func didReceiveChatElement(_ item: any GenesysCloud.StorableChatElement)
+  @objc optional func didReceiveChatElement(_ item: any GenesysCloud.StorableChatElement)
   @available(*, deprecated, message: "Not utilized, will be removed.")
   @objc optional func fetch(_ from: Swift.Int, handler: () -> [any GenesysCloud.StorableChatElement])
   @available(*, deprecated, message: "Not utilized, will be removed.")
@@ -235,7 +235,7 @@ extension GenesysCloudCore.MimeType {
   @objc deinit
 }
 extension UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public func embedInView(_ container: UIKit.UIView!)
+  @_Concurrency.MainActor @preconcurrency public func anchorToSuperview()
   @_Concurrency.MainActor @preconcurrency public func setCornerRadius(radius: CoreFoundation.CGFloat, corners: QuartzCore.CACornerMask = [.layerMinXMinYCorner,
                                                                     .layerMaxXMinYCorner,
                                                                     .layerMinXMaxYCorner,
