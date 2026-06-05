@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GenesysCloudCore
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GenesysCloudCore
 import AVKit
 import Combine
 import Foundation
@@ -215,11 +214,11 @@ public enum MimeType : Swift.String {
 }
 @objc public enum EndedReason : Swift.Int {
   public static let endedReasonKey: Swift.String
-  case Unknown = 0
-  case Operator
-  case Visitor
-  case Disconnected
-  case App
+  case unknown = 0
+  case `operator`
+  case visitor
+  case disconnected
+  case app
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -391,7 +390,7 @@ public class TimedChatStatement : GenesysCloudCore.ChatStatement {
   @objc deinit
 }
 @objc public enum UnavailableReason : Swift.Int {
-  case QueueFull, NoOperators, VisitorBlocked, OutsideHours, Unknown, answerTimeout, Unsecure, Error, NoConnection, ServiceUnavailable, ServiceDisabled
+  case queueFull, noOperators, visitorBlocked, outsideHours, unknown, answerTimeout, unsecure, error, noConnection, serviceUnavailable, serviceDisabled
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

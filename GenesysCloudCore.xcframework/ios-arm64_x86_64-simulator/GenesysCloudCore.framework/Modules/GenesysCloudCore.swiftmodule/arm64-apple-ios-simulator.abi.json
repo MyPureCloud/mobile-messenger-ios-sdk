@@ -1040,7 +1040,7 @@
           {
             "kind": "TypeNominal",
             "name": "Error",
-            "printedName": "Swift.Error",
+            "printedName": "any Swift.Error",
             "usr": "s:s5ErrorP"
           },
           {
@@ -1559,12 +1559,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "GenesysCloudCore.ChatEngineDelegate?",
+                "printedName": "(any GenesysCloudCore.ChatEngineDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "ChatEngineDelegate",
-                    "printedName": "GenesysCloudCore.ChatEngineDelegate",
+                    "printedName": "any GenesysCloudCore.ChatEngineDelegate",
                     "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate"
                   }
                 ],
@@ -1585,12 +1585,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "GenesysCloudCore.ChatEngineDelegate?",
+                    "printedName": "(any GenesysCloudCore.ChatEngineDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ChatEngineDelegate",
-                        "printedName": "GenesysCloudCore.ChatEngineDelegate",
+                        "printedName": "any GenesysCloudCore.ChatEngineDelegate",
                         "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate"
                       }
                     ],
@@ -1620,12 +1620,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "GenesysCloudCore.ChatEngineDelegate?",
+                    "printedName": "(any GenesysCloudCore.ChatEngineDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ChatEngineDelegate",
-                        "printedName": "GenesysCloudCore.ChatEngineDelegate",
+                        "printedName": "any GenesysCloudCore.ChatEngineDelegate",
                         "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate"
                       }
                     ],
@@ -1678,7 +1678,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ConfigurationLoader",
-                "printedName": "GenesysCloudCore.ConfigurationLoader",
+                "printedName": "any GenesysCloudCore.ConfigurationLoader",
                 "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoader"
               }
             ],
@@ -1696,7 +1696,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ConfigurationLoader",
-                    "printedName": "GenesysCloudCore.ConfigurationLoader",
+                    "printedName": "any GenesysCloudCore.ConfigurationLoader",
                     "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoader"
                   }
                 ],
@@ -1723,7 +1723,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ConfigurationLoader",
-                    "printedName": "GenesysCloudCore.ConfigurationLoader",
+                    "printedName": "any GenesysCloudCore.ConfigurationLoader",
                     "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoader"
                   }
                 ],
@@ -1984,7 +1984,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ConfigurationLoader",
-                "printedName": "GenesysCloudCore.ConfigurationLoader",
+                "printedName": "any GenesysCloudCore.ConfigurationLoader",
                 "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoader"
               }
             ],
@@ -2048,7 +2048,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ConfigurationLoader",
-                "printedName": "GenesysCloudCore.ConfigurationLoader",
+                "printedName": "any GenesysCloudCore.ConfigurationLoader",
                 "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoader"
               }
             ],
@@ -2070,7 +2070,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ConfigurationLoader",
-                    "printedName": "GenesysCloudCore.ConfigurationLoader",
+                    "printedName": "any GenesysCloudCore.ConfigurationLoader",
                     "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoader"
                   }
                 ],
@@ -2094,7 +2094,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ConfigurationLoader",
-                    "printedName": "GenesysCloudCore.ConfigurationLoader",
+                    "printedName": "any GenesysCloudCore.ConfigurationLoader",
                     "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoader"
                   }
                 ],
@@ -2225,7 +2225,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "GenesysCloudCore.ChatEngineDelegate?"
+                "printedName": "(any GenesysCloudCore.ChatEngineDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -2249,12 +2249,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "GenesysCloudCore.ChatEngineDelegate?",
+                    "printedName": "(any GenesysCloudCore.ChatEngineDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ChatEngineDelegate",
-                        "printedName": "GenesysCloudCore.ChatEngineDelegate",
+                        "printedName": "any GenesysCloudCore.ChatEngineDelegate",
                         "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate"
                       }
                     ],
@@ -2281,12 +2281,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "GenesysCloudCore.ChatEngineDelegate?",
+                    "printedName": "(any GenesysCloudCore.ChatEngineDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ChatEngineDelegate",
-                        "printedName": "GenesysCloudCore.ChatEngineDelegate",
+                        "printedName": "any GenesysCloudCore.ChatEngineDelegate",
                         "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate"
                       }
                     ],
@@ -2338,7 +2338,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ConfigurationLoader",
-                "printedName": "GenesysCloudCore.ConfigurationLoader",
+                "printedName": "any GenesysCloudCore.ConfigurationLoader",
                 "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoader"
               }
             ],
@@ -4781,12 +4781,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -4813,12 +4813,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Error?",
+                    "printedName": "(any Swift.Error)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -4848,12 +4848,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Error?",
+                    "printedName": "(any Swift.Error)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -5113,12 +5113,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6868,12 +6868,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -6950,7 +6950,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ConfigurationParser",
-                "printedName": "GenesysCloudCore.ConfigurationParser",
+                "printedName": "any GenesysCloudCore.ConfigurationParser",
                 "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationParser"
               }
             ],
@@ -6971,7 +6971,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ConfigurationParser",
-                    "printedName": "GenesysCloudCore.ConfigurationParser",
+                    "printedName": "any GenesysCloudCore.ConfigurationParser",
                     "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationParser"
                   }
                 ],
@@ -7001,7 +7001,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ConfigurationParser",
-                    "printedName": "GenesysCloudCore.ConfigurationParser",
+                    "printedName": "any GenesysCloudCore.ConfigurationParser",
                     "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationParser"
                   }
                 ],
@@ -7028,7 +7028,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "GenesysCloudCore.ConfigurationLoaderDelegate?"
+                "printedName": "(any GenesysCloudCore.ConfigurationLoaderDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -7050,12 +7050,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "GenesysCloudCore.ConfigurationLoaderDelegate?",
+                    "printedName": "(any GenesysCloudCore.ConfigurationLoaderDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ConfigurationLoaderDelegate",
-                        "printedName": "GenesysCloudCore.ConfigurationLoaderDelegate",
+                        "printedName": "any GenesysCloudCore.ConfigurationLoaderDelegate",
                         "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoaderDelegate"
                       }
                     ],
@@ -7088,12 +7088,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "GenesysCloudCore.ConfigurationLoaderDelegate?",
+                    "printedName": "(any GenesysCloudCore.ConfigurationLoaderDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ConfigurationLoaderDelegate",
-                        "printedName": "GenesysCloudCore.ConfigurationLoaderDelegate",
+                        "printedName": "any GenesysCloudCore.ConfigurationLoaderDelegate",
                         "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoaderDelegate"
                       }
                     ],
@@ -7284,8 +7284,8 @@
           },
           {
             "kind": "Var",
-            "name": "Unknown",
-            "printedName": "Unknown",
+            "name": "unknown",
+            "printedName": "unknown",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -7316,7 +7316,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@EndedReason@EndedReasonUnknown",
-            "mangledName": "$s16GenesysCloudCore11EndedReasonO7UnknownyA2CmF",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO7unknownyA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "RawDocComment",
@@ -7326,8 +7326,8 @@
           },
           {
             "kind": "Var",
-            "name": "Operator",
-            "printedName": "Operator",
+            "name": "operator",
+            "printedName": "operator",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -7358,7 +7358,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@EndedReason@EndedReasonOperator",
-            "mangledName": "$s16GenesysCloudCore11EndedReasonO8OperatoryA2CmF",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO8operatoryA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "RawDocComment",
@@ -7368,8 +7368,8 @@
           },
           {
             "kind": "Var",
-            "name": "Visitor",
-            "printedName": "Visitor",
+            "name": "visitor",
+            "printedName": "visitor",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -7400,7 +7400,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@EndedReason@EndedReasonVisitor",
-            "mangledName": "$s16GenesysCloudCore11EndedReasonO7VisitoryA2CmF",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO7visitoryA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "RawDocComment",
@@ -7410,8 +7410,8 @@
           },
           {
             "kind": "Var",
-            "name": "Disconnected",
-            "printedName": "Disconnected",
+            "name": "disconnected",
+            "printedName": "disconnected",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -7442,7 +7442,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@EndedReason@EndedReasonDisconnected",
-            "mangledName": "$s16GenesysCloudCore11EndedReasonO12DisconnectedyA2CmF",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO12disconnectedyA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "RawDocComment",
@@ -7452,8 +7452,8 @@
           },
           {
             "kind": "Var",
-            "name": "App",
-            "printedName": "App",
+            "name": "app",
+            "printedName": "app",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -7484,7 +7484,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@EndedReason@EndedReasonApp",
-            "mangledName": "$s16GenesysCloudCore11EndedReasonO3AppyA2CmF",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO3appyA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "RawDocComment",
@@ -13837,8 +13837,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "QueueFull",
-            "printedName": "QueueFull",
+            "name": "queueFull",
+            "printedName": "queueFull",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -13869,7 +13869,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@UnavailableReason@UnavailableReasonQueueFull",
-            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO9QueueFullyA2CmF",
+            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO9queueFullyA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "ObjC"
@@ -13878,8 +13878,8 @@
           },
           {
             "kind": "Var",
-            "name": "NoOperators",
-            "printedName": "NoOperators",
+            "name": "noOperators",
+            "printedName": "noOperators",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -13910,7 +13910,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@UnavailableReason@UnavailableReasonNoOperators",
-            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO11NoOperatorsyA2CmF",
+            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO11noOperatorsyA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "ObjC"
@@ -13919,8 +13919,8 @@
           },
           {
             "kind": "Var",
-            "name": "VisitorBlocked",
-            "printedName": "VisitorBlocked",
+            "name": "visitorBlocked",
+            "printedName": "visitorBlocked",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -13951,7 +13951,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@UnavailableReason@UnavailableReasonVisitorBlocked",
-            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO14VisitorBlockedyA2CmF",
+            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO14visitorBlockedyA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "ObjC"
@@ -13960,8 +13960,8 @@
           },
           {
             "kind": "Var",
-            "name": "OutsideHours",
-            "printedName": "OutsideHours",
+            "name": "outsideHours",
+            "printedName": "outsideHours",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -13992,7 +13992,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@UnavailableReason@UnavailableReasonOutsideHours",
-            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO12OutsideHoursyA2CmF",
+            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO12outsideHoursyA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "ObjC"
@@ -14001,8 +14001,8 @@
           },
           {
             "kind": "Var",
-            "name": "Unknown",
-            "printedName": "Unknown",
+            "name": "unknown",
+            "printedName": "unknown",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -14033,7 +14033,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@UnavailableReason@UnavailableReasonUnknown",
-            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO7UnknownyA2CmF",
+            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO7unknownyA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "ObjC"
@@ -14083,8 +14083,8 @@
           },
           {
             "kind": "Var",
-            "name": "Unsecure",
-            "printedName": "Unsecure",
+            "name": "unsecure",
+            "printedName": "unsecure",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -14115,7 +14115,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@UnavailableReason@UnavailableReasonUnsecure",
-            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO8UnsecureyA2CmF",
+            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO8unsecureyA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "ObjC"
@@ -14124,8 +14124,8 @@
           },
           {
             "kind": "Var",
-            "name": "Error",
-            "printedName": "Error",
+            "name": "error",
+            "printedName": "error",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -14156,7 +14156,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@UnavailableReason@UnavailableReasonError",
-            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO5ErroryA2CmF",
+            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO5erroryA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "ObjC"
@@ -14165,8 +14165,8 @@
           },
           {
             "kind": "Var",
-            "name": "NoConnection",
-            "printedName": "NoConnection",
+            "name": "noConnection",
+            "printedName": "noConnection",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -14197,7 +14197,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@UnavailableReason@UnavailableReasonNoConnection",
-            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO12NoConnectionyA2CmF",
+            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO12noConnectionyA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "ObjC"
@@ -14206,8 +14206,8 @@
           },
           {
             "kind": "Var",
-            "name": "ServiceUnavailable",
-            "printedName": "ServiceUnavailable",
+            "name": "serviceUnavailable",
+            "printedName": "serviceUnavailable",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -14238,7 +14238,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@UnavailableReason@UnavailableReasonServiceUnavailable",
-            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO07ServiceD0yA2CmF",
+            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO07serviceD0yA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "ObjC"
@@ -14247,8 +14247,8 @@
           },
           {
             "kind": "Var",
-            "name": "ServiceDisabled",
-            "printedName": "ServiceDisabled",
+            "name": "serviceDisabled",
+            "printedName": "serviceDisabled",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -14279,7 +14279,7 @@
             ],
             "declKind": "EnumElement",
             "usr": "c:@M@GenesysCloudCore@E@UnavailableReason@UnavailableReasonServiceDisabled",
-            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO15ServiceDisabledyA2CmF",
+            "mangledName": "$s16GenesysCloudCore17UnavailableReasonO15serviceDisabledyA2CmF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "ObjC"
@@ -16277,6 +16277,7 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
@@ -17000,14 +17001,14 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/AttachmentFetcher.swift",
       "kind": "IntegerLiteral",
-      "offset": 2197,
+      "offset": 2171,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/AttachmentFetcher.swift",
       "kind": "Array",
-      "offset": 2308,
+      "offset": 2278,
       "length": 2,
       "value": "[]"
     },
@@ -17028,63 +17029,63 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Helper\/printLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 410,
+      "offset": 409,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 1738,
+      "offset": 1734,
       "length": 14,
       "value": "\"GenesysCloudCore.BaseChatEngine\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2708,
+      "offset": 2663,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2749,
+      "offset": 2704,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2788,
+      "offset": 2743,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2856,
+      "offset": 2811,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2883,
+      "offset": 2838,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2908,
+      "offset": 2863,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 2608,
+      "offset": 2563,
       "length": 9,
       "value": "\"GenesysCloudCore.EventData\""
     },
@@ -17231,56 +17232,56 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1285,
+      "offset": 1273,
       "length": 20,
       "value": "\"Failed to connect.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1368,
+      "offset": 1356,
       "length": 71,
       "value": "\"Unable to reconnect. Messenger state is not valid for this operation.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1498,
+      "offset": 1486,
       "length": 42,
       "value": "\"Failed to fetch Messenger configuration.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1595,
+      "offset": 1583,
       "length": 20,
       "value": "\"Failed to connect.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1678,
+      "offset": 1666,
       "length": 35,
       "value": "\"Failed to autostart conversation.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1775,
+      "offset": 1763,
       "length": 64,
       "value": "\"We are unable to start a conversation. Please try again later.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1899,
+      "offset": 1887,
       "length": 31,
       "value": "\"Failed to download attachment\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1989,
+      "offset": 1977,
       "length": 30,
       "value": "\"Failed to refresh attachment\""
     },
@@ -17427,7 +17428,7 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 2089,
+      "offset": 2077,
       "length": 7,
       "value": "\"GenesysCloudCore.GCError\""
     },
@@ -17589,27 +17590,27 @@
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
       "offset": 658,
-      "length": 8,
+      "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
-      "offset": 787,
+      "offset": 789,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
-      "offset": 931,
+      "offset": 933,
       "length": 12,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
-      "offset": 1035,
+      "offset": 1037,
       "length": 3,
       "value": "4"
     },
@@ -17624,41 +17625,41 @@
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
       "offset": 658,
-      "length": 8,
+      "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
-      "offset": 787,
+      "offset": 789,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
-      "offset": 931,
+      "offset": 933,
       "length": 12,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
-      "offset": 1035,
+      "offset": 1037,
       "length": 3,
       "value": "4"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
       "kind": "IntegerLiteral",
-      "offset": 1334,
+      "offset": 1285,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
       "kind": "IntegerLiteral",
-      "offset": 1628,
+      "offset": 1572,
       "length": 1,
       "value": "0"
     },
@@ -17686,7 +17687,7 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/NetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1423,
+      "offset": 1463,
       "length": 5,
       "value": "false"
     },
@@ -17714,147 +17715,147 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1203,
+      "offset": 1195,
       "length": 22,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1235,
+      "offset": 1227,
       "length": 22,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1203,
+      "offset": 1195,
       "length": 22,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1235,
+      "offset": 1227,
       "length": 22,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 1408,
+      "offset": 1400,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 1429,
+      "offset": 1421,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 1448,
+      "offset": 1440,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 1466,
+      "offset": 1458,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 1489,
+      "offset": 1481,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 1408,
+      "offset": 1400,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 1429,
+      "offset": 1421,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 1448,
+      "offset": 1440,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 1466,
+      "offset": 1458,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 1489,
+      "offset": 1481,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "Array",
-      "offset": 1925,
+      "offset": 1917,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "BooleanLiteral",
-      "offset": 1969,
+      "offset": 1961,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "StringLiteral",
-      "offset": 1537,
+      "offset": 1529,
       "length": 13,
       "value": "\"GenesysCloudCore.ChatStatement\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "Array",
-      "offset": 2773,
+      "offset": 2765,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "StringLiteral",
-      "offset": 2679,
+      "offset": 2671,
       "length": 25,
       "value": "\"GenesysCloudCore.QuickRepliesChatStatement\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 3186,
+      "offset": 3221,
       "length": 2,
       "value": "35"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "StringLiteral",
-      "offset": 3008,
+      "offset": 3042,
       "length": 18,
       "value": "\"GenesysCloudCore.TimedChatStatement\""
     },
@@ -17868,7 +17869,7 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/SessionInfo.swift",
       "kind": "StringLiteral",
-      "offset": 416,
+      "offset": 412,
       "length": 2,
       "value": "\"\""
     },

@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GenesysCloud
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GenesysCloud
 import AVFoundation
 import AVKit
 import Combine
@@ -52,7 +51,6 @@ public protocol TagCellLayoutDelegate : ObjectiveC.NSObjectProtocol {
 }
 extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func embedInView(_ container: UIKit.UIView!)
-  @_Concurrency.MainActor(unsafe) public class func fromNib<T>() -> T where T : UIKit.UIView
   @_Concurrency.MainActor(unsafe) public func setCornerRadius(radius: CoreFoundation.CGFloat, corners: QuartzCore.CACornerMask = [.layerMinXMinYCorner,
                                                                     .layerMaxXMinYCorner,
                                                                     .layerMinXMaxYCorner,
@@ -139,7 +137,7 @@ public protocol ButtonResponseTableViewCellDelegate : AnyObject {
   case botAutoComplete
   case keyboard
   case appInjection
-  case InputTypesCount
+  case inputTypesCount
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -202,7 +200,6 @@ public class DownloadableFileHandler {
   }
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
