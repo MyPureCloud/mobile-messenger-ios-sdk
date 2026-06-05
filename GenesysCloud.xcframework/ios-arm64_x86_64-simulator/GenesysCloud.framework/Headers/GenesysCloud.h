@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.6.0
+// GenesysCloud version number: v1.7.0
 #import <GenesysCloud/NRDefaultViewAdapter.h>
 #import <GenesysCloud/NRContentTableViewCell.h>
 #import <GenesysCloud/NRConversationalChannelCollectionViewCell.h>
@@ -27,16 +27,8 @@
 #import <GenesysCloud/NREntitiesProvider.h>
 #import <GenesysCloud/BaseViewController.h>
 #import <GenesysCloud/BrowserViewController.h>
-#import <GenesysCloud/ChatBarViewController.h>
 #import <GenesysCloud/ChatComponentsViewController.h>
-#import <GenesysCloud/ChatViewController.h>
 #import <GenesysCloud/InfoView.h>
-#import <GenesysCloud/AutoComplete.h>
-#import <GenesysCloud/AutoCompleteView.h>
-#import <GenesysCloud/SearchView.h>
-#import <GenesysCloud/SearchViewController.h>
-#import <GenesysCloud/SearchViewPresentationState.h>
-#import <GenesysCloud/SearchViewControllerDelegate.h>
 #import <GenesysCloud/ViewConfiguration.h>
 #import <GenesysCloud/NRAlertViewController.h>
 #import <GenesysCloud/NRAlertviewTableViewCell.h>
@@ -90,7 +82,6 @@
 #import <GenesysCloud/ChatAvailabilityChecker.h>
 #import <GenesysCloud/BaseChatHandler.h>
 #import <GenesysCloud/ChatHandler.h>
-#import <GenesysCloud/ContentChatElement+Serialization.h>
 #import <GenesysCloud/ContentChatElement+Parser.h>
 #import <GenesysCloud/ContentChatElement.h>
 #import <GenesysCloud/PreChatInfo.h>
@@ -118,16 +109,12 @@
 #import <GenesysCloud/IncomingBotConfiguration.h>
 #import <GenesysCloud/MultipleSelectionConfiguration.h>
 #import <GenesysCloud/QuickOptionConfiguration.h>
-#import <GenesysCloud/OutgoingConfiguration.h>
-#import <GenesysCloud/PlaceholderConfiguration.h>
 #import <GenesysCloud/ReadMoreViewConfiguration.h>
-#import <GenesysCloud/SearchViewConfiguration.h>
 #import <GenesysCloud/SystemMessageConfiguration.h>
 #import <GenesysCloud/TextConfiguration.h>
 #import <GenesysCloud/ApplicationHandler.h>
 #import <GenesysCloud/SpeechReconitionDelegate.h>
 #import <GenesysCloud/StatementStatus.h>
-#import <GenesysCloud/TrackingUsageConstants.h>
 #import <GenesysCloud/BLDError.h>
 #import <GenesysCloud/BoldEvent.h>
 #import <GenesysCloud/ChatStateUnavailableEvent.h>

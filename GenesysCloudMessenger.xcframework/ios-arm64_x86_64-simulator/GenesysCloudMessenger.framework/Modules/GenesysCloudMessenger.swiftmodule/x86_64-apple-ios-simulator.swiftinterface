@@ -51,6 +51,13 @@ import _StringProcessing
     @objc get
     @objc set
   }
+  @objc public var dateSeparatorColor: UIKit.UIColor
+  @objc public var dateSeparatorFontSize: Swift.Double
+  @objc public var dateSeparatorAlignment: UIKit.NSTextAlignment
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var dateSeparatorDateFormat: Swift.String
+  @objc public var dateSeparatorHeight: Swift.Double
+  @objc public var dateSeparatorMargin: Swift.Double
   @objc public var locale: Swift.String?
   @objc override dynamic public init()
   @objc deinit
@@ -58,12 +65,19 @@ import _StringProcessing
 @_inheritsConvenienceInitializers @objc public class MessageConfig : ObjectiveC.NSObject {
   @objc public var messageColor: UIKit.UIColor?
   @objc public var messageFontColor: UIKit.UIColor?
+  @objc public var messageFontSize: Swift.Double
+  @objc public var messageTimeFontColor: UIKit.UIColor?
+  @objc public var messageTimeFontSize: Swift.Double
   @objc public var enableAvatar: Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol TranslationsRepositoryProtocol {
   @objc func load(language: Swift.String, fallbackLanguage: Swift.String?, completion: @escaping (GenesysCloudMessenger.TranslationsResponse?) -> Swift.Void)
+}
+public protocol MessengerTransportProtocol {
+  func createMessagingClient(with configuration: MessengerTransport.Configuration) -> any MessengerTransport.MessagingClient
+  func fetchDeploymentConfig(with configuration: MessengerTransport.Configuration, completionHandler: @escaping (MessengerTransport.DeploymentConfig?, (any Swift.Error)?) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @objc public class TranslationsParser : ObjectiveC.NSObject {
   @objc override dynamic public init()

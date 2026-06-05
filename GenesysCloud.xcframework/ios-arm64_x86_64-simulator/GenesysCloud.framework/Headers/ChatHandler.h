@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.6.0
+// GenesysCloud version number: v1.7.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -31,6 +31,18 @@
 
 @protocol ChatHandlerDelegate <NSObject>
 
+
+// ToDo: these functions:
+// presentStatement,
+// presentStatements,
+// presentFeedbackStatement,
+// didSelectChannel,
+// updateStatus,
+// updateElement,
+// postChat
+// should be review after the legacy code is removed, becuase the UI refresh can be synchronious,
+// no need for them, unless they require
+// asynchronious actions on UI
 /**
  Present Chat Element.
 
@@ -114,8 +126,6 @@ Read text using TTS.
 
 @class ConfigurationRepository;
 @class BaseChatEngine;
-@protocol ChatRepositoryProtocol;
-@protocol ChatRepositoryDelegate;
 
 /************************************************************/
 // MARK: - ChatHandler
@@ -177,12 +187,6 @@ The Text To Speech Parser
  Whole Brandind Dictionary
  */
 @property (nonatomic, copy, readonly) NSDictionary<NSString *, NSString *> * _Nullable branding;
-
-/**
- Chat Repository
-*/
-
-@property(nonatomic, strong) id<ChatRepositoryProtocol> _Nullable chatRepository;
 
 /**
  Configuration Repository

@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.6.0
+// GenesysCloud version number: v1.7.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -9,15 +9,16 @@
 #import <GenesysCloud/IncomingBotConfiguration.h>
 #import <GenesysCloud/MultipleSelectionConfiguration.h>
 #import <GenesysCloud/IncomingLiveConfiguration.h>
-#import <GenesysCloud/OutgoingConfiguration.h>
 #import <GenesysCloud/SystemMessageConfiguration.h>
 #import <GenesysCloud/InfoViewConfiguration.h>
-#import <GenesysCloud/SearchViewConfiguration.h>
 #import <GenesysCloud/ReadMoreViewConfiguration.h>
 #import <GenesysCloud/ChatBarConfiguration.h>
 #import <GenesysCloud/BoldFormConfiguration.h>
 #import <GenesysCloudAccessibility/VoiceToVoiceConfiguration.h>
 #import <GenesysCloud/ChatViewConfiguration.h>
+
+@class InputViewConfiguration;
+@class OutgoingConfiguration;
 
 /************************************************************/
 // MARK: - ChatConfiguration
@@ -61,9 +62,9 @@
 @property(strong, nonatomic, readonly) InfoViewConfiguration *queueViewConfig;
 
 /**
-Search View Configuration
+Input View Configuration
 */
-@property(strong, nonatomic, readonly) SearchViewConfiguration *searchViewConfig;
+@property(strong, nonatomic, readonly) InputViewConfiguration *inputViewConfig;
 
 /**
 Read More View Configuration

@@ -636,6 +636,36 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shouldNotifyIndicator",
+            "printedName": "shouldNotifyIndicator(isActive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate(im)shouldNotifyIndicatorWithIsActive:",
+            "mangledName": "$s16GenesysCloudCore18ChatEngineDelegateP21shouldNotifyIndicator8isActiveySb_tF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngineDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngineDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -10608,42 +10638,42 @@
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 1429,
+      "offset": 1476,
       "length": 14,
       "value": "\"GenesysCloudCore.BaseChatEngine\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2232,
+      "offset": 2279,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2273,
+      "offset": 2320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2353,
+      "offset": 2400,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2380,
+      "offset": 2427,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 2128,
+      "offset": 2175,
       "length": 9,
       "value": "\"GenesysCloudCore.EventData\""
     },

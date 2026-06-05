@@ -27,6 +27,7 @@ public func printLog(_ error: any Swift.Error, logType: GenesysCloudCore.LogType
   @objc func messageDidChanged(chatStatement: GenesysCloudCore.ChatStatement, elementId: Swift.String)
   @objc func messageStatusDidChanged(chatStatement: GenesysCloudCore.ChatStatement)
   @objc func didReceiveChatData(_ request: GenesysCloudCore.ChatDataRequest, completion: (() -> Swift.Void)?)
+  @objc func shouldNotifyIndicator(isActive: Swift.Bool)
 }
 public protocol ChatEngine {
   associatedtype AccountType

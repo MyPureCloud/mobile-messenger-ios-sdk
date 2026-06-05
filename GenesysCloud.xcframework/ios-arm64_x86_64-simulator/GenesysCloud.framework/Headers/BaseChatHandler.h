@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.6.0
+// GenesysCloud version number: v1.7.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -8,6 +8,8 @@
 
 #import <GenesysCloud/ChatHandler.h>
 #import <GenesysCloudCore/GenesysCloudCore-Swift.h>
+
+@class ChatUIViewModel;
 
 /************************************************************/
 // MARK: - BaseChatHandler
@@ -18,6 +20,8 @@ FOUNDATION_EXPORT NSString * _Nonnull const NewSessionKey;
 FOUNDATION_EXPORT NSString * _Nonnull const StartChatKey;
 
 @interface BaseChatHandler : NSObject <ChatHandler, TrackingDatasource>
+@property (nonatomic, strong) ChatUIViewModel * _Nullable UIViewModel;
+
 - (void)presentStatement:(id<StorableChatElement>_Nullable)statement;
 - (void)presentStatements:(NSArray<id<StorableChatElement>> *_Nullable)statements isPrecedingStatements:(BOOL)isPrecedingStatements;
 - (void)presentFeedbackStatement:(id<StorableChatElement> _Nonnull)statement;

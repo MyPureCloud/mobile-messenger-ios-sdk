@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.6.0
+// GenesysCloud version number: v1.7.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -21,7 +21,8 @@ typedef NS_ENUM(NSInteger, StatementStatus) {
     /// Shouldn't be presented
     Repost = 3,
     /// Should be default
-    None = 4
-
+    None = 4,
+    /// Sent when statement response status is inprocess
+    InProcess = 5
 };
 

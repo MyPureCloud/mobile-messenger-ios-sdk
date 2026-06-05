@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GenesysCloud
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
 import Foundation
 @_exported import GenesysCloud
 import GenesysCloudCore
@@ -9,38 +10,62 @@ import GenesysCloudMessenger
 import Swift
 import _Concurrency
 import _StringProcessing
-@objc public protocol ChatRepositoryDelegate {
-  @objc func chatRepository(didAppendElement element: any GenesysCloud.StorableChatElement)
-  @objc func chatRepository(didAppendElements elements: [any GenesysCloud.StorableChatElement])
-  @objc func chatRepository(didAppendHistoryElement element: any GenesysCloud.StorableChatElement)
-  @objc func chatRepository(didAppendHistoryElements elements: [any GenesysCloud.StorableChatElement])
-  @objc func chatRepository(didAddToTop elements: [any GenesysCloud.StorableChatElement])
-  @objc func chatRepository(didReplaceElement newElement: (any GenesysCloud.StorableChatElement)?, originalId: Swift.String, originalElement: (any GenesysCloud.StorableChatElement)?)
-  @objc func chatRepository(didUpdateElementStatus element: (any GenesysCloud.StorableChatElement)?)
+@objc public enum PresentationState : Swift.Int {
+  case none = 0
+  case typingPlaceholder
+  case typingSendDisabled
+  case typingSendEnabled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
-@objc public protocol ChatRepositoryProtocol {
-  @objc var delegate: (any GenesysCloud.ChatRepositoryDelegate)? { get set }
-  @objc var elements: [any GenesysCloud.StorableChatElement]? { get set }
-  @objc func append(newElement: any GenesysCloud.StorableChatElement)
-  @objc func append(contentsOf newElements: [any GenesysCloud.StorableChatElement])
-  @objc func append(historyElement: any GenesysCloud.StorableChatElement)
-  @objc func append(historyElements: [any GenesysCloud.StorableChatElement])
-  @objc func addToTop(elements: [any GenesysCloud.StorableChatElement])
-  @objc func removeAll()
-  @objc func replace(newElement: any GenesysCloud.StorableChatElement, using elementId: Swift.String)
-  @objc func updateStatus(element: any GenesysCloud.StorableChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
-}
-@_inheritsConvenienceInitializers @objc public class ChatRepository : ObjectiveC.NSObject, GenesysCloud.ChatRepositoryProtocol {
-  @objc weak public var delegate: (any GenesysCloud.ChatRepositoryDelegate)?
-  @objc public var elements: [any GenesysCloud.StorableChatElement]?
+@_inheritsConvenienceInitializers @objc public class ChatUIViewModel : ObjectiveC.NSObject {
+  @objc public var hasMoreHistory: Swift.Bool
+  @objc public var chatHandlerProvider: (any GenesysCloud.ChatHandlerProvider)?
   @objc override dynamic public init()
-  @objc public func append(newElement: any GenesysCloud.StorableChatElement)
-  @objc public func append(contentsOf newElements: [any GenesysCloud.StorableChatElement])
-  @objc public func append(historyElement: any GenesysCloud.StorableChatElement)
-  @objc public func append(historyElements: [any GenesysCloud.StorableChatElement])
-  @objc public func addToTop(elements: [any GenesysCloud.StorableChatElement])
-  @objc public func replace(newElement: any GenesysCloud.StorableChatElement, using elementId: Swift.String)
-  @objc public func updateStatus(element: any GenesysCloud.StorableChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
+  @objc public func updateConfiguration(with repository: GenesysCloud.ConfigurationRepository)
+  @objc deinit
+}
+extension GenesysCloud.ChatUIViewModel : GenesysCloud.ChatHandlerDelegate {
+  @objc dynamic public func presentStatement(_ statement: any GenesysCloud.StorableChatElement)
+  @objc dynamic public func presentStatements(_ statements: [any GenesysCloud.StorableChatElement], isPrecedingStatements: Swift.Bool)
+  @objc dynamic public func presentFeedbackStatement(_ statement: any GenesysCloud.StorableChatElement)
+  @objc dynamic public func didSelectChannel(_ params: [Swift.AnyHashable : Any])
+  @objc dynamic public func readText(_ text: Swift.String?)
+  @objc dynamic public func loadingIndicator(_ isActive: Swift.Bool)
+  @objc dynamic public func update(_ status: GenesysCloud.StatementStatus, element: any GenesysCloud.StorableChatElement)
+  @objc dynamic public func update(_ element: any GenesysCloud.StorableChatElement, originalId elementId: Swift.String)
+  @objc dynamic public func event(_ event: GenesysCloudCore.ChatEventType, withParams params: [Swift.AnyHashable : Any]?)
+  @objc dynamic public func preChat(_ preChatInfo: GenesysCloud.PreChatInfo?)
+  @objc dynamic public func postChat(_ postChatInfo: [Swift.AnyHashable : Any]?)
+  @objc dynamic public func reloadConfiguration(for chatHandler: any GenesysCloud.ChatHandler)
+  @objc dynamic public func reloadAutoComplete(for chatHandler: any GenesysCloud.ChatHandler)
+  @objc dynamic public func resetChatUI(completionHandler: @escaping () -> Swift.Void)
+  @objc dynamic public func didFailWithError(_ error: GenesysCloudCore.GCError?)
+}
+public protocol ChatRepositoryProtocol : AnyObject {
+  var groupedData: [any GenesysCloud.GroupedDataProtocol]? { get set }
+  var previousIndexPath: Foundation.IndexPath? { get set }
+  func addElement(_ element: GenesysCloud.ContentChatElement)
+  func addElements(contentsOf newElements: [GenesysCloud.ContentChatElement], isPrecedingStatements: Swift.Bool)
+  func replace(newElement: GenesysCloud.ContentChatElement, using elementId: Swift.String) -> GenesysCloud.ContentChatElement?
+  func updateStatus(element: GenesysCloud.ContentChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
+  func removeAll()
+}
+public protocol GroupedDataProtocol : AnyObject {
+  var elements: [GenesysCloud.ContentChatElement] { get set }
+  func getGroupHeader(as template: Swift.String, withLocale locale: Swift.String?) -> Swift.String
+}
+@objc @_inheritsConvenienceInitializers public class ChatRepository : ObjectiveC.NSObject, GenesysCloud.ChatRepositoryProtocol {
+  public var groupedData: [any GenesysCloud.GroupedDataProtocol]?
+  public var previousIndexPath: Foundation.IndexPath?
+  @objc override dynamic public init()
+  @objc public func addElement(_ newElement: GenesysCloud.ContentChatElement)
+  @objc public func addElements(contentsOf newElements: [GenesysCloud.ContentChatElement], isPrecedingStatements: Swift.Bool)
+  @objc public func replace(newElement: GenesysCloud.ContentChatElement, using elementId: Swift.String) -> GenesysCloud.ContentChatElement?
+  @objc public func updateStatus(element: GenesysCloud.ContentChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
   @objc public func removeAll()
   @objc deinit
 }
@@ -50,6 +75,85 @@ import _StringProcessing
   @objc public init(settings: GenesysCloudCore.ChatSettings, config: GenesysCloud.ChatConfiguration)
   @objc deinit
 }
+@objc public enum InputType : Swift.Int {
+  case conversationVoice = 0
+  case botAutoComplete
+  case keyboard
+  case appInjection
+  case InputTypesCount
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc final public class InputTypes : ObjectiveC.NSObject {
+  @objc public static func typeOf(_ type: GenesysCloud.InputType) -> Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol ChatBarDelegate {
+  func didClickEndChat()
+  func didClickUserTranscript()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class ChatBarView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc extension GenesysCloud.BaseChatHandler {
+  @objc dynamic public func setupPublisher()
+  @objc dynamic public func destroyPublisher()
+  @objc dynamic public func updateViewModel(with element: any GenesysCloud.StorableChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
+  @objc dynamic public func replaceInViewModel(element: any GenesysCloud.StorableChatElement, originalId: Swift.String)
+  @objc dynamic public func addElementToViewModel(_ element: any GenesysCloud.StorableChatElement)
+  @objc dynamic public func addElementsToViewModel(_ elements: [any GenesysCloud.StorableChatElement], isPrecedingStatements: Swift.Bool)
+  @objc dynamic public func clearViewModel(hasMore: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class InputViewConfiguration : GenesysCloud.TextConfiguration {
+  @objc override dynamic public init()
+  @objc deinit
+}
 extension GenesysCloud.ChatConfiguration {
   @objc dynamic public func updateSettings(uiSettings: GenesysCloudMessenger.MessengerUIConfig)
 }
+@objc @_inheritsConvenienceInitializers @objcMembers final public class OutgoingConfiguration : GenesysCloud.MessageConfiguration {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) final public class ChatUIViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) final public var viewModel: GenesysCloud.ChatUIViewModel?
+  @objc @_Concurrency.MainActor(unsafe) final public var viewConfiguration: (any GenesysCloud.ViewConfiguration)?
+  @objc @_Concurrency.MainActor(unsafe) final public var configurationRepository: GenesysCloud.ConfigurationRepository? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
+  @objc @_Concurrency.MainActor(unsafe) final public func setupWithViewModel(_ viewModel: GenesysCloud.ChatUIViewModel)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension GenesysCloud.ChatUIViewController : UIKit.UITableViewDelegate, UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+}
+extension GenesysCloud.ChatUIViewController : GenesysCloud.ChatBarDelegate {
+  @_Concurrency.MainActor(unsafe) final public func didClickEndChat()
+  @_Concurrency.MainActor(unsafe) final public func didClickUserTranscript()
+}
+extension GenesysCloud.ChatUIViewController {
+  @_Concurrency.MainActor(unsafe) final public func isTyping(_ isTyping: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) final public func didSubmit(text: Swift.String)
+}
+extension GenesysCloud.PresentationState : Swift.Equatable {}
+extension GenesysCloud.PresentationState : Swift.Hashable {}
+extension GenesysCloud.PresentationState : Swift.RawRepresentable {}
+extension GenesysCloud.InputType : Swift.Equatable {}
+extension GenesysCloud.InputType : Swift.Hashable {}
+extension GenesysCloud.InputType : Swift.RawRepresentable {}
