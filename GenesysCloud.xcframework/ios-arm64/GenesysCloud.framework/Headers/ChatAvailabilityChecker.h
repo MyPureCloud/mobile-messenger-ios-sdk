@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.7.1
+// GenesysCloud version number: v1.8.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -9,6 +9,7 @@
 #import <GenesysCloudCore/GenesysCloudCore-Swift.h>
 //#import <GenesysCloudBold/BCUnavailableReason.h>
 #import <GenesysCloud/AvailabilityResult.h>
+#import <GenesysCloudMessenger/GenesysCloudMessenger-Swift.h>
 
 /************************************************************/
 // MARK: - ChatAvailabilityChecker
@@ -20,5 +21,6 @@
                completion:(void(^)(AvailabilityResult *result))completion;
 + (void)fetchDepartments:(Account *)account
               completion:(void(^)(DepartmentResult *result))completion;
++ (void)setMockedConfigurationLoader:(MessengerConfigurationLoader *)loader;
 @end
 

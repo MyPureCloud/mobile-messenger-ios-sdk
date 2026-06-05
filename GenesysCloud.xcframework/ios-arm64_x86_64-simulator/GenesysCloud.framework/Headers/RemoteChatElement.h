@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.7.1
+// GenesysCloud version number: v1.8.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -16,7 +16,8 @@
 typedef NS_ENUM(NSInteger, RemoteMessageType) {
     RemoteMessageTypDefault = 0,
     RemoteMessageTypWelcomeMessage = 1,
-    RemoteMessageTypFAQ= 2
+    RemoteMessageTypFAQ = 2,
+    RemoteMessageConversationDisconnect = 3
 };
 
 @interface RemoteChatElement: ContentChatElement

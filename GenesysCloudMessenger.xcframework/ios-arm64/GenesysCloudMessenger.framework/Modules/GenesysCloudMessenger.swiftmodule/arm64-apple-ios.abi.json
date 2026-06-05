@@ -525,6 +525,324 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "conversationHasEnded",
+            "printedName": "conversationHasEnded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cpy)conversationHasEnded",
+            "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC20conversationHasEndedSSvpZ",
+            "moduleName": "GenesysCloudMessenger",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cm)conversationHasEnded",
+                "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC20conversationHasEndedSSvgZ",
+                "moduleName": "GenesysCloudMessenger",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startNewConversation",
+            "printedName": "startNewConversation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cpy)startNewConversation",
+            "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC20startNewConversationSSvpZ",
+            "moduleName": "GenesysCloudMessenger",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cm)startNewConversation",
+                "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC20startNewConversationSSvgZ",
+                "moduleName": "GenesysCloudMessenger",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "conversationHasResumed",
+            "printedName": "conversationHasResumed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cpy)conversationHasResumed",
+            "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC22conversationHasResumedSSvpZ",
+            "moduleName": "GenesysCloudMessenger",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cm)conversationHasResumed",
+                "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC22conversationHasResumedSSvgZ",
+                "moduleName": "GenesysCloudMessenger",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startNew",
+            "printedName": "startNew",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cpy)startNew",
+            "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC8startNewSSvpZ",
+            "moduleName": "GenesysCloudMessenger",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cm)startNew",
+                "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC8startNewSSvgZ",
+                "moduleName": "GenesysCloudMessenger",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resumeConversation",
+            "printedName": "resumeConversation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cpy)resumeConversation",
+            "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC18resumeConversationSSvpZ",
+            "moduleName": "GenesysCloudMessenger",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cm)resumeConversation",
+                "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC18resumeConversationSSvgZ",
+                "moduleName": "GenesysCloudMessenger",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startNewConverstaionError",
+            "printedName": "startNewConverstaionError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cpy)startNewConverstaionError",
+            "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC25startNewConverstaionErrorSSvpZ",
+            "moduleName": "GenesysCloudMessenger",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsKeys(cm)startNewConverstaionError",
+                "mangledName": "$s21GenesysCloudMessenger16TranslationsKeysC25startNewConverstaionErrorSSvgZ",
+                "moduleName": "GenesysCloudMessenger",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -2119,6 +2437,192 @@
                 "declKind": "Accessor",
                 "usr": "s:21GenesysCloudMessenger0C8UIConfigC6localeSSSgvM",
                 "mangledName": "$s21GenesysCloudMessenger0C8UIConfigC6localeSSSgvM",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorViewTextColor",
+            "printedName": "errorViewTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerUIConfig(py)errorViewTextColor",
+            "mangledName": "$s21GenesysCloudMessenger0C8UIConfigC18errorViewTextColorSo7UIColorCvp",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerUIConfig(im)errorViewTextColor",
+                "mangledName": "$s21GenesysCloudMessenger0C8UIConfigC18errorViewTextColorSo7UIColorCvg",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerUIConfig(im)setErrorViewTextColor:",
+                "mangledName": "$s21GenesysCloudMessenger0C8UIConfigC18errorViewTextColorSo7UIColorCvs",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GenesysCloudMessenger0C8UIConfigC18errorViewTextColorSo7UIColorCvM",
+                "mangledName": "$s21GenesysCloudMessenger0C8UIConfigC18errorViewTextColorSo7UIColorCvM",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorViewBackgroundColor",
+            "printedName": "errorViewBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerUIConfig(py)errorViewBackgroundColor",
+            "mangledName": "$s21GenesysCloudMessenger0C8UIConfigC24errorViewBackgroundColorSo7UIColorCvp",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerUIConfig(im)errorViewBackgroundColor",
+                "mangledName": "$s21GenesysCloudMessenger0C8UIConfigC24errorViewBackgroundColorSo7UIColorCvg",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerUIConfig(im)setErrorViewBackgroundColor:",
+                "mangledName": "$s21GenesysCloudMessenger0C8UIConfigC24errorViewBackgroundColorSo7UIColorCvs",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GenesysCloudMessenger0C8UIConfigC24errorViewBackgroundColorSo7UIColorCvM",
+                "mangledName": "$s21GenesysCloudMessenger0C8UIConfigC24errorViewBackgroundColorSo7UIColorCvM",
                 "moduleName": "GenesysCloudMessenger",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -4102,18 +4606,26 @@
           {
             "kind": "Function",
             "name": "endChat",
-            "printedName": "endChat()",
+            "printedName": "endChat(forceClose:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@GenesysCloudMessenger@objc(cs)MessengerChatEngine(im)endChat",
-            "mangledName": "$s21GenesysCloudMessenger0C10ChatEngineC03endD0yyF",
+            "usr": "c:@CM@GenesysCloudMessenger@objc(cs)MessengerChatEngine(im)endChatWithForceClose:",
+            "mangledName": "$s21GenesysCloudMessenger0C10ChatEngineC03endD010forceCloseySb_tF",
             "moduleName": "GenesysCloudMessenger",
+            "objc_name": "endChatWithForceClose:",
             "declAttributes": [
               "Dynamic",
               "AccessControl",
@@ -5384,6 +5896,134 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIColor",
+        "printedName": "UIColor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:alpha:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So7UIColorC21GenesysCloudMessengerE_5alphaABSS_14CoreFoundation7CGFloatVtcfc",
+            "mangledName": "$sSo7UIColorC21GenesysCloudMessengerE_5alphaABSS_12CoreGraphics7CGFloatVtcfc",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIColor",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIColor",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByColorLiteral",
+            "printedName": "_ExpressibleByColorLiteral",
+            "usr": "s:s26_ExpressibleByColorLiteralP",
+            "mangledName": "$ss26_ExpressibleByColorLiteralP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -5413,91 +6053,91 @@
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "FloatLiteral",
-      "offset": 399,
+      "offset": 406,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 519,
+      "offset": 526,
       "length": 3,
       "value": "\"#\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 579,
+      "offset": 586,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 599,
+      "offset": 606,
       "length": 8,
       "value": "\"ff0000\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 700,
+      "offset": 707,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 799,
+      "offset": 806,
       "length": 8,
       "value": "0xFF0000"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 812,
+      "offset": 819,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "FloatLiteral",
-      "offset": 818,
+      "offset": 825,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 866,
+      "offset": 873,
       "length": 8,
       "value": "0x00FF00"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 879,
+      "offset": 886,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "FloatLiteral",
-      "offset": 884,
+      "offset": 891,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 930,
+      "offset": 937,
       "length": 8,
       "value": "0x0000FF"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "FloatLiteral",
-      "offset": 942,
+      "offset": 949,
       "length": 5,
       "value": "255.0"
     },
@@ -5535,6 +6175,48 @@
       "offset": 761,
       "length": 29,
       "value": "\"conversationRecoveryFailure\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsKeysEnum.swift",
+      "kind": "StringLiteral",
+      "offset": 842,
+      "length": 22,
+      "value": "\"conversationHasEnded\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsKeysEnum.swift",
+      "kind": "StringLiteral",
+      "offset": 916,
+      "length": 22,
+      "value": "\"startNewConversation\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsKeysEnum.swift",
+      "kind": "StringLiteral",
+      "offset": 992,
+      "length": 24,
+      "value": "\"conversationHasResumed\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsKeysEnum.swift",
+      "kind": "StringLiteral",
+      "offset": 1056,
+      "length": 10,
+      "value": "\"startNew\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsKeysEnum.swift",
+      "kind": "StringLiteral",
+      "offset": 1116,
+      "length": 20,
+      "value": "\"resumeConversation\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsKeysEnum.swift",
+      "kind": "StringLiteral",
+      "offset": 1193,
+      "length": 27,
+      "value": "\"startNewConverstaionError\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerInternalError.swift",
@@ -5576,7 +6258,7 @@
       "kind": "StringLiteral",
       "offset": 433,
       "length": 71,
-      "value": "\"https:\/\/nr-customers.s3.amazonaws.com\/mobileMessengerTranslations\/v3\/\""
+      "value": "\"https:\/\/nr-customers.s3.amazonaws.com\/mobileMessengerTranslations\/v4\/\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsRemoteDataSource.swift",
@@ -5608,64 +6290,85 @@
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 426,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
       "kind": "StringLiteral",
-      "offset": 721,
+      "offset": 775,
       "length": 49,
       "value": "\"incorrect MessengerUIConfig type for uiSettings\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1331,
+      "offset": 1385,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1385,
+      "offset": 1439,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
       "kind": "StringLiteral",
-      "offset": 1583,
+      "offset": 1637,
       "length": 14,
       "value": "\"MMM dd, yyyy\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1653,
+      "offset": 1707,
       "length": 4,
       "value": "20.0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1713,
+      "offset": 1767,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 1875,
+      "length": 8,
+      "value": "\"B00020\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 1954,
+      "length": 9,
+      "value": "\"#FFEBEE\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1957,
+      "offset": 2164,
       "length": 4,
       "value": "14.0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 2073,
+      "offset": 2280,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 2124,
+      "offset": 2331,
       "length": 5,
       "value": "false"
     },
@@ -5729,69 +6432,76 @@
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "StringLiteral",
       "offset": 3404,
-      "length": 61,
+      "length": 68,
       "value": "\"element dequeued -> \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "StringLiteral",
-      "offset": 3464,
+      "offset": 3468,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "StringLiteral",
-      "offset": 3593,
+      "offset": 3471,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
+      "kind": "StringLiteral",
+      "offset": 3600,
       "length": 63,
       "value": "\"Queue: Element dequeued, Elements on queue: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "StringLiteral",
-      "offset": 3655,
+      "offset": 3662,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "BooleanLiteral",
-      "offset": 3863,
+      "offset": 3870,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "StringLiteral",
-      "offset": 3910,
+      "offset": 3917,
       "length": 35,
       "value": "\"pausableOperationsQueue suspended\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "BooleanLiteral",
-      "offset": 4347,
+      "offset": 4354,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "StringLiteral",
-      "offset": 4446,
+      "offset": 4453,
       "length": 33,
       "value": "\"pausableOperationsQueue resumed\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "StringLiteral",
-      "offset": 4600,
+      "offset": 4607,
       "length": 21,
       "value": "\"cancelAllOperations\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "StringLiteral",
-      "offset": 5193,
+      "offset": 5200,
       "length": 25,
       "value": "\"Queue: Elements cleared\""
     },
@@ -5889,518 +6599,644 @@
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1091,
+      "offset": 1092,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 1128,
+      "offset": 1129,
       "length": 14,
       "value": "\"isNewSession\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 1176,
+      "offset": 1177,
       "length": 13,
       "value": "\"isAutostart\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1340,
+      "offset": 1384,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1524,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "Dictionary",
-      "offset": 1546,
+      "offset": 1621,
       "length": 8,
       "value": "[(\"\", \"\")]"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "Dictionary",
-      "offset": 2034,
+      "offset": 2109,
       "length": 8,
       "value": "[(\"\", \"\")]"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 2322,
+      "offset": 2397,
       "length": 38,
       "value": "\"Can't find configuration for account\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 3107,
+      "offset": 3182,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 4007,
+      "offset": 4022,
+      "length": 65,
+      "value": "\"Unable to connect, chat state is not nil\/preparing\/disconnected\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 4293,
+      "length": 13,
+      "value": "\"EndedReason\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 4455,
+      "length": 13,
+      "value": "\"EndedReason\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 4731,
       "length": 27,
       "value": "\"sending event chatStarted\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 4628,
+      "offset": 4946,
+      "length": 11,
+      "value": "\"eventData\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 5076,
+      "length": 34,
+      "value": "\"Updating chat state to: \""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 5109,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 5601,
       "length": 21,
       "value": "\"socket <connecting>\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 4846,
+      "offset": 5804,
       "length": 20,
       "value": "\"socket <connected>\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 5064,
+      "offset": 6007,
       "length": 26,
       "value": "\"socket <reconnecting>...\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 5339,
+      "offset": 6280,
       "length": 124,
       "value": "\"Socket <configured>. connected: <\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 5408,
+      "offset": 6349,
       "length": 1,
       "value": "\"> , newSession: <\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 5461,
+      "offset": 6402,
       "length": 1,
       "value": "\">\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 5690,
+      "offset": 6631,
       "length": 97,
       "value": "\"Socket <closing>. reason: <\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 5747,
+      "offset": 6688,
       "length": 1,
       "value": "\"> , code: <\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 5785,
+      "offset": 6726,
       "length": 1,
       "value": "\">\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 5987,
+      "offset": 6795,
+      "length": 13,
+      "value": "\"EndedReason\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 6955,
       "length": 94,
       "value": "\"Socket <closed>. reason: <\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 6042,
+      "offset": 7010,
       "length": 1,
       "value": "\"> , code: <\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 6079,
+      "offset": 7047,
       "length": 1,
       "value": "\">\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 6278,
+      "offset": 7169,
+      "length": 13,
+      "value": "\"EndedReason\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 7312,
+      "length": 13,
+      "value": "\"EndedReason\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 7497,
       "length": 97,
       "value": "\"Socket <error>. code: <\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 6327,
+      "offset": 7546,
       "length": 1,
       "value": "\"> , message: <\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 6360,
+      "offset": 7579,
       "length": 12,
       "value": "\"No message\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 6373,
+      "offset": 7592,
       "length": 1,
       "value": "\">\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 6719,
+      "offset": 7938,
       "length": 15,
       "value": "\"Session error\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 7517,
+      "offset": 8818,
       "length": 15,
       "value": "\"error::\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 7531,
+      "offset": 8832,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 7631,
+      "offset": 8943,
+      "length": 20,
+      "value": "\"socket <read only>\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 9255,
       "length": 42,
       "value": "\"Unexpected stateListener state: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 7672,
+      "offset": 9296,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 8130,
+      "offset": 9754,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 8149,
+      "offset": 9773,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 9237,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9256,
+      "offset": 9790,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 10055,
+      "offset": 10805,
+      "length": 13,
+      "value": "\"EndedReason\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 10931,
+      "length": 13,
+      "value": "\"EndedReason\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11442,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11461,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11479,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 12278,
       "length": 70,
       "value": "\"newSession: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 10124,
+      "offset": 12347,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 10180,
+      "offset": 12403,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 10527,
+      "offset": 12532,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 10648,
+      "offset": 12653,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 10953,
+      "offset": 12958,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12976,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 11311,
+      "offset": 13334,
       "length": 21,
       "value": "\"genesys.cloud.error\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 11636,
+      "offset": 13959,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 11761,
+      "offset": 14084,
       "length": 25,
       "value": "\"autostart timer stopped\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 11995,
+      "offset": 14318,
       "length": 49,
       "value": "\"invalidateCache: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 12043,
+      "offset": 14366,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 12101,
+      "offset": 14424,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 13470,
+      "offset": 15793,
       "length": 30,
       "value": "\"MessageEvent.MessageInserted\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 13716,
+      "offset": 16039,
       "length": 29,
       "value": "\"MessageEvent.MessageUpdated\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 13948,
+      "offset": 16271,
       "length": 67,
       "value": "\"Attachment Updated: <\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 14013,
+      "offset": 16336,
       "length": 1,
       "value": "\">\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 14132,
+      "offset": 16455,
       "length": 125,
       "value": "\"start of conversation: <\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 14199,
+      "offset": 16522,
       "length": 1,
       "value": "\">, messages: <\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 14255,
+      "offset": 16578,
       "length": 1,
       "value": "\">\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 14403,
+      "offset": 16726,
       "length": 44,
       "value": "\"Unexpected messageListener event: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 14446,
+      "offset": 16769,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 14733,
+      "offset": 17056,
       "length": 25,
       "value": "\"chatDataRequest is null\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 15133,
+      "offset": 17471,
       "length": 22,
       "value": "\"pauseMessagesTraffic\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 15377,
+      "offset": 17730,
       "length": 108,
       "value": "\"statements: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 15427,
+      "offset": 17780,
       "length": 1,
       "value": "\", startOfConversation: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 15484,
+      "offset": 17837,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18350,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 15782,
+      "offset": 19337,
       "length": 41,
       "value": "\"has chatDataRequest, received chat data\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 16163,
+      "offset": 19718,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 16183,
+      "offset": 19738,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19756,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 16529,
+      "offset": 20210,
       "length": 23,
       "value": "\"resumeMessagesTraffic\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 16826,
+      "offset": 20507,
       "length": 31,
       "value": "\"outgoingMessagesQueue resumed\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 17009,
+      "offset": 20690,
       "length": 31,
       "value": "\"incomingMessagesQueue resumed\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 17590,
+      "offset": 21271,
       "length": 28,
       "value": "\"Message direction:outbound\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 17939,
+      "offset": 21620,
       "length": 27,
       "value": "\"Message direction:inbound\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 19661,
+      "offset": 23342,
       "length": 79,
       "value": "\"error: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 19702,
+      "offset": 23383,
       "length": 10,
       "value": "\"NO ERROR\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 19713,
+      "offset": 23394,
       "length": 1,
       "value": "\", state: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 19739,
+      "offset": 23420,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 21209,
+      "offset": 25324,
       "length": 39,
       "value": "\"reached custom attributes error event\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "Dictionary",
-      "offset": 21489,
+      "offset": 25604,
       "length": 8,
       "value": "[(\"\", \"\")]"
     },
@@ -6414,203 +7250,273 @@
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 23463,
+      "offset": 27954,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 29229,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 29249,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 29267,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 25094,
+      "offset": 30348,
       "length": 46,
       "value": "\"client current state: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 25139,
+      "offset": 30393,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 27926,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
-      "kind": "BooleanLiteral",
-      "offset": 27970,
+      "offset": 31846,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 28311,
+      "offset": 31976,
+      "length": 13,
+      "value": "\"EndedReason\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 32646,
+      "length": 101,
+      "value": "\"Client current state: \""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 32691,
+      "length": 1,
+      "value": "\", ChatState: \""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 32746,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 34108,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 34152,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 34565,
       "length": 18,
       "value": "\"canceledInactive\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 28613,
+      "offset": 34867,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 28638,
+      "offset": 34892,
       "length": 23,
       "value": "\"startOfConversation: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 28701,
+      "offset": 34955,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 28730,
+      "offset": 34984,
       "length": 19,
       "value": "\"canceledRedundant\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 28870,
+      "offset": 35124,
       "length": 14,
       "value": "\"canceledBusy\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 28955,
+      "offset": 35209,
       "length": 9,
       "value": "\"canLoad\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 29120,
+      "offset": 35374,
       "length": 19,
       "value": "\"reason: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 29138,
+      "offset": 35392,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 29407,
+      "offset": 35661,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 29583,
+      "offset": 35837,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 30034,
+      "offset": 36288,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 30081,
+      "offset": 36335,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 30100,
+      "offset": 36354,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 36372,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 30355,
+      "offset": 36627,
       "length": 9,
       "value": "\"timeout\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 30367,
+      "offset": 36639,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 30816,
-      "length": 80,
+      "offset": 37088,
+      "length": 86,
       "value": "\"statement text: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 30854,
+      "offset": 37129,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 37132,
       "length": 1,
       "value": "\", statement state: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 30895,
+      "offset": 37173,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "IntegerLiteral",
-      "offset": 536,
+      "offset": 542,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "StringLiteral",
-      "offset": 638,
+      "offset": 644,
       "length": 32,
       "value": "\"Custom Attributes were fetched\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "Dictionary",
-      "offset": 779,
+      "offset": 785,
       "length": 8,
       "value": "[(\"\", \"\")]"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "StringLiteral",
-      "offset": 833,
+      "offset": 839,
       "length": 48,
       "value": "\"Custom Attributes were updated to: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "StringLiteral",
-      "offset": 880,
+      "offset": 886,
       "length": 2,
       "value": "\"\""
     },
@@ -6638,154 +7544,154 @@
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 6135,
+      "offset": 6849,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 6284,
+      "offset": 6998,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "StringLiteral",
-      "offset": 6365,
+      "offset": 7079,
       "length": 9,
       "value": "\"#ececec\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 6480,
+      "offset": 7194,
       "length": 4,
       "value": "0.87"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 6594,
+      "offset": 7308,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 6667,
+      "offset": 7381,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 7085,
+      "offset": 7799,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 7277,
+      "offset": 7991,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 7350,
+      "offset": 8064,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "Dictionary",
-      "offset": 7636,
+      "offset": 8647,
       "length": 111,
       "value": "[(\"startChat\", \"This is the beginning of your conversation with us. <br\/>Please send a message to get started.\")]"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 7944,
+      "offset": 8955,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 7950,
+      "offset": 8961,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 8014,
+      "offset": 9025,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 8020,
+      "offset": 9031,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 8083,
+      "offset": 9094,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 8089,
+      "offset": 9100,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 8115,
+      "offset": 9126,
       "length": 5,
       "value": "0.299"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 8129,
+      "offset": 9140,
       "length": 5,
       "value": "0.587"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 8145,
+      "offset": 9156,
       "length": 5,
       "value": "0.114"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 8190,
+      "offset": 9201,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 8248,
+      "offset": 9259,
       "length": 4,
       "value": "0.87"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "StringLiteral",
-      "offset": 8298,
+      "offset": 9309,
       "length": 9,
       "value": "\"#FFFFFF\""
     },

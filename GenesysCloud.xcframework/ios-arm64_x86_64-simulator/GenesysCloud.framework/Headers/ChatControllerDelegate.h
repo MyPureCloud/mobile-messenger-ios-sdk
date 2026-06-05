@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.7.1
+// GenesysCloud version number: v1.8.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -9,7 +9,6 @@
 #import <GenesysCloud/NRQuickOption.h>
 #import <GenesysCloud/StorableChatElement.h>
 #import <GenesysCloud/ApplicationHandler.h>
-#import <GenesysCloud/ChatStateUnavailableEvent.h>
 #import <GenesysCloud/BoldForm.h>
 #import <GenesysCloud/BLDError.h>
 #import <GenesysCloud/FileUploadInfo.h>

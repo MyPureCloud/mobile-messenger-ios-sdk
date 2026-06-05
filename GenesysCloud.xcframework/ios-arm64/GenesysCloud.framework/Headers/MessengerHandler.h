@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.7.1
+// GenesysCloud version number: v1.8.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -14,7 +14,7 @@ static NSString * const DeploymentID = @"DeploymentID";
 static NSString * const LastIncomingMessageID = @"LastIncomingMessageID";
 
 
-@interface MessengerHandler : BaseChatHandler
+@interface MessengerHandler : BaseChatHandler <ChatEngineDelegate>
 @property (nonatomic, strong) id<ChatDataProducer> chatDataProducer;
 
 @end

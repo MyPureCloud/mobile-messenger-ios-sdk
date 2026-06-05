@@ -6,15 +6,23 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		SG0ZwCOdSGFdg9b3MDWS9On6WpM=
+		87p4QOoFjvduTKaNTwwnxEMB7xI=
 		</data>
 		<key>BrowserViewController.nib</key>
 		<data>
 		bqF1fySjWvTVF8HWS3Z/1fezMik=
 		</data>
+		<key>ButtonView.nib</key>
+		<data>
+		IZrnRc8E7E7fknm5LL0swZYtQEA=
+		</data>
 		<key>ContextPickerSection.nib</key>
 		<data>
 		S4+ZjqWxh7ewdIBsY0k5snfIUug=
+		</data>
+		<key>ErrorView.nib</key>
+		<data>
+		u8EHt38WrmgYyGwrOWcbbf2EPe4=
 		</data>
 		<key>FormTitleView.nib</key>
 		<data>
@@ -42,11 +50,11 @@
 		</data>
 		<key>GenesysCloud.storyboardc/MMQ-qY-Lto-view-VfP-cD-GIo.nib/objects-14.0+.nib</key>
 		<data>
-		j81r/zRFcDrmIeqZFhLaYf7cT4g=
+		DVxcHdWVkOIIUok5WmFxLowMDfM=
 		</data>
 		<key>GenesysCloud.storyboardc/MMQ-qY-Lto-view-VfP-cD-GIo.nib/runtime.nib</key>
 		<data>
-		KWxewbEJsHwvhd+XFQqNYrIjEGc=
+		iBM746lV0WjdzUQaYC61Y9jl8c8=
 		</data>
 		<key>Headers/AccountProvider.h</key>
 		<data>
@@ -190,7 +198,7 @@
 		</data>
 		<key>Headers/ChatAvailabilityChecker.h</key>
 		<data>
-		y1sniweaqKZlLpl9Y4QaJrfBKkk=
+		TIVs6K8Rw14UtzBywHBWrQhlw7U=
 		</data>
 		<key>Headers/ChatBarConfiguration.h</key>
 		<data>
@@ -206,11 +214,11 @@
 		</data>
 		<key>Headers/ChatController.h</key>
 		<data>
-		0krXCxUix9UmYZzZL9KBKaigk4g=
+		mWFWrtImxR9n1+ZLnUmdVPGZJo4=
 		</data>
 		<key>Headers/ChatControllerDelegate.h</key>
 		<data>
-		vjkTMBcGi4NVQ3ZijybfWXpefdo=
+		ylCHNkOFZcFbSiW5trPnqQnpFes=
 		</data>
 		<key>Headers/ChatConversationPresenter.h</key>
 		<data>
@@ -230,15 +238,11 @@
 		</data>
 		<key>Headers/ChatHandler.h</key>
 		<data>
-		UiF1Y/cyPg/ddV4ScSeot50o0cI=
+		xymUBypVmAl1Za7vZ1TkHBrdE0o=
 		</data>
 		<key>Headers/ChatRecorder.h</key>
 		<data>
 		0ip3VRGIfVoz8CqzkYp/9BtYfIQ=
-		</data>
-		<key>Headers/ChatStateUnavailableEvent.h</key>
-		<data>
-		nCf84YMfcRKpvssFsBmLw7XvGTw=
 		</data>
 		<key>Headers/ChatTextView.h</key>
 		<data>
@@ -246,7 +250,7 @@
 		</data>
 		<key>Headers/ChatViewConfiguration.h</key>
 		<data>
-		aa/QsWXuto2eQ49EqyXhsnglxxA=
+		hqHBcJvvtZ66gpeaz/4QbGqnhdc=
 		</data>
 		<key>Headers/CommonConfig.h</key>
 		<data>
@@ -314,11 +318,11 @@
 		</data>
 		<key>Headers/GenesysCloud-Swift.h</key>
 		<data>
-		jjrWEMX7FRjRUrBX2JMkskrgqx8=
+		SjID7g2TgsGA+bHxODwXnirFYLc=
 		</data>
 		<key>Headers/GenesysCloud.h</key>
 		<data>
-		a+no+LUiSlyIaTGcKeqlD0qnY14=
+		6l6fN8KysCBMZ7uvgZu8AoX7egM=
 		</data>
 		<key>Headers/HandOver.h</key>
 		<data>
@@ -382,7 +386,7 @@
 		</data>
 		<key>Headers/MessengerHandler.h</key>
 		<data>
-		PdYUT0MjWsuqgmG0zfrJTWsTlhs=
+		g/scVu2V2Ik8sX81o/DSqN/cuRE=
 		</data>
 		<key>Headers/MessengerMessage.h</key>
 		<data>
@@ -462,7 +466,7 @@
 		</data>
 		<key>Headers/NRChatFactory.h</key>
 		<data>
-		nxEYiSdP9E3gXZRMaZwqOROAwMQ=
+		VcxPIKbY3hWLuJco6a4MfTYD5BI=
 		</data>
 		<key>Headers/NRChatView.h</key>
 		<data>
@@ -714,7 +718,7 @@
 		</data>
 		<key>Headers/RemoteChatElement.h</key>
 		<data>
-		fKbcwjnTywm3wYrjDDndJ85vgbE=
+		7sglOvd4/gCS0Hq7s6mvDl0bIx8=
 		</data>
 		<key>Headers/SelectCellInjector.h</key>
 		<data>
@@ -802,11 +806,11 @@
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		DXMjpYhgq7cD8b1Sm7+IdyVnpsc=
+		vbHy42pStAG+9znHYPMZ2wwqVhQ=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		zpq2SvbqkWAVOgLyxojCB2cNZ4g=
+		+PCLCk6HdjOZ9tKUZf7rXGfP3wc=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -814,19 +818,19 @@
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zpq2SvbqkWAVOgLyxojCB2cNZ4g=
+		+PCLCk6HdjOZ9tKUZf7rXGfP3wc=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jXrWaaD/OoN03P0d9zJZlAo0plk=
+		Hqxk4nJXvmHPbnuBcQzHZ/1GDMo=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		DXMjpYhgq7cD8b1Sm7+IdyVnpsc=
+		vbHy42pStAG+9znHYPMZ2wwqVhQ=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		17Wjjr3pQ01hJ/gLt9y+Whbywfg=
+		7uTEKiBiwHnjiv/VN/pNayiNecY=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -834,11 +838,11 @@
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		17Wjjr3pQ01hJ/gLt9y+Whbywfg=
+		7uTEKiBiwHnjiv/VN/pNayiNecY=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		B/RYnkJDDmrnetIKDAomiLPXark=
+		280ygNOcogmmEZx9OlXm9TD6lfY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1004,7 +1008,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G/XLQjgPMmUWxaMRCzZjahX4AzYexOe/ij1/me9Jpe0=
+			Lm35JzOdQu6amQwQJa7e16sDNsTKQ/NrV2PEAI0uWWY=
 			</data>
 		</dict>
 		<key>BrowserViewController.nib</key>
@@ -1014,11 +1018,25 @@
 			xBnMdjffvLPUGyjjgmCiHcx4scixi3UnlC9Oj+3maig=
 			</data>
 		</dict>
+		<key>ButtonView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GfxONIxHMZtAKpW2ZB/kGglLjrlT/vnLJIjtnDZfTDQ=
+			</data>
+		</dict>
 		<key>ContextPickerSection.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			ccuH1pF3GMEM4rEdRO0vKHmQ2AqU1WNge6Wzed43sbc=
+			</data>
+		</dict>
+		<key>ErrorView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o/EM+Hl409j85wojGfKUJS2YETLj+grgsuo/ZaZTfRc=
 			</data>
 		</dict>
 		<key>FormTitleView.nib</key>
@@ -1067,14 +1085,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N5ISuVW+cApGn9bPC/DjN6wC0MJbIBFpYrUtij4bvRE=
+			qcjifrPCSDRJ+drWgCKIBLWPwcgL3RewNGy7EiPKpLs=
 			</data>
 		</dict>
 		<key>GenesysCloud.storyboardc/MMQ-qY-Lto-view-VfP-cD-GIo.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6TDAdUMN0MmfHH4Z1595VzPrvPeVKKpdEIkdMv6HT7o=
+			qqCAtcr96UJWhTIzEUMIrpDi4o8AQgexRn9G8g9fViM=
 			</data>
 		</dict>
 		<key>Headers/AccountProvider.h</key>
@@ -1326,7 +1344,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			coqg5Yft3FJnkf1TZOd6RXnkCMRf6E5zPwRHB4mD37Y=
+			uxMk+zMWzpYXBnjmemTL0l+J2DS5mooWSiC3XwkaftY=
 			</data>
 		</dict>
 		<key>Headers/ChatBarConfiguration.h</key>
@@ -1354,14 +1372,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FGeEqLUkBN6taRtubOPPsjRS86XVouWJMrWvR/zGMOw=
+			adWNqeKuAH2nl9uyULre/NVBAP59Awkqqs5NA1dMvkc=
 			</data>
 		</dict>
 		<key>Headers/ChatControllerDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JJ5hAeCwIw8ii8CewaJHOFt96mPXo2BF6dO+gaeKuGU=
+			HkoFDPR3/M2NUlyDk2+J0PEM3c7qJxDrcRhaMiSMLiA=
 			</data>
 		</dict>
 		<key>Headers/ChatConversationPresenter.h</key>
@@ -1396,7 +1414,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GEZ40rZ2BgyFImgyIl8GRhjBFcxlIcP12jIRej20cOM=
+			6Nhr2fV7A2z0+aJduUiNmMwe6HdjfidFGVOIEcBUoH4=
 			</data>
 		</dict>
 		<key>Headers/ChatRecorder.h</key>
@@ -1404,13 +1422,6 @@
 			<key>hash2</key>
 			<data>
 			NfXlZ4FnyO+owRTqU1lzydTKuQYbP6a16DL/XPFbu9g=
-			</data>
-		</dict>
-		<key>Headers/ChatStateUnavailableEvent.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GKmskXWv28LBsInGUFYZ1pJETgAQdmjj2yH5wzhquic=
 			</data>
 		</dict>
 		<key>Headers/ChatTextView.h</key>
@@ -1424,7 +1435,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wH7BT45/hFYXn+ymOQUgOjvj0yH6YWv8mpmjA5v/CVw=
+			54rYrROfGx0+wAxE99A18ko4C2mJ6YlcPS6aQiRXi1o=
 			</data>
 		</dict>
 		<key>Headers/CommonConfig.h</key>
@@ -1543,14 +1554,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Zx0lULKPlAAGscx3XAVhkikUEqnZoKz6cTCiitEL6k=
+			XBYfzA9YUzNYSQ8qF4vWFtay3gcUKuPyIVg1dieSCbg=
 			</data>
 		</dict>
 		<key>Headers/GenesysCloud.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+nIDY/TpWyW58BOGOGmiKGwWqqpJR8sKDYu6B6LAuak=
+			SE6luNdmYRYRmC+iioJ37R20+hB2lMmM4hygFAQKwsU=
 			</data>
 		</dict>
 		<key>Headers/HandOver.h</key>
@@ -1662,7 +1673,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aIQg6l+Vzxy1PX0QVnaP9Ws7auEkpXd2Xe4ap4Ck0hQ=
+			SCdJ3qRdWIVvdvKbAessHi2PdAJQFlx68hWRLeeeRwE=
 			</data>
 		</dict>
 		<key>Headers/MessengerMessage.h</key>
@@ -1802,7 +1813,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TjxPtwyJgOHua7LL+7AS6qhZNXJDQ1s6gaAbzY6Sm5Y=
+			uGvDMLcnrRTWMlV/7H3fNZ5NzrjXWp6UlQ1LDVB7cP4=
 			</data>
 		</dict>
 		<key>Headers/NRChatView.h</key>
@@ -2243,7 +2254,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H+LgehsxrDX5AcSPFEhp0GZamYM7M6HUMtpp2iS/4Cc=
+			3LbbzIx8J3glITiUyecJ2qnKjbKi+bQVo2QEcmn8A98=
 			</data>
 		</dict>
 		<key>Headers/SelectCellInjector.h</key>
@@ -2390,14 +2401,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J4wuQhVLw4BZaKbjETWCwxKmVgM09FoEPQEqTvuI8g0=
+			UCts1hf/18sZmTf1ya2PYyo6SHWz/+8DMrCBSon9PoQ=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x0pD99zM5O9fOWko9Vn/NookAWSSO4A/+wboadq27Vc=
+			2W894dt3zXTUWWTZjQ5xGXtEKAsgVPjfsixgdsv62bc=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -2411,28 +2422,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x0pD99zM5O9fOWko9Vn/NookAWSSO4A/+wboadq27Vc=
+			2W894dt3zXTUWWTZjQ5xGXtEKAsgVPjfsixgdsv62bc=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DEXv6GVmrsZWoO+D8Y+45ckas6zKG9roLiRsI1FONdU=
+			v40o3Z1uJT4mhMH+P40fFtvB8y9D+PcZ5yegX6s5VL0=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J4wuQhVLw4BZaKbjETWCwxKmVgM09FoEPQEqTvuI8g0=
+			UCts1hf/18sZmTf1ya2PYyo6SHWz/+8DMrCBSon9PoQ=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WHuBGZckr2FmGx1piD/uenVTUffxv9guM/wVMC+BHGg=
+			68S+u6HNAHONIB0JXlipm/r7OjZkPx0xqsMH9Lhz9dU=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -2446,14 +2457,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WHuBGZckr2FmGx1piD/uenVTUffxv9guM/wVMC+BHGg=
+			68S+u6HNAHONIB0JXlipm/r7OjZkPx0xqsMH9Lhz9dU=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GL8JU/GWKdX19322Ek8UnDtXMQ1T6uRHl69BUHIzIlw=
+			hhjWLM8HgT8mR1M5WDfBhz17bE1FdH+SMohp6hGnrvg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

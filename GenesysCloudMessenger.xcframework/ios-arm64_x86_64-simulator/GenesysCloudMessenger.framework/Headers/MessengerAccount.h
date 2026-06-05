@@ -1,5 +1,5 @@
 
-// GenesysCloudMessenger version number: v1.7.1
+// GenesysCloudMessenger version number: v1.8.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -14,6 +14,8 @@ DEPRECATED: The Objective C header is deprecated, please use
 #ifndef MessengerAccount_h
 #define MessengerAccount_h
 
+#if RELEASE
 #import <GenesysCloudMessenger/GenesysCloudMessenger-Swift.h>
+#endif
 
 #endif /* MessengerAccount_h */

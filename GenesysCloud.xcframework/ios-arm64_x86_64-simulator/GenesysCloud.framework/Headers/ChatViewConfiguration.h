@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.7.1
+// GenesysCloud version number: v1.8.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -27,6 +27,14 @@
  Chat hyperlink Color
  */
 @property (copy, nonatomic) UIColor * hyperlinkColor;
+
+@property (copy, nonatomic) UIColor * errorViewTextColor;
+@property (copy, nonatomic) UIColor * errorViewBackgroundColor;
+
+
+@property (copy, nonatomic) UIImage * errorViewImage;
+@property (copy, nonatomic) UIImage * errorViewButtonImage;
+
 
 @property (nonatomic) CGSize avatarSize;
 @end

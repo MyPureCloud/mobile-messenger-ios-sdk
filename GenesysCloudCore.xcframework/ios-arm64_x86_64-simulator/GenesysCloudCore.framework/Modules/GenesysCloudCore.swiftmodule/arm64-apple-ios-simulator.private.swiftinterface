@@ -24,7 +24,7 @@ public func printLog(_ error: any Swift.Error, logType: GenesysCloudCore.LogType
   @objc func messageDidArrive(chatStatement: GenesysCloudCore.ChatStatement)
   @objc func didFail(error: GenesysCloudCore.GCError)
   @objc func didFetchConfiguration(settings: GenesysCloudCore.ChatSettings)
-  @objc func event(_ event: GenesysCloudCore.ChatEventType, withParams params: GenesysCloudCore.EventData?)
+  @objc func event(with chatState: GenesysCloudCore.ChatState, withParams params: [Swift.String : Any]?)
   @objc func messageDidChanged(chatStatement: GenesysCloudCore.ChatStatement, elementId: Swift.String)
   @objc func messageStatusDidChanged(chatStatement: GenesysCloudCore.ChatStatement)
   @objc func didReceiveChatData(_ request: GenesysCloudCore.ChatDataRequest, completion: (() -> Swift.Void)?)
@@ -39,7 +39,7 @@ public protocol ChatEngine {
   func create()
   func start()
   func postMessage(_ chatStatement: GenesysCloudCore.ChatStatement)
-  func endChat()
+  func endChat(forceClose: Swift.Bool)
   func reconnect()
   init(configLoader: any GenesysCloudCore.ConfigurationLoader)
 }
@@ -57,14 +57,15 @@ public protocol ChatEngine {
   public func start()
   public func reconnect()
   public func postMessage(_ chatStatement: GenesysCloudCore.ChatStatement)
-  public func endChat()
+  public func endChat(forceClose: Swift.Bool)
   @objc deinit
 }
 @objc public class EventData : ObjectiveC.NSObject {
-  @objc public var eventType: GenesysCloudCore.ChatEventType
+  @objc public var chatState: GenesysCloudCore.ChatState
   @objc public var isNewSession: Swift.Bool
   @objc public var isAutostart: Swift.Bool
-  @objc public init(eventType: GenesysCloudCore.ChatEventType, isNewSession: Swift.Bool = false, isAutostart: Swift.Bool = false)
+  @objc public var isResumed: Swift.Bool
+  @objc public init(state: GenesysCloudCore.ChatState, isNewSession: Swift.Bool = false, isAutostart: Swift.Bool = false, isResumed: Swift.Bool = false)
   @objc deinit
 }
 @objc public enum ChatError : Swift.Int {
@@ -86,11 +87,13 @@ public protocol ChatEngine {
   case failedToReconnect = 5016
   case failedToAutostartConversation = 5017
   case failedToSendCustomAttributes = 5018
+  case conversationCreationError = 5019
   public static let ClientErrorReconnectDescription: Swift.String
   public static let IllegalStateErrorReconnectDescription: Swift.String
   public static let ConfigurationLoadErrorDescription: Swift.String
   public static let ClientConnectErrorDescription: Swift.String
   public static let conversationAutostartErrorDescription: Swift.String
+  public static let ConversationCreationErrorDescription: Swift.String
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -159,6 +162,19 @@ public protocol ChatEngine {
 @objc public protocol ConfigurationParser {
   @objc func parse(data: Any?) -> GenesysCloudCore.ChatSettings?
 }
+@objc public enum EndedReason : Swift.Int {
+  public static let endedReasonKey: Swift.String
+  case Unknown = 0
+  case Operator
+  case Visitor
+  case Disconnected
+  case App
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc open class Account : ObjectiveC.NSObject {
   @objc public var apiKey: Swift.String?
   @objc public var info: [Swift.String : [Swift.String : Swift.String]]?
@@ -180,6 +196,7 @@ public protocol ChatEngine {
 }
 @objc public enum Feature : Swift.Int {
   case autostart
+  case conversationDisconnect
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -233,6 +250,10 @@ public enum ChatStatementsError : Swift.Error {
   @objc override public init(text: Swift.String?, elementId: Swift.String)
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class ConversationDisconnectEventStatement : GenesysCloudCore.EventStatement {
+  @objc override public init(text: Swift.String?, elementId: Swift.String)
+  @objc deinit
+}
 @objc public class TimedChatStatement : GenesysCloudCore.ChatStatement {
   public static let expirationTimeInterval: Swift.Double
   public var error: GenesysCloudCore.ChatStatementsError?
@@ -257,6 +278,48 @@ public enum ChatStatementsError : Swift.Error {
     get
   }
 }
+@objc public enum ChatState : Swift.Int {
+  case unknown = 0
+  case chatCreated
+  case chatStarted
+  case chatPreparing
+  case chatPrepared
+  case chatDisconnected
+  case chatReconnecting
+  case chatReconnected
+  case chatEnding
+  case chatEnded
+  case chatClosed
+  case config
+  case endQueue
+  case typing
+  case endTyping
+  case unavailable
+  case readmore
+  case chatReady
+  case agentAccepted
+  case refresh
+  case stickyMsgUpdate
+  case fileUploadQueuePosition
+  case fileUploadStateChanged
+  case chatPending
+  case startQueue
+  case operatorChanged
+  case chatInQueue
+  case chatAccepted
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class ChatStateEvent : GenesysCloudCore.ChatEvent {
+  @objc public var state: GenesysCloudCore.ChatState
+  @objc public var dataMsg: Swift.String?
+  @objc public init(state: GenesysCloudCore.ChatState, scope: GenesysCloudCore.StatementScope, dataMsg: Swift.String?)
+  @objc public init(state: GenesysCloudCore.ChatState, scope: GenesysCloudCore.StatementScope)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class LanguageUtility : ObjectiveC.NSObject {
   @objc public func getDeviceLanguage() -> Swift.String?
   @objc override dynamic public init()
@@ -273,6 +336,9 @@ extension GenesysCloudCore.RequestReason : Swift.RawRepresentable {}
 extension GenesysCloudCore.RequestStatus : Swift.Equatable {}
 extension GenesysCloudCore.RequestStatus : Swift.Hashable {}
 extension GenesysCloudCore.RequestStatus : Swift.RawRepresentable {}
+extension GenesysCloudCore.EndedReason : Swift.Equatable {}
+extension GenesysCloudCore.EndedReason : Swift.Hashable {}
+extension GenesysCloudCore.EndedReason : Swift.RawRepresentable {}
 extension GenesysCloudCore.Feature : Swift.Equatable {}
 extension GenesysCloudCore.Feature : Swift.Hashable {}
 extension GenesysCloudCore.Feature : Swift.RawRepresentable {}
@@ -284,3 +350,6 @@ extension GenesysCloudCore.ChatStatementStates : Swift.RawRepresentable {}
 extension GenesysCloudCore.UnavailableReason : Swift.Equatable {}
 extension GenesysCloudCore.UnavailableReason : Swift.Hashable {}
 extension GenesysCloudCore.UnavailableReason : Swift.RawRepresentable {}
+extension GenesysCloudCore.ChatState : Swift.Equatable {}
+extension GenesysCloudCore.ChatState : Swift.Hashable {}
+extension GenesysCloudCore.ChatState : Swift.RawRepresentable {}

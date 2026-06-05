@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.7.1
+// GenesysCloud version number: v1.8.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -21,7 +21,6 @@
 #import <GenesysCloud/TextToSpeechParser.h>
 #import <GenesysCloud/ReadoutHandler.h>
 #import <GenesysCloud/ChatConfiguration.h>
-#import <GenesysCloudCore/ChatStateEvent.h>
 
 @protocol ChatHandler;
 
@@ -89,10 +88,10 @@ Read text using TTS.
 /**
  Event handler
  
- @param event event name
+ @param state chat state 
  @param params any params
  */
-- (void)event:(ChatEventType)event withParams:(NSDictionary *_Nullable)params;
+- (void)eventWithState:(ChatState)state withParams:(NSDictionary *_Nullable)params;
 - (void)preChat:(PreChatInfo *_Nullable)preChatInfo;
 - (void)postChat:(NSDictionary *_Nullable)postChatInfo;
 - (void)reloadConfigurationForChatHandler:(id<ChatHandler> _Nonnull)chatHandler;
@@ -208,8 +207,9 @@ The Text To Speech Parser
 
 /**
  End chat implementation.
+ * @param forceClose - fast ending current chat
  */
-- (void)endChat;
+- (void)endChat:(BOOL)forceClose;
 
 /**
  Post chat element implementation.

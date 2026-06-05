@@ -30,6 +30,7 @@ import _SwiftConcurrencyShims
   @objc public var chatHandlerProvider: (any GenesysCloud.ChatHandlerProvider)?
   @objc override dynamic public init()
   @objc public func updateConfiguration(with repository: GenesysCloud.ConfigurationRepository)
+  @objc public func showErrorView(errorMessage: Swift.String, image: UIKit.UIImage? = nil, buttonImage: UIKit.UIImage? = nil)
   @objc deinit
 }
 extension GenesysCloud.ChatUIViewModel : GenesysCloud.ChatHandlerDelegate {
@@ -41,7 +42,7 @@ extension GenesysCloud.ChatUIViewModel : GenesysCloud.ChatHandlerDelegate {
   @objc dynamic public func loadingIndicator(_ isActive: Swift.Bool)
   @objc dynamic public func update(_ status: GenesysCloud.StatementStatus, element: any GenesysCloud.StorableChatElement)
   @objc dynamic public func update(_ element: any GenesysCloud.StorableChatElement, originalId elementId: Swift.String)
-  @objc dynamic public func event(_ event: GenesysCloudCore.ChatEventType, withParams params: [Swift.AnyHashable : Any]?)
+  @objc dynamic public func event(with state: GenesysCloudCore.ChatState, withParams params: [Swift.AnyHashable : Any]?)
   @objc dynamic public func preChat(_ preChatInfo: GenesysCloud.PreChatInfo?)
   @objc dynamic public func postChat(_ postChatInfo: [Swift.AnyHashable : Any]?)
   @objc dynamic public func reloadConfiguration(for chatHandler: any GenesysCloud.ChatHandler)

@@ -1,5 +1,5 @@
 
-// GenesysCloudCore version number: v1.7.1
+// GenesysCloudCore version number: v1.8.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -37,5 +37,4 @@ FOUNDATION_EXPORT const unsigned char GenesysCloudCoreVersionString[];
 #import <GenesysCloudCore/AccountExtraData.h>
 #import <GenesysCloudCore/StatementScope.h>
 #import <GenesysCloudCore/ChatEvent.h>
-#import <GenesysCloudCore/ChatStateEvent.h>
 #import <GenesysCloudCore/NSArray+JSON.h>

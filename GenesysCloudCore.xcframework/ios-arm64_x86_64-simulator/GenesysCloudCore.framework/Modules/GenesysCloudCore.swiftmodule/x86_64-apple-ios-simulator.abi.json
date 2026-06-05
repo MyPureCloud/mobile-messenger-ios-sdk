@@ -475,7 +475,7 @@
           {
             "kind": "Function",
             "name": "event",
-            "printedName": "event(_:withParams:)",
+            "printedName": "event(with:withParams:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -484,28 +484,41 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ChatEventType",
-                "printedName": "GenesysCloudCore.ChatEventType",
-                "usr": "c:@E@ChatEventType"
+                "name": "ChatState",
+                "printedName": "GenesysCloudCore.ChatState",
+                "usr": "c:@M@GenesysCloudCore@E@ChatState"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "GenesysCloudCore.EventData?",
+                "printedName": "[Swift.String : Any]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "EventData",
-                    "printedName": "GenesysCloudCore.EventData",
-                    "usr": "c:@M@GenesysCloudCore@objc(cs)EventData"
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate(im)event:withParams:",
-            "mangledName": "$s16GenesysCloudCore18ChatEngineDelegateP5event_10withParamsySo0D9EventTypeV_AA0J4DataCSgtF",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate(im)eventWith:withParams:",
+            "mangledName": "$s16GenesysCloudCore18ChatEngineDelegateP5event4with0H6ParamsyAA0D5StateO_SDySSypGSgtF",
             "moduleName": "GenesysCloudCore",
             "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngineDelegate>",
             "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngineDelegate>",
@@ -1098,17 +1111,23 @@
           {
             "kind": "Function",
             "name": "endChat",
-            "printedName": "endChat()",
+            "printedName": "endChat(forceClose:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16GenesysCloudCore10ChatEngineP03endD0yyF",
-            "mangledName": "$s16GenesysCloudCore10ChatEngineP03endD0yyF",
+            "usr": "s:16GenesysCloudCore10ChatEngineP03endD010forceCloseySb_tF",
+            "mangledName": "$s16GenesysCloudCore10ChatEngineP03endD010forceCloseySb_tF",
             "moduleName": "GenesysCloudCore",
             "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngine>",
             "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngine>",
@@ -1595,17 +1614,23 @@
           {
             "kind": "Function",
             "name": "endChat",
-            "printedName": "endChat()",
+            "printedName": "endChat(forceClose:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16GenesysCloudCore14BaseChatEngineC03endE0yyF",
-            "mangledName": "$s16GenesysCloudCore14BaseChatEngineC03endE0yyF",
+            "usr": "s:16GenesysCloudCore14BaseChatEngineC03endE010forceCloseySb_tF",
+            "mangledName": "$s16GenesysCloudCore14BaseChatEngineC03endE010forceCloseySb_tF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "AccessControl"
@@ -1733,19 +1758,19 @@
         "children": [
           {
             "kind": "Var",
-            "name": "eventType",
-            "printedName": "eventType",
+            "name": "chatState",
+            "printedName": "chatState",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ChatEventType",
-                "printedName": "GenesysCloudCore.ChatEventType",
-                "usr": "c:@E@ChatEventType"
+                "name": "ChatState",
+                "printedName": "GenesysCloudCore.ChatState",
+                "usr": "c:@M@GenesysCloudCore@E@ChatState"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@GenesysCloudCore@objc(cs)EventData(py)eventType",
-            "mangledName": "$s16GenesysCloudCore9EventDataC9eventTypeSo04ChatdG0Vvp",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)EventData(py)chatState",
+            "mangledName": "$s16GenesysCloudCore9EventDataC9chatStateAA04ChatG0Ovp",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "HasStorage",
@@ -1761,14 +1786,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ChatEventType",
-                    "printedName": "GenesysCloudCore.ChatEventType",
-                    "usr": "c:@E@ChatEventType"
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@GenesysCloudCore@objc(cs)EventData(im)eventType",
-                "mangledName": "$s16GenesysCloudCore9EventDataC9eventTypeSo04ChatdG0Vvg",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)EventData(im)chatState",
+                "mangledName": "$s16GenesysCloudCore9EventDataC9chatStateAA04ChatG0Ovg",
                 "moduleName": "GenesysCloudCore",
                 "implicit": true,
                 "declAttributes": [
@@ -1788,14 +1813,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ChatEventType",
-                    "printedName": "GenesysCloudCore.ChatEventType",
-                    "usr": "c:@E@ChatEventType"
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@GenesysCloudCore@objc(cs)EventData(im)setEventType:",
-                "mangledName": "$s16GenesysCloudCore9EventDataC9eventTypeSo04ChatdG0Vvs",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)EventData(im)setChatState:",
+                "mangledName": "$s16GenesysCloudCore9EventDataC9chatStateAA04ChatG0Ovs",
                 "moduleName": "GenesysCloudCore",
                 "implicit": true,
                 "declAttributes": [
@@ -1815,8 +1840,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore9EventDataC9eventTypeSo04ChatdG0VvM",
-                "mangledName": "$s16GenesysCloudCore9EventDataC9eventTypeSo04ChatdG0VvM",
+                "usr": "s:16GenesysCloudCore9EventDataC9chatStateAA04ChatG0OvM",
+                "mangledName": "$s16GenesysCloudCore9EventDataC9chatStateAA04ChatG0OvM",
                 "moduleName": "GenesysCloudCore",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2010,9 +2035,102 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isResumed",
+            "printedName": "isResumed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)EventData(py)isResumed",
+            "mangledName": "$s16GenesysCloudCore9EventDataC9isResumedSbvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)EventData(im)isResumed",
+                "mangledName": "$s16GenesysCloudCore9EventDataC9isResumedSbvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)EventData(im)setIsResumed:",
+                "mangledName": "$s16GenesysCloudCore9EventDataC9isResumedSbvs",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore9EventDataC9isResumedSbvM",
+                "mangledName": "$s16GenesysCloudCore9EventDataC9isResumedSbvM",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(eventType:isNewSession:isAutostart:)",
+            "printedName": "init(state:isNewSession:isAutostart:isResumed:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2022,9 +2140,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ChatEventType",
-                "printedName": "GenesysCloudCore.ChatEventType",
-                "usr": "c:@E@ChatEventType"
+                "name": "ChatState",
+                "printedName": "GenesysCloudCore.ChatState",
+                "usr": "c:@M@GenesysCloudCore@E@ChatState"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -2042,10 +2167,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@GenesysCloudCore@objc(cs)EventData(im)initWithEventType:isNewSession:isAutostart:",
-            "mangledName": "$s16GenesysCloudCore9EventDataC9eventType12isNewSession0H9AutostartACSo04ChatdG0V_S2btcfc",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)EventData(im)initWithState:isNewSession:isAutostart:isResumed:",
+            "mangledName": "$s16GenesysCloudCore9EventDataC5state12isNewSession0G9Autostart0G7ResumedAcA9ChatStateO_S3btcfc",
             "moduleName": "GenesysCloudCore",
-            "objc_name": "initWithEventType:isNewSession:isAutostart:",
+            "objc_name": "initWithState:isNewSession:isAutostart:isResumed:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -2908,6 +3033,47 @@
           },
           {
             "kind": "Var",
+            "name": "conversationCreationError",
+            "printedName": "conversationCreationError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatError.Type) -> GenesysCloudCore.ChatError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatError",
+                    "printedName": "GenesysCloudCore.ChatError",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatError",
+                        "printedName": "GenesysCloudCore.ChatError",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatError@ChatErrorConversationCreationError",
+            "mangledName": "$s16GenesysCloudCore9ChatErrorO020conversationCreationE0yA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 18
+          },
+          {
+            "kind": "Var",
             "name": "ClientErrorReconnectDescription",
             "printedName": "ClientErrorReconnectDescription",
             "children": [
@@ -3135,6 +3301,53 @@
                 "declKind": "Accessor",
                 "usr": "s:16GenesysCloudCore9ChatErrorO021conversationAutostartE11DescriptionSSvgZ",
                 "mangledName": "$s16GenesysCloudCore9ChatErrorO021conversationAutostartE11DescriptionSSvgZ",
+                "moduleName": "GenesysCloudCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ConversationCreationErrorDescription",
+            "printedName": "ConversationCreationErrorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore9ChatErrorO020ConversationCreationE11DescriptionSSvpZ",
+            "mangledName": "$s16GenesysCloudCore9ChatErrorO020ConversationCreationE11DescriptionSSvpZ",
+            "moduleName": "GenesysCloudCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore9ChatErrorO020ConversationCreationE11DescriptionSSvgZ",
+                "mangledName": "$s16GenesysCloudCore9ChatErrorO020ConversationCreationE11DescriptionSSvgZ",
                 "moduleName": "GenesysCloudCore",
                 "static": true,
                 "implicit": true,
@@ -5847,6 +6060,400 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "EndedReason",
+        "printedName": "EndedReason",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "endedReasonKey",
+            "printedName": "endedReasonKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore11EndedReasonO05endedE3KeySSvpZ",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO05endedE3KeySSvpZ",
+            "moduleName": "GenesysCloudCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore11EndedReasonO05endedE3KeySSvgZ",
+                "mangledName": "$s16GenesysCloudCore11EndedReasonO05endedE3KeySSvgZ",
+                "moduleName": "GenesysCloudCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "Unknown",
+            "printedName": "Unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.EndedReason.Type) -> GenesysCloudCore.EndedReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EndedReason",
+                    "printedName": "GenesysCloudCore.EndedReason",
+                    "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.EndedReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EndedReason",
+                        "printedName": "GenesysCloudCore.EndedReason",
+                        "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@EndedReason@EndedReasonUnknown",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO7UnknownyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "Operator",
+            "printedName": "Operator",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.EndedReason.Type) -> GenesysCloudCore.EndedReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EndedReason",
+                    "printedName": "GenesysCloudCore.EndedReason",
+                    "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.EndedReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EndedReason",
+                        "printedName": "GenesysCloudCore.EndedReason",
+                        "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@EndedReason@EndedReasonOperator",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO8OperatoryA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "Visitor",
+            "printedName": "Visitor",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.EndedReason.Type) -> GenesysCloudCore.EndedReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EndedReason",
+                    "printedName": "GenesysCloudCore.EndedReason",
+                    "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.EndedReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EndedReason",
+                        "printedName": "GenesysCloudCore.EndedReason",
+                        "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@EndedReason@EndedReasonVisitor",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO7VisitoryA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "Disconnected",
+            "printedName": "Disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.EndedReason.Type) -> GenesysCloudCore.EndedReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EndedReason",
+                    "printedName": "GenesysCloudCore.EndedReason",
+                    "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.EndedReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EndedReason",
+                        "printedName": "GenesysCloudCore.EndedReason",
+                        "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@EndedReason@EndedReasonDisconnected",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO12DisconnectedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "App",
+            "printedName": "App",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.EndedReason.Type) -> GenesysCloudCore.EndedReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EndedReason",
+                    "printedName": "GenesysCloudCore.EndedReason",
+                    "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.EndedReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EndedReason",
+                        "printedName": "GenesysCloudCore.EndedReason",
+                        "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@EndedReason@EndedReasonApp",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO3AppyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudCore.EndedReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EndedReason",
+                    "printedName": "GenesysCloudCore.EndedReason",
+                    "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenesysCloudCore11EndedReasonO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO8rawValueACSgSi_tcfc",
+            "moduleName": "GenesysCloudCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore11EndedReasonO8rawValueSivp",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO8rawValueSivp",
+            "moduleName": "GenesysCloudCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore11EndedReasonO8rawValueSivg",
+                "mangledName": "$s16GenesysCloudCore11EndedReasonO8rawValueSivg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@GenesysCloudCore@E@EndedReason",
+        "mangledName": "$s16GenesysCloudCore11EndedReasonO",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Account",
         "printedName": "Account",
         "children": [
@@ -7453,6 +8060,47 @@
               "ObjC"
             ],
             "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "conversationDisconnect",
+            "printedName": "conversationDisconnect",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.Feature.Type) -> GenesysCloudCore.Feature",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Feature",
+                    "printedName": "GenesysCloudCore.Feature",
+                    "usr": "c:@M@GenesysCloudCore@E@Feature"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.Feature.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Feature",
+                        "printedName": "GenesysCloudCore.Feature",
+                        "usr": "c:@M@GenesysCloudCore@E@Feature"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@Feature@FeatureConversationDisconnect",
+            "mangledName": "$s16GenesysCloudCore7FeatureO22conversationDisconnectyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
           },
           {
             "kind": "Constructor",
@@ -9273,6 +9921,124 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "ConversationDisconnectEventStatement",
+        "printedName": "ConversationDisconnectEventStatement",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(text:elementId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConversationDisconnectEventStatement",
+                "printedName": "GenesysCloudCore.ConversationDisconnectEventStatement",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ConversationDisconnectEventStatement"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)ConversationDisconnectEventStatement(im)initWithText:elementId:",
+            "mangledName": "$s16GenesysCloudCore36ConversationDisconnectEventStatementC4text9elementIdACSSSg_SStcfc",
+            "moduleName": "GenesysCloudCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithText:elementId:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloudCore@objc(cs)ConversationDisconnectEventStatement",
+        "mangledName": "$s16GenesysCloudCore36ConversationDisconnectEventStatementC",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@GenesysCloudCore@objc(cs)EventStatement",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "GenesysCloudCore.EventStatement",
+          "GenesysCloudCore.ChatStatement",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "TimedChatStatement",
         "printedName": "TimedChatStatement",
         "children": [
@@ -10499,6 +11265,1698 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "ChatState",
+        "printedName": "ChatState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateUnknown",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO7unknownyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "chatCreated",
+            "printedName": "chatCreated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatCreated",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO11chatCreatedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "chatStarted",
+            "printedName": "chatStarted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatStarted",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO11chatStartedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "chatPreparing",
+            "printedName": "chatPreparing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatPreparing",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO13chatPreparingyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "chatPrepared",
+            "printedName": "chatPrepared",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatPrepared",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO12chatPreparedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "chatDisconnected",
+            "printedName": "chatDisconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatDisconnected",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO16chatDisconnectedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "chatReconnecting",
+            "printedName": "chatReconnecting",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatReconnecting",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO16chatReconnectingyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "chatReconnected",
+            "printedName": "chatReconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatReconnected",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO15chatReconnectedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "chatEnding",
+            "printedName": "chatEnding",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatEnding",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO10chatEndingyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "chatEnded",
+            "printedName": "chatEnded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatEnded",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO9chatEndedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "chatClosed",
+            "printedName": "chatClosed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatClosed",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO10chatClosedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "config",
+            "printedName": "config",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateConfig",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO6configyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "endQueue",
+            "printedName": "endQueue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateEndQueue",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO8endQueueyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "typing",
+            "printedName": "typing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateTyping",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO6typingyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "endTyping",
+            "printedName": "endTyping",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateEndTyping",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO9endTypingyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "unavailable",
+            "printedName": "unavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateUnavailable",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO11unavailableyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
+            "kind": "Var",
+            "name": "readmore",
+            "printedName": "readmore",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateReadmore",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO8readmoreyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 16
+          },
+          {
+            "kind": "Var",
+            "name": "chatReady",
+            "printedName": "chatReady",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatReady",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO9chatReadyyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 17
+          },
+          {
+            "kind": "Var",
+            "name": "agentAccepted",
+            "printedName": "agentAccepted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateAgentAccepted",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO13agentAcceptedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 18
+          },
+          {
+            "kind": "Var",
+            "name": "refresh",
+            "printedName": "refresh",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateRefresh",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO7refreshyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 19
+          },
+          {
+            "kind": "Var",
+            "name": "stickyMsgUpdate",
+            "printedName": "stickyMsgUpdate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateStickyMsgUpdate",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO15stickyMsgUpdateyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 20
+          },
+          {
+            "kind": "Var",
+            "name": "fileUploadQueuePosition",
+            "printedName": "fileUploadQueuePosition",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateFileUploadQueuePosition",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO23fileUploadQueuePositionyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 21
+          },
+          {
+            "kind": "Var",
+            "name": "fileUploadStateChanged",
+            "printedName": "fileUploadStateChanged",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateFileUploadStateChanged",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO010fileUploadE7ChangedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 22
+          },
+          {
+            "kind": "Var",
+            "name": "chatPending",
+            "printedName": "chatPending",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatPending",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO11chatPendingyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 23
+          },
+          {
+            "kind": "Var",
+            "name": "startQueue",
+            "printedName": "startQueue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateStartQueue",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO10startQueueyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 24
+          },
+          {
+            "kind": "Var",
+            "name": "operatorChanged",
+            "printedName": "operatorChanged",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateOperatorChanged",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO15operatorChangedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 25
+          },
+          {
+            "kind": "Var",
+            "name": "chatInQueue",
+            "printedName": "chatInQueue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatInQueue",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO11chatInQueueyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 26
+          },
+          {
+            "kind": "Var",
+            "name": "chatAccepted",
+            "printedName": "chatAccepted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatState.Type) -> GenesysCloudCore.ChatState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatState",
+                        "printedName": "GenesysCloudCore.ChatState",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatState@ChatStateChatAccepted",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO12chatAcceptedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 27
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudCore.ChatState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenesysCloudCore9ChatStateO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO8rawValueACSgSi_tcfc",
+            "moduleName": "GenesysCloudCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore9ChatStateO8rawValueSivp",
+            "mangledName": "$s16GenesysCloudCore9ChatStateO8rawValueSivp",
+            "moduleName": "GenesysCloudCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore9ChatStateO8rawValueSivg",
+                "mangledName": "$s16GenesysCloudCore9ChatStateO8rawValueSivg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@GenesysCloudCore@E@ChatState",
+        "mangledName": "$s16GenesysCloudCore9ChatStateO",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChatStateEvent",
+        "printedName": "ChatStateEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChatState",
+                "printedName": "GenesysCloudCore.ChatState",
+                "usr": "c:@M@GenesysCloudCore@E@ChatState"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent(py)state",
+            "mangledName": "$s16GenesysCloudCore14ChatStateEventC5stateAA0dE0Ovp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent(im)state",
+                "mangledName": "$s16GenesysCloudCore14ChatStateEventC5stateAA0dE0Ovg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatState",
+                    "printedName": "GenesysCloudCore.ChatState",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatState"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent(im)setState:",
+                "mangledName": "$s16GenesysCloudCore14ChatStateEventC5stateAA0dE0Ovs",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore14ChatStateEventC5stateAA0dE0OvM",
+                "mangledName": "$s16GenesysCloudCore14ChatStateEventC5stateAA0dE0OvM",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dataMsg",
+            "printedName": "dataMsg",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent(py)dataMsg",
+            "mangledName": "$s16GenesysCloudCore14ChatStateEventC7dataMsgSSSgvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent(im)dataMsg",
+                "mangledName": "$s16GenesysCloudCore14ChatStateEventC7dataMsgSSSgvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent(im)setDataMsg:",
+                "mangledName": "$s16GenesysCloudCore14ChatStateEventC7dataMsgSSSgvs",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore14ChatStateEventC7dataMsgSSSgvM",
+                "mangledName": "$s16GenesysCloudCore14ChatStateEventC7dataMsgSSSgvM",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(state:scope:dataMsg:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChatStateEvent",
+                "printedName": "GenesysCloudCore.ChatStateEvent",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatState",
+                "printedName": "GenesysCloudCore.ChatState",
+                "usr": "c:@M@GenesysCloudCore@E@ChatState"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StatementScope",
+                "printedName": "GenesysCloudCore.StatementScope",
+                "usr": "c:@EA@StatementScope"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent(im)initWithState:scope:dataMsg:",
+            "mangledName": "$s16GenesysCloudCore14ChatStateEventC5state5scope7dataMsgAcA0dE0O_So14StatementScopeaSSSgtcfc",
+            "moduleName": "GenesysCloudCore",
+            "objc_name": "initWithState:scope:dataMsg:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(state:scope:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChatStateEvent",
+                "printedName": "GenesysCloudCore.ChatStateEvent",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatState",
+                "printedName": "GenesysCloudCore.ChatState",
+                "usr": "c:@M@GenesysCloudCore@E@ChatState"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StatementScope",
+                "printedName": "GenesysCloudCore.StatementScope",
+                "usr": "c:@EA@StatementScope"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent(im)initWithState:scope:",
+            "mangledName": "$s16GenesysCloudCore14ChatStateEventC5state5scopeAcA0dE0O_So14StatementScopeatcfc",
+            "moduleName": "GenesysCloudCore",
+            "objc_name": "initWithState:scope:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChatStateEvent",
+                "printedName": "GenesysCloudCore.ChatStateEvent",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent(im)init",
+            "mangledName": "$s16GenesysCloudCore14ChatStateEventCACycfc",
+            "moduleName": "GenesysCloudCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent",
+        "mangledName": "$s16GenesysCloudCore14ChatStateEventC",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)ChatEvent",
+        "superclassNames": [
+          "GenesysCloudCore.ChatEvent",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "LanguageUtility",
         "printedName": "LanguageUtility",
         "children": [
@@ -10638,42 +13096,56 @@
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 1476,
+      "offset": 1499,
       "length": 14,
       "value": "\"GenesysCloudCore.BaseChatEngine\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2279,
+      "offset": 2314,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2320,
+      "offset": 2355,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2400,
+      "offset": 2394,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 2427,
+      "offset": 2462,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2489,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2514,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 2175,
+      "offset": 2214,
       "length": 9,
       "value": "\"GenesysCloudCore.EventData\""
     },
@@ -10805,38 +13277,52 @@
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1083,
+      "length": 4,
+      "value": "5019"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1203,
+      "offset": 1245,
       "length": 20,
       "value": "\"Failed to connect.\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1286,
+      "offset": 1328,
       "length": 71,
       "value": "\"Unable to reconnect. Messenger state is not valid for this operation.\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1416,
+      "offset": 1458,
       "length": 42,
       "value": "\"Failed to fetch Messenger configuration.\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1513,
+      "offset": 1555,
       "length": 20,
       "value": "\"Failed to connect.\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1596,
+      "offset": 1638,
       "length": 35,
       "value": "\"Failed to autostart conversation.\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "kind": "StringLiteral",
+      "offset": 1735,
+      "length": 64,
+      "value": "\"We are unable to start a conversation. Please try again later.\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
@@ -10966,8 +13452,15 @@
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1083,
+      "length": 4,
+      "value": "5019"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1701,
+      "offset": 1869,
       "length": 7,
       "value": "\"GenesysCloudCore.GCError\""
     },
@@ -11112,6 +13605,83 @@
       "value": "7"
     },
     {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "StringLiteral",
+      "offset": 443,
+      "length": 13,
+      "value": "\"EndedReason\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "IntegerLiteral",
+      "offset": 563,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "IntegerLiteral",
+      "offset": 658,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "IntegerLiteral",
+      "offset": 787,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "IntegerLiteral",
+      "offset": 931,
+      "length": 12,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1035,
+      "length": 3,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "IntegerLiteral",
+      "offset": 563,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "IntegerLiteral",
+      "offset": 658,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "IntegerLiteral",
+      "offset": 787,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "IntegerLiteral",
+      "offset": 931,
+      "length": 12,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1035,
+      "length": 3,
+      "value": "4"
+    },
+    {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatSettings.swift",
       "kind": "Dictionary",
       "offset": 416,
@@ -11124,6 +13694,20 @@
       "offset": 453,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1084,
+      "length": 22,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1084,
+      "length": 22,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
@@ -11205,14 +13789,14 @@
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 2549,
+      "offset": 2626,
       "length": 2,
       "value": "35"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "StringLiteral",
-      "offset": 2371,
+      "offset": 2448,
       "length": 18,
       "value": "\"GenesysCloudCore.TimedChatStatement\""
     },
@@ -11376,6 +13960,405 @@
       "offset": 1211,
       "length": 15,
       "value": "10"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 371,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 406,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 451,
+      "length": 11,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 496,
+      "length": 13,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 541,
+      "length": 12,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 586,
+      "length": 16,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 631,
+      "length": 16,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 676,
+      "length": 15,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 721,
+      "length": 10,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 766,
+      "length": 9,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 811,
+      "length": 10,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 857,
+      "length": 6,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 903,
+      "length": 8,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 949,
+      "length": 6,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 995,
+      "length": 9,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1041,
+      "length": 11,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1107,
+      "length": 8,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1125,
+      "length": 9,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1144,
+      "length": 13,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1167,
+      "length": 7,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1184,
+      "length": 15,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1209,
+      "length": 23,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1242,
+      "length": 22,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1274,
+      "length": 11,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1295,
+      "length": 10,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1315,
+      "length": 15,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1380,
+      "length": 11,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1401,
+      "length": 12,
+      "value": "27"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 371,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 406,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 451,
+      "length": 11,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 496,
+      "length": 13,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 541,
+      "length": 12,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 586,
+      "length": 16,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 631,
+      "length": 16,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 676,
+      "length": 15,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 721,
+      "length": 10,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 766,
+      "length": 9,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 811,
+      "length": 10,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 857,
+      "length": 6,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 903,
+      "length": 8,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 949,
+      "length": 6,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 995,
+      "length": 9,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1041,
+      "length": 11,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1107,
+      "length": 8,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1125,
+      "length": 9,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1144,
+      "length": 13,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1167,
+      "length": 7,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1184,
+      "length": 15,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1209,
+      "length": 23,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1242,
+      "length": 22,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1274,
+      "length": 11,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1295,
+      "length": 10,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1315,
+      "length": 15,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1380,
+      "length": 11,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1401,
+      "length": 12,
+      "value": "27"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 1436,
+      "length": 14,
+      "value": "\"GenesysCloudCore.ChatStateEvent\""
     }
   ]
 }

@@ -16,12 +16,21 @@ import _SwiftConcurrencyShims
   @objc public func load(language: Swift.String, fallbackLanguage: Swift.String? = nil, completion: @escaping (GenesysCloudMessenger.TranslationsResponse?) -> Swift.Void)
   @objc deinit
 }
+extension UIKit.UIColor {
+  convenience public init(_ hex: Swift.String, alpha: CoreFoundation.CGFloat = 1.0)
+}
 @_inheritsConvenienceInitializers @objc public class TranslationsKeys : ObjectiveC.NSObject {
   @objc public static let startConversationMessage: Swift.String
   @objc public static let conversationStartedMessage: Swift.String
   @objc public static let inputMessagePlaceholder: Swift.String
   @objc public static let inputMessageSpeechPlaceholder: Swift.String
   @objc public static let conversationRecoveryFailure: Swift.String
+  @objc public static let conversationHasEnded: Swift.String
+  @objc public static let startNewConversation: Swift.String
+  @objc public static let conversationHasResumed: Swift.String
+  @objc public static let startNew: Swift.String
+  @objc public static let resumeConversation: Swift.String
+  @objc public static let startNewConverstaionError: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -60,6 +69,8 @@ import _SwiftConcurrencyShims
   @objc public var dateSeparatorHeight: Swift.Double
   @objc public var dateSeparatorMargin: Swift.Double
   @objc public var locale: Swift.String?
+  @objc public var errorViewTextColor: UIKit.UIColor
+  @objc public var errorViewBackgroundColor: UIKit.UIColor
   @objc override dynamic public init()
   @objc deinit
 }
@@ -110,7 +121,7 @@ extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatEngin
   @objc dynamic public func start()
   @objc dynamic public func postMessage(_ chatStatement: GenesysCloudCore.ChatStatement)
   @objc dynamic public func reconnect()
-  @objc dynamic public func endChat()
+  @objc dynamic public func endChat(forceClose: Swift.Bool = false)
   @objc dynamic public func resume()
 }
 extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ConfigurationLoaderDelegate {
@@ -121,7 +132,7 @@ extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatDataP
   @discardableResult
   @objc dynamic public func produceChatData(_ request: GenesysCloudCore.ChatDataRequest) -> Swift.Bool
 }
-@objc @_inheritsConvenienceInitializers public class MessengerAccount : GenesysCloudCore.Account {
+@_inheritsConvenienceInitializers @objc public class MessengerAccount : GenesysCloudCore.Account {
   @objc public var customAttributes: [Swift.String : Swift.String] {
     @objc get
     @objc set

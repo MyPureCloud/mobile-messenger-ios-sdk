@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.7.1
+// GenesysCloud version number: v1.8.0
 #import <GenesysCloud/NRDefaultViewAdapter.h>
 #import <GenesysCloud/NRContentTableViewCell.h>
 #import <GenesysCloud/NRConversationalChannelCollectionViewCell.h>
@@ -117,7 +117,6 @@
 #import <GenesysCloud/StatementStatus.h>
 #import <GenesysCloud/BLDError.h>
 #import <GenesysCloud/BoldEvent.h>
-#import <GenesysCloud/ChatStateUnavailableEvent.h>
 #import <GenesysCloud/NSBundle+BLDUIBundle.h>
 #import <GenesysCloud/UIColor+BLDUtility.h>
 #import <GenesysCloud/UIColor+NanorepColors.h>
