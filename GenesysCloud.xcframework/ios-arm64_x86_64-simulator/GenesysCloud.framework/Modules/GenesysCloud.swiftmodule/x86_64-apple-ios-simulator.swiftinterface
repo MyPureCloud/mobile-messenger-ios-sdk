@@ -8,8 +8,7 @@ import Combine
 import CoreImage
 import DeveloperToolsSupport
 import Foundation
-@_exported import GenesysCloud
-import GenesysCloudCore
+@_exported import GenesysCloudCore
 import GenesysCloudMessenger
 import MobileCoreServices
 import PhotosUI
@@ -21,169 +20,65 @@ import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc extension GenesysCloud.BaseChatHandler {
-  @nonobjc public static var cancellables: [Combine.AnyCancellable]
-  @objc dynamic public func setupPublisher()
-  @objc dynamic public func performDefaultAction()
-  @objc dynamic public func destroyPublisher()
-  @objc dynamic public func updateViewModel(with element: any GenesysCloud.StorableChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
-  @objc dynamic public func replaceInViewModel(element: any GenesysCloud.StorableChatElement, originalId: Swift.String)
-  @objc dynamic public func addElementToViewModel(_ element: any GenesysCloud.StorableChatElement, scrollToBottom: Swift.Bool = false)
-  @objc dynamic public func addElementsToViewModel(_ elements: [any GenesysCloud.StorableChatElement], isPrecedingStatements: Swift.Bool)
-  @objc dynamic public func clearViewModel(hasMore: Swift.Bool)
-  @objc dynamic public func removeTypingIndicator() throws
-  @objc dynamic public func removeLastQuickReplayElement()
-  @objc dynamic public func updateAttachment(file: GenesysCloudCore.DownloadableFile)
-}
-public protocol ButtonResponseTableViewCellDelegate : AnyObject {
-  func onButtonClicked(element: GenesysCloud.LocalChatElement, text: Swift.String)
-}
-public protocol ButtonResponseViewCellDelegate : AnyObject {
-  func onButtonResponseClicked(text: Swift.String)
-}
-extension GenesysCloud.ChatConfiguration {
-  @objc dynamic public func updateSettings(uiSettings: GenesysCloudMessenger.MessengerUIConfig)
-}
-@objc @_inheritsConvenienceInitializers public class ChatRepository : ObjectiveC.NSObject, GenesysCloud.ChatRepositoryProtocol {
-  public var groupedData: [any GenesysCloud.GroupedDataProtocol]?
-  @objc override dynamic public init()
-  @objc public func addElement(_ newElement: GenesysCloud.ContentChatElement)
-  @objc public func addElements(contentsOf newElements: [GenesysCloud.ContentChatElement], isPrecedingStatements: Swift.Bool)
-  @objc public func replace(newElement: GenesysCloud.ContentChatElement, using elementId: Swift.String) -> GenesysCloud.ContentChatElement?
-  @objc public func updateStatus(element: GenesysCloud.ContentChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
-  public func removeLastElementMatching(with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool) throws
-  @objc public func updateElement(with file: GenesysCloudCore.DownloadableFile, completion: ((GenesysCloud.ContentChatElement?) -> Swift.Void))
-  @objc public func removeAll()
-  @objc deinit
-}
-public protocol ChatRepositoryProtocol : AnyObject {
-  var groupedData: [any GenesysCloud.GroupedDataProtocol]? { get set }
-  func addElement(_ element: GenesysCloud.ContentChatElement)
-  func addElements(contentsOf newElements: [GenesysCloud.ContentChatElement], isPrecedingStatements: Swift.Bool)
-  func replace(newElement: GenesysCloud.ContentChatElement, using elementId: Swift.String) -> GenesysCloud.ContentChatElement?
-  func updateStatus(element: GenesysCloud.ContentChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
-  func removeLastElementMatching(with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool) throws
-  func removeAll()
-  func updateElement(with file: GenesysCloudCore.DownloadableFile, completion: ((GenesysCloud.ContentChatElement?) -> Swift.Void))
-}
-public protocol GroupedDataProtocol : AnyObject {
-  var elements: [GenesysCloud.ContentChatElement] { get set }
-  func getGroupHeader(as template: Swift.String, withLocale locale: Swift.String?) -> Swift.String
-}
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency final public class ChatUIViewController : UIKit.UIViewController {
-  @objc @_Concurrency.MainActor @preconcurrency final public var viewConfiguration: (any GenesysCloud.ViewConfiguration)?
-  @objc @_Concurrency.MainActor @preconcurrency final public var configurationRepository: GenesysCloud.ConfigurationRepository? {
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+@objc public enum ChatElementType : Swift.Int {
+  case OutgoingElement, IncomingBotElement, IncomingLiveElement, CarouselElement, SystemMessageElement, IncomingBotMultipleSelectionElement
+  public init?(rawValue: Swift.Int)
+  @available(*, deprecated, message: "Replaced by new ChatElelement structure")
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
-  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLayoutSubviews()
-  @objc @_Concurrency.MainActor @preconcurrency final public func setupWithViewModel(_ viewModel: GenesysCloud.ChatUIViewModel)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
-extension GenesysCloud.ChatUIViewController : UIKit.UITableViewDelegate, UIKit.UIScrollViewDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc final public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
-  @_Concurrency.MainActor @preconcurrency @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
-  @_Concurrency.MainActor @preconcurrency @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
-  @_Concurrency.MainActor @preconcurrency @objc final public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
-  @_Concurrency.MainActor @preconcurrency @objc final public func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreFoundation.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreFoundation.CGPoint>)
+@objc public protocol ChatElementDelegate {
+  @objc func didReceive(chatElement: GenesysCloudCore.ChatElement)
+  @available(*, deprecated, message: "StoreableChatElement is replaced by ChatElement")
+  @objc func didReceiveChatElement(_ item: any GenesysCloud.StorableChatElement)
+  @available(*, deprecated, message: "Not utilized, will be removed.")
+  @objc optional func fetch(_ from: Swift.Int, handler: () -> [any GenesysCloud.StorableChatElement])
+  @available(*, deprecated, message: "Not utilized, will be removed.")
+  @objc optional func didRemoveChatElement(_ timestampId: Foundation.TimeInterval)
+  @available(*, deprecated, message: "Will be removed.")
+  @objc optional func didUpdateChatElement(_ timestampId: Foundation.TimeInterval, newTimestamp: Foundation.TimeInterval, status: GenesysCloud.StatementStatus)
 }
-extension GenesysCloud.ChatUIViewController : QuickLook.QLPreviewControllerDataSource {
-  @_Concurrency.MainActor @preconcurrency @objc final public func numberOfPreviewItems(in controller: QuickLook.QLPreviewController) -> Swift.Int
-  @_Concurrency.MainActor @preconcurrency @objc final public func previewController(_ controller: QuickLook.QLPreviewController, previewItemAt index: Swift.Int) -> any QuickLook.QLPreviewItem
-}
-extension GenesysCloud.ChatUIViewController : QuickLook.QLPreviewControllerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc final public func previewControllerDidDismiss(_ controller: QuickLook.QLPreviewController)
-}
-extension GenesysCloud.ChatUIViewController {
-  @_Concurrency.MainActor @preconcurrency final public func userDidType()
-  @_Concurrency.MainActor @preconcurrency final public func didSubmit(text: Swift.String)
-}
-extension GenesysCloud.ChatUIViewController : PhotosUI.PHPickerViewControllerDelegate {
-  @_Concurrency.MainActor @preconcurrency final public func picker(_ picker: PhotosUI.PHPickerViewController, didFinishPicking results: [PhotosUI.PHPickerResult])
-}
-extension GenesysCloud.ChatUIViewController : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc final public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
-  @_Concurrency.MainActor @preconcurrency @objc final public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
-}
-extension GenesysCloud.ChatUIViewController : UIKit.UIDocumentPickerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc final public func documentPicker(_ controller: UIKit.UIDocumentPickerViewController, didPickDocumentsAt urls: [Foundation.URL])
-}
-@_inheritsConvenienceInitializers @objc public class ChatUIViewModel : ObjectiveC.NSObject {
-  @objc public var hasMoreHistory: Swift.Bool
-  @objc public var chatHandlerProvider: (any GenesysCloud.ChatHandlerProvider)?
-  @objc override dynamic public init()
-  public func removeLastElement(updateUI: Swift.Bool = false, with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool) throws
-  @objc public func updateConfiguration(with repository: GenesysCloud.ConfigurationRepository)
-  @objc public func showErrorView(errorMessage: Swift.String, image: UIKit.UIImage? = nil, buttonImage: UIKit.UIImage? = nil)
-  @objc public func showAttachmentComponent(file: GenesysCloudCore.UploadableFile)
-  @objc deinit
-}
-extension GenesysCloud.ChatUIViewModel : GenesysCloud.ChatHandlerDelegate {
-  @objc dynamic public func presentStatement(_ statement: any GenesysCloud.StorableChatElement)
-  @objc dynamic public func presentStatements(_ statements: [any GenesysCloud.StorableChatElement], isPrecedingStatements: Swift.Bool)
-  @objc dynamic public func presentFeedbackStatement(_ statement: any GenesysCloud.StorableChatElement)
-  @objc dynamic public func didSelectChannel(_ params: [Swift.AnyHashable : Any])
-  @objc dynamic public func readText(_ text: Swift.String?)
-  @objc dynamic public func loadingIndicator(_ isActive: Swift.Bool)
-  @objc dynamic public func update(_ status: GenesysCloud.StatementStatus, element: any GenesysCloud.StorableChatElement)
-  @objc dynamic public func update(_ element: any GenesysCloud.StorableChatElement, originalId elementId: Swift.String)
-  @objc dynamic public func event(with state: GenesysCloudCore.ChatState, withParams params: [Swift.AnyHashable : Any]?)
-  @objc dynamic public func postChat(_ postChatInfo: [Swift.AnyHashable : Any]?)
-  @objc dynamic public func reloadConfiguration(for chatHandler: any GenesysCloud.ChatHandler)
-  @objc dynamic public func reloadAutoComplete(for chatHandler: any GenesysCloud.ChatHandler)
-  @objc dynamic public func resetChatUI(completionHandler: @escaping () -> Swift.Void)
-  @objc dynamic public func didFailWithError(_ error: GenesysCloudCore.GCError?)
-}
-extension GenesysCloud.ChatUIViewModel {
-  public func attachmentValidationFailed()
-}
-@objc public class ConfigurationRepository : ObjectiveC.NSObject {
-  @objc public var chatSettings: GenesysCloudMessenger.MessengerChatSettings
-  @objc public var uiConfig: GenesysCloud.ChatConfiguration
-  @objc public init(settings: GenesysCloudMessenger.MessengerChatSettings, config: GenesysCloud.ChatConfiguration)
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers public class CameraAvailabilityChecker : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class AuthenticationStatus : ObjectiveC.NSObject {
+  @objc public static func shouldAuthorize(account: GenesysCloudCore.Account, completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
-public protocol FileSystemManaging {
-  func fileExists(atPath path: Swift.String) -> Swift.Bool
-  func createDirectory(at url: Foundation.URL, withIntermediateDirectories createIntermediates: Swift.Bool, attributes: [Foundation.FileAttributeKey : Any]?) throws
-  func removeItem(at URL: Foundation.URL) throws
-  func write(_ data: Foundation.Data, to url: Foundation.URL, options: Foundation.Data.WritingOptions) throws
+public protocol GroupedDataProtocol : AnyObject {
+  var elements: [GenesysCloudCore.ChatElement] { get set }
+  func getGroupHeader(as template: Swift.String, withLocale locale: Swift.String?) -> Swift.String
 }
-extension Foundation.FileManager : GenesysCloud.FileSystemManaging {
+@objc public class ChatController : ObjectiveC.NSObject {
+  @objc weak public var chatElementDelegate: (any GenesysCloud.ChatElementDelegate)?
+  @objc weak public var delegate: (any GenesysCloud.ChatControllerDelegate)? {
+    @objc get
+    @objc set
+  }
+  @objc public init(account: GenesysCloudCore.Account, engine: GenesysCloudMessenger.MessengerChatEngine? = nil)
+  @objc public func endChat(_ forceClose: Swift.Bool)
+  @objc public func reconnectChat()
+  @objc public func clearConversation()
+  @objc public func logoutFromAuthenticatedSession()
+  @objc public func terminate()
+  @objc public func updateCustomAttributes(_ customAttributes: [Swift.String : Swift.String])
+  @objc public static func checkAvailability(_ account: GenesysCloudCore.Account, completion: @escaping ((GenesysCloud.AvailabilityResult?) -> Swift.Void))
+  @objc deinit
+}
+extension Foundation.FileManager {
   public func write(_ data: Foundation.Data, to url: Foundation.URL, options: Foundation.Data.WritingOptions) throws
-}
-public class DownloadableFileHandler {
-  public init(fileManager: any GenesysCloud.FileSystemManaging)
-  @objc deinit
 }
 extension GenesysCloudCore.MimeType {
   public static func generateFileImage(from fileName: Swift.String, shouldBeGray: Swift.Bool = false) -> UIKit.UIImage
-  public static func getAccessibilityBrandingKey(from fileName: Swift.String) -> Swift.String
+  public static func getAccessibilityBrandingKey(from fileName: Swift.String) -> GenesysCloudCore.TranslationKey
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class InputViewConfiguration : GenesysCloud.TextConfiguration {
-  @objc override dynamic public init()
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+@objc public class LocalChatElement : GenesysCloud.ContentChatElement {
+  @objc public var quickReplies: [Swift.String]
+  @objc public init(content: Swift.String)
+  @objc public init(type: GenesysCloud.ChatElementType, content: Swift.String, quickReplies: [Swift.String])
   @objc deinit
-}
-public enum LoadingViewStateAfterCompletion {
-  case hide
-  case showStatic
-  case showInterminate
-  public static func == (a: GenesysCloud.LoadingViewStateAfterCompletion, b: GenesysCloud.LoadingViewStateAfterCompletion) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public struct LoadingIndicatorModel {
 }
 @objc public enum PresentationState : Swift.Int {
   case none
@@ -197,63 +92,86 @@ public struct LoadingIndicatorModel {
     get
   }
 }
-extension GenesysCloud.MessengerHandler {
-  @objc override dynamic public func updateFileProfile(_ profile: GenesysCloudMessenger.AttachmentProfile?)
-  @objc override dynamic public func subscribeToAttachmentFetcher()
-  @objc override dynamic open func didReceiveAttachmentId(_ attachmentId: Swift.String, fileURL: Foundation.URL, fileData: Foundation.Data)
-  @objc override dynamic open func didUploadAttachment(withAttachmentId attachmentId: Swift.String, downloadUrl: Swift.String)
-  @objc override dynamic open func updateAttachmentStatus(_ status: GenesysCloudCore.UploadableFileStatus)
-  @objc override dynamic open func didUpdateUploadProgress(_ progress: Swift.Double)
-  @objc override dynamic open func handleSelectedFile(_ localUrl: Foundation.URL)
-  @objc override dynamic open func postStatement(_ statement: any GenesysCloud.StorableChatElement)
-  @objc dynamic public func didFailAttachmentValidation()
-  @objc override dynamic open func didDelayAttachment(withFileData fileData: Foundation.Data, fileURL: Foundation.URL)
-  @objc override dynamic open func didEnableFileUpload()
-  @objc override dynamic open func didRefreshAttachment(withAttachmentId attachmentId: Swift.String, downloadUrl: Swift.String)
-  @objc override dynamic open func attachmentRefresh(_ file: GenesysCloudCore.DownloadableFile)
-  @objc override dynamic open func detach()
-  @objc override dynamic public func clearConversationIfEnabled()
-  @objc override dynamic open func agentDidType(_ params: [Swift.String : Any]?)
-}
-@objc @_inheritsConvenienceInitializers @objcMembers final public class OutgoingConfiguration : GenesysCloud.MessageConfiguration {
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class DefaultRotationAnimator {
-  @objc deinit
-}
-extension GenesysCloud.TagCellLayout {
-  public enum LayoutAlignment : Swift.Int {
-    case left
-    case center
-    case right
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
-      get
-    }
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+@objc public enum StatementStatus : Swift.Int {
+  case OK, Pending, Error, Repost, None, InProcess
+  public init?(rawValue: Swift.Int)
+  @available(*, deprecated, message: "Replaced by new ChatElelement structure")
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
   }
 }
-extension GenesysCloud.TagCellLayout {
-  public struct LayoutInfo {
-  }
-}
-public protocol TagCellLayoutDelegate : ObjectiveC.NSObjectProtocol {
-  func tagCellLayoutTagSize(layout: GenesysCloud.TagCellLayout, atIndex index: Swift.Int) -> (tagSize: CoreFoundation.CGSize, textAlignment: UIKit.NSTextAlignment)
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class TagCellLayout : UIKit.UICollectionViewLayout {
-  @_Concurrency.MainActor @preconcurrency public init(alignment: GenesysCloud.TagCellLayout.LayoutAlignment = .left, delegate: (any GenesysCloud.TagCellLayoutDelegate)?)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepare()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var collectionViewContentSize: CoreFoundation.CGSize {
-    @objc get
-  }
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+@objc public class ContentChatElement : ObjectiveC.NSObject, GenesysCloud.StorableChatElement {
+  @objc public var status: GenesysCloud.StatementStatus
+  @objc public var elementId: Swift.String
+  @objc public var type: GenesysCloud.ChatElementType
+  @objc public var timestamp: Foundation.Date
+  @objc public var text: Swift.String?
+  public var files: [GenesysCloudCore.DownloadableFile]
+  @objc public var isPreceding: Swift.Bool
+  @objc public init(type: GenesysCloud.ChatElementType, content: Swift.String)
+  @objc public init(type: GenesysCloud.ChatElementType, content: Swift.String, elementId: Swift.String)
   @objc deinit
 }
-@objc public protocol GrowingTextViewDelegate : UIKit.UITextViewDelegate {
-  @objc optional func textViewDidChangeHeight(_ textView: GenesysCloud.GrowingTextView, height: CoreFoundation.CGFloat)
+@_hasMissingDesignatedInitializers @objc final public class AvailabilityResult : ObjectiveC.NSObject {
+  @objc final public let isAvailable: Swift.Bool
+  @objc final public let reason: GenesysCloudCore.UnavailableReason
+  @objc final public let error: (any Swift.Error)?
+  @available(*, deprecated, message: "Not used, will be removed")
+  @objc final public let departmentId: Swift.String?
+  @available(*, deprecated, message: "Not used, will be removed")
+  @objc final public let apiKey: Swift.String?
+  @objc deinit
+}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+@objc public protocol StorableChatElement {
+  @objc var status: GenesysCloud.StatementStatus { get set }
+  @objc var elementId: Swift.String { get set }
+  @objc var text: Swift.String? { get set }
+  @objc var timestamp: Foundation.Date { get set }
+  @objc var type: GenesysCloud.ChatElementType { get set }
+}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+@objc public enum RemoteMessageType : Swift.Int {
+  case typDefault, typWelcomeMessag, typFAQ, conversationDisconnect
+  public init?(rawValue: Swift.Int)
+  @available(*, deprecated, message: "Replaced by new ChatElelement structure")
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+@objc public class RemoteChatElement : GenesysCloud.ContentChatElement {
+  @objc public var remoteMessageType: GenesysCloud.RemoteMessageType
+  @objc public init(remoteMessageType: GenesysCloud.RemoteMessageType)
+  @objc deinit
+}
+@objc public protocol ChatControllerDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func shouldPresentChatViewController(_ viewController: UIKit.UINavigationController!)
+  @objc optional func didClickLink(_ url: Swift.String)
+  @objc optional func didUpdateState(_ event: GenesysCloudCore.ChatStateEvent)
+  @objc optional func didFailWithError(_ error: GenesysCloudCore.GCError?)
+  @available(*, deprecated, message: "Function not utilized, will be removed. Use ChatElementDelegate instead.")
+  @objc optional func statement(_ statement: any GenesysCloud.StorableChatElement, didFailWithError error: Foundation.NSError)
+  @available(*, deprecated, message: "Function not utilized, will be removed.")
+  @objc optional func didClickUploadFile()
+  @available(*, deprecated, message: "Function not utilized, will be removed.")
+  @objc optional func presentingController(_ controller: UIKit.UIViewController, shouldHandleClickedLink link: Swift.String)
+  @available(*, deprecated, message: "Function not utilized, will be removed.")
+  @objc optional func updateCustomAttributes(_ customAttributes: [Swift.String : Swift.String])
+  @available(*, deprecated, message: "Function not utilized, will be removed.")
+  @objc optional func didClickToCall(_ phoneNumber: Swift.String)
+  @available(*, deprecated, message: "Function not utilized, will be removed.")
+  @objc optional func shouldPresentWelcomeMessage() -> Swift.Bool
+  @available(*, deprecated, message: "Function not utilized, will be removed.")
+  @objc optional func shouldHandleFormPresentation(_ formController: UIKit.UIViewController) -> Swift.Bool
+  @available(*, deprecated, message: "Function not utilized, will be removed.")
+  @objc optional func reconnectChat()
+  @available(*, deprecated, message: "Function not utilized, will be removed.")
+  @objc optional func didLogoutChat()
 }
 @objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class GrowingTextView : UIKit.UITextView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var text: Swift.String! {
@@ -293,20 +211,10 @@ public protocol TagCellLayoutDelegate : ObjectiveC.NSObjectProtocol {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
 }
-@objc public enum InputType : Swift.Int {
-  case conversationVoice = 0
-  case botAutoComplete
-  case keyboard
-  case appInjection
-  case inputTypesCount
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_inheritsConvenienceInitializers @objc final public class InputTypes : ObjectiveC.NSObject {
-  @objc public static func typeOf(_ type: GenesysCloud.InputType) -> Swift.String?
+@_inheritsConvenienceInitializers @objc final public class ChatAvailabilityChecker : ObjectiveC.NSObject, GenesysCloudCore.ConfigurationLoaderDelegate {
+  @objc public static func checkAvailability(_ account: GenesysCloudCore.Account, completion: @escaping (GenesysCloud.AvailabilityResult?) -> Swift.Void)
+  @objc final public func didFailLoad(error: (any Swift.Error)?)
+  @objc final public func didFetchChatSettings(remoteConfig: GenesysCloudCore.RemoteConfiguration)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -317,14 +225,24 @@ extension UIKit.UIView {
                                                                     .layerMinXMaxYCorner,
                                                                     .layerMaxXMaxYCorner])
 }
-extension GenesysCloud.LoadingViewStateAfterCompletion : Swift.Equatable {}
-extension GenesysCloud.LoadingViewStateAfterCompletion : Swift.Hashable {}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+extension GenesysCloud.ChatElementType : Swift.Equatable {}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+extension GenesysCloud.ChatElementType : Swift.Hashable {}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+extension GenesysCloud.ChatElementType : Swift.RawRepresentable {}
 extension GenesysCloud.PresentationState : Swift.Equatable {}
 extension GenesysCloud.PresentationState : Swift.Hashable {}
 extension GenesysCloud.PresentationState : Swift.RawRepresentable {}
-extension GenesysCloud.TagCellLayout.LayoutAlignment : Swift.Equatable {}
-extension GenesysCloud.TagCellLayout.LayoutAlignment : Swift.Hashable {}
-extension GenesysCloud.TagCellLayout.LayoutAlignment : Swift.RawRepresentable {}
-extension GenesysCloud.InputType : Swift.Equatable {}
-extension GenesysCloud.InputType : Swift.Hashable {}
-extension GenesysCloud.InputType : Swift.RawRepresentable {}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+extension GenesysCloud.StatementStatus : Swift.Equatable {}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+extension GenesysCloud.StatementStatus : Swift.Hashable {}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+extension GenesysCloud.StatementStatus : Swift.RawRepresentable {}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+extension GenesysCloud.RemoteMessageType : Swift.Equatable {}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+extension GenesysCloud.RemoteMessageType : Swift.Hashable {}
+@available(*, deprecated, message: "Replaced by new ChatElelement structure")
+extension GenesysCloud.RemoteMessageType : Swift.RawRepresentable {}
