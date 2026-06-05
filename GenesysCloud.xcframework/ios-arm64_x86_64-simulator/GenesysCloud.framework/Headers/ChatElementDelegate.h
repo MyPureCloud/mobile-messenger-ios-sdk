@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.11.0
+// GenesysCloud version number: v1.11.1
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -14,11 +14,21 @@
 // MARK: - Functions
 /************************************************************/
 
-/**
-Store Chat Element
-
-@param item Represents StorableChatItem
-*/
+/// Notifies the delegate when a new chat element is sent or received.
+///
+/// This delegate method is triggered whenever a new message or interaction occurs in the chat. It provides an object conforming to the `StorableChatElement` protocol, allowing the host application to handle or process the new chat element appropriately.
+///
+/// - Parameter item: An object conforming to the `StorableChatElement` protocol. This object contains the details of the chat element.
+///
+/// ## Usage
+/// Implement this method in the class conforming to the delegate to handle new chat elements. This can include updating the UI, persisting the chat element to storage, or triggering other application logic.
+///
+/// ### Swift
+/// ```swift
+/// func didReceive(_ item: (any StorableChatElement)!) {
+///     print("text: \(String(describing: item.text)) source: \(item.source)")
+/// }
+/// ```
 - (void)didReceiveChatElement:(id<StorableChatElement>)item;
 
 @optional

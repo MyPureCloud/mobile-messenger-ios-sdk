@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		OjYM6ZiO964ChqDwerRu1QIYotw=
+		JNCjiuIimP/vgo/uFTCRfonVLuM=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dFRaGuyUP/PRZGcKTQM5PqdtFvA=
+		n73t6LZCXR+dHqN9ZCpFvMuxZu8=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		OjYM6ZiO964ChqDwerRu1QIYotw=
+		JNCjiuIimP/vgo/uFTCRfonVLuM=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		m/ZTlOlQOAg95TBu3m9CS32aTP0=
+		eza+wKJZC+FpCT9X63fWoE6gCws=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7B3NLuGp9bFp8OrjSi1WOQ3disMDwyV3I4n8khZh/7g=
+			fb027VhruFmEwURAiIeeZaY9S3xU9em+r3O4xn0FeWo=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -113,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vZMZBW4TRjYoFVgKIcenjxprTrSAkwagnUQ5lfC2u1w=
+			a3XwHHokc5iEqOsqBc8o6zAd7LgXb1oIqKMJbs5s1Xg=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7B3NLuGp9bFp8OrjSi1WOQ3disMDwyV3I4n8khZh/7g=
+			fb027VhruFmEwURAiIeeZaY9S3xU9em+r3O4xn0FeWo=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pRoWHijEJ1/cw3YfHDvmynStnLxSScyoZNfYYe/V/UU=
+			LCvHtZBBREauIOubThq6CFtE5a11cJrG+eQzsrvpudo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
