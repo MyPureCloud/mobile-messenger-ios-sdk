@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GenesysCloudMessenger
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GenesysCloudMessenger
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Darwin
 import Foundation
 import GenesysCloudCore
@@ -23,27 +23,17 @@ public enum PushProvider {
   }
 }
 public protocol PushHandlerProtocol : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   func setPushToken(deviceToken: Swift.String, pushProvider: GenesysCloudMessenger.PushProvider, account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
-  #endif
 }
 @_hasMissingDesignatedInitializers public class PushHandler : GenesysCloudMessenger.PushHandlerProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(account: GenesysCloudCore.Account)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func setPushToken(deviceToken: Swift.String, pushProvider: GenesysCloudMessenger.PushProvider, account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func removePushToken(account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
-  #endif
   @objc deinit
 }
 public class TranslationsRepositoryImplementation : GenesysCloudMessenger.TranslationsRepositoryProtocol {
   public init(fileDataSource: any GenesysCloudMessenger.TranslationsDataSourceDelegate, remoteDataSource: any GenesysCloudMessenger.TranslationsDataSourceDelegate, parser: GenesysCloudMessenger.TranslationsParser)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func load(language: Swift.String, fallbackLanguage: Swift.String? = nil, completion: @escaping (GenesysCloudMessenger.TranslationsResponse?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 extension UIKit.UIColor {
@@ -55,15 +45,11 @@ extension UIKit.UIColor {
 public class TranslationsRemoteDataSource : GenesysCloudMessenger.TranslationsDataSourceDelegate {
   convenience public init(domain: Swift.String)
   public init(domain: Swift.String, handler: any GenesysCloudCore.ConnectionHandler = DefaultConnectionHandler())
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func fetch(language: Swift.String, completion: @escaping (Foundation.Data?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 public protocol TranslationsRepositoryProtocol : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   func load(language: Swift.String, fallbackLanguage: Swift.String?, completion: @escaping (GenesysCloudMessenger.TranslationsResponse?) -> Swift.Void)
-  #endif
 }
 public class TranslationsParser {
   public init()
@@ -72,15 +58,11 @@ public class TranslationsParser {
 @objc @_inheritsConvenienceInitializers public class TranslationsFileDataSource : ObjectiveC.NSObject, GenesysCloudMessenger.TranslationsDataSourceDelegate {
   @objc override dynamic public init()
   public init(dataProvider: any GenesysCloudMessenger.DataLoading = DataLoader())
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func fetch(language: Swift.String, completion: @escaping (Foundation.Data?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 @objc public protocol TranslationsDataSourceDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func fetch(language: Swift.String, completion: @escaping (Foundation.Data?) -> Swift.Void)
-  #endif
 }
 @objc public class MessengerChatEngine : ObjectiveC.NSObject {
   public var account: GenesysCloudMessenger.MessengerChatEngine.AccountType {
@@ -118,18 +100,14 @@ extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatEngin
 }
 extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ConfigurationLoaderDelegate {
   @objc dynamic public func didFetchChatSettings(remoteConfig: GenesysCloudCore.RemoteConfiguration)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func didFailLoad(error: (any Swift.Error)?)
-  #endif
 }
 extension GenesysCloudMessenger.MessengerChatEngine {
   @discardableResult
   @objc dynamic public func produceChatData(_ request: GenesysCloudCore.ChatDataRequest) -> Swift.Bool
 }
 public protocol DataLoading {
-  #if compiler(>=5.3) && $NonescapableTypes
   func load(contentsOf: Foundation.URL) throws -> Foundation.Data?
-  #endif
 }
 @_inheritsConvenienceInitializers @objc final public class MessengerAccount : GenesysCloudCore.Account {
   final public var domain: Swift.String? {
@@ -144,9 +122,7 @@ public protocol DataLoading {
   }
   @objc override dynamic public init()
   @objc public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func setAuthenticationInfo(authCode: Swift.String, redirectUri: Swift.String, codeVerifier: Swift.String?)
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class TranslationsResponse : Swift.Codable {
@@ -157,32 +133,24 @@ public protocol DataLoading {
 public class MessengerConfigurationLoader : GenesysCloudCore.ConfigurationLoader {
   @objc weak public var delegate: (any GenesysCloudCore.ConfigurationLoaderDelegate)?
   @objc public var parser: any GenesysCloudCore.ConfigurationParser
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(translationsRepository: (any GenesysCloudMessenger.TranslationsRepositoryProtocol)? = nil)
-  #endif
   @objc public func load(account: GenesysCloudCore.Account)
   @objc deinit
 }
 public struct DataLoader : GenesysCloudMessenger.DataLoading {
   public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   public func load(contentsOf url: Foundation.URL) throws -> Foundation.Data?
-  #endif
 }
 public protocol AuthenticationHandlerProtocol : AnyObject {
   func shouldAuthorize(completion: @escaping (Swift.Bool) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers public class AuthenticationHandler : GenesysCloudMessenger.AuthenticationHandlerProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(account: GenesysCloudCore.Account)
-  #endif
   public func shouldAuthorize(completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class TranslationsLocaleParser : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func parse(locale: Swift.String?) -> Swift.String?
-  #endif
   @objc override dynamic public init()
   @objc deinit
 }
