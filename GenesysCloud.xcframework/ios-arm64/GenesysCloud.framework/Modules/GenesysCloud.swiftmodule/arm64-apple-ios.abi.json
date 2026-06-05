@@ -10802,14 +10802,14 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 40944,
+      "offset": 41112,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "StringLiteral",
-      "offset": 40985,
+      "offset": 41153,
       "length": 6,
       "value": "\"dyn.\""
     },
