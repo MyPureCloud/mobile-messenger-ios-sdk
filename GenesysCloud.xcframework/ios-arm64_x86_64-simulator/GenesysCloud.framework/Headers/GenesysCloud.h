@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.7.0
+// GenesysCloud version number: v1.7.1
 #import <GenesysCloud/NRDefaultViewAdapter.h>
 #import <GenesysCloud/NRContentTableViewCell.h>
 #import <GenesysCloud/NRConversationalChannelCollectionViewCell.h>

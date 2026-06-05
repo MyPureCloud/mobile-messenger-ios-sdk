@@ -4396,11 +4396,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:21GenesysCloudMessenger0C7AccountC16customAttributesSDyS2SGvp",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerAccount(py)customAttributes",
             "mangledName": "$s21GenesysCloudMessenger0C7AccountC16customAttributesSDyS2SGvp",
             "moduleName": "GenesysCloudMessenger",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "accessors": [
               {
@@ -4430,9 +4431,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21GenesysCloudMessenger0C7AccountC16customAttributesSDyS2SGvg",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerAccount(im)customAttributes",
                 "mangledName": "$s21GenesysCloudMessenger0C7AccountC16customAttributesSDyS2SGvg",
                 "moduleName": "GenesysCloudMessenger",
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -4467,9 +4471,12 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21GenesysCloudMessenger0C7AccountC16customAttributesSDyS2SGvs",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerAccount(im)setCustomAttributes:",
                 "mangledName": "$s21GenesysCloudMessenger0C7AccountC16customAttributesSDyS2SGvs",
                 "moduleName": "GenesysCloudMessenger",
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -4549,11 +4556,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:21GenesysCloudMessenger0C7AccountC12deploymentId6domain7loggingACSS_SSSbtcfc",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerAccount(im)initWithDeploymentId:domain:logging:",
             "mangledName": "$s21GenesysCloudMessenger0C7AccountC12deploymentId6domain7loggingACSS_SSSbtcfc",
             "moduleName": "GenesysCloudMessenger",
+            "objc_name": "initWithDeploymentId:domain:logging:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           }
@@ -6580,28 +6589,28 @@
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "StringLiteral",
-      "offset": 632,
+      "offset": 638,
       "length": 32,
       "value": "\"Custom Attributes were fetched\""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "Dictionary",
-      "offset": 773,
+      "offset": 779,
       "length": 8,
       "value": "[(\"\", \"\")]"
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "StringLiteral",
-      "offset": 827,
+      "offset": 833,
       "length": 48,
       "value": "\"Custom Attributes were updated to: \""
     },
     {
       "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "StringLiteral",
-      "offset": 874,
+      "offset": 880,
       "length": 2,
       "value": "\"\""
     },

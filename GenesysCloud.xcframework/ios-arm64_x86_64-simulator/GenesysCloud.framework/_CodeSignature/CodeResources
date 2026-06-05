@@ -6,19 +6,19 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		3DTSThxzLtQHfInTyYrN6lVtbPA=
+		SG0ZwCOdSGFdg9b3MDWS9On6WpM=
 		</data>
 		<key>BrowserViewController.nib</key>
 		<data>
-		Mqp/zG+dJprTSMgohSGc8Z6Hk98=
+		bqF1fySjWvTVF8HWS3Z/1fezMik=
 		</data>
 		<key>ContextPickerSection.nib</key>
 		<data>
-		4kDjkShnZ6SGhQeeAhEjV0jMHqg=
+		S4+ZjqWxh7ewdIBsY0k5snfIUug=
 		</data>
 		<key>FormTitleView.nib</key>
 		<data>
-		szVMPTu+kt4CsNgEARCQxKtiI7U=
+		iLlYv1xZbkwtdjiPogJIF8DnLKY=
 		</data>
 		<key>GenesysCloud.storyboardc/ChatUIViewController.nib/objects-14.0+.nib</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>GenesysCloud.storyboardc/MMQ-qY-Lto-view-VfP-cD-GIo.nib/objects-14.0+.nib</key>
 		<data>
-		bgqR+zu4v81qlMHw90tYTX3m0o8=
+		j81r/zRFcDrmIeqZFhLaYf7cT4g=
 		</data>
 		<key>GenesysCloud.storyboardc/MMQ-qY-Lto-view-VfP-cD-GIo.nib/runtime.nib</key>
 		<data>
-		oDcyjAKjyl9Umf3B0YSP0GN4Nbw=
+		KWxewbEJsHwvhd+XFQqNYrIjEGc=
 		</data>
 		<key>Headers/AccountProvider.h</key>
 		<data>
@@ -314,7 +314,7 @@
 		</data>
 		<key>Headers/GenesysCloud-Swift.h</key>
 		<data>
-		SJyc9LrEVxmvuhJERjMaugNHX0Y=
+		jjrWEMX7FRjRUrBX2JMkskrgqx8=
 		</data>
 		<key>Headers/GenesysCloud.h</key>
 		<data>
@@ -794,83 +794,83 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		av1Z07COkc1FHBfa/GnCWXAbk+0=
+		WP0TWJf6VpjweuJacG7mxxYkpBs=
 		</data>
 		<key>InputView.nib</key>
 		<data>
-		D0/rGAtyqvPjhZ0XRpxnPp1VXcw=
+		zeOKVfCX+ltFYNE9bBh5En1Jny8=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		6gTYhtSBO4H1doAeIMatK+HDXcY=
+		DXMjpYhgq7cD8b1Sm7+IdyVnpsc=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5EilciCrBL7FUaDaz3vIrLy3afg=
+		zpq2SvbqkWAVOgLyxojCB2cNZ4g=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ipYp+a8sI84Kwd8Jmzebuuy7UOI=
+		YoRJjmUkxF748NqAOtExLt+yPWM=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5EilciCrBL7FUaDaz3vIrLy3afg=
+		zpq2SvbqkWAVOgLyxojCB2cNZ4g=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LjJUoZ9rY8r76NUQCUEvWkTmZWQ=
+		jXrWaaD/OoN03P0d9zJZlAo0plk=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		6gTYhtSBO4H1doAeIMatK+HDXcY=
+		DXMjpYhgq7cD8b1Sm7+IdyVnpsc=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		krYJ4AM71semwbMaCMWuYzLGUY8=
+		17Wjjr3pQ01hJ/gLt9y+Whbywfg=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		PzVpKX1TMJmCSXl9CL7gNNGdx2g=
+		rTovK98aSyP2iJ39X8KyN0Rc1yE=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		krYJ4AM71semwbMaCMWuYzLGUY8=
+		17Wjjr3pQ01hJ/gLt9y+Whbywfg=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WG8h+UjWgv2SIpN1KqJC7c28+BE=
+		B/RYnkJDDmrnetIKDAomiLPXark=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Y5zSy/PLVtQgyOcOp73AOvEIEq8=
+		pBU/1pebmVp9Kc4MsQBhiN5sirI=
 		</data>
 		<key>MultipleChoiceView.nib</key>
 		<data>
-		imh4WLN9q9BrMfm+yecWe6OZ294=
+		E4PhVHUCWrvUxNXJmHzAf6H/Mac=
 		</data>
 		<key>NRAlertViewController.nib</key>
 		<data>
-		pCNNOpcdWBzEDNZWrRwJ2j1NT3E=
+		t/bLfLeJYbAXf8NEravzMFN5QP0=
 		</data>
 		<key>NRAlertviewTableViewCell.nib</key>
 		<data>
-		gLfqV/c5O031HEjaVfj1tgqPYzk=
+		j6aqGhEGYcIu/WTflE9K6hSKhE8=
 		</data>
 		<key>NRAutoCompleteView.nib</key>
 		<data>
-		qKzfYrPHIJMy2R6h/u96PX7In8w=
+		OIrfhD49wWSKNTpNTpWKYdsciE4=
 		</data>
 		<key>NRChanneCell.nib</key>
 		<data>
-		azCMUxnawOpQE6PnU0Ps8RGd67s=
+		W2WUpEcP4HW+kJ9naY7qq/0G08A=
 		</data>
 		<key>NRChannelingView.nib</key>
 		<data>
-		2k8h7uFV6q4RP7Qyf1z8olzj1oQ=
+		MrVNhSIMkq7uK5ROKb+c/y5YKyk=
 		</data>
 		<key>NRChannelingViewController.nib</key>
 		<data>
-		usOTaPcRQaAdnA6J5BNqiWwOAq0=
+		6WYTUxDL/rZFSwvS+K70Jcnpc/w=
 		</data>
 		<key>NRContentTableViewCell.nib</key>
 		<data>
@@ -878,11 +878,11 @@
 		</data>
 		<key>NRContextPickerViewController.nib</key>
 		<data>
-		moVHtHoZC+fkRElUtcBu8rdCoLQ=
+		Ihu8KxCcP6KBRkMAt2yMUMkkVf4=
 		</data>
 		<key>NRConversationSearchView.nib</key>
 		<data>
-		lLoAoNvKHaHIHu8MprsmQu/0nHE=
+		PCSfjEC63JFTapmYsxPhBIukEso=
 		</data>
 		<key>NRConversationalChannelCollectionViewCell.nib</key>
 		<data>
@@ -890,15 +890,15 @@
 		</data>
 		<key>NRConversationalLikeView.nib</key>
 		<data>
-		BNAKySFv1/UlB47t1OTt+/L7TJY=
+		BLggSQeI3we0/NqxODosWfZ1BvE=
 		</data>
 		<key>NRConversationalViewController.nib</key>
 		<data>
-		/wHdQ3UrE/2P/DoHtCA4lh4s44U=
+		3vSWkxW2JaynV07m/w3RT6/wX+0=
 		</data>
 		<key>NRConversationlChannelView.nib</key>
 		<data>
-		p405iUD25mUu9wrf8UFWKGI3QG8=
+		p89jqeCvOVOSZjHLMtubRgSxXLs=
 		</data>
 		<key>NRFeedbackTableViewCell.nib</key>
 		<data>
@@ -906,19 +906,19 @@
 		</data>
 		<key>NRFeedbackViewFreeText.nib</key>
 		<data>
-		BYGZCY4AWI8XeAF0wz9FeB5sgHQ=
+		d64G5e5pD8/laYR9toK9lsZKLJg=
 		</data>
 		<key>NRGroupTableViewCell.nib</key>
 		<data>
-		S13ZWWexMApFj2+Mb3hdJMz0R5E=
+		363mEFrS9EPOAkPmz5PWvD6xP1U=
 		</data>
 		<key>NRGroupsView.nib</key>
 		<data>
-		AJ9M4HlcTX3g+/btzs+Z8PP2P1Q=
+		Qe7TDv2wCJMAFQCa4NiBBkCrHvQ=
 		</data>
 		<key>NRLikeView.nib</key>
 		<data>
-		Ik/NNUdwPqQJspW33s+ea2KJEag=
+		sVj0Gn0yIIjfVHeQk2gfZo3v75s=
 		</data>
 		<key>NRLoadingViewController.nib</key>
 		<data>
@@ -926,43 +926,43 @@
 		</data>
 		<key>NRNegativeFeedbackViewController.nib</key>
 		<data>
-		1Cz8xaZs66okdohJThEvkUfGdPo=
+		Pn4kqFdfjptIiVDiA6xW+2BlYXQ=
 		</data>
 		<key>NRNoAnswerViewController.nib</key>
 		<data>
-		32QpFspLOyz2CuS1ao8sOtyr5aI=
+		pogcrZNPeRXieBsUZnW/cKTbwhg=
 		</data>
 		<key>NRNoConnectionView.nib</key>
 		<data>
-		H2qd7xwrqRUBGAqJrxiORyx6i7s=
+		vps6758uR13TeMbSvF7rtsnuTzQ=
 		</data>
 		<key>NRReadMoreViewController.nib</key>
 		<data>
-		b0geYnBnitl7o+I332lwjkH99j4=
+		YCch4i82jwU9PGZi4fLOVEdD2N4=
 		</data>
 		<key>NRResultPresntationView.nib</key>
 		<data>
-		lHBmgkSYQyL5fajqIAkSg1B9Bsk=
+		B2EuwjSlZOgK0ajNL5g4aGSAfZk=
 		</data>
 		<key>NRSearchBar.nib</key>
 		<data>
-		rYlZUWhcuCw0oclILuJdMQ9j6FA=
+		lzZwWQcYNLmTOyDoaofjjx7QDWw=
 		</data>
 		<key>NRSectionView.nib</key>
 		<data>
-		qi3lamqUPGPt5EH2njf7Aad/K0A=
+		NpaQ1KFh4AuMGWouLzadDqNnFbw=
 		</data>
 		<key>NRSuggestionTableViewCell.nib</key>
 		<data>
-		8lxmAa9imlJvOkEPEP7enAtANhY=
+		uKhI6Q28qf/x+Dfu3f2iWKtQALo=
 		</data>
 		<key>NRTitleTableViewCell.nib</key>
 		<data>
-		ra27/vZ8tZMzoDx/Z2eZvCPXmUw=
+		u6XEpeYIG6NhWA3Ct19154hQOtE=
 		</data>
 		<key>NoAnswersView.nib</key>
 		<data>
-		wM01Jak5G0tRJRt9l2dNofHXMT0=
+		GF8T2OzI59T2ZpLVWM8u7+VdyyQ=
 		</data>
 		<key>SupportCenter.storyboardc/Info.plist</key>
 		<data>
@@ -982,11 +982,11 @@
 		</data>
 		<key>SupportCenter.storyboardc/VUI-NA-qcQ-view-Ia2-7v-V9T.nib</key>
 		<data>
-		o0IXZWefTJbZeIpohIAqmeiKBOA=
+		E+UfUX7IYYYdg009X/7hnx5fE8E=
 		</data>
 		<key>SupportCenter.storyboardc/mmM-QA-j0e-view-9EC-bE-7Ga.nib</key>
 		<data>
-		cj4gkd1OhGAyQQb7ybMN0wK8ibQ=
+		b7JDMEI+oOaycetyubgYa/afs08=
 		</data>
 		<key>id.lproj/Localized.strings</key>
 		<dict>
@@ -1004,28 +1004,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IcXg8hSJQuApJltEpRy+wq84oiuPq2Yp9/6fldT0R0o=
+			G/XLQjgPMmUWxaMRCzZjahX4AzYexOe/ij1/me9Jpe0=
 			</data>
 		</dict>
 		<key>BrowserViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RwAjd1HulXFTxHNREuA4VZh7ddH9UB4UT0wuoY2HqdI=
+			xBnMdjffvLPUGyjjgmCiHcx4scixi3UnlC9Oj+3maig=
 			</data>
 		</dict>
 		<key>ContextPickerSection.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CPTkmGuo2ZAoQU3Mhex5pypYgoScg52M3pdnHwZA4g4=
+			ccuH1pF3GMEM4rEdRO0vKHmQ2AqU1WNge6Wzed43sbc=
 			</data>
 		</dict>
 		<key>FormTitleView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pVQgYDdf7Fu6e7Jwekp8bbYk6Pv6l0dLePFINcjoWds=
+			Jo49aJ2kazqnO54x3/+uhUSNsfIv/Iyec2ypEgMovio=
 			</data>
 		</dict>
 		<key>GenesysCloud.storyboardc/ChatUIViewController.nib/objects-14.0+.nib</key>
@@ -1067,14 +1067,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IdVfr8+PhrpOEGdixEhU1PjcbQnS6xowL8u/XphR0vg=
+			N5ISuVW+cApGn9bPC/DjN6wC0MJbIBFpYrUtij4bvRE=
 			</data>
 		</dict>
 		<key>GenesysCloud.storyboardc/MMQ-qY-Lto-view-VfP-cD-GIo.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l4nZsA267QJulixA/0D1HFNWLb2dUOjXTv3R7WhLT1o=
+			6TDAdUMN0MmfHH4Z1595VzPrvPeVKKpdEIkdMv6HT7o=
 			</data>
 		</dict>
 		<key>Headers/AccountProvider.h</key>
@@ -1543,7 +1543,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1tbWXbQjO6umrtbU8QmpIReLEqW6buS1rTf9lLUKE3k=
+			8Zx0lULKPlAAGscx3XAVhkikUEqnZoKz6cTCiitEL6k=
 			</data>
 		</dict>
 		<key>Headers/GenesysCloud.h</key>
@@ -2383,133 +2383,133 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vpjz/ZmQQxS+ztwzonb7i6b3apnsOD8tHs/jAkrfJDc=
+			l86pkWZycxoqjVTtQeTYWmfVjszufT/LDfL3ebhhOmE=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			09Ua8CmMu27SXf/mRQyGGoPeN+BQrbieQLVWCr+GK1A=
+			J4wuQhVLw4BZaKbjETWCwxKmVgM09FoEPQEqTvuI8g0=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FFGbedT1GDEwV73jvIL1/7jwUH0YL6PzRRltKWQ0ugY=
+			x0pD99zM5O9fOWko9Vn/NookAWSSO4A/+wboadq27Vc=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8lwtWYhFH+KUh+lRjAnTb63dSAf+l+6Wp901hum+Y9c=
+			7dio0gJROOa2uWkDOPa8Nca1iiUSrJoEX/uLp8dM1kg=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FFGbedT1GDEwV73jvIL1/7jwUH0YL6PzRRltKWQ0ugY=
+			x0pD99zM5O9fOWko9Vn/NookAWSSO4A/+wboadq27Vc=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oMt5ccjzgj5muSqmzXinVNW77RmPwrduVuN9p05yN6M=
+			DEXv6GVmrsZWoO+D8Y+45ckas6zKG9roLiRsI1FONdU=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			09Ua8CmMu27SXf/mRQyGGoPeN+BQrbieQLVWCr+GK1A=
+			J4wuQhVLw4BZaKbjETWCwxKmVgM09FoEPQEqTvuI8g0=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LwTK5yZTCJNRkTXoj6byQb1XRU1xSA/kWVvczoGqQ+o=
+			WHuBGZckr2FmGx1piD/uenVTUffxv9guM/wVMC+BHGg=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CyBd1qnDE2B++IIB6+7tFP48rDsl99UkA8FOj1nkNdU=
+			X9F2L3WO3tzlXcctL2wQVIIGLB73Q2oGRyH7xTROcc8=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LwTK5yZTCJNRkTXoj6byQb1XRU1xSA/kWVvczoGqQ+o=
+			WHuBGZckr2FmGx1piD/uenVTUffxv9guM/wVMC+BHGg=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g0agaBc7fJE1a+qMKUPQ3LOMP38hNPy5rArBcHnGCJs=
+			GL8JU/GWKdX19322Ek8UnDtXMQ1T6uRHl69BUHIzIlw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FrtasA3m5yM6hn9axcCicZhnSrRCCEAs5hgsyMTSDgQ=
+			i6MPc/yhk1ynb+tgg2nzDHfHXnXlWKPMbGnVdTEXwEo=
 			</data>
 		</dict>
 		<key>MultipleChoiceView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QbFHmgqABL3Uf9Nr6Rcnt1mCNK3uHelhzhqyKq3lZZM=
+			KKQHVDFGwrR4o6/jaUv2stYD7AZ4ja3VRPyL7pYIZPk=
 			</data>
 		</dict>
 		<key>NRAlertViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7/EThE7Qz2ISqspg7DVd6gzlQg8OJuzFafRT7F7mOgw=
+			9KxjtZBDhiy5jHmRl3G3EWmE94TzhhHMY0r9whFLUAA=
 			</data>
 		</dict>
 		<key>NRAlertviewTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aUfclCQfbEvxjGIJuWLdIIiyH1UKjCfMcpWhlkxs6dU=
+			52FNmwBDQRb80xMaRjk5ocA9xMaKiqvWhGdwsFS3rBk=
 			</data>
 		</dict>
 		<key>NRAutoCompleteView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0YjceLXUb9CBeJb1Yi2wN0lWzCN08GYbKBS/XODgHQo=
+			m42cxgdjO1kn5MerVXSCwT7b4+ONbxKyI+us8kGCr+k=
 			</data>
 		</dict>
 		<key>NRChanneCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S8coYhVpV7NK7bA4M47kBcEaZ5RhfmPWeTACLUWpVvk=
+			dlRfI3yv6k8Uo6sGs6vbRav7XZqKVgaQfoLPWUrLEo4=
 			</data>
 		</dict>
 		<key>NRChannelingView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GaEKhBoGZgw4htZiefQtliKCUiizKWS7bcC0gtc3i7o=
+			5j6T8sF3clgpbyQNuFCipACmfG5JhP/exvW97Auls44=
 			</data>
 		</dict>
 		<key>NRChannelingViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eMF/urloue3ll5jooQT8CyR82qNjPyWMMCTWXL6v6TQ=
+			ftWvQA9J/dWe2/wmJbCo1C0j3yuCNUYjWa0jfInvh1A=
 			</data>
 		</dict>
 		<key>NRContentTableViewCell.nib</key>
@@ -2523,14 +2523,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iRncYq/QkBx9FtOng+ycrroIk+vKZ3ltwQA6wog2NHU=
+			0yfSTNg470X1FrGn/tdJTZTlxKy/K8xMh4xoazunZk8=
 			</data>
 		</dict>
 		<key>NRConversationSearchView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jr0PfjqOp/C48IlOCuUt45dvFCoE8lPwhml9933YaYU=
+			n40rFi/sxTE4A8LZo8PjU7mHJhWxSkIvrIdsinS6FXY=
 			</data>
 		</dict>
 		<key>NRConversationalChannelCollectionViewCell.nib</key>
@@ -2544,21 +2544,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oqFv0T055okZKwxdoYmliA6MLF7iD1iMz8q9D3ue0JA=
+			dq5XNQSesd082SNJjChvTSHByQRVd2C5q9HrK8vhklc=
 			</data>
 		</dict>
 		<key>NRConversationalViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			25DZyQIejCSYG40ljyE6TgdMADH6jwqrgyOZ3QlXlvA=
+			gsinqY06C/ElKCi1EkPqgk0mDeQbfAtGCSeoExOhc30=
 			</data>
 		</dict>
 		<key>NRConversationlChannelView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SxI7D3IB9xbF+XrBwPDgVeT8rv6wruAzCgtJMUkTZr4=
+			QY4tkBV9bPpEchONflgAR7FZbDl/czQuDRkYv8SbM9s=
 			</data>
 		</dict>
 		<key>NRFeedbackTableViewCell.nib</key>
@@ -2572,28 +2572,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WV/vjYEoNzJG8ewgW7qnu8dN+HdzonKpneHyoPoAlWM=
+			5Q5EvUXgdvG3FUNllI0u8+X+t+9OfinB/LdGLRQKzjE=
 			</data>
 		</dict>
 		<key>NRGroupTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ck2U6FKkH6eFIat4qtmFUUF+Lzj0cHBU7mHUmJ+yrXE=
+			hrfxXwJLF0dTYFmJDiKc/vT1uij9Jiz+hZwK00DY2tw=
 			</data>
 		</dict>
 		<key>NRGroupsView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BMjuqvTA+uja1aE+vJm3GhWOL1byVpFtVtsEP5gl0UA=
+			9HoMshB4kks1DW8lWwNDVLAWhQPt/cqG6pfmZa7g2zU=
 			</data>
 		</dict>
 		<key>NRLikeView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rvHkZXRCgMshsQvbqPHT8fC+4xpp2i3QfI7J96f4X58=
+			YYiLf9DF97kj5bFQgU2PUmk4oyIxf7yBfT/dMvS3jE8=
 			</data>
 		</dict>
 		<key>NRLoadingViewController.nib</key>
@@ -2607,70 +2607,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Bd7zf3vt7Sm4hok0GbvEj5cCBd60EoYNofBDJAvPRc=
+			uK08alwzerN4+Beh5v72UDDapr8i7zVy6Jz0tGAi2+4=
 			</data>
 		</dict>
 		<key>NRNoAnswerViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xmSwME3LTeW/XaeWMGCcrYwMzpCpg9Xi5DGsRxC7Oro=
+			VLMKn0IvAcaRQUBim9OpE07w+oVwkEUlMu4YduSEl14=
 			</data>
 		</dict>
 		<key>NRNoConnectionView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Osl9L1XbzovmCnMqNaKVCIZHuV8KU9g1dowLeXf5CZQ=
+			sLsQ13OiZ+0O5E7hahfyTMHJodGQMertwH4DwroOuCs=
 			</data>
 		</dict>
 		<key>NRReadMoreViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Swdbl95fEG22/B9I+pJ3CxfSa7a934XnVAHm/HzzNuY=
+			ydyT48kJ31T+K6EMHdBPTeJgws4TYw7fOe8KR5pBO4A=
 			</data>
 		</dict>
 		<key>NRResultPresntationView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ETCW7Gj20irDmns3mz42eDRraY4ItUjT3uiXwfw9aCg=
+			N6lFN3vb00QNnea+B12VDkuEYih4ffPOC1feL2Nj0ek=
 			</data>
 		</dict>
 		<key>NRSearchBar.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+LZRT6Oor+DVnTTRn1nuNppiYTbTqv8DkhP6wUtElq0=
+			ytgQoN1/s8B8uwnw46n46lNiRxxQUR+FV56x8NxIh8c=
 			</data>
 		</dict>
 		<key>NRSectionView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tKZFeo2x4aX7D6WqXAA8dzkwIi6N0NXtFiOBwoAG+Nc=
+			5y00b41rcBZd/PaqNc2pHsHV2oE8WDO6diUAjIjSj2k=
 			</data>
 		</dict>
 		<key>NRSuggestionTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LROBa3/ShJqJyf+YUDBU0UZbRZEB/3PSa4XYq5PyYtw=
+			iSaDyE4DGhGtbQrzMK28MWkc3wpjw6eGs+cXx7Mr1j0=
 			</data>
 		</dict>
 		<key>NRTitleTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MHSdytjoOfh/1FnTSBLYd7iRr6Bmx91BNaNA0Gn5MCU=
+			QOvlY7wDFSbed/kxsIK8cdkhV05gDvjrpOOhBB2cvhM=
 			</data>
 		</dict>
 		<key>NoAnswersView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WTKM5Ds0L4g6/i9GgK2rb4hzBbNb9wG3s50cTA5IncM=
+			2+8lVBTKoi4scujMpwje9KMWq9J1idVYxrTIkgBO6Pk=
 			</data>
 		</dict>
 		<key>SupportCenter.storyboardc/Info.plist</key>
@@ -2705,14 +2705,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cn/gM8pwqYONAcdu9S3nxssPB63ItWFROR66duqxj/A=
+			xbv6Q4aI0VPHw3GRbTn20AA6AYyh/9vkkT1zgXj9VqY=
 			</data>
 		</dict>
 		<key>SupportCenter.storyboardc/mmM-QA-j0e-view-9EC-bE-7Ga.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			emO+M3lz4VmfYOaVk33Ak970HMB25IaF0ug4USg4dCc=
+			FROCumTQqWo5NaevrYPzqRTD4VO+q/h2Mri5eitdlM8=
 			</data>
 		</dict>
 		<key>id.lproj/Localized.strings</key>

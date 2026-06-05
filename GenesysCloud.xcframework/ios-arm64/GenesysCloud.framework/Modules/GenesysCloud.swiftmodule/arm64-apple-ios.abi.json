@@ -3438,6 +3438,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -4776,6 +4783,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -4805,6 +4819,34 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud"
       },
       {
         "kind": "TypeDecl",
@@ -7632,6 +7674,307 @@
       "offset": 2485,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 723,
+      "length": 7,
+      "value": "\"agent\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 858,
+      "length": 11,
+      "value": "\"agentlive\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1019,
+      "length": 23,
+      "value": "\"answer_arrowdown_icon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1164,
+      "length": 8,
+      "value": "\"attach\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1299,
+      "length": 11,
+      "value": "\"back_icon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1439,
+      "length": 12,
+      "value": "\"bullet_off\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1578,
+      "length": 11,
+      "value": "\"bullet_on\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1720,
+      "length": 13,
+      "value": "\"card_shadow\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1869,
+      "length": 16,
+      "value": "\"card_shadow_up\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2027,
+      "length": 19,
+      "value": "\"channel_call_icon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2188,
+      "length": 19,
+      "value": "\"channel_chat_icon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2349,
+      "length": 19,
+      "value": "\"channel_form_icon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2510,
+      "length": 19,
+      "value": "\"channel_mail_icon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2649,
+      "length": 7,
+      "value": "\"close\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2798,
+      "length": 18,
+      "value": "\"conversationChat\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2960,
+      "length": 19,
+      "value": "\"conversationPhone\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3119,
+      "length": 17,
+      "value": "\"convesationMail\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3273,
+      "length": 16,
+      "value": "\"delivery_error\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3409,
+      "length": 7,
+      "value": "\"email\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3544,
+      "length": 11,
+      "value": "\"emptyStar\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3685,
+      "length": 12,
+      "value": "\"filledStar\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3839,
+      "length": 19,
+      "value": "\"grey_dislike_icon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3994,
+      "length": 16,
+      "value": "\"grey_like_icon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4153,
+      "length": 19,
+      "value": "\"message_delivered\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4311,
+      "length": 17,
+      "value": "\"message_pending\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4461,
+      "length": 14,
+      "value": "\"message_sent\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4591,
+      "length": 5,
+      "value": "\"mic\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4720,
+      "length": 9,
+      "value": "\"micIcon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4849,
+      "length": 7,
+      "value": "\"micOn\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5004,
+      "length": 21,
+      "value": "\"newLogoNanorepWhite\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5148,
+      "length": 9,
+      "value": "\"nr_icon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5277,
+      "length": 7,
+      "value": "\"right\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5422,
+      "length": 16,
+      "value": "\"searchbarXIcon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5556,
+      "length": 6,
+      "value": "\"send\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5690,
+      "length": 11,
+      "value": "\"speakerOn\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5823,
+      "length": 8,
+      "value": "\"typing\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5956,
+      "length": 10,
+      "value": "\"voice_on\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6103,
+      "length": 17,
+      "value": "\"voice_on_ani_01\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6257,
+      "length": 17,
+      "value": "\"voice_on_ani_02\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6411,
+      "length": 17,
+      "value": "\"voice_on_ani_03\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6572,
+      "length": 20,
+      "value": "\"white_dislike_icon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6730,
+      "length": 17,
+      "value": "\"white_like_icon\""
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-erpwmurdacugrpcwdmuwjbeprvit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6883,
+      "length": 16,
+      "value": "\"speaker.2.fill\""
     }
   ]
 }

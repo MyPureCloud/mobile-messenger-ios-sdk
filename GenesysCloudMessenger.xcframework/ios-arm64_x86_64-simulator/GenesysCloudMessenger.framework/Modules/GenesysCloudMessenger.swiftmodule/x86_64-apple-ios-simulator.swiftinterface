@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GenesysCloudMessenger
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Darwin
@@ -10,6 +10,7 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public class TranslationsRepositoryImplementation : ObjectiveC.NSObject, GenesysCloudMessenger.TranslationsRepositoryProtocol {
   @objc public init(fileDataSource: any GenesysCloudMessenger.TranslationsDataSourceDelegate, remoteDataSource: any GenesysCloudMessenger.TranslationsDataSourceDelegate, parser: GenesysCloudMessenger.TranslationsParser)
   @objc public func load(language: Swift.String, fallbackLanguage: Swift.String? = nil, completion: @escaping (GenesysCloudMessenger.TranslationsResponse?) -> Swift.Void)
@@ -121,12 +122,12 @@ extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatDataP
   @objc dynamic public func produceChatData(_ request: GenesysCloudCore.ChatDataRequest) -> Swift.Bool
 }
 @objc @_inheritsConvenienceInitializers public class MessengerAccount : GenesysCloudCore.Account {
-  public var customAttributes: [Swift.String : Swift.String] {
-    get
-    set
+  @objc public var customAttributes: [Swift.String : Swift.String] {
+    @objc get
+    @objc set
   }
   @objc override dynamic public init()
-  public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool)
+  @objc public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class TranslationsResponse : ObjectiveC.NSObject, Swift.Codable {
