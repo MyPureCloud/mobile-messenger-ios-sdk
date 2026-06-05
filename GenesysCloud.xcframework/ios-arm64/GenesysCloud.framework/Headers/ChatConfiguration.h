@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.8.2
+// GenesysCloud version number: v1.9.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -7,14 +7,9 @@
 // ===================================================================================================
 
 #import <GenesysCloud/IncomingBotConfiguration.h>
-#import <GenesysCloud/MultipleSelectionConfiguration.h>
 #import <GenesysCloud/IncomingLiveConfiguration.h>
 #import <GenesysCloud/SystemMessageConfiguration.h>
 #import <GenesysCloud/InfoViewConfiguration.h>
-#import <GenesysCloud/ReadMoreViewConfiguration.h>
-#import <GenesysCloud/ChatBarConfiguration.h>
-#import <GenesysCloud/BoldFormConfiguration.h>
-#import <GenesysCloudAccessibility/VoiceToVoiceConfiguration.h>
 #import <GenesysCloud/ChatViewConfiguration.h>
 
 @class InputViewConfiguration;
@@ -35,11 +30,6 @@
  Incoming Bot Configuration
  */
 @property(strong, nonatomic) IncomingBotConfiguration *incomingBotConfig;
-
-/**
- Multiple Selection Bot Configuration
- */
-@property(strong, nonatomic) MultipleSelectionConfiguration *multipleSelectionConfiguration;
 
 /**
  Incoming Live Configuration
@@ -66,23 +56,4 @@ Input View Configuration
 */
 @property(strong, nonatomic, readonly) InputViewConfiguration *inputViewConfig;
 
-/**
-Read More View Configuration
-*/
-@property(strong, nonatomic, readonly) ReadMoreViewConfiguration *readMoreViewConfig;
-
-/**
-Chat Bar Configuration
-*/
-@property(strong, nonatomic, readonly) ChatBarConfiguration *chatBarConfiguration;
-
-/**
-VoiceToVoiceConfiguration
-*/
-@property(strong, nonatomic, readonly) VoiceToVoiceConfiguration *voiceToVoiceConfiguration;
-
-/**
-Bold Live Form Configuration
-*/
-@property(strong, nonatomic, readonly) BoldFormConfiguration *formConfiguration;
 @end

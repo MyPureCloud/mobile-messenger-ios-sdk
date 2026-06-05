@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.8.2
+// GenesysCloud version number: v1.9.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -19,8 +19,6 @@
 
 + (void)checkAvailability:(Account *)account
                completion:(void(^)(AvailabilityResult *result))completion;
-+ (void)fetchDepartments:(Account *)account
-              completion:(void(^)(DepartmentResult *result))completion;
 + (void)setMockedConfigurationLoader:(MessengerConfigurationLoader *)loader;
 @end
 

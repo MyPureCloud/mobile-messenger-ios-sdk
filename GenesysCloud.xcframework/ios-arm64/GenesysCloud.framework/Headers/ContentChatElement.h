@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.8.2
+// GenesysCloud version number: v1.9.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <GenesysCloud/StorableChatElement.h>
-#import <GenesysCloudCore/NSString+BLDUtilities.h>
 #import <GenesysCloudCore/GenesysCloudCore-Swift.h>
 
 /************************************************************/
@@ -27,7 +26,8 @@ extern NSString *const ChatElementDesignCustomOutgoing;
  */
 @interface ContentChatElement : NSObject <StorableChatElement>
 @property (nonatomic, copy) NSString *articleId;
-
+@property (strong) NSArray<DownloadableFile *> *files;
+@property (nonatomic, assign) BOOL isPreceding;
 // Enable set internally (replace readonly with readwrite)
 @property (nonatomic, copy) NSString *design;
 @property (nonatomic, copy) NSDateFormatter *dateFormatter;

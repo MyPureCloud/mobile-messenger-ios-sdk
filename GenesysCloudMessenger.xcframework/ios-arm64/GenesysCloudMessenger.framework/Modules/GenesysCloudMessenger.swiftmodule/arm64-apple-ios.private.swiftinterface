@@ -6,8 +6,10 @@ import Darwin
 import Foundation
 import GenesysCloudCore
 import MessengerTransport
+import MobileCoreServices
 import Swift
 import UIKit
+import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -40,6 +42,7 @@ extension UIKit.UIColor {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MessengerChatSettings : GenesysCloudCore.ChatSettings {
+  public var fileAttachmentProfile: GenesysCloudMessenger.AttachmentProfile?
   @objc override public var uiSettings: Any? {
     @objc get
     @objc set
@@ -81,6 +84,7 @@ extension UIKit.UIColor {
   @objc public var messageTimeFontColor: UIKit.UIColor?
   @objc public var messageTimeFontSize: Swift.Double
   @objc public var enableAvatar: Swift.Bool
+  @objc public var iconBackground: UIKit.UIColor?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -116,6 +120,7 @@ public protocol MessengerTransportProtocol {
   @objc deinit
 }
 extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatEngine {
+  @objc dynamic public func refreshAttachment(fileId: Swift.String)
   @objc dynamic public func prepare(account: GenesysCloudMessenger.MessengerChatEngine.AccountType)
   @objc dynamic public func create()
   @objc dynamic public func start()
@@ -153,6 +158,13 @@ extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatDataP
   @objc override dynamic public init()
   @objc public init(translationsRepository: (any GenesysCloudMessenger.TranslationsRepositoryProtocol)? = nil)
   @objc public func load(account: GenesysCloudCore.Account)
+  @objc deinit
+}
+extension GenesysCloudMessenger.MessengerConfigurationLoader {
+  public func parse(_ profile: MessengerTransport.FileAttachmentProfile?) -> GenesysCloudMessenger.AttachmentProfile?
+}
+@_hasMissingDesignatedInitializers @objc public class AttachmentProfile : ObjectiveC.NSObject {
+  public func isEnabled() -> Swift.Bool
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class TranslationsLocaleParser : ObjectiveC.NSObject {
