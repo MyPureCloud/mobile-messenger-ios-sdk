@@ -155,7 +155,9 @@ extension GenesysCloud.MessengerHandler {
   public func subscribeToAttachmentFetcher()
 }
 @objc extension GenesysCloud.BaseChatHandler {
+  @nonobjc public static var cancellables: [Combine.AnyCancellable]
   @objc dynamic public func setupPublisher()
+  @objc dynamic public func performDefaultAction()
   @objc dynamic public func destroyPublisher()
   @objc dynamic public func updateViewModel(with element: any GenesysCloud.StorableChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
   @objc dynamic public func replaceInViewModel(element: any GenesysCloud.StorableChatElement, originalId: Swift.String)

@@ -973,6 +973,127 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "AuthenticationInfo",
+        "printedName": "AuthenticationInfo",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthenticationInfo",
+                "printedName": "GenesysCloudMessenger.AuthenticationInfo",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)AuthenticationInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)AuthenticationInfo(im)init",
+            "mangledName": "$s21GenesysCloudMessenger18AuthenticationInfoCACycfc",
+            "moduleName": "GenesysCloudMessenger",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloudMessenger@objc(cs)AuthenticationInfo",
+        "mangledName": "$s21GenesysCloudMessenger18AuthenticationInfoC",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "GenesysCloudCore",
         "printedName": "GenesysCloudCore",
@@ -5160,6 +5281,29 @@
           },
           {
             "kind": "Function",
+            "name": "logoutFromAuthenticatedSession",
+            "printedName": "logoutFromAuthenticatedSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GenesysCloudMessenger@objc(cs)MessengerChatEngine(im)logoutFromAuthenticatedSession",
+            "mangledName": "$s21GenesysCloudMessenger0C10ChatEngineC30logoutFromAuthenticatedSessionyyF",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "didFetchChatSettings",
             "printedName": "didFetchChatSettings(settings:)",
             "children": [
@@ -5183,6 +5327,40 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isEnableToAuthenticate",
+            "printedName": "isEnableToAuthenticate(chatSettings:account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatSettings",
+                "printedName": "GenesysCloudCore.ChatSettings",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatSettings"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "GenesysCloudCore.Account",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)Account"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger0C10ChatEngineC22isEnableToAuthenticate12chatSettings7accountSb0aB4Core0dK0C_AG7AccountCtF",
+            "mangledName": "$s21GenesysCloudMessenger0C10ChatEngineC22isEnableToAuthenticate12chatSettings7accountSb0aB4Core0dK0C_AG7AccountCtF",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -5569,6 +5747,67 @@
         "children": [
           {
             "kind": "Var",
+            "name": "authenticationInfo",
+            "printedName": "authenticationInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudMessenger.AuthenticationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthenticationInfo",
+                    "printedName": "GenesysCloudMessenger.AuthenticationInfo",
+                    "usr": "c:@M@GenesysCloudMessenger@objc(cs)AuthenticationInfo"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21GenesysCloudMessenger0C7AccountC18authenticationInfoAA014AuthenticationF0CSgvp",
+            "mangledName": "$s21GenesysCloudMessenger0C7AccountC18authenticationInfoAA014AuthenticationF0CSgvp",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloudMessenger.AuthenticationInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthenticationInfo",
+                        "printedName": "GenesysCloudMessenger.AuthenticationInfo",
+                        "usr": "c:@M@GenesysCloudMessenger@objc(cs)AuthenticationInfo"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GenesysCloudMessenger0C7AccountC18authenticationInfoAA014AuthenticationF0CSgvg",
+                "mangledName": "$s21GenesysCloudMessenger0C7AccountC18authenticationInfoAA014AuthenticationF0CSgvg",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "customAttributes",
             "printedName": "customAttributes",
             "children": [
@@ -5763,6 +6002,52 @@
               "ObjC"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setAuthenticationInfo",
+            "printedName": "setAuthenticationInfo(authCode:redirectUri:codeVerifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger0C7AccountC21setAuthenticationInfo8authCode11redirectUri12codeVerifierySS_S2SSgtF",
+            "mangledName": "$s21GenesysCloudMessenger0C7AccountC21setAuthenticationInfo8authCode11redirectUri12codeVerifierySS_S2SSgtF",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -7156,7 +7441,7 @@
       "kind": "StringLiteral",
       "offset": 693,
       "length": 71,
-      "value": "\"https:\/\/nr-customers.s3.amazonaws.com\/mobileMessengerTranslations\/v4\/\""
+      "value": "\"https:\/\/nr-customers.s3.amazonaws.com\/mobileMessengerTranslations\/v5\/\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatSettings.swift",
@@ -7322,14 +7607,14 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 34729,
+      "offset": 36995,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "IntegerLiteral",
-      "offset": 542,
+      "offset": 611,
       "length": 3,
       "value": "300"
     },
@@ -7392,9 +7677,9 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsLocaleParser.swift",
       "kind": "Dictionary",
-      "offset": 420,
-      "length": 1888,
-      "value": "[(\"zh-cn\", \"zh-cn\"), (\"zh-hans\", \"zh-cn\"), (\"zh-tw\", \"zh-tw\"), (\"zh-hant\", \"zh-tw\"), (\"pt\", \"pt-pt\"), (\"en-us\", \"en-us\"), (\"en\", \"en-us\"), (\"ar\", \"ar\"), (\"cs\", \"cs\"), (\"da\", \"da\"), (\"nl\", \"nl\"), (\"fi\", \"fi\"), (\"fr\", \"fr\"), (\"de\", \"de\"), (\"he\", \"he\"), (\"it\", \"it\"), (\"ja\", \"ja\"), (\"ko\", \"ko\"), (\"nb\", \"no\"), (\"pl\", \"pl\"), (\"ru\", \"ru\"), (\"es\", \"es\"), (\"sv\", \"sv\"), (\"th\", \"th\"), (\"tr\", \"tr\"), (\"et\", \"et\"), (\"lt\", \"lt\"), (\"lv\", \"lv\")]"
+      "offset": 444,
+      "length": 2092,
+      "value": "[(\"zh-cn\", \"zh-cn\"), (\"zh-hans\", \"zh-cn\"), (\"zh-tw\", \"zh-tw\"), (\"zh-hant\", \"zh-tw\"), (\"pt\", \"pt-pt\"), (\"en-us\", \"en-us\"), (\"en\", \"en-us\"), (\"ar\", \"ar\"), (\"cs\", \"cs\"), (\"da\", \"da\"), (\"nl\", \"nl\"), (\"fi\", \"fi\"), (\"fr\", \"fr\"), (\"de\", \"de\"), (\"he\", \"he\"), (\"it\", \"it\"), (\"ja\", \"ja\"), (\"ko\", \"ko\"), (\"nb\", \"no\"), (\"pl\", \"pl\"), (\"ru\", \"ru\"), (\"es\", \"es\"), (\"sv\", \"sv\"), (\"th\", \"th\"), (\"tr\", \"tr\"), (\"et\", \"et\"), (\"lt\", \"lt\"), (\"lv\", \"lv\"), (\"uk\", \"uk\"), (\"hu\", \"hu\"), (\"vi\", \"vi\")]"
     }
   ]
 }

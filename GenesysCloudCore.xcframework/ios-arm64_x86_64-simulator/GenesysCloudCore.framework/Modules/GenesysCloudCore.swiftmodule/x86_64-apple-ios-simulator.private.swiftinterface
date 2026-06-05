@@ -77,6 +77,7 @@ public protocol ChatEngine {
   func endChat(forceClose: Swift.Bool)
   func reconnect()
   func refreshAttachment(fileId: Swift.String)
+  func logoutFromAuthenticatedSession()
   init(configLoader: any GenesysCloudCore.ConfigurationLoader)
 }
 public enum MimeType : Swift.String {
@@ -111,6 +112,8 @@ public enum MimeType : Swift.String {
   case failedToSendCustomAttributes = 5018
   case conversationCreationError = 5019
   case attachmentDownloadError = 5020
+  case clientNotAuthenticatedError = 5021
+  case authLogoutFailed = 5022
   public static let ClientErrorReconnectDescription: Swift.String
   public static let IllegalStateErrorReconnectDescription: Swift.String
   public static let ConfigurationLoadErrorDescription: Swift.String
@@ -119,6 +122,8 @@ public enum MimeType : Swift.String {
   public static let ConversationCreationErrorDescription: Swift.String
   public static let AttachmentDownloadErrorDescription: Swift.String
   public static let AttachmentRefreshErrorDescription: Swift.String
+  public static let ClientNotAuthenticatedErrorAuthenticatedMessagesDescription: Swift.String
+  public static let AuthLogoutFailedAuthenticatedMessagesDescription: Swift.String
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -193,6 +198,8 @@ public enum MimeType : Swift.String {
   case visitor
   case disconnected
   case app
+  case sessionLimitReached
+  case logout
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -276,6 +283,7 @@ public enum DownloadableFileStatus {
   case autostart
   case conversationDisconnect
   case supportContentProfiles
+  case authentication
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -401,8 +409,8 @@ public enum ChatStatementsError : Swift.Error {
 }
 @objc public class ChatStateEvent : GenesysCloudCore.ChatEvent {
   @objc public var state: GenesysCloudCore.ChatState
-  @objc public var dataMsg: Swift.String?
-  @objc public init(state: GenesysCloudCore.ChatState, scope: GenesysCloudCore.StatementScope, dataMsg: Swift.String?)
+  @objc public var dataMsg: Any?
+  @objc public init(state: GenesysCloudCore.ChatState, scope: GenesysCloudCore.StatementScope, dataMsg: Any?)
   @objc public init(state: GenesysCloudCore.ChatState, scope: GenesysCloudCore.StatementScope)
   @objc deinit
 }
@@ -428,6 +436,7 @@ public enum ChatStatementsError : Swift.Error {
   public func refreshAttachment(fileId: Swift.String)
   public func postQuickRepliesMessage(_ chatStatement: GenesysCloudCore.QuickRepliesChatStatement)
   public func endChat(forceClose: Swift.Bool)
+  public func logoutFromAuthenticatedSession()
   @objc deinit
 }
 extension GenesysCloudCore.LogType : Swift.Equatable {}

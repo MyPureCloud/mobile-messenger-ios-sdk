@@ -36,9 +36,12 @@ extension UIKit.UIColor {
   @objc override dynamic public init()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers @objc public class AuthenticationInfo : ObjectiveC.NSObject {
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers public class TranslationsRemoteDataSource : ObjectiveC.NSObject, GenesysCloudMessenger.TranslationsDataSourceDelegate {
   @objc override dynamic public init()
-  public init(baseUrl: Swift.String = "https://nr-customers.s3.amazonaws.com/mobileMessengerTranslations/v4/", handler: GenesysCloudCore.NRDefaultConnectionHandler = NRDefaultConnectionHandler())
+  public init(baseUrl: Swift.String = "https://nr-customers.s3.amazonaws.com/mobileMessengerTranslations/v5/", handler: GenesysCloudCore.NRDefaultConnectionHandler = NRDefaultConnectionHandler())
   @objc public func fetch(language: Swift.String, completion: @escaping (Foundation.Data?) -> Swift.Void)
   @objc deinit
 }
@@ -131,9 +134,11 @@ extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatEngin
   @objc dynamic public func reconnect()
   @objc dynamic public func endChat(forceClose: Swift.Bool = false)
   @objc dynamic public func resume()
+  @objc dynamic public func logoutFromAuthenticatedSession()
 }
 extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ConfigurationLoaderDelegate {
   @objc dynamic public func didFetchChatSettings(settings: GenesysCloudCore.ChatSettings)
+  public func isEnableToAuthenticate(chatSettings: GenesysCloudCore.ChatSettings, account: GenesysCloudCore.Account) -> Swift.Bool
   @objc dynamic public func didFailLoad(error: (any Swift.Error)?)
 }
 extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatDataProducer {
@@ -148,12 +153,16 @@ public struct DataLoader : GenesysCloudMessenger.DataLoading {
   public func load(contentsOf url: Foundation.URL) throws -> Foundation.Data?
 }
 @_inheritsConvenienceInitializers @objc public class MessengerAccount : GenesysCloudCore.Account {
+  public var authenticationInfo: GenesysCloudMessenger.AuthenticationInfo? {
+    get
+  }
   @objc public var customAttributes: [Swift.String : Swift.String] {
     @objc get
     @objc set
   }
   @objc override dynamic public init()
   @objc public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool)
+  public func setAuthenticationInfo(authCode: Swift.String, redirectUri: Swift.String, codeVerifier: Swift.String?)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class TranslationsResponse : ObjectiveC.NSObject, Swift.Codable {
