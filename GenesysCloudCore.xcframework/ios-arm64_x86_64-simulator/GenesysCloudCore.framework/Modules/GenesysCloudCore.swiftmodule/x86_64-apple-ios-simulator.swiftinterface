@@ -209,6 +209,7 @@ final public class LanguageConfiguration {
   case clearConversationDisabled = 5025
   case clearConversationFailure = 5026
   case pushDeploymentIdMismatch = 5027
+  case deviceAlreadyRegistered = 5028
   public static let ClientErrorReconnectDescription: Swift.String
   public static let IllegalStateErrorReconnectDescription: Swift.String
   public static let ConfigurationLoadErrorDescription: Swift.String

@@ -9,7 +9,7 @@ import CoreImage
 import DeveloperToolsSupport
 import Foundation
 @_exported import GenesysCloudCore
-import GenesysCloudMessenger
+@_exported import GenesysCloudMessenger
 import MobileCoreServices
 import PhotosUI
 import QuickLook

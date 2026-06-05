@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		cBJq2lqJXBuGuiShkEB/vdRx2xo=
+		8Qejepw31Nxnk+Whk10dsQv4AQE=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		da9c7fzldPq/XpaHW0d+9YuVEh0=
+		8Srpq/zyiagzS6Lrc64AS1UjH1A=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		cBJq2lqJXBuGuiShkEB/vdRx2xo=
+		8Qejepw31Nxnk+Whk10dsQv4AQE=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GAheoybq4tAWY1R1qk6e5GYPvCg=
+		OuFa+e7tsKRlgxOXXCxDrxAt7xY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g50N79GYqI5oo7gmdXgAf4GY4G6ifhaRD9Yq0jxjH8M=
+			koQf/pP88omAME40c/xB09Kf5nTTSl+oO7+49/gEmNg=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -113,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GLPREuq8ru+bqDxtsfYX2Yapf4CUjxatNiiOk5RTcHM=
+			Eq47qdYp1XkQdkaI3KTvmNxfEdzbK9atkgeS6WCTjnI=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g50N79GYqI5oo7gmdXgAf4GY4G6ifhaRD9Yq0jxjH8M=
+			koQf/pP88omAME40c/xB09Kf5nTTSl+oO7+49/gEmNg=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zWUAWKcQ/FVW/K+ScxTnZ2X/PPPyzjgI2Gyk6L4zwok=
+			Tc0lIFvvqu38ruiPkHIkyocXMXg5Hev6rHS5k7Xv6Ck=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
