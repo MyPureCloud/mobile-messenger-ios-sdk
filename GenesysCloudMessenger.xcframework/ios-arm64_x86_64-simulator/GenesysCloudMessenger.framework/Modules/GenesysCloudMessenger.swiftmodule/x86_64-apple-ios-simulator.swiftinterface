@@ -125,6 +125,7 @@ extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatEngin
   @objc dynamic public func create()
   @objc dynamic public func start()
   @objc dynamic public func postMessage(_ chatStatement: GenesysCloudCore.ChatStatement)
+  @objc dynamic public func postQuickRepliesMessage(_ chatStatement: GenesysCloudCore.QuickRepliesChatStatement)
   @objc dynamic public func reconnect()
   @objc dynamic public func endChat(forceClose: Swift.Bool = false)
   @objc dynamic public func resume()

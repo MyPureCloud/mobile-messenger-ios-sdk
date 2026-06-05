@@ -1,17 +1,13 @@
 
-// GenesysCloudCore version number: v1.9.0
+// GenesysCloud version number: v1.10.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
 // All rights reserved.
 // ===================================================================================================
 
-#import "EventParams.h"
+#import <GenesysCloud/GenesysCloud.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface FirstMessageEventParams : EventParams
+@interface QuickRepliesChatElement : LocalChatElement
 
 @end
-
-NS_ASSUME_NONNULL_END

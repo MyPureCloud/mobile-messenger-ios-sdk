@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.9.0
+// GenesysCloud version number: v1.10.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomLabel : UILabel
+@property (nonatomic) CGFloat horizontalInsetValue;
+@property (nonatomic) CGFloat verticalInsetValue;
+
 - (UIEdgeInsets)getEdgeInsets;
 @end

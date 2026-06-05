@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.9.0
+// GenesysCloud version number: v1.10.0
 #import <GenesysCloud/InfoView.h>
 #import <GenesysCloud/ViewConfiguration.h>
 #import <GenesysCloud/CustomLabel.h>
@@ -9,6 +9,7 @@
 #import <GenesysCloud/ChatHandler.h>
 #import <GenesysCloud/ContentChatElement.h>
 #import <GenesysCloud/RemoteChatElement.h>
+#import <GenesysCloud/QuickRepliesChatElement.h>
 #import <GenesysCloud/StorableChatElement.h>
 #import <GenesysCloud/IncomingLiveConfiguration.h>
 #import <GenesysCloud/InfoViewConfiguration.h>

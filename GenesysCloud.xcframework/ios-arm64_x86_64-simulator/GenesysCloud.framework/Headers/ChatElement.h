@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.9.0
+// GenesysCloud version number: v1.10.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -7,7 +7,6 @@
 // ===================================================================================================
 
 #import <GenesysCloud/MessageConfiguration.h>
-#import <GenesysCloudBot/ReadoutMessage.h>
 
 /************************************************************/
 // MARK: - ChatElementType
@@ -80,9 +79,4 @@ The UI element configuration.
  If set to `YES` element will be removed according to relevant event.
  */
 @property (nonatomic) BOOL removable;
-
-/**
-The readout item with body, persistent options and quick options that are about to be readout to the user.
- */
-@property (nonatomic, strong) id <ReadoutMessage> _Nullable readoutMessage;
 @end

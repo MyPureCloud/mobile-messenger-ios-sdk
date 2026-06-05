@@ -60,6 +60,660 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TagCellLayoutDelegate",
+        "printedName": "TagCellLayoutDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "tagCellLayoutTagSize",
+            "printedName": "tagCellLayoutTagSize(layout:atIndex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(tagSize: CoreFoundation.CGSize, textAlignment: UIKit.NSTextAlignment)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSTextAlignment",
+                    "printedName": "UIKit.NSTextAlignment",
+                    "usr": "c:@E@NSTextAlignment"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TagCellLayout",
+                "printedName": "GenesysCloud.TagCellLayout",
+                "usr": "c:@M@GenesysCloud@objc(cs)TagCellLayout"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12GenesysCloud21TagCellLayoutDelegateP03tagdeC4Size6layout7atIndexSo6CGSizeV0gH0_So15NSTextAlignmentV04textN0tAA0cdE0C_SitF",
+            "mangledName": "$s12GenesysCloud21TagCellLayoutDelegateP03tagdeC4Size6layout7atIndexSo6CGSizeV0gH0_So15NSTextAlignmentV04textN0tAA0cdE0C_SitF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.TagCellLayoutDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.TagCellLayoutDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12GenesysCloud21TagCellLayoutDelegateP",
+        "mangledName": "$s12GenesysCloud21TagCellLayoutDelegateP",
+        "moduleName": "GenesysCloud",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TagCellLayout",
+        "printedName": "TagCellLayout",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(alignment:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TagCellLayout",
+                "printedName": "GenesysCloud.TagCellLayout",
+                "usr": "c:@M@GenesysCloud@objc(cs)TagCellLayout"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LayoutAlignment",
+                "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment",
+                "hasDefaultArg": true,
+                "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloud.TagCellLayoutDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TagCellLayoutDelegate",
+                    "printedName": "GenesysCloud.TagCellLayoutDelegate",
+                    "usr": "s:12GenesysCloud21TagCellLayoutDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12GenesysCloud13TagCellLayoutC9alignment8delegateA2C0E9AlignmentO_AA0cdE8Delegate_pSgtcfc",
+            "mangledName": "$s12GenesysCloud13TagCellLayoutC9alignment8delegateA2C0E9AlignmentO_AA0cdE8Delegate_pSgtcfc",
+            "moduleName": "GenesysCloud",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloud.TagCellLayout?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TagCellLayout",
+                    "printedName": "GenesysCloud.TagCellLayout",
+                    "usr": "c:@M@GenesysCloud@objc(cs)TagCellLayout"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloud@objc(cs)TagCellLayout(im)initWithCoder:",
+            "mangledName": "$s12GenesysCloud13TagCellLayoutC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "GenesysCloud",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "prepare",
+            "printedName": "prepare()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)TagCellLayout(im)prepareLayout",
+            "mangledName": "$s12GenesysCloud13TagCellLayoutC7prepareyyF",
+            "moduleName": "GenesysCloud",
+            "overriding": true,
+            "objc_name": "prepareLayout",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutAttributesForItem",
+            "printedName": "layoutAttributesForItem(at:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UICollectionViewLayoutAttributes?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UICollectionViewLayoutAttributes",
+                    "printedName": "UIKit.UICollectionViewLayoutAttributes",
+                    "usr": "c:objc(cs)UICollectionViewLayoutAttributes"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)TagCellLayout(im)layoutAttributesForItemAtIndexPath:",
+            "mangledName": "$s12GenesysCloud13TagCellLayoutC23layoutAttributesForItem2atSo016UICollectionVieweG0CSg10Foundation9IndexPathV_tF",
+            "moduleName": "GenesysCloud",
+            "overriding": true,
+            "objc_name": "layoutAttributesForItemAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutAttributesForElements",
+            "printedName": "layoutAttributesForElements(in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[UIKit.UICollectionViewLayoutAttributes]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UICollectionViewLayoutAttributes]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UICollectionViewLayoutAttributes",
+                        "printedName": "UIKit.UICollectionViewLayoutAttributes",
+                        "usr": "c:objc(cs)UICollectionViewLayoutAttributes"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)TagCellLayout(im)layoutAttributesForElementsInRect:",
+            "mangledName": "$s12GenesysCloud13TagCellLayoutC27layoutAttributesForElements2inSaySo016UICollectionVieweG0CGSgSo6CGRectV_tF",
+            "moduleName": "GenesysCloud",
+            "overriding": true,
+            "objc_name": "layoutAttributesForElementsInRect:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "collectionViewContentSize",
+            "printedName": "collectionViewContentSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloud@objc(cs)TagCellLayout(py)collectionViewContentSize",
+            "mangledName": "$s12GenesysCloud13TagCellLayoutC25collectionViewContentSizeSo6CGSizeVvp",
+            "moduleName": "GenesysCloud",
+            "overriding": true,
+            "objc_name": "collectionViewContentSize",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(cs)TagCellLayout(im)collectionViewContentSize",
+                "mangledName": "$s12GenesysCloud13TagCellLayoutC25collectionViewContentSizeSo6CGSizeVvg",
+                "moduleName": "GenesysCloud",
+                "overriding": true,
+                "objc_name": "collectionViewContentSize",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "LayoutAlignment",
+            "printedName": "LayoutAlignment",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "left",
+                "printedName": "left",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GenesysCloud.TagCellLayout.LayoutAlignment.Type) -> GenesysCloud.TagCellLayout.LayoutAlignment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LayoutAlignment",
+                        "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment",
+                        "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LayoutAlignment",
+                            "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment",
+                            "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO4leftyA2EmF",
+                "mangledName": "$s12GenesysCloud13TagCellLayoutC0E9AlignmentO4leftyA2EmF",
+                "moduleName": "GenesysCloud"
+              },
+              {
+                "kind": "Var",
+                "name": "center",
+                "printedName": "center",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GenesysCloud.TagCellLayout.LayoutAlignment.Type) -> GenesysCloud.TagCellLayout.LayoutAlignment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LayoutAlignment",
+                        "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment",
+                        "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LayoutAlignment",
+                            "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment",
+                            "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO6centeryA2EmF",
+                "mangledName": "$s12GenesysCloud13TagCellLayoutC0E9AlignmentO6centeryA2EmF",
+                "moduleName": "GenesysCloud"
+              },
+              {
+                "kind": "Var",
+                "name": "right",
+                "printedName": "right",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(GenesysCloud.TagCellLayout.LayoutAlignment.Type) -> GenesysCloud.TagCellLayout.LayoutAlignment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LayoutAlignment",
+                        "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment",
+                        "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LayoutAlignment",
+                            "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment",
+                            "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO5rightyA2EmF",
+                "mangledName": "$s12GenesysCloud13TagCellLayoutC0E9AlignmentO5rightyA2EmF",
+                "moduleName": "GenesysCloud"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LayoutAlignment",
+                        "printedName": "GenesysCloud.TagCellLayout.LayoutAlignment",
+                        "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO8rawValueAESgSi_tcfc",
+                "mangledName": "$s12GenesysCloud13TagCellLayoutC0E9AlignmentO8rawValueAESgSi_tcfc",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO8rawValueSivp",
+                "mangledName": "$s12GenesysCloud13TagCellLayoutC0E9AlignmentO8rawValueSivp",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO8rawValueSivg",
+                    "mangledName": "$s12GenesysCloud13TagCellLayoutC0E9AlignmentO8rawValueSivg",
+                    "moduleName": "GenesysCloud",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:12GenesysCloud13TagCellLayoutC0E9AlignmentO",
+            "mangledName": "$s12GenesysCloud13TagCellLayoutC0E9AlignmentO",
+            "moduleName": "GenesysCloud",
+            "isFromExtension": true,
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "LayoutInfo",
+            "printedName": "LayoutInfo",
+            "declKind": "Struct",
+            "usr": "s:12GenesysCloud13TagCellLayoutC0E4InfoV",
+            "mangledName": "$s12GenesysCloud13TagCellLayoutC0E4InfoV",
+            "moduleName": "GenesysCloud",
+            "isFromExtension": true
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloud@objc(cs)TagCellLayout",
+        "mangledName": "$s12GenesysCloud13TagCellLayoutC",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UICollectionViewLayout",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UICollectionViewLayout",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -635,6 +1289,48 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "removeLastElement",
+            "printedName": "removeLastElement(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloud.ContentChatElement) throws -> Swift.Bool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentChatElement",
+                    "printedName": "GenesysCloud.ContentChatElement",
+                    "usr": "c:objc(cs)ContentChatElement"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12GenesysCloud15ChatUIViewModelC17removeLastElement4withySbSo07ContentcH0CKXE_tF",
+            "mangledName": "$s12GenesysCloud15ChatUIViewModelC17removeLastElement4withySbSo07ContentcH0CKXE_tF",
+            "moduleName": "GenesysCloud",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -1333,6 +2029,66 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ButtonResponseViewCellDelegate",
+        "printedName": "ButtonResponseViewCellDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onButtonResponseClicked",
+            "printedName": "onButtonResponseClicked(text:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12GenesysCloud30ButtonResponseViewCellDelegateP02oncD7Clicked4textySS_tF",
+            "mangledName": "$s12GenesysCloud30ButtonResponseViewCellDelegateP02oncD7Clicked4textySS_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ButtonResponseViewCellDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ButtonResponseViewCellDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12GenesysCloud30ButtonResponseViewCellDelegateP",
+        "mangledName": "$s12GenesysCloud30ButtonResponseViewCellDelegateP",
+        "moduleName": "GenesysCloud",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "ChatRepositoryProtocol",
         "printedName": "ChatRepositoryProtocol",
@@ -1727,6 +2483,49 @@
             "declKind": "Func",
             "usr": "s:12GenesysCloud22ChatRepositoryProtocolP12updateStatus7element03newG0ySo07ContentC7ElementC_0aB4Core0C15StatementStatesOtF",
             "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP12updateStatus7element03newG0ySo07ContentC7ElementC_0aB4Core0C15StatementStatesOtF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeLastElementMatching",
+            "printedName": "removeLastElementMatching(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloud.ContentChatElement) throws -> Swift.Bool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentChatElement",
+                    "printedName": "GenesysCloud.ContentChatElement",
+                    "usr": "c:objc(cs)ContentChatElement"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12GenesysCloud22ChatRepositoryProtocolP25removeLastElementMatching4withySbSo07ContentcH0CKXE_tF",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP25removeLastElementMatching4withySbSo07ContentcH0CKXE_tF",
             "moduleName": "GenesysCloud",
             "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
             "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
@@ -2452,6 +3251,48 @@
           },
           {
             "kind": "Function",
+            "name": "removeLastElementMatching",
+            "printedName": "removeLastElementMatching(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloud.ContentChatElement) throws -> Swift.Bool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentChatElement",
+                    "printedName": "GenesysCloud.ContentChatElement",
+                    "usr": "c:objc(cs)ContentChatElement"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12GenesysCloud14ChatRepositoryC25removeLastElementMatching4withySbSo07ContentcG0CKXE_tF",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryC25removeLastElementMatching4withySbSo07ContentcG0CKXE_tF",
+            "moduleName": "GenesysCloud",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "updateElement",
             "printedName": "updateElement(with:completion:)",
             "children": [
@@ -2599,6 +3440,82 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ButtonResponseTableViewCellDelegate",
+        "printedName": "ButtonResponseTableViewCellDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onButtonClicked",
+            "printedName": "onButtonClicked(element:text:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalChatElement",
+                "printedName": "GenesysCloud.LocalChatElement",
+                "usr": "c:objc(cs)LocalChatElement"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12GenesysCloud35ButtonResponseTableViewCellDelegateP02onC7Clicked7element4textySo16LocalChatElementC_SStF",
+            "mangledName": "$s12GenesysCloud35ButtonResponseTableViewCellDelegateP02onC7Clicked7element4textySo16LocalChatElementC_SStF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ButtonResponseTableViewCellDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ButtonResponseTableViewCellDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12GenesysCloud35ButtonResponseTableViewCellDelegateP",
+        "mangledName": "$s12GenesysCloud35ButtonResponseTableViewCellDelegateP",
+        "moduleName": "GenesysCloud",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -3949,6 +4866,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "OutgoingConfiguration",
         "printedName": "OutgoingConfiguration",
@@ -4059,6 +4986,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud"
       },
       {
         "kind": "Import",
@@ -5276,6 +6210,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "GenesysCloud"
       },
       {
@@ -5854,6 +6798,28 @@
               "Dynamic",
               "ObjC",
               "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeLastQuickReplayElement",
+            "printedName": "removeLastQuickReplayElement()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GenesysCloud@@objc(cs)BaseChatHandler(im)removeLastQuickReplayElement",
+            "mangledName": "$sSo15BaseChatHandlerC12GenesysCloudE28removeLastQuickReplayElementyyF",
+            "moduleName": "GenesysCloud",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -6921,168 +7887,168 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 1360,
+      "offset": 1307,
       "length": 5,
       "value": "250.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1480,
+      "offset": 1538,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1522,
+      "offset": 1580,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1562,
+      "offset": 1620,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2036,
+      "offset": 2094,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2083,
+      "offset": 2141,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2838,
+      "offset": 2896,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3142,
+      "offset": 3200,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3194,
+      "offset": 3252,
       "length": 60,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3216,
+      "offset": 3274,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3236,
+      "offset": 3294,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3253,
+      "offset": 3311,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3375,
+      "offset": 3433,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3793,
+      "offset": 3851,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3843,
+      "offset": 3901,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 4062,
+      "offset": 4120,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4275,
+      "offset": 4333,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4705,
+      "offset": 4763,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 6196,
+      "offset": 6254,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 6204,
+      "offset": 6262,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 7093,
+      "offset": 7151,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 7350,
+      "offset": 7408,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 7393,
+      "offset": 7451,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/MediaTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 8334,
+      "offset": 8594,
       "length": 3,
       "value": "0.0"
     },
@@ -7204,6 +8170,293 @@
       "offset": 754,
       "length": 9,
       "value": "\"%.2f GB\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 429,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 449,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 429,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 449,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 429,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 449,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 620,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 658,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "FloatLiteral",
+      "offset": 846,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "BooleanLiteral",
+      "offset": 885,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "FloatLiteral",
+      "offset": 1427,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "FloatLiteral",
+      "offset": 1471,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "Array",
+      "offset": 1563,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1601,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1634,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3025,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3069,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3412,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3528,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3549,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3744,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3750,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3853,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3939,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4579,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5811,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6045,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6119,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6171,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6773,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7221,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7472,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7494,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8185,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8523,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8555,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8715,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8742,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9249,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "StringLiteral",
+      "offset": 9308,
+      "length": 56,
+      "value": "\"TagCollectionViewCellLayout is not properly configured\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/TagCellLayout.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9487,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/DateExtension.swift",
@@ -7719,149 +8972,268 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3628,
+      "offset": 3234,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3874,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3945,
+      "offset": 4191,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4026,
+      "offset": 4272,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4837,
+      "offset": 5083,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5135,
+      "offset": 5381,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5866,
+      "offset": 6112,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6067,
+      "offset": 6313,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6148,
+      "offset": 6394,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6727,
+      "offset": 6973,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6928,
+      "offset": 7174,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7009,
+      "offset": 7255,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "Dictionary",
-      "offset": 7749,
+      "offset": 8162,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "Dictionary",
-      "offset": 7917,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
-      "kind": "Dictionary",
-      "offset": 8998,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
-      "kind": "Dictionary",
-      "offset": 9194,
+      "offset": 8330,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 10227,
+      "offset": 8958,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9237,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9284,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
+      "kind": "Dictionary",
+      "offset": 10024,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
+      "kind": "Dictionary",
+      "offset": 10220,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11253,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 10313,
+      "offset": 11339,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 10509,
+      "offset": 11535,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11632,
+      "offset": 12658,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11770,
+      "offset": 12796,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/ViewModel\/ChatUIViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11970,
+      "offset": 12996,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 529,
+      "length": 12,
+      "value": "\"qr_option_\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 582,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 630,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 676,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 719,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 765,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 812,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2100,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2200,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2250,
+      "length": 26,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2267,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2275,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2448,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
@@ -7873,196 +9245,245 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1061,
+      "offset": 1120,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1765,
+      "offset": 1824,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2049,
+      "offset": 2108,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2107,
+      "offset": 2166,
       "length": 62,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2131,
+      "offset": 2190,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2151,
+      "offset": 2210,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2168,
+      "offset": 2227,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2321,
+      "offset": 2380,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 2686,
+      "offset": 2745,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 2968,
+      "offset": 3027,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3664,
+      "offset": 3793,
+      "length": 45,
+      "value": "\"$$ \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 3809,
+      "length": 1,
+      "value": "\", fileName: \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 3837,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 3924,
       "length": 73,
       "value": "\"PROGRESS: \""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3686,
+      "offset": 3946,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 3736,
+      "offset": 3996,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4030,
+      "offset": 4335,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4207,
+      "offset": 4512,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4267,
+      "offset": 4572,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 4858,
+      "length": 61,
+      "value": "\"$$ \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 4874,
+      "length": 1,
+      "value": "\" , file: \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 4899,
+      "length": 1,
+      "value": "\", status: \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 4918,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 4558,
+      "offset": 5031,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 5204,
+      "offset": 5613,
       "length": 7,
       "value": "\"retry\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 6064,
+      "offset": 6480,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 6391,
+      "offset": 6807,
       "length": 16,
       "value": "\"filetype_image\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 6510,
+      "offset": 6926,
       "length": 16,
       "value": "\"filetype_video\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 6629,
+      "offset": 7045,
       "length": 16,
       "value": "\"filetype_audio\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 6775,
+      "offset": 7191,
       "length": 5,
       "value": "\"pdf\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 6821,
+      "offset": 7237,
       "length": 14,
       "value": "\"filetype_pdf\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 6900,
+      "offset": 7316,
       "length": 5,
       "value": "\"doc\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 6909,
+      "offset": 7325,
       "length": 6,
       "value": "\"docx\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 6957,
+      "offset": 7373,
       "length": 14,
       "value": "\"filetype_doc\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/AttachmentTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7078,
+      "offset": 7494,
       "length": 18,
       "value": "\"filetype_general\""
     },
@@ -8089,80 +9510,178 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3251,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 4583,
+      "offset": 5100,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 6141,
+      "offset": 6658,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 6887,
+      "offset": 7404,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 6942,
+      "offset": 7459,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 7137,
+      "offset": 7654,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 7197,
+      "offset": 7714,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 7271,
+      "offset": 7788,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 7389,
+      "offset": 7906,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 7541,
+      "offset": 8058,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 7552,
+      "offset": 8069,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 8202,
+      "offset": 8719,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 1060,
+      "length": 4,
+      "value": "60.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 1106,
+      "length": 6,
+      "value": "9999.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 1154,
+      "length": 4,
+      "value": "32.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 1199,
+      "length": 4,
+      "value": "24.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 1245,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 1281,
+      "length": 13,
+      "value": "\"qr_options_\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 3612,
+      "length": 24,
+      "value": "\"ButtonResponseViewCell\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4310,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4459,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 4682,
+      "length": 19,
+      "value": "\"No element found.\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 5090,
+      "length": 4,
+      "value": "14.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5244,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/ButtonResponseTableViewCells\/ButtonResponseTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5631,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Configurations\/ChatViewConfiguration\/PlaceholderConfiguration.swift",
@@ -8177,6 +9696,13 @@
       "offset": 590,
       "length": 4,
       "value": "14.0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Extensions\/UITableViewExtension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 404,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Configurations\/ConfigurationRepository.swift",
@@ -8462,50 +9988,57 @@
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
       "offset": 741,
-      "length": 11,
+      "length": 14,
       "value": "17"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 762,
-      "length": 8,
+      "offset": 765,
+      "length": 11,
       "value": "18"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 780,
-      "length": 9,
+      "offset": 786,
+      "length": 8,
       "value": "19"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 799,
-      "length": 25,
+      "offset": 804,
+      "length": 9,
       "value": "20"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 834,
-      "length": 24,
+      "offset": 823,
+      "length": 25,
       "value": "21"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 868,
-      "length": 21,
+      "offset": 858,
+      "length": 24,
       "value": "22"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 899,
-      "length": 14,
+      "offset": 892,
+      "length": 21,
       "value": "23"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 923,
+      "length": 14,
+      "value": "24"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
@@ -8630,50 +10163,57 @@
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
       "offset": 741,
-      "length": 11,
+      "length": 14,
       "value": "17"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 762,
-      "length": 8,
+      "offset": 765,
+      "length": 11,
       "value": "18"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 780,
-      "length": 9,
+      "offset": 786,
+      "length": 8,
       "value": "19"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 799,
-      "length": 25,
+      "offset": 804,
+      "length": 9,
       "value": "20"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 834,
-      "length": 24,
+      "offset": 823,
+      "length": 25,
       "value": "21"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 868,
-      "length": 21,
+      "offset": 858,
+      "length": 24,
       "value": "22"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 899,
-      "length": 14,
+      "offset": 892,
+      "length": 21,
       "value": "23"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 923,
+      "length": 14,
+      "value": "24"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
@@ -8798,386 +10338,407 @@
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
       "offset": 741,
-      "length": 11,
+      "length": 14,
       "value": "17"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 762,
-      "length": 8,
+      "offset": 765,
+      "length": 11,
       "value": "18"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 780,
-      "length": 9,
+      "offset": 786,
+      "length": 8,
       "value": "19"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 799,
-      "length": 25,
+      "offset": 804,
+      "length": 9,
       "value": "20"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 834,
-      "length": 24,
+      "offset": 823,
+      "length": 25,
       "value": "21"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 868,
-      "length": 21,
+      "offset": 858,
+      "length": 24,
       "value": "22"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 899,
-      "length": 14,
+      "offset": 892,
+      "length": 21,
       "value": "23"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 923,
+      "length": 14,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 970,
+      "offset": 994,
       "length": 9,
       "value": "\"element\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1000,
+      "offset": 1024,
       "length": 10,
       "value": "\"elements\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1044,
+      "offset": 1068,
       "length": 23,
       "value": "\"isPrecedingStatements\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1090,
+      "offset": 1114,
       "length": 12,
       "value": "\"newElement\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1125,
+      "offset": 1149,
       "length": 12,
       "value": "\"originalId\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
+      "offset": 1184,
       "length": 12,
       "value": "\"oldElement\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1199,
+      "offset": 1223,
       "length": 16,
       "value": "\"scrollToBottom\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1239,
+      "offset": 1263,
       "length": 13,
       "value": "\"delayScroll\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 1299,
       "length": 12,
       "value": "\"textToRead\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1315,
+      "offset": 1339,
       "length": 17,
       "value": "\"activeIndocator\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1354,
+      "offset": 1378,
       "length": 11,
       "value": "\"animating\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1397,
+      "offset": 1421,
       "length": 21,
       "value": "\"autocompleteEnabled\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1450,
+      "offset": 1474,
       "length": 21,
       "value": "\"textToSpeechEnabled\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1494,
+      "offset": 1518,
       "length": 12,
       "value": "\"kbLanguage\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1524,
+      "offset": 1548,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1549,
+      "offset": 1573,
       "length": 7,
       "value": "\"state\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1574,
+      "offset": 1598,
       "length": 7,
       "value": "\"event\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1600,
+      "offset": 1624,
       "length": 8,
       "value": "\"params\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1629,
+      "offset": 1653,
       "length": 10,
       "value": "\"isTyping\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1664,
+      "offset": 1688,
       "length": 14,
       "value": "\"errorMessage\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1708,
+      "offset": 1732,
       "length": 19,
       "value": "\"ErrorViewDelegate\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1745,
+      "offset": 1769,
       "length": 7,
       "value": "\"image\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1776,
+      "offset": 1800,
       "length": 13,
       "value": "\"buttonImage\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1812,
+      "offset": 1836,
       "length": 12,
       "value": "\"attachment\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 970,
+      "offset": 1873,
+      "length": 14,
+      "value": "\"isQuickReply\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
+      "kind": "StringLiteral",
+      "offset": 994,
       "length": 9,
       "value": "\"element\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1000,
+      "offset": 1024,
       "length": 10,
       "value": "\"elements\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1044,
+      "offset": 1068,
       "length": 23,
       "value": "\"isPrecedingStatements\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1090,
+      "offset": 1114,
       "length": 12,
       "value": "\"newElement\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1125,
+      "offset": 1149,
       "length": 12,
       "value": "\"originalId\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
+      "offset": 1184,
       "length": 12,
       "value": "\"oldElement\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1199,
+      "offset": 1223,
       "length": 16,
       "value": "\"scrollToBottom\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1239,
+      "offset": 1263,
       "length": 13,
       "value": "\"delayScroll\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 1299,
       "length": 12,
       "value": "\"textToRead\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1315,
+      "offset": 1339,
       "length": 17,
       "value": "\"activeIndocator\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1354,
+      "offset": 1378,
       "length": 11,
       "value": "\"animating\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1397,
+      "offset": 1421,
       "length": 21,
       "value": "\"autocompleteEnabled\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1450,
+      "offset": 1474,
       "length": 21,
       "value": "\"textToSpeechEnabled\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1494,
+      "offset": 1518,
       "length": 12,
       "value": "\"kbLanguage\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1524,
+      "offset": 1548,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1549,
+      "offset": 1573,
       "length": 7,
       "value": "\"state\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1574,
+      "offset": 1598,
       "length": 7,
       "value": "\"event\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1600,
+      "offset": 1624,
       "length": 8,
       "value": "\"params\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1629,
+      "offset": 1653,
       "length": 10,
       "value": "\"isTyping\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1664,
+      "offset": 1688,
       "length": 14,
       "value": "\"errorMessage\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1708,
+      "offset": 1732,
       "length": 19,
       "value": "\"ErrorViewDelegate\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1745,
+      "offset": 1769,
       "length": 7,
       "value": "\"image\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1776,
+      "offset": 1800,
       "length": 13,
       "value": "\"buttonImage\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1812,
+      "offset": 1836,
       "length": 12,
       "value": "\"attachment\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Enums\/PublisherActionEnum.swift",
+      "kind": "StringLiteral",
+      "offset": 1873,
+      "length": 14,
+      "value": "\"isQuickReply\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/InputView\/InputView.swift",
@@ -9365,6 +10926,13 @@
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Handlers\/BaseChatHandlerExtension.swift",
       "kind": "BooleanLiteral",
       "offset": 2646,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Handlers\/BaseChatHandlerExtension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5446,
       "length": 5,
       "value": "false"
     },
@@ -9791,364 +11359,385 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 681,
+      "offset": 696,
       "length": 4,
       "value": "70.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 724,
+      "offset": 739,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 775,
+      "offset": 790,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 842,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 810,
+      "offset": 876,
       "length": 19,
       "value": "\"error_status_icon\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 862,
+      "offset": 928,
       "length": 21,
       "value": "\"pending_status_icon\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 913,
+      "offset": 979,
       "length": 18,
       "value": "\"sent_status_icon\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 966,
+      "offset": 1032,
       "length": 23,
       "value": "\"delivered_status_icon\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1027,
+      "offset": 1093,
       "length": 16,
       "value": "\"agent_message_\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1080,
+      "offset": 1146,
       "length": 15,
       "value": "\"user_message_\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1129,
+      "offset": 1195,
       "length": 12,
       "value": "\"user_time_\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2722,
+      "offset": 2970,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 2767,
+      "offset": 3015,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4015,
+      "offset": 4399,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4083,
+      "offset": 4467,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 4289,
+      "offset": 4673,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 4371,
+      "offset": 4755,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4440,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5573,
+      "offset": 4824,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 6025,
+      "offset": 5879,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5911,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6022,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6474,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 6559,
+      "offset": 7029,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7305,
+      "offset": 7795,
       "length": 54,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7320,
+      "offset": 7810,
       "length": 1,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7341,
+      "offset": 7831,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7358,
+      "offset": 7848,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7484,
+      "offset": 7974,
       "length": 56,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7501,
+      "offset": 7991,
       "length": 1,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7522,
+      "offset": 8012,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7539,
+      "offset": 8029,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7662,
+      "offset": 8152,
       "length": 58,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7681,
+      "offset": 8171,
       "length": 1,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7702,
+      "offset": 8192,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7719,
+      "offset": 8209,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7856,
+      "offset": 8346,
       "length": 53,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7870,
+      "offset": 8360,
       "length": 1,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7891,
+      "offset": 8381,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 7908,
+      "offset": 8398,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 7987,
+      "offset": 8477,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 8646,
+      "offset": 9136,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 8705,
+      "offset": 9195,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 8759,
+      "offset": 9249,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 8868,
+      "offset": 9358,
       "length": 59,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 8889,
+      "offset": 9379,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 8909,
+      "offset": 9399,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 8926,
+      "offset": 9416,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 8995,
+      "offset": 9485,
       "length": 60,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 9017,
+      "offset": 9507,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 9037,
+      "offset": 9527,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 9054,
+      "offset": 9544,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 9116,
+      "offset": 9606,
       "length": 56,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 9134,
+      "offset": 9624,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 9154,
+      "offset": 9644,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/TableViewCells\/BubbleTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 9171,
+      "offset": 9661,
       "length": 1,
       "value": "\"\""
     },
@@ -10295,770 +11884,770 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2610,
+      "offset": 2316,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2657,
+      "offset": 2363,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2795,
+      "offset": 2501,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2841,
+      "offset": 2547,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2881,
+      "offset": 2587,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2933,
+      "offset": 2639,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2981,
+      "offset": 2687,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3024,
+      "offset": 2730,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3674,
+      "offset": 3380,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3708,
+      "offset": 3414,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4630,
+      "offset": 4336,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4927,
+      "offset": 4633,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6476,
+      "offset": 6538,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6482,
+      "offset": 6544,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9821,
+      "offset": 9883,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10693,
+      "offset": 10755,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10740,
+      "offset": 10802,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10858,
+      "offset": 10920,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 11535,
+      "offset": 11597,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 11616,
+      "offset": 11678,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 11802,
+      "offset": 11864,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11904,
+      "offset": 11966,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12002,
+      "offset": 12064,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 12538,
+      "offset": 12600,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12637,
+      "offset": 12699,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12743,
+      "offset": 12805,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12957,
+      "offset": 13019,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 12968,
+      "offset": 13030,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 13033,
+      "offset": 13095,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 13100,
+      "offset": 13162,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 13166,
+      "offset": 13228,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13203,
+      "offset": 13265,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 13412,
+      "offset": 13474,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 13928,
+      "offset": 13990,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14149,
+      "offset": 14211,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14196,
+      "offset": 14258,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14627,
+      "offset": 14689,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14671,
+      "offset": 14733,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14716,
+      "offset": 14778,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14776,
+      "offset": 14838,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14910,
+      "offset": 14972,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15287,
+      "offset": 15349,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 15562,
+      "offset": 15624,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15820,
+      "offset": 15882,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16052,
+      "offset": 16114,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16590,
+      "offset": 16652,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16663,
+      "offset": 16725,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17172,
+      "offset": 17234,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17650,
+      "offset": 17778,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18013,
+      "offset": 18141,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18922,
+      "offset": 19050,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18996,
+      "offset": 19124,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20314,
+      "offset": 20442,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20446,
+      "offset": 20574,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 20501,
+      "offset": 20629,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20608,
+      "offset": 20736,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20984,
+      "offset": 21112,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21042,
+      "offset": 21170,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21059,
+      "offset": 21187,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21386,
+      "offset": 21514,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21470,
+      "offset": 21598,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21487,
+      "offset": 21615,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21535,
+      "offset": 21663,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21703,
+      "offset": 21831,
       "length": 13,
       "value": "\"EndedReason\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21796,
+      "offset": 21924,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22288,
+      "offset": 22416,
       "length": 13,
       "value": "\"EndedReason\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22381,
+      "offset": 22509,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22959,
+      "offset": 23087,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 23117,
+      "offset": 23245,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 23134,
+      "offset": 23262,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 23900,
+      "offset": 24028,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 23947,
+      "offset": 24075,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 24059,
+      "offset": 24187,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 24137,
+      "offset": 24265,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 24141,
+      "offset": 24269,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24250,
+      "offset": 24378,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 24775,
+      "offset": 24903,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25734,
+      "offset": 25862,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25751,
+      "offset": 25879,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26026,
+      "offset": 26154,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26288,
+      "offset": 26416,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26428,
+      "offset": 26556,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 27850,
+      "offset": 27978,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 27922,
+      "offset": 28050,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28107,
+      "offset": 28235,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28626,
+      "offset": 28754,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28795,
+      "offset": 28923,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28830,
+      "offset": 28958,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 28861,
+      "offset": 28989,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 29029,
+      "offset": 29157,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 29078,
+      "offset": 29206,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 29203,
+      "offset": 29331,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 29400,
+      "offset": 29528,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 29530,
+      "offset": 29658,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 29619,
+      "offset": 29747,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 30198,
+      "offset": 30326,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 30429,
+      "offset": 30557,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 31539,
+      "offset": 31667,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 31900,
+      "offset": 32028,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 32639,
+      "offset": 32767,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 32712,
+      "offset": 32840,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33000,
+      "offset": 33236,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33004,
+      "offset": 33240,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33567,
+      "offset": 33803,
       "length": 58,
       "value": "\"Success deleting file after dismissing previewController\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33955,
+      "offset": 34191,
       "length": 15,
       "value": "\"is Typing: %@\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33983,
+      "offset": 34219,
       "length": 8,
       "value": "\"Typing\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33994,
+      "offset": 34230,
       "length": 16,
       "value": "\"Stopped Typing\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34197,
+      "offset": 34433,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34311,
+      "offset": 34547,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34327,
+      "offset": 34563,
       "length": 4,
       "value": "true"
     },
@@ -11079,121 +12668,205 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/CustomViews\/ToggleImageView.swift",
       "kind": "StringLiteral",
-      "offset": 928,
+      "offset": 991,
       "length": 19,
       "value": "\"CIPhotoEffectNoir\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2016,
+      "offset": 2063,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3791,
+      "offset": 4503,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3835,
+      "offset": 4547,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4060,
+      "offset": 4772,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4336,
+      "offset": 5048,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4828,
+      "offset": 5540,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4851,
+      "offset": 5563,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4864,
+      "offset": 5576,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4984,
+      "offset": 5696,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5066,
+      "offset": 5778,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5089,
+      "offset": 5801,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5102,
+      "offset": 5814,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5791,
+      "offset": 6503,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5868,
+      "offset": 6580,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5913,
+      "offset": 6625,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/ChatDataSource\/ChatDataManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6727,
+      "offset": 7439,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 426,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 438,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 450,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 462,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 506,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 518,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 530,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 542,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 778,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 802,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 825,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Extentions\/ColorExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 848,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/Library\/Developer\/Xcode\/DerivedData\/GenesysCloud-awlwpjvtsclywmfegcqipmnqefve\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenesysCloud\/IntermediateBuildFilesPath\/GenesysCloud.build\/Release-iphoneos\/GenesysCloud.build\/DerivedSources\/GeneratedAssetSymbols.swift",

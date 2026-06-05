@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.9.0
+// GenesysCloud version number: v1.10.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <GenesysCloud/ContentChatElement.h>
-#import <GenesysCloudBot/NRConversationalResponse.h>
-
 /**
  An RemoteMessageType is an enum of different Message Types
  */
@@ -30,6 +28,4 @@ typedef NS_ENUM(NSInteger, RemoteMessageType) {
  If set to `YES` element will be replaced with auto message if exist.
  */
 @property (nonatomic) BOOL stickable;
-
-- (instancetype)initWithRespone:(NRConversationalResponse *)response statementScope:(StatementScope)statementScope;
 @end

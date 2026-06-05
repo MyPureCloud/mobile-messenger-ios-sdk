@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.9.0
+// GenesysCloud version number: v1.10.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -12,6 +12,8 @@
 @interface LocalChatElement : ContentChatElement
 
 - (instancetype)initWithContent:(NSString *)content;
+- (instancetype)initWithType:(ChatElementType)type content:(NSString *)content quickReplies:(NSArray *)quickReplies;
+
 /**
  The input type the user used e.g. AutoComplete
  */
@@ -19,4 +21,6 @@
 @property (nonatomic, copy) NSString *userTrackingType;
 @property (nonatomic, copy) NSString *postback;
 @property (nonatomic, copy, readonly) NSArray<NSURLQueryItem *> *queryItems;
+@property (nonatomic, copy) NSArray *quickReplies;
+
 @end

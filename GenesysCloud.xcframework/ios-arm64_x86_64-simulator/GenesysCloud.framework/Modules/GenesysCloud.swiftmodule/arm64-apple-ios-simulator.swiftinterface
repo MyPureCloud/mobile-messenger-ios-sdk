@@ -20,6 +20,36 @@ import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension GenesysCloud.TagCellLayout {
+  public enum LayoutAlignment : Swift.Int {
+    case left
+    case center
+    case right
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension GenesysCloud.TagCellLayout {
+  public struct LayoutInfo {
+  }
+}
+public protocol TagCellLayoutDelegate : ObjectiveC.NSObjectProtocol {
+  func tagCellLayoutTagSize(layout: GenesysCloud.TagCellLayout, atIndex index: Swift.Int) -> (tagSize: CoreFoundation.CGSize, textAlignment: UIKit.NSTextAlignment)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TagCellLayout : UIKit.UICollectionViewLayout {
+  @_Concurrency.MainActor(unsafe) public init(alignment: GenesysCloud.TagCellLayout.LayoutAlignment = .left, delegate: (any GenesysCloud.TagCellLayoutDelegate)?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepare()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var collectionViewContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc deinit
+}
 extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func embedInView(_ container: UIKit.UIView!)
   @_Concurrency.MainActor(unsafe) public class func fromNib<T>() -> T where T : UIKit.UIView
@@ -43,6 +73,7 @@ extension UIKit.UIView {
   @objc public var hasMoreHistory: Swift.Bool
   @objc public var chatHandlerProvider: (any GenesysCloud.ChatHandlerProvider)?
   @objc override dynamic public init()
+  public func removeLastElement(with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool)
   @objc public func updateConfiguration(with repository: GenesysCloud.ConfigurationRepository)
   @objc public func showErrorView(errorMessage: Swift.String, image: UIKit.UIImage? = nil, buttonImage: UIKit.UIImage? = nil)
   @objc deinit
@@ -63,6 +94,9 @@ extension GenesysCloud.ChatUIViewModel : GenesysCloud.ChatHandlerDelegate {
   @objc dynamic public func resetChatUI(completionHandler: @escaping () -> Swift.Void)
   @objc dynamic public func didFailWithError(_ error: GenesysCloudCore.GCError?)
 }
+public protocol ButtonResponseViewCellDelegate : AnyObject {
+  func onButtonResponseClicked(text: Swift.String)
+}
 public protocol ChatRepositoryProtocol : AnyObject {
   var groupedData: [any GenesysCloud.GroupedDataProtocol]? { get set }
   var previousIndexPath: Foundation.IndexPath? { get set }
@@ -70,6 +104,7 @@ public protocol ChatRepositoryProtocol : AnyObject {
   func addElements(contentsOf newElements: [GenesysCloud.ContentChatElement], isPrecedingStatements: Swift.Bool)
   func replace(newElement: GenesysCloud.ContentChatElement, using elementId: Swift.String) -> GenesysCloud.ContentChatElement?
   func updateStatus(element: GenesysCloud.ContentChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
+  func removeLastElementMatching(with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool)
   func removeAll()
   func updateElement(with file: GenesysCloudCore.DownloadableFile, completion: ((GenesysCloud.ContentChatElement?) -> Swift.Void))
 }
@@ -85,9 +120,13 @@ public protocol GroupedDataProtocol : AnyObject {
   @objc public func addElements(contentsOf newElements: [GenesysCloud.ContentChatElement], isPrecedingStatements: Swift.Bool)
   @objc public func replace(newElement: GenesysCloud.ContentChatElement, using elementId: Swift.String) -> GenesysCloud.ContentChatElement?
   @objc public func updateStatus(element: GenesysCloud.ContentChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
+  public func removeLastElementMatching(with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool)
   @objc public func updateElement(with file: GenesysCloudCore.DownloadableFile, completion: ((GenesysCloud.ContentChatElement?) -> Swift.Void))
   @objc public func removeAll()
   @objc deinit
+}
+public protocol ButtonResponseTableViewCellDelegate : AnyObject {
+  func onButtonClicked(element: GenesysCloud.LocalChatElement, text: Swift.String)
 }
 @objc public class ConfigurationRepository : ObjectiveC.NSObject {
   @objc public var chatSettings: GenesysCloudCore.ChatSettings
@@ -124,6 +163,7 @@ extension GenesysCloud.MessengerHandler {
   @objc dynamic public func addElementToViewModel(_ element: any GenesysCloud.StorableChatElement)
   @objc dynamic public func addElementsToViewModel(_ elements: [any GenesysCloud.StorableChatElement], isPrecedingStatements: Swift.Bool)
   @objc dynamic public func clearViewModel(hasMore: Swift.Bool)
+  @objc dynamic public func removeLastQuickReplayElement()
   @objc dynamic public func updateAttachment(file: GenesysCloudCore.DownloadableFile)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class InputViewConfiguration : GenesysCloud.TextConfiguration {
@@ -190,6 +230,9 @@ extension GenesysCloud.ChatUIViewController {
   @_Concurrency.MainActor(unsafe) final public func isTyping(_ isTyping: Swift.Bool)
   @_Concurrency.MainActor(unsafe) final public func didSubmit(text: Swift.String)
 }
+extension GenesysCloud.TagCellLayout.LayoutAlignment : Swift.Equatable {}
+extension GenesysCloud.TagCellLayout.LayoutAlignment : Swift.Hashable {}
+extension GenesysCloud.TagCellLayout.LayoutAlignment : Swift.RawRepresentable {}
 extension GenesysCloud.PresentationState : Swift.Equatable {}
 extension GenesysCloud.PresentationState : Swift.Hashable {}
 extension GenesysCloud.PresentationState : Swift.RawRepresentable {}

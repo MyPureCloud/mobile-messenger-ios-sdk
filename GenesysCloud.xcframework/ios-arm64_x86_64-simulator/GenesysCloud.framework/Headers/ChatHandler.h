@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.9.0
+// GenesysCloud version number: v1.10.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -192,6 +192,11 @@ Read text using TTS.
  Post chat element implementation.
  */
 - (void)postStatement:(id<StorableChatElement> _Nonnull)statement;
+
+/**
+ Send quick reply implementation.
+ */
+- (void)postQuickReplyStatement:(id<StorableChatElement> _Nonnull)statement;
 
 /**
  Indicates if typing was started.

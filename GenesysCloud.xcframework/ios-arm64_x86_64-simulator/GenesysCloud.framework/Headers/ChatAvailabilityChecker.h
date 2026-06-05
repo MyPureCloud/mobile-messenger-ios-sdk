@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.9.0
+// GenesysCloud version number: v1.10.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -7,7 +7,6 @@
 // ===================================================================================================
 
 #import <GenesysCloudCore/GenesysCloudCore-Swift.h>
-//#import <GenesysCloudBold/BCUnavailableReason.h>
 #import <GenesysCloud/AvailabilityResult.h>
 #import <GenesysCloudMessenger/GenesysCloudMessenger-Swift.h>
 
