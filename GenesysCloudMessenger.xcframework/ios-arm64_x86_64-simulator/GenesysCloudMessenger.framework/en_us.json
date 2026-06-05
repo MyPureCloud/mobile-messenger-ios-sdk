@@ -54,7 +54,8 @@
     "messageDeliveryFailed": "Message delivery failed.",
     "messageDelivered": "Message delivered.",
     "participantTyping": "Participant is typing.",
-    "selectOption": "Please select an option:"
+    "selectOption": "Please select an option:",
+    "close": "Close"
   },
   "permissions": {
     "cameraPermissionsDialogTitle": "\"%s\" Would Like to Access the Camera",
