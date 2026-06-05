@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.11.1
+// GenesysCloud version number: v1.11.2
 // ===================================================================================================
 // Copyright © 2022 GenesysCloud(Genesys).
 // GenesysCloud SDK.

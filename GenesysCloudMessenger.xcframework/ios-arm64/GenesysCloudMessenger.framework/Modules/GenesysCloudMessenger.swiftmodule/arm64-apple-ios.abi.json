@@ -7699,8 +7699,8 @@
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsLocaleParser.swift",
       "kind": "Dictionary",
       "offset": 444,
-      "length": 2092,
-      "value": "[(\"zh-cn\", \"zh-cn\"), (\"zh-hans\", \"zh-cn\"), (\"zh-tw\", \"zh-tw\"), (\"zh-hant\", \"zh-tw\"), (\"pt\", \"pt-pt\"), (\"en-us\", \"en-us\"), (\"en\", \"en-us\"), (\"ar\", \"ar\"), (\"cs\", \"cs\"), (\"da\", \"da\"), (\"nl\", \"nl\"), (\"fi\", \"fi\"), (\"fr\", \"fr\"), (\"de\", \"de\"), (\"he\", \"he\"), (\"it\", \"it\"), (\"ja\", \"ja\"), (\"ko\", \"ko\"), (\"nb\", \"no\"), (\"pl\", \"pl\"), (\"ru\", \"ru\"), (\"es\", \"es\"), (\"sv\", \"sv\"), (\"th\", \"th\"), (\"tr\", \"tr\"), (\"et\", \"et\"), (\"lt\", \"lt\"), (\"lv\", \"lv\"), (\"uk\", \"uk\"), (\"hu\", \"hu\"), (\"vi\", \"vi\")]"
+      "length": 2169,
+      "value": "[(\"zh-cn\", \"zh-cn\"), (\"zh-hans\", \"zh-cn\"), (\"zh-tw\", \"zh-tw\"), (\"zh-hant\", \"zh-tw\"), (\"pt-BR\", \"pt-br\"), (\"pt-PT\", \"pt-pt\"), (\"en-us\", \"en-us\"), (\"en\", \"en-us\"), (\"ar\", \"ar\"), (\"cs\", \"cs\"), (\"da\", \"da\"), (\"nl\", \"nl\"), (\"fi\", \"fi\"), (\"fr\", \"fr\"), (\"de\", \"de\"), (\"he\", \"he\"), (\"it\", \"it\"), (\"ja\", \"ja\"), (\"ko\", \"ko\"), (\"nb\", \"no\"), (\"pl\", \"pl\"), (\"ru\", \"ru\"), (\"es\", \"es\"), (\"sv\", \"sv\"), (\"th\", \"th\"), (\"tr\", \"tr\"), (\"et\", \"et\"), (\"lt\", \"lt\"), (\"lv\", \"lv\"), (\"uk\", \"uk\"), (\"hu\", \"hu\"), (\"vi\", \"vi\")]"
     }
   ]
 }

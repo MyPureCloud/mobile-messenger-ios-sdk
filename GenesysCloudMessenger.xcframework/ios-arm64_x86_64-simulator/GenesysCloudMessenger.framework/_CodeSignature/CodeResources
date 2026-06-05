@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		JNCjiuIimP/vgo/uFTCRfonVLuM=
+		hyKrm3eiToHIxvz0/T1RFLqoPr4=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		n73t6LZCXR+dHqN9ZCpFvMuxZu8=
+		PlM0eiYd5BFrxYcc8YMbUHUY6E8=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JNCjiuIimP/vgo/uFTCRfonVLuM=
+		hyKrm3eiToHIxvz0/T1RFLqoPr4=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eza+wKJZC+FpCT9X63fWoE6gCws=
+		0A529+Znv8t4IG+mIxRAbastHrw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fb027VhruFmEwURAiIeeZaY9S3xU9em+r3O4xn0FeWo=
+			Hs85rfjTBv4V9wKu7LQU0J1SeqMsOUCZegFRyzTXhLc=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -113,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a3XwHHokc5iEqOsqBc8o6zAd7LgXb1oIqKMJbs5s1Xg=
+			jURvraqx5XaXFoWdyY5AJGiXWR+P7oXNPBdxRWysoOc=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fb027VhruFmEwURAiIeeZaY9S3xU9em+r3O4xn0FeWo=
+			Hs85rfjTBv4V9wKu7LQU0J1SeqMsOUCZegFRyzTXhLc=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LCvHtZBBREauIOubThq6CFtE5a11cJrG+eQzsrvpudo=
+			PFzYp7buiUpIz9DNbPFnWZVhzDtG0HR3lhUwZOZRU1U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
