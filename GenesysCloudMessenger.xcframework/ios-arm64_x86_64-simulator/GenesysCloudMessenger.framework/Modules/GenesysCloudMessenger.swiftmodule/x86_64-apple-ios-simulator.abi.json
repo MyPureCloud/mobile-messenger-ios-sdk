@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "GenesysCloudMessenger",
+    "printedName": "GenesysCloudMessenger",
     "children": [
       {
         "kind": "Import",
@@ -175,6 +175,20 @@
             "printedName": "TranslationsRepositoryProtocol",
             "usr": "c:@M@GenesysCloudMessenger@objc(pl)TranslationsRepositoryProtocol",
             "mangledName": "$s21GenesysCloudMessenger30TranslationsRepositoryProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -885,6 +899,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -946,16 +974,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "GenesysCloudMessenger",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "GenesysCloudCore",
         "printedName": "GenesysCloudCore",
         "declKind": "Import",
@@ -969,6 +987,67 @@
         "name": "TranslationsRemoteDataSource",
         "printedName": "TranslationsRemoteDataSource",
         "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TranslationsRemoteDataSource",
+                "printedName": "GenesysCloudMessenger.TranslationsRemoteDataSource",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsRemoteDataSource"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsRemoteDataSource(im)init",
+            "mangledName": "$s21GenesysCloudMessenger28TranslationsRemoteDataSourceCACycfc",
+            "moduleName": "GenesysCloudMessenger",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(baseUrl:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TranslationsRemoteDataSource",
+                "printedName": "GenesysCloudMessenger.TranslationsRemoteDataSource",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsRemoteDataSource"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NRDefaultConnectionHandler",
+                "printedName": "GenesysCloudCore.NRDefaultConnectionHandler",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NRDefaultConnectionHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21GenesysCloudMessenger28TranslationsRemoteDataSourceC7baseUrl7handlerACSS_So26NRDefaultConnectionHandlerCtcfc",
+            "mangledName": "$s21GenesysCloudMessenger28TranslationsRemoteDataSourceC7baseUrl7handlerACSS_So26NRDefaultConnectionHandlerCtcfc",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
           {
             "kind": "Function",
             "name": "fetch",
@@ -1022,32 +1101,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TranslationsRemoteDataSource",
-                "printedName": "GenesysCloudMessenger.TranslationsRemoteDataSource",
-                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsRemoteDataSource"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsRemoteDataSource(im)init",
-            "mangledName": "$s21GenesysCloudMessenger28TranslationsRemoteDataSourceCACycfc",
-            "moduleName": "GenesysCloudMessenger",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -1070,6 +1123,20 @@
             "printedName": "TranslationsDataSourceDelegate",
             "usr": "c:@M@GenesysCloudMessenger@objc(pl)TranslationsDataSourceDelegate",
             "mangledName": "$s21GenesysCloudMessenger30TranslationsDataSourceDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -1456,6 +1523,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2782,6 +2863,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3626,6 +3721,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3769,7 +3878,24 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3903,6 +4029,22 @@
         "moduleName": "GenesysCloudMessenger",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3961,6 +4103,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4055,6 +4211,60 @@
         "printedName": "TranslationsFileDataSource",
         "children": [
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TranslationsFileDataSource",
+                "printedName": "GenesysCloudMessenger.TranslationsFileDataSource",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsFileDataSource"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsFileDataSource(im)init",
+            "mangledName": "$s21GenesysCloudMessenger26TranslationsFileDataSourceCACycfc",
+            "moduleName": "GenesysCloudMessenger",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dataProvider:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TranslationsFileDataSource",
+                "printedName": "GenesysCloudMessenger.TranslationsFileDataSource",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsFileDataSource"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DataLoading",
+                "printedName": "any GenesysCloudMessenger.DataLoading",
+                "hasDefaultArg": true,
+                "usr": "s:21GenesysCloudMessenger11DataLoadingP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21GenesysCloudMessenger26TranslationsFileDataSourceC12dataProviderAcA0F7Loading_p_tcfc",
+            "mangledName": "$s21GenesysCloudMessenger26TranslationsFileDataSourceC12dataProviderAcA0F7Loading_p_tcfc",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "fetch",
             "printedName": "fetch(language:completion:)",
@@ -4107,32 +4317,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TranslationsFileDataSource",
-                "printedName": "GenesysCloudMessenger.TranslationsFileDataSource",
-                "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsFileDataSource"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsFileDataSource(im)init",
-            "mangledName": "$s21GenesysCloudMessenger26TranslationsFileDataSourceCACycfc",
-            "moduleName": "GenesysCloudMessenger",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -4155,6 +4339,20 @@
             "printedName": "TranslationsDataSourceDelegate",
             "usr": "c:@M@GenesysCloudMessenger@objc(pl)TranslationsDataSourceDelegate",
             "mangledName": "$s21GenesysCloudMessenger30TranslationsDataSourceDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -4288,6 +4486,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -5060,39 +5274,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "ChatEngine",
-            "printedName": "ChatEngine",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AccountType",
-                "printedName": "AccountType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MessengerAccount",
-                    "printedName": "GenesysCloudMessenger.MessengerAccount",
-                    "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerAccount"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:16GenesysCloudCore10ChatEngineP",
-            "mangledName": "$s16GenesysCloudCore10ChatEngineP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "ConfigurationLoaderDelegate",
-            "printedName": "ConfigurationLoaderDelegate",
-            "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoaderDelegate",
-            "mangledName": "$s16GenesysCloudCore27ConfigurationLoaderDelegateP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ChatDataProducer",
-            "printedName": "ChatDataProducer",
-            "usr": "c:@M@GenesysCloudCore@objc(pl)ChatDataProducer",
-            "mangledName": "$s16GenesysCloudCore16ChatDataProducerP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -5142,6 +5334,214 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ChatEngine",
+            "printedName": "ChatEngine",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AccountType",
+                "printedName": "AccountType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MessengerAccount",
+                    "printedName": "GenesysCloudMessenger.MessengerAccount",
+                    "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerAccount"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16GenesysCloudCore10ChatEngineP",
+            "mangledName": "$s16GenesysCloudCore10ChatEngineP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConfigurationLoaderDelegate",
+            "printedName": "ConfigurationLoaderDelegate",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)ConfigurationLoaderDelegate",
+            "mangledName": "$s16GenesysCloudCore27ConfigurationLoaderDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ChatDataProducer",
+            "printedName": "ChatDataProducer",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)ChatDataProducer",
+            "mangledName": "$s16GenesysCloudCore16ChatDataProducerP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DataLoading",
+        "printedName": "DataLoading",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(contentsOf:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger11DataLoadingP4load10contentsOf10Foundation0D0VSgAF3URLV_tKF",
+            "mangledName": "$s21GenesysCloudMessenger11DataLoadingP4load10contentsOf10Foundation0D0VSgAF3URLV_tKF",
+            "moduleName": "GenesysCloudMessenger",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudMessenger.DataLoading>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudMessenger.DataLoading>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:21GenesysCloudMessenger11DataLoadingP",
+        "mangledName": "$s21GenesysCloudMessenger11DataLoadingP",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DataLoader",
+        "printedName": "DataLoader",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataLoader",
+                "printedName": "GenesysCloudMessenger.DataLoader",
+                "usr": "s:21GenesysCloudMessenger10DataLoaderV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21GenesysCloudMessenger10DataLoaderVACycfc",
+            "mangledName": "$s21GenesysCloudMessenger10DataLoaderVACycfc",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(contentsOf:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger10DataLoaderV4load10contentsOf10Foundation0D0VSgAF3URLV_tKF",
+            "mangledName": "$s21GenesysCloudMessenger10DataLoaderV4load10contentsOf10Foundation0D0VSgAF3URLV_tKF",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:21GenesysCloudMessenger10DataLoaderV",
+        "mangledName": "$s21GenesysCloudMessenger10DataLoaderV",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DataLoading",
+            "printedName": "DataLoading",
+            "usr": "s:21GenesysCloudMessenger11DataLoadingP",
+            "mangledName": "$s21GenesysCloudMessenger11DataLoadingP"
           }
         ]
       },
@@ -5382,6 +5782,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5571,6 +5985,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -6036,6 +6464,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6152,6 +6594,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6300,6 +6756,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6431,6 +6901,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6486,6 +6970,91 @@
             "mangledName": "$ss26_ExpressibleByColorLiteralP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MessengerTransportSDK",
+        "printedName": "MessengerTransportSDK",
+        "declKind": "Class",
+        "usr": "c:objc(cs)MessengerTransportMessengerTransportSDK",
+        "moduleName": "MessengerTransport",
+        "objc_name": "MessengerTransportMessengerTransportSDK",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)MessengerTransportBase",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "MessengerTransport.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -6497,13 +7066,6 @@
       "offset": 448,
       "length": 7,
       "value": "\"en-us\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsRepositoryImplementation.swift",
-      "kind": "StringLiteral",
-      "offset": 334,
-      "length": 36,
-      "value": "\"GenesysCloudMessenger.TranslationsRepositoryImplementation\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
@@ -6592,7 +7154,7 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsRemoteDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 433,
+      "offset": 693,
       "length": 71,
       "value": "\"https:\/\/nr-customers.s3.amazonaws.com\/mobileMessengerTranslations\/v4\/\""
     },
@@ -6759,15 +7321,8 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
-      "kind": "StringLiteral",
-      "offset": 423,
-      "length": 19,
-      "value": "\"GenesysCloudMessenger.MessengerChatEngine\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 34676,
+      "offset": 34729,
       "length": 5,
       "value": "false"
     },
@@ -6781,65 +7336,58 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "Array",
-      "offset": 8319,
+      "offset": 7764,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "Array",
-      "offset": 8366,
+      "offset": 7811,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 8495,
+      "offset": 7940,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "Array",
-      "offset": 8547,
+      "offset": 7992,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "Array",
-      "offset": 8835,
+      "offset": 8280,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "Array",
-      "offset": 8879,
+      "offset": 8324,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 8987,
+      "offset": 8432,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
       "kind": "Array",
-      "offset": 9036,
+      "offset": 8481,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerConfigurationLoader.swift",
-      "kind": "StringLiteral",
-      "offset": 8246,
-      "length": 17,
-      "value": "\"GenesysCloudMessenger.AttachmentProfile\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsLocaleParser.swift",

@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.10.1
+// GenesysCloud version number: v1.10.2
 #import <GenesysCloud/InfoView.h>
 #import <GenesysCloud/ViewConfiguration.h>
 #import <GenesysCloud/CustomLabel.h>

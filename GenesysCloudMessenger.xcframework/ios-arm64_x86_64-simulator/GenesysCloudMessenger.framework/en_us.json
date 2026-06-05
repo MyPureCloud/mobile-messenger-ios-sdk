@@ -1,0 +1,16 @@
+{
+  "language": "en-us",
+  "conversations": {
+    "inputMessagePlaceholder": "Send a message…",
+    "inputMessageSpeechPlaceholder": "Listening…",
+    "startConversationMessage": "This is the beginning of your conversation with us. Please send a message to get started.",
+    "conversationStartedMessage": "This is the beginning of your conversation with us.",
+    "conversationRecoveryFailure": "We're sorry, but we are unable to restore your conversation.",
+    "conversationHasEnded": "Your conversation has ended",
+    "startNewConversation": "Start new conversation by clicking the button down below",
+    "conversationHasResumed": "Conversation has resumed",
+    "startNew": "Start New",
+    "resumeConversation": "Resume Conversation",
+    "startNewConverstaionError": "We are unable to start a conversation. Please try again later"
+  }
+}

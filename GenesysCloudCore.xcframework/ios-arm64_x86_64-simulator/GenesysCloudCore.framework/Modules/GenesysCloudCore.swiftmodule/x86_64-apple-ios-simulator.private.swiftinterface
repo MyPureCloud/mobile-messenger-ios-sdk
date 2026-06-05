@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GenesysCloudCore
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GenesysCloudCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVKit
 import Combine
 import Foundation
@@ -11,10 +12,17 @@ import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc public class EventData : ObjectiveC.NSObject {
+  @objc public var chatState: GenesysCloudCore.ChatState
+  @objc public var isNewSession: Swift.Bool
+  @objc public var isAutostart: Swift.Bool
+  @objc public var isResumed: Swift.Bool
+  @objc public init(state: GenesysCloudCore.ChatState, isNewSession: Swift.Bool = false, isAutostart: Swift.Bool = false, isResumed: Swift.Bool = false)
+  @objc deinit
+}
 extension Swift.String {
   public func mimeType() -> GenesysCloudCore.MimeType?
 }
-@available(iOS 13.0, *)
 @objc public protocol AttachmentFetcherProtocol {
   @objc func fetch(_ file: GenesysCloudCore.DownloadableFile)
   @objc func getPreview(_ file: GenesysCloudCore.DownloadableFile)
@@ -23,8 +31,7 @@ extension Swift.String {
   @objc func subscribeToRefreshPublisher(receiveValue: @escaping (GenesysCloudCore.DownloadableFile?, Foundation.NSError?) -> Swift.Void)
   @objc func updateRefreshedFile(fileId: Swift.String, newDownloadUrl: Swift.String)
 }
-@_inheritsConvenienceInitializers @available(iOS 13.0, *)
-@objc final public class AttachmentFetcher : ObjectiveC.NSObject, GenesysCloudCore.AttachmentFetcherProtocol {
+@_inheritsConvenienceInitializers @objc final public class AttachmentFetcher : ObjectiveC.NSObject, GenesysCloudCore.AttachmentFetcherProtocol {
   @objc final public func getPreview(_ file: GenesysCloudCore.DownloadableFile)
   @objc override dynamic public init()
   @objc final public func subscribeToFetchPublisher(receiveValue: @escaping (GenesysCloudCore.DownloadableFile?, Foundation.NSError?) -> Swift.Void)
@@ -46,7 +53,6 @@ public enum LogType {
 }
 public func printLog(_ message: Swift.String?, logType: GenesysCloudCore.LogType = .info, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
 public func printLog(_ error: any Swift.Error, logType: GenesysCloudCore.LogType = .failure, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
-@available(iOS 13.0, *)
 @objc public protocol ChatEngineDelegate {
   @objc func messageDidArrive(chatStatement: GenesysCloudCore.ChatStatement)
   @objc func didFail(error: GenesysCloudCore.GCError)
@@ -58,7 +64,6 @@ public func printLog(_ error: any Swift.Error, logType: GenesysCloudCore.LogType
   @objc func shouldNotifyIndicator(isActive: Swift.Bool)
   @objc func didRefreshAttachment(attachmentId: Swift.String, downloadUrl: Swift.String)
 }
-@available(iOS 13.0, *)
 public protocol ChatEngine {
   associatedtype AccountType
   var account: Self.AccountType { get set }
@@ -73,34 +78,6 @@ public protocol ChatEngine {
   func reconnect()
   func refreshAttachment(fileId: Swift.String)
   init(configLoader: any GenesysCloudCore.ConfigurationLoader)
-}
-@available(iOS 13.0, *)
-@objc open class BaseChatEngine : ObjectiveC.NSObject, GenesysCloudCore.ChatEngine {
-  public func refreshAttachment(fileId: Swift.String)
-  public var configurationLoader: any GenesysCloudCore.ConfigurationLoader
-  public typealias AccountType = GenesysCloudCore.Account
-  public var account: GenesysCloudCore.BaseChatEngine.AccountType {
-    get
-    set
-  }
-  weak public var delegate: (any GenesysCloudCore.ChatEngineDelegate)?
-  @objc required public init(configLoader: any GenesysCloudCore.ConfigurationLoader)
-  public func prepare(account: GenesysCloudCore.BaseChatEngine.AccountType)
-  public func create()
-  public func start()
-  public func reconnect()
-  public func postMessage(_ chatStatement: GenesysCloudCore.ChatStatement)
-  public func postQuickRepliesMessage(_ chatStatement: GenesysCloudCore.QuickRepliesChatStatement)
-  public func endChat(forceClose: Swift.Bool)
-  @objc deinit
-}
-@objc public class EventData : ObjectiveC.NSObject {
-  @objc public var chatState: GenesysCloudCore.ChatState
-  @objc public var isNewSession: Swift.Bool
-  @objc public var isAutostart: Swift.Bool
-  @objc public var isResumed: Swift.Bool
-  @objc public init(state: GenesysCloudCore.ChatState, isNewSession: Swift.Bool = false, isAutostart: Swift.Bool = false, isResumed: Swift.Bool = false)
-  @objc deinit
 }
 public enum MimeType : Swift.String {
   case image
@@ -155,12 +132,10 @@ public enum MimeType : Swift.String {
   @objc public init(error: (any Swift.Error)? = nil, errorType: GenesysCloudCore.ChatError, errorDescription: Swift.String? = nil)
   @objc deinit
 }
-@available(iOS 13.0, *)
 @objc public protocol ChatDataProducer {
   @objc func produceChatData(_ request: GenesysCloudCore.ChatDataRequest) -> Swift.Bool
 }
-@_inheritsConvenienceInitializers @available(iOS 13.0, *)
-@objc public class ChatDataRequest : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class ChatDataRequest : ObjectiveC.NSObject {
   @objc public var id: Foundation.UUID
   @objc public var reason: GenesysCloudCore.RequestReason
   @objc public var requestStatus: GenesysCloudCore.RequestStatus
@@ -168,8 +143,7 @@ public enum MimeType : Swift.String {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @available(iOS 13.0, *)
-@objc public class ChatDataResponse : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class ChatDataResponse : ObjectiveC.NSObject {
   @objc public var statements: [GenesysCloudCore.ChatStatement]
   @objc public var hasMore: Swift.Bool
   @objc override dynamic public init()
@@ -238,7 +212,6 @@ public enum DownloadableFileStatus {
     get
   }
 }
-@available(iOS 13.0, *)
 @objc public class DownloadableFile : ObjectiveC.NSObject {
   @objc public var fileId: Swift.String {
     get
@@ -338,7 +311,6 @@ public enum ChatStatementsError : Swift.Error {
     get
   }
 }
-@available(iOS 13.0, *)
 @objc public class ChatStatement : ObjectiveC.NSObject {
   @objc public var text: Swift.String?
   @objc public var id: Swift.String
@@ -351,29 +323,24 @@ public enum ChatStatementsError : Swift.Error {
   @objc public init(text: Swift.String?, elementId: Swift.String)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @available(iOS 13.0, *)
-@objc public class EventStatement : GenesysCloudCore.ChatStatement {
+@_inheritsConvenienceInitializers @objc public class EventStatement : GenesysCloudCore.ChatStatement {
   @objc override public init(text: Swift.String?, elementId: Swift.String)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @available(iOS 13.0, *)
-@objc public class AutostartEventStatement : GenesysCloudCore.EventStatement {
+@_inheritsConvenienceInitializers @objc public class AutostartEventStatement : GenesysCloudCore.EventStatement {
   @objc override public init(text: Swift.String?, elementId: Swift.String)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @available(iOS 13.0, *)
-@objc public class ConversationDisconnectEventStatement : GenesysCloudCore.EventStatement {
+@_inheritsConvenienceInitializers @objc public class ConversationDisconnectEventStatement : GenesysCloudCore.EventStatement {
   @objc override public init(text: Swift.String?, elementId: Swift.String)
   @objc deinit
 }
-@available(iOS 13.0, *)
 @objc public class QuickRepliesChatStatement : GenesysCloudCore.TimedChatStatement {
   @objc public var quickReplies: [Swift.String]
   @objc public init(quickReplies: [Swift.String], chatStatement: GenesysCloudCore.ChatStatement)
   @objc deinit
 }
-@objc @available(iOS 13.0, *)
-public class TimedChatStatement : GenesysCloudCore.ChatStatement {
+@objc public class TimedChatStatement : GenesysCloudCore.ChatStatement {
   public static let expirationTimeInterval: Swift.Double
   public var error: GenesysCloudCore.ChatStatementsError?
   public init(copy: GenesysCloudCore.ChatStatement)
@@ -442,6 +409,25 @@ public class TimedChatStatement : GenesysCloudCore.ChatStatement {
 @_inheritsConvenienceInitializers @objc public class LanguageUtility : ObjectiveC.NSObject {
   @objc public func getDeviceLanguage() -> Swift.String?
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc open class BaseChatEngine : ObjectiveC.NSObject, GenesysCloudCore.ChatEngine {
+  public var configurationLoader: any GenesysCloudCore.ConfigurationLoader
+  public typealias AccountType = GenesysCloudCore.Account
+  public var account: GenesysCloudCore.BaseChatEngine.AccountType {
+    get
+    set
+  }
+  weak public var delegate: (any GenesysCloudCore.ChatEngineDelegate)?
+  @objc required public init(configLoader: any GenesysCloudCore.ConfigurationLoader)
+  public func prepare(account: GenesysCloudCore.BaseChatEngine.AccountType)
+  public func create()
+  public func start()
+  public func reconnect()
+  public func postMessage(_ chatStatement: GenesysCloudCore.ChatStatement)
+  public func refreshAttachment(fileId: Swift.String)
+  public func postQuickRepliesMessage(_ chatStatement: GenesysCloudCore.QuickRepliesChatStatement)
+  public func endChat(forceClose: Swift.Bool)
   @objc deinit
 }
 extension GenesysCloudCore.LogType : Swift.Equatable {}
