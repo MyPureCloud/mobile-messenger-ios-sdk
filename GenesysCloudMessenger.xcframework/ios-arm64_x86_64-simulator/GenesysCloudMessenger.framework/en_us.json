@@ -12,7 +12,9 @@
     "conversationHasResumed": "Conversation has resumed",
     "startNew": "Start New",
     "resumeConversation": "Resume Conversation",
-    "startNewConversationError": "We are unable to start a conversation. Please try again later"
+    "startNewConversationError": "We are unable to start a conversation. Please try again later",
+    "sessionExpirationMessage": "Please note your session will expire after %s of inactivity.",
+    "sessionExpirationNotice": "Please note your session will expire after %s due to inactivity."
   },
   "attachments": {
     "attachCamera": "Camera",

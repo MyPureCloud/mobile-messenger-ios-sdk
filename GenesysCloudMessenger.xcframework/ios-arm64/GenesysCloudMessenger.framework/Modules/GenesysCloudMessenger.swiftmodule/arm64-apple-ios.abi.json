@@ -708,6 +708,54 @@
             "moduleName": "GenesysCloudMessenger",
             "objc_name": "initWithDeploymentId:domain:logging:",
             "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(deploymentId:domain:logging:sessionExpirationNoticeInterval:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MessengerAccount",
+                "printedName": "GenesysCloudMessenger.MessengerAccount",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerAccount"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerAccount(im)initWithDeploymentId:domain:logging:sessionExpirationNoticeInterval:",
+            "mangledName": "$s21GenesysCloudMessenger0C7AccountC12deploymentId6domain7logging31sessionExpirationNoticeIntervalACSS_SSSbSitcfc",
+            "moduleName": "GenesysCloudMessenger",
+            "objc_name": "initWithDeploymentId:domain:logging:sessionExpirationNoticeInterval:",
+            "declAttributes": [
               "AccessControl",
               "ObjC"
             ],
@@ -4836,7 +4884,7 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DK_mobile-messenger-ios-sdk_main\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "IntegerLiteral",
-      "offset": 735,
+      "offset": 781,
       "length": 3,
       "value": "300"
     },
@@ -4845,7 +4893,7 @@
       "kind": "StringLiteral",
       "offset": 136,
       "length": 7,
-      "value": "\"2.0.0\""
+      "value": "\"2.1.0\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DK_mobile-messenger-ios-sdk_main\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
@@ -4990,7 +5038,7 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DK_mobile-messenger-ios-sdk_main\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 16545,
+      "offset": 16816,
       "length": 5,
       "value": "false"
     },

@@ -552,6 +552,10 @@ extension Swift.String {
   public func fileExtension() -> Swift.String
   public func withoutFileExtension() -> Swift.String
 }
+extension Foundation.Locale {
+  public static func localizeSessionExpirationNotice(_ interval: Foundation.TimeInterval, languageConfig: GenesysCloudCore.LanguageConfiguration) -> Swift.String?
+  public static func localizeTimeInterval(language: Swift.String?, interval: Foundation.TimeInterval) -> Swift.String?
+}
 public enum TranslationKey {
   case startConversationMessage
   case conversationStartedMessage
@@ -564,6 +568,8 @@ public enum TranslationKey {
   case startNew
   case resumeConversation
   case startNewConversationError
+  case sessionExpirationMessage
+  case sessionExpirationNotice
   case attachCamera
   case attachMedia
   case attachFile
@@ -678,6 +684,9 @@ public protocol ChatEngineDelegate : AnyObject {
   func didUpdateUploadProgress(_ progress: Swift.Double)
   func didDelayAttachment(fileData: Foundation.Data, fileURL: Foundation.URL)
   func didEnableFileUpload()
+  func didReceiveSessionDuration(_ interval: Foundation.TimeInterval)
+  func didReceiveSessionExpirationNotice(_ interval: Foundation.TimeInterval)
+  func didReceiveRemoveSessionExpirationNotice()
 }
 public protocol ChatEngineProtocol {
   var delegate: (any GenesysCloudCore.ChatEngineDelegate)? { get set }
@@ -754,6 +763,7 @@ public protocol ConfigurationParser {
   case sessionLimitReached
   case conversationCleared
   case logout
+  case sessionExpired
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -813,10 +823,13 @@ public protocol ConfigurationParser {
   }
 }
 @objc final public class GCError : ObjectiveC.NSObject, Swift.Error {
+  @available(*, deprecated, message: "Will be removed in 3.0.0. GCError conforms to Error directly.")
   @objc final public var error: (any Swift.Error)?
   @objc final public var errorType: GenesysCloudCore.ChatError
   @objc final public var errorDescription: Swift.String?
+  @available(*, deprecated, message: "Use init(errorType:errorDescription:) instead. Will be removed in 3.0.0.")
   @objc public init(error: (any Swift.Error)? = nil, errorType: GenesysCloudCore.ChatError, errorDescription: Swift.String? = nil)
+  @objc public init(errorType: GenesysCloudCore.ChatError, errorDescription: Swift.String? = nil)
   @objc deinit
 }
 final public class EventData {
@@ -863,6 +876,16 @@ public enum MessageSendingError : Swift.Error {
   public var hashValue: Swift.Int {
     get
   }
+}
+@_hasMissingDesignatedInitializers final public class SessionDurationStorage {
+  public static let shared: GenesysCloudCore.SessionDurationStorage
+  @GenesysCloudCore.Locked final public var sessionDuration: Foundation.TimeInterval? {
+    get
+    set
+    _modify
+  }
+  final public func reset()
+  @objc deinit
 }
 final public class SessionInfo : Swift.Equatable {
   public init(id: Swift.String = "")

@@ -37,7 +37,8 @@ import _SwiftConcurrencyShims
     @objc set
   }
   @objc override dynamic public init()
-  @objc public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool)
+  @objc convenience public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool)
+  @objc public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool, sessionExpirationNoticeInterval: Swift.Int)
   final public func setAuthenticationInfo(authCode: Swift.String, redirectUri: Swift.String, codeVerifier: Swift.String?)
   final public func setImplicitAuthenticationInfo(idToken: Swift.String, nonce: Swift.String)
   @objc deinit
