@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.12.0
+// GenesysCloud version number: v1.13.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -106,6 +106,8 @@ Read text using TTS.
 - (void)didCreateChat;
 - (void)didRegisterToProtocols;
 - (void)didFailChatWithError:(GCError *_Nullable)error;
+- (void)didClearConversation;
+
 
 @property (nonatomic, readonly) ChatConfiguration *_Nonnull configuration;
 @end
@@ -181,6 +183,11 @@ Read text using TTS.
  Reconnect chat implementation.
  */
 - (void)reconnectChat;
+
+/**
+ Clear conversation implementation.
+ */
+- (void)clearConversationIfEnabled;
 
 /**
  logout chat implementation.

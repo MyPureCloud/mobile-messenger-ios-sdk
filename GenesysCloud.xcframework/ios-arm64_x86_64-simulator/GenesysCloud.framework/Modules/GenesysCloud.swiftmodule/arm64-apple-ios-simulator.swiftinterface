@@ -165,6 +165,7 @@ public class DownloadableFileHandler {
 extension GenesysCloud.MessengerHandler {
   @objc override dynamic public func updateFileProfile(_ settings: GenesysCloudCore.ChatSettings, profile: GenesysCloudMessenger.AttachmentProfile?)
   public func subscribeToAttachmentFetcher()
+  @objc override dynamic public func clearConversationIfEnabled()
   @objc override dynamic open func agentDidType(_ params: [Swift.String : Any]?)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers final public class OutgoingConfiguration : GenesysCloud.MessageConfiguration {

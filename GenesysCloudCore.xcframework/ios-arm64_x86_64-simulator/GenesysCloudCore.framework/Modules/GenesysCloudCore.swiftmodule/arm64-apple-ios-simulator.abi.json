@@ -580,6 +580,286 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "FormField",
+        "printedName": "FormField",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "extraData",
+            "printedName": "extraData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)FormField(cpy)extraData",
+            "mangledName": "$s16GenesysCloudCore9FormFieldC9extraDataSSvpZ",
+            "moduleName": "GenesysCloudCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)FormField(cm)extraData",
+                "mangledName": "$s16GenesysCloudCore9FormFieldC9extraDataSSvgZ",
+                "moduleName": "GenesysCloudCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customAttributes",
+            "printedName": "customAttributes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)FormField(cpy)customAttributes",
+            "mangledName": "$s16GenesysCloudCore9FormFieldC16customAttributesSSvpZ",
+            "moduleName": "GenesysCloudCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)FormField(cm)customAttributes",
+                "mangledName": "$s16GenesysCloudCore9FormFieldC16customAttributesSSvgZ",
+                "moduleName": "GenesysCloudCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "language",
+            "printedName": "language",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)FormField(cpy)language",
+            "mangledName": "$s16GenesysCloudCore9FormFieldC8languageSSvpZ",
+            "moduleName": "GenesysCloudCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)FormField(cm)language",
+                "mangledName": "$s16GenesysCloudCore9FormFieldC8languageSSvgZ",
+                "moduleName": "GenesysCloudCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FormField",
+                "printedName": "GenesysCloudCore.FormField",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)FormField"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)FormField(im)init",
+            "mangledName": "$s16GenesysCloudCore9FormFieldCACycfc",
+            "moduleName": "GenesysCloudCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloudCore@objc(cs)FormField",
+        "mangledName": "$s16GenesysCloudCore9FormFieldC",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
@@ -2577,6 +2857,27 @@
           },
           {
             "kind": "Function",
+            "name": "clearConversation",
+            "printedName": "clearConversation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenesysCloudCore10ChatEngineP17clearConversationyyF",
+            "mangledName": "$s16GenesysCloudCore10ChatEngineP17clearConversationyyF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngine>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngine>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "indicateTyping",
             "printedName": "indicateTyping()",
             "children": [
@@ -3865,6 +4166,88 @@
           },
           {
             "kind": "Var",
+            "name": "clearConversationDisabled",
+            "printedName": "clearConversationDisabled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatError.Type) -> GenesysCloudCore.ChatError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatError",
+                    "printedName": "GenesysCloudCore.ChatError",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatError",
+                        "printedName": "GenesysCloudCore.ChatError",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatError@ChatErrorClearConversationDisabled",
+            "mangledName": "$s16GenesysCloudCore9ChatErrorO25clearConversationDisabledyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 22
+          },
+          {
+            "kind": "Var",
+            "name": "clearConversationFailure",
+            "printedName": "clearConversationFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatError.Type) -> GenesysCloudCore.ChatError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatError",
+                    "printedName": "GenesysCloudCore.ChatError",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatError",
+                        "printedName": "GenesysCloudCore.ChatError",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatError@ChatErrorClearConversationFailure",
+            "mangledName": "$s16GenesysCloudCore9ChatErrorO24clearConversationFailureyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 23
+          },
+          {
+            "kind": "Var",
             "name": "ClientErrorReconnectDescription",
             "printedName": "ClientErrorReconnectDescription",
             "children": [
@@ -4327,6 +4710,100 @@
                 "declKind": "Accessor",
                 "usr": "s:16GenesysCloudCore9ChatErrorO48AuthLogoutFailedAuthenticatedMessagesDescriptionSSvgZ",
                 "mangledName": "$s16GenesysCloudCore9ChatErrorO48AuthLogoutFailedAuthenticatedMessagesDescriptionSSvgZ",
+                "moduleName": "GenesysCloudCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ClearConversationDisabledDescription",
+            "printedName": "ClearConversationDisabledDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore9ChatErrorO36ClearConversationDisabledDescriptionSSvpZ",
+            "mangledName": "$s16GenesysCloudCore9ChatErrorO36ClearConversationDisabledDescriptionSSvpZ",
+            "moduleName": "GenesysCloudCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore9ChatErrorO36ClearConversationDisabledDescriptionSSvgZ",
+                "mangledName": "$s16GenesysCloudCore9ChatErrorO36ClearConversationDisabledDescriptionSSvgZ",
+                "moduleName": "GenesysCloudCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ClearConversationFailureDescription",
+            "printedName": "ClearConversationFailureDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore9ChatErrorO35ClearConversationFailureDescriptionSSvpZ",
+            "mangledName": "$s16GenesysCloudCore9ChatErrorO35ClearConversationFailureDescriptionSSvpZ",
+            "moduleName": "GenesysCloudCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore9ChatErrorO35ClearConversationFailureDescriptionSSvgZ",
+                "mangledName": "$s16GenesysCloudCore9ChatErrorO35ClearConversationFailureDescriptionSSvgZ",
                 "moduleName": "GenesysCloudCore",
                 "static": true,
                 "implicit": true,
@@ -7037,6 +7514,395 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DefaultConnectionHandler",
+        "printedName": "DefaultConnectionHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open(request:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenesysCloudCore24DefaultConnectionHandlerC4open7request10completiony10Foundation10URLRequestV_yAG4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$s16GenesysCloudCore24DefaultConnectionHandlerC4open7request10completiony10Foundation10URLRequestV_yAG4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open(request:progress:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Float) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Float) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenesysCloudCore24DefaultConnectionHandlerC4open7request8progress10completiony10Foundation10URLRequestV_ySfcSgyAH4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$s16GenesysCloudCore24DefaultConnectionHandlerC4open7request8progress10completiony10Foundation10URLRequestV_ySfcSgyAH4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultConnectionHandler",
+                "printedName": "GenesysCloudCore.DefaultConnectionHandler",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)DefaultConnectionHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)DefaultConnectionHandler(im)init",
+            "mangledName": "$s16GenesysCloudCore24DefaultConnectionHandlerCACycfc",
+            "moduleName": "GenesysCloudCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionTask",
+                "printedName": "Foundation.URLSessionTask",
+                "usr": "c:objc(cs)NSURLSessionTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GenesysCloudCore@objc(cs)DefaultConnectionHandler(im)URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:",
+            "mangledName": "$s16GenesysCloudCore24DefaultConnectionHandlerC10urlSession_4task15didSendBodyData14totalBytesSent0no10ExpectedToK0ySo12NSURLSessionC_So0S4TaskCs5Int64VA2NtF",
+            "moduleName": "GenesysCloudCore",
+            "objc_name": "URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloudCore@objc(cs)DefaultConnectionHandler",
+        "mangledName": "$s16GenesysCloudCore24DefaultConnectionHandlerC",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ConnectionHandler",
+            "printedName": "ConnectionHandler",
+            "usr": "s:16GenesysCloudCore17ConnectionHandlerP",
+            "mangledName": "$s16GenesysCloudCore17ConnectionHandlerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "EndedReason",
         "printedName": "EndedReason",
         "children": [
@@ -7341,6 +8207,48 @@
           },
           {
             "kind": "Var",
+            "name": "conversationCleared",
+            "printedName": "conversationCleared",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.EndedReason.Type) -> GenesysCloudCore.EndedReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EndedReason",
+                    "printedName": "GenesysCloudCore.EndedReason",
+                    "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.EndedReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EndedReason",
+                        "printedName": "GenesysCloudCore.EndedReason",
+                        "usr": "c:@M@GenesysCloudCore@E@EndedReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@EndedReason@EndedReasonConversationCleared",
+            "mangledName": "$s16GenesysCloudCore11EndedReasonO19conversationClearedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
             "name": "logout",
             "printedName": "logout",
             "children": [
@@ -7379,7 +8287,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Constructor",
@@ -7528,9 +8436,258 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "ConnectionHandler",
+        "printedName": "ConnectionHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open(request:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenesysCloudCore17ConnectionHandlerP4open7request10completiony10Foundation10URLRequestV_yAG4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$s16GenesysCloudCore17ConnectionHandlerP4open7request10completiony10Foundation10URLRequestV_yAG4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ConnectionHandler>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ConnectionHandler>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open(request:progress:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Float) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Float) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenesysCloudCore17ConnectionHandlerP4open7request8progress10completiony10Foundation10URLRequestV_ySfcSgyAH4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$s16GenesysCloudCore17ConnectionHandlerP4open7request8progress10completiony10Foundation10URLRequestV_ySfcSgyAH4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ConnectionHandler>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ConnectionHandler>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16GenesysCloudCore17ConnectionHandlerP",
+        "mangledName": "$s16GenesysCloudCore17ConnectionHandlerP",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "GenesysCloudCore"
       },
@@ -8816,6 +9973,837 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StatementScope",
+        "printedName": "StatementScope",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bot",
+            "printedName": "bot",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.StatementScope.Type) -> GenesysCloudCore.StatementScope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementScope",
+                    "printedName": "GenesysCloudCore.StatementScope",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.StatementScope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatementScope",
+                        "printedName": "GenesysCloudCore.StatementScope",
+                        "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@StatementScope@StatementScopeBot",
+            "mangledName": "$s16GenesysCloudCore14StatementScopeO3botyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "live",
+            "printedName": "live",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.StatementScope.Type) -> GenesysCloudCore.StatementScope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementScope",
+                    "printedName": "GenesysCloudCore.StatementScope",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.StatementScope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatementScope",
+                        "printedName": "GenesysCloudCore.StatementScope",
+                        "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@StatementScope@StatementScopeLive",
+            "mangledName": "$s16GenesysCloudCore14StatementScopeO4liveyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "messenger",
+            "printedName": "messenger",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.StatementScope.Type) -> GenesysCloudCore.StatementScope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementScope",
+                    "printedName": "GenesysCloudCore.StatementScope",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.StatementScope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatementScope",
+                        "printedName": "GenesysCloudCore.StatementScope",
+                        "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@StatementScope@StatementScopeMessenger",
+            "mangledName": "$s16GenesysCloudCore14StatementScopeO9messengeryA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.StatementScope.Type) -> GenesysCloudCore.StatementScope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementScope",
+                    "printedName": "GenesysCloudCore.StatementScope",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.StatementScope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatementScope",
+                        "printedName": "GenesysCloudCore.StatementScope",
+                        "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@StatementScope@StatementScopeNone",
+            "mangledName": "$s16GenesysCloudCore14StatementScopeO4noneyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudCore.StatementScope?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementScope",
+                    "printedName": "GenesysCloudCore.StatementScope",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenesysCloudCore14StatementScopeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16GenesysCloudCore14StatementScopeO8rawValueACSgSi_tcfc",
+            "moduleName": "GenesysCloudCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore14StatementScopeO8rawValueSivp",
+            "mangledName": "$s16GenesysCloudCore14StatementScopeO8rawValueSivp",
+            "moduleName": "GenesysCloudCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore14StatementScopeO8rawValueSivg",
+                "mangledName": "$s16GenesysCloudCore14StatementScopeO8rawValueSivg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@GenesysCloudCore@E@StatementScope",
+        "mangledName": "$s16GenesysCloudCore14StatementScopeO",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StatementType",
+        "printedName": "StatementType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "outgoing",
+            "printedName": "outgoing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.StatementType.Type) -> GenesysCloudCore.StatementType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementType",
+                    "printedName": "GenesysCloudCore.StatementType",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.StatementType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatementType",
+                        "printedName": "GenesysCloudCore.StatementType",
+                        "usr": "c:@M@GenesysCloudCore@E@StatementType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@StatementType@StatementTypeOutgoing",
+            "mangledName": "$s16GenesysCloudCore13StatementTypeO8outgoingyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "incoming",
+            "printedName": "incoming",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.StatementType.Type) -> GenesysCloudCore.StatementType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementType",
+                    "printedName": "GenesysCloudCore.StatementType",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.StatementType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatementType",
+                        "printedName": "GenesysCloudCore.StatementType",
+                        "usr": "c:@M@GenesysCloudCore@E@StatementType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@StatementType@StatementTypeIncoming",
+            "mangledName": "$s16GenesysCloudCore13StatementTypeO8incomingyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "system",
+            "printedName": "system",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.StatementType.Type) -> GenesysCloudCore.StatementType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementType",
+                    "printedName": "GenesysCloudCore.StatementType",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.StatementType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatementType",
+                        "printedName": "GenesysCloudCore.StatementType",
+                        "usr": "c:@M@GenesysCloudCore@E@StatementType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@StatementType@StatementTypeSystem",
+            "mangledName": "$s16GenesysCloudCore13StatementTypeO6systemyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.StatementType.Type) -> GenesysCloudCore.StatementType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementType",
+                    "printedName": "GenesysCloudCore.StatementType",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.StatementType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatementType",
+                        "printedName": "GenesysCloudCore.StatementType",
+                        "usr": "c:@M@GenesysCloudCore@E@StatementType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@StatementType@StatementTypeNone",
+            "mangledName": "$s16GenesysCloudCore13StatementTypeO4noneyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudCore.StatementType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementType",
+                    "printedName": "GenesysCloudCore.StatementType",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenesysCloudCore13StatementTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16GenesysCloudCore13StatementTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "GenesysCloudCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore13StatementTypeO8rawValueSivp",
+            "mangledName": "$s16GenesysCloudCore13StatementTypeO8rawValueSivp",
+            "moduleName": "GenesysCloudCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore13StatementTypeO8rawValueSivg",
+                "mangledName": "$s16GenesysCloudCore13StatementTypeO8rawValueSivg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@GenesysCloudCore@E@StatementType",
+        "mangledName": "$s16GenesysCloudCore13StatementTypeO",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChatEvent",
+        "printedName": "ChatEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "scope",
+            "printedName": "scope",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StatementScope",
+                "printedName": "GenesysCloudCore.StatementScope",
+                "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)ChatEvent(py)scope",
+            "mangledName": "$s16GenesysCloudCore9ChatEventC5scopeAA14StatementScopeOvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementScope",
+                    "printedName": "GenesysCloudCore.StatementScope",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatEvent(im)scope",
+                "mangledName": "$s16GenesysCloudCore9ChatEventC5scopeAA14StatementScopeOvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatementScope",
+                    "printedName": "GenesysCloudCore.StatementScope",
+                    "usr": "c:@M@GenesysCloudCore@E@StatementScope"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatEvent(im)setScope:",
+                "mangledName": "$s16GenesysCloudCore9ChatEventC5scopeAA14StatementScopeOvs",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore9ChatEventC5scopeAA14StatementScopeOvM",
+                "mangledName": "$s16GenesysCloudCore9ChatEventC5scopeAA14StatementScopeOvM",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChatEvent",
+                "printedName": "GenesysCloudCore.ChatEvent",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatEvent"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)ChatEvent(im)init",
+            "mangledName": "$s16GenesysCloudCore9ChatEventCACycfc",
+            "moduleName": "GenesysCloudCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloudCore@objc(cs)ChatEvent",
+        "mangledName": "$s16GenesysCloudCore9ChatEventC",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -10735,6 +12723,47 @@
           },
           {
             "kind": "Var",
+            "name": "conversationClear",
+            "printedName": "conversationClear",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.Feature.Type) -> GenesysCloudCore.Feature",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Feature",
+                    "printedName": "GenesysCloudCore.Feature",
+                    "usr": "c:@M@GenesysCloudCore@E@Feature"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.Feature.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Feature",
+                        "printedName": "GenesysCloudCore.Feature",
+                        "usr": "c:@M@GenesysCloudCore@E@Feature"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@Feature@FeatureConversationClear",
+            "mangledName": "$s16GenesysCloudCore7FeatureO17conversationClearyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
             "name": "agentTypingIndicator",
             "printedName": "agentTypingIndicator",
             "children": [
@@ -10772,7 +12801,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -10813,7 +12842,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Constructor",
@@ -12035,12 +14064,12 @@
                 "kind": "TypeNominal",
                 "name": "StatementScope",
                 "printedName": "GenesysCloudCore.StatementScope",
-                "usr": "c:@EA@StatementScope"
+                "usr": "c:@M@GenesysCloudCore@E@StatementScope"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStatement(py)scope",
-            "mangledName": "$s16GenesysCloudCore13ChatStatementC5scopeSo0E5Scopeavp",
+            "mangledName": "$s16GenesysCloudCore13ChatStatementC5scopeAA0E5ScopeOvp",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "HasInitialValue",
@@ -12059,12 +14088,12 @@
                     "kind": "TypeNominal",
                     "name": "StatementScope",
                     "printedName": "GenesysCloudCore.StatementScope",
-                    "usr": "c:@EA@StatementScope"
+                    "usr": "c:@M@GenesysCloudCore@E@StatementScope"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStatement(im)scope",
-                "mangledName": "$s16GenesysCloudCore13ChatStatementC5scopeSo0E5Scopeavg",
+                "mangledName": "$s16GenesysCloudCore13ChatStatementC5scopeAA0E5ScopeOvg",
                 "moduleName": "GenesysCloudCore",
                 "implicit": true,
                 "declAttributes": [
@@ -12086,12 +14115,12 @@
                     "kind": "TypeNominal",
                     "name": "StatementScope",
                     "printedName": "GenesysCloudCore.StatementScope",
-                    "usr": "c:@EA@StatementScope"
+                    "usr": "c:@M@GenesysCloudCore@E@StatementScope"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStatement(im)setScope:",
-                "mangledName": "$s16GenesysCloudCore13ChatStatementC5scopeSo0E5Scopeavs",
+                "mangledName": "$s16GenesysCloudCore13ChatStatementC5scopeAA0E5ScopeOvs",
                 "moduleName": "GenesysCloudCore",
                 "implicit": true,
                 "declAttributes": [
@@ -12111,8 +14140,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore13ChatStatementC5scopeSo0E5ScopeavM",
-                "mangledName": "$s16GenesysCloudCore13ChatStatementC5scopeSo0E5ScopeavM",
+                "usr": "s:16GenesysCloudCore13ChatStatementC5scopeAA0E5ScopeOvM",
+                "mangledName": "$s16GenesysCloudCore13ChatStatementC5scopeAA0E5ScopeOvM",
                 "moduleName": "GenesysCloudCore",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -12128,12 +14157,12 @@
                 "kind": "TypeNominal",
                 "name": "StatementType",
                 "printedName": "GenesysCloudCore.StatementType",
-                "usr": "c:@EA@StatementType"
+                "usr": "c:@M@GenesysCloudCore@E@StatementType"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStatement(py)type",
-            "mangledName": "$s16GenesysCloudCore13ChatStatementC4typeSo0E4Typeavp",
+            "mangledName": "$s16GenesysCloudCore13ChatStatementC4typeAA0E4TypeOvp",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "HasInitialValue",
@@ -12152,12 +14181,12 @@
                     "kind": "TypeNominal",
                     "name": "StatementType",
                     "printedName": "GenesysCloudCore.StatementType",
-                    "usr": "c:@EA@StatementType"
+                    "usr": "c:@M@GenesysCloudCore@E@StatementType"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStatement(im)type",
-                "mangledName": "$s16GenesysCloudCore13ChatStatementC4typeSo0E4Typeavg",
+                "mangledName": "$s16GenesysCloudCore13ChatStatementC4typeAA0E4TypeOvg",
                 "moduleName": "GenesysCloudCore",
                 "implicit": true,
                 "declAttributes": [
@@ -12179,12 +14208,12 @@
                     "kind": "TypeNominal",
                     "name": "StatementType",
                     "printedName": "GenesysCloudCore.StatementType",
-                    "usr": "c:@EA@StatementType"
+                    "usr": "c:@M@GenesysCloudCore@E@StatementType"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStatement(im)setType:",
-                "mangledName": "$s16GenesysCloudCore13ChatStatementC4typeSo0E4Typeavs",
+                "mangledName": "$s16GenesysCloudCore13ChatStatementC4typeAA0E4TypeOvs",
                 "moduleName": "GenesysCloudCore",
                 "implicit": true,
                 "declAttributes": [
@@ -12204,8 +14233,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore13ChatStatementC4typeSo0E4TypeavM",
-                "mangledName": "$s16GenesysCloudCore13ChatStatementC4typeSo0E4TypeavM",
+                "usr": "s:16GenesysCloudCore13ChatStatementC4typeAA0E4TypeOvM",
+                "mangledName": "$s16GenesysCloudCore13ChatStatementC4typeAA0E4TypeOvM",
                 "moduleName": "GenesysCloudCore",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -16386,7 +18415,7 @@
                 "kind": "TypeNominal",
                 "name": "StatementScope",
                 "printedName": "GenesysCloudCore.StatementScope",
-                "usr": "c:@EA@StatementScope"
+                "usr": "c:@M@GenesysCloudCore@E@StatementScope"
               },
               {
                 "kind": "TypeNominal",
@@ -16404,7 +18433,7 @@
             ],
             "declKind": "Constructor",
             "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent(im)initWithState:scope:dataMsg:",
-            "mangledName": "$s16GenesysCloudCore14ChatStateEventC5state5scope7dataMsgAcA0dE0O_So14StatementScopeaypSgtcfc",
+            "mangledName": "$s16GenesysCloudCore14ChatStateEventC5state5scope7dataMsgAcA0dE0O_AA14StatementScopeOypSgtcfc",
             "moduleName": "GenesysCloudCore",
             "objc_name": "initWithState:scope:dataMsg:",
             "declAttributes": [
@@ -16434,12 +18463,12 @@
                 "kind": "TypeNominal",
                 "name": "StatementScope",
                 "printedName": "GenesysCloudCore.StatementScope",
-                "usr": "c:@EA@StatementScope"
+                "usr": "c:@M@GenesysCloudCore@E@StatementScope"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStateEvent(im)initWithState:scope:",
-            "mangledName": "$s16GenesysCloudCore14ChatStateEventC5state5scopeAcA0dE0O_So14StatementScopeatcfc",
+            "mangledName": "$s16GenesysCloudCore14ChatStateEventC5state5scopeAcA0dE0O_AA14StatementScopeOtcfc",
             "moduleName": "GenesysCloudCore",
             "objc_name": "initWithState:scope:",
             "declAttributes": [
@@ -16483,7 +18512,7 @@
           "AccessControl",
           "ObjC"
         ],
-        "superclassUsr": "c:objc(cs)ChatEvent",
+        "superclassUsr": "c:@M@GenesysCloudCore@objc(cs)ChatEvent",
         "superclassNames": [
           "GenesysCloudCore.ChatEvent",
           "ObjectiveC.NSObject"
@@ -17226,6 +19255,26 @@
             "declKind": "Func",
             "usr": "s:16GenesysCloudCore14BaseChatEngineC30logoutFromAuthenticatedSessionyyF",
             "mangledName": "$s16GenesysCloudCore14BaseChatEngineC30logoutFromAuthenticatedSessionyyF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearConversation",
+            "printedName": "clearConversation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenesysCloudCore14BaseChatEngineC17clearConversationyyF",
+            "mangledName": "$s16GenesysCloudCore14BaseChatEngineC17clearConversationyyF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "AccessControl"
@@ -18221,6 +20270,27 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AccountConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 11,
+      "value": "\"extraData\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AccountConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 457,
+      "length": 18,
+      "value": "\"customAttributes\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AccountConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 515,
+      "length": 10,
+      "value": "\"language\""
+    },
+    {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/AttachmentFetcher.swift",
       "kind": "IntegerLiteral",
       "offset": 2075,
@@ -18411,73 +20481,101 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1242,
+      "length": 4,
+      "value": "5023"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1283,
+      "length": 4,
+      "value": "5024"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1350,
+      "offset": 1433,
       "length": 20,
       "value": "\"Failed to connect.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1433,
+      "offset": 1516,
       "length": 71,
       "value": "\"Unable to reconnect. Messenger state is not valid for this operation.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1563,
+      "offset": 1646,
       "length": 42,
       "value": "\"Failed to fetch Messenger configuration.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1660,
+      "offset": 1743,
       "length": 20,
       "value": "\"Failed to connect.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1743,
+      "offset": 1826,
       "length": 35,
       "value": "\"Failed to autostart conversation.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1840,
+      "offset": 1923,
       "length": 64,
       "value": "\"We are unable to start a conversation. Please try again later.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1964,
+      "offset": 2047,
       "length": 31,
       "value": "\"Failed to download attachment\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 2054,
+      "offset": 2137,
       "length": 30,
       "value": "\"Failed to refresh attachment\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 2169,
+      "offset": 2268,
       "length": 114,
       "value": "\"Authentication cannot proceed because no authentication information was provided in the MessengerAccount object.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 2357,
+      "offset": 2456,
       "length": 19,
       "value": "\"Failed to logout.\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "kind": "StringLiteral",
+      "offset": 2537,
+      "length": 110,
+      "value": "\"Failed to clear and leave the conversation. This option is disabled for the current Messenger configuration.\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "kind": "StringLiteral",
+      "offset": 2708,
+      "length": 31,
+      "value": "\"Failed to clear conversation.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatDataProducer.swift",
@@ -18608,23 +20706,86 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
-      "offset": 1304,
-      "length": 6,
+      "offset": 1314,
+      "length": 19,
       "value": "6"
     },
     {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1434,
+      "length": 6,
+      "value": "7"
+    },
+    {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
       "kind": "IntegerLiteral",
-      "offset": 1261,
+      "offset": 1274,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
       "kind": "IntegerLiteral",
-      "offset": 1548,
+      "offset": 1561,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/StatementScope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 389,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/StatementScope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 444,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/StatementScope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 509,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/StatementScope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 564,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/StatementScope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 665,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/StatementScope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 724,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/StatementScope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 786,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/StatementScope.swift",
+      "kind": "IntegerLiteral",
+      "offset": 841,
+      "length": 2,
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCoreTests\/MockClasses\/MockDataTask.swift",
@@ -18700,15 +20861,22 @@
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatSettings.swift",
       "kind": "IntegerLiteral",
       "offset": 1289,
-      "length": 20,
+      "length": 17,
       "value": "4"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1319,
-      "length": 19,
+      "offset": 1316,
+      "length": 20,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1346,
+      "length": 19,
+      "value": "6"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
@@ -18748,35 +20916,35 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "Array",
-      "offset": 1893,
+      "offset": 1868,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "BooleanLiteral",
-      "offset": 1937,
+      "offset": 1912,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "StringLiteral",
-      "offset": 2634,
+      "offset": 2609,
       "length": 18,
       "value": "\"typing_indicator\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "Array",
-      "offset": 2868,
+      "offset": 2843,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 3300,
+      "offset": 3263,
       "length": 2,
       "value": "35"
     },

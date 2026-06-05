@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.12.0
+// GenesysCloud version number: v1.13.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -69,6 +69,11 @@
  Reconnect current chat handler.
  */
 - (void)reconnectChat;
+
+/**
+ Clear current conversation.
+ */
+- (void)clearConversation;
 
 /**
  Logout current chat handler.

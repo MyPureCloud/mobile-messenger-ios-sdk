@@ -7147,6 +7147,32 @@
           },
           {
             "kind": "Function",
+            "name": "clearConversationIfEnabled",
+            "printedName": "clearConversationIfEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GenesysCloud@@objc(cs)MessengerHandler(im)clearConversationIfEnabled",
+            "mangledName": "$sSo16MessengerHandlerC12GenesysCloudE26clearConversationIfEnabledyyF",
+            "moduleName": "GenesysCloud",
+            "overriding": true,
+            "objc_name": "clearConversationIfEnabled",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "agentDidType",
             "printedName": "agentDidType(_:)",
             "children": [
@@ -8372,45 +8398,59 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 924,
+      "length": 21,
+      "value": "\"conversationCleared\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "Dictionary",
-      "offset": 932,
+      "offset": 992,
       "length": 8,
       "value": "[(\"\", \"\")]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "StringLiteral",
-      "offset": 972,
+      "offset": 1032,
       "length": 14,
       "value": "\"eventDataKey\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2034,
+      "offset": 2158,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2082,
+      "offset": 2206,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2188,
+      "offset": 2312,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2230,
+      "offset": 2354,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatUIViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2444,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Views\/CustomViews\/BouncingDotsView.swift",
@@ -8891,28 +8931,28 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Handlers\/MessengerHandlerExtension.swift",
       "kind": "IntegerLiteral",
-      "offset": 2348,
+      "offset": 3098,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Handlers\/MessengerHandlerExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 2364,
+      "offset": 3114,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Handlers\/MessengerHandlerExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2501,
+      "offset": 3251,
       "length": 76,
       "value": "\"failed to remove typing indicator with error \""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Handlers\/MessengerHandlerExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2576,
+      "offset": 3326,
       "length": 2,
       "value": "\"\""
     },

@@ -1,14 +1,15 @@
 
-// GenesysCloud version number: v1.12.0
+// GenesysCloud version number: v1.13.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
 // All rights reserved.
 // ===================================================================================================
 
-#import <GenesysCloudCore/StatementScope.h>
 #import <GenesysCloud/ChatElement.h>
 #import <GenesysCloud/StatementStatus.h>
+
+typedef NS_ENUM(NSInteger, StatementScope);
 
 /************************************************************/
 // MARK: - StorableChatElement

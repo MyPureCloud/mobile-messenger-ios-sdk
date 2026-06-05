@@ -32,7 +32,7 @@ extension UIKit.UIColor {
   @objc public static let conversationHasResumed: Swift.String
   @objc public static let startNew: Swift.String
   @objc public static let resumeConversation: Swift.String
-  @objc public static let startNewConverstaionError: Swift.String
+  @objc public static let startNewConversationError: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -41,7 +41,8 @@ extension UIKit.UIColor {
 }
 @objc @_inheritsConvenienceInitializers public class TranslationsRemoteDataSource : ObjectiveC.NSObject, GenesysCloudMessenger.TranslationsDataSourceDelegate {
   @objc override dynamic public init()
-  public init(baseUrl: Swift.String = "https://nr-customers.s3.amazonaws.com/mobileMessengerTranslations/v5/", handler: GenesysCloudCore.NRDefaultConnectionHandler = NRDefaultConnectionHandler())
+  @objc convenience public init(domain: Swift.String)
+  public init(domain: Swift.String, handler: any GenesysCloudCore.ConnectionHandler = DefaultConnectionHandler())
   @objc public func fetch(language: Swift.String, completion: @escaping (Foundation.Data?) -> Swift.Void)
   @objc deinit
 }
@@ -131,10 +132,12 @@ extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatEngin
   @objc dynamic public func start()
   @objc dynamic public func postMessage(_ chatStatement: GenesysCloudCore.ChatStatement)
   @objc dynamic public func postQuickRepliesMessage(_ chatStatement: GenesysCloudCore.QuickRepliesChatStatement)
+  @objc dynamic public func clearConversationConnect()
   @objc dynamic public func reconnect()
   @objc dynamic public func endChat(forceClose: Swift.Bool = false)
   @objc dynamic public func resume()
   @objc dynamic public func logoutFromAuthenticatedSession()
+  @objc dynamic public func clearConversation()
   @objc dynamic public func indicateTyping()
 }
 extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ConfigurationLoaderDelegate {
@@ -154,6 +157,7 @@ public struct DataLoader : GenesysCloudMessenger.DataLoading {
   public func load(contentsOf url: Foundation.URL) throws -> Foundation.Data?
 }
 @_inheritsConvenienceInitializers @objc public class MessengerAccount : GenesysCloudCore.Account {
+  @objc public var domain: Swift.String?
   public var authenticationInfo: GenesysCloudMessenger.AuthenticationInfo? {
     get
   }

@@ -8,9 +8,26 @@
     "conversationRecoveryFailure": "We're sorry, but we are unable to restore your conversation.",
     "conversationHasEnded": "Your conversation has ended",
     "startNewConversation": "Start new conversation by clicking the button down below",
+    "disconnectMessageSend": "Resume conversation by sending a new message",
     "conversationHasResumed": "Conversation has resumed",
     "startNew": "Start New",
     "resumeConversation": "Resume Conversation",
-    "startNewConverstaionError": "We are unable to start a conversation. Please try again later"
+    "startNewConversationError": "We are unable to start a conversation. Please try again later"
+  },
+  "attachments": {
+    "attachCamera": "Camera",
+    "attachPhoto": "Take a Photo",
+    "attachVideo": "Take a Video",
+    "attachMedia": "Media Library",
+    "attachFile": "File"
+  },
+  "commons": {
+    "cancel": "Cancel",
+    "settings": "Settings",
+    "preparing": "Preparing..."
+  },
+  "permissions" : {
+    "cameraPermissionsDialogTitle": "\"%s\" Would Like to Access the Camera",
+    "cameraPermissionsDialogBody": "This app requires access to the camera"
   }
 }
