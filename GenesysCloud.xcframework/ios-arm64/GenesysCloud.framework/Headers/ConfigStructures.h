@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.13.0
+// GenesysCloud version number: v1.14.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -44,11 +44,6 @@ typedef NS_ENUM(NSInteger, AvatarPosition) {
  Chat Text Color
  */
 @property (copy, nonatomic) UIColor * _Nullable textColor;
-
-/**
- Chat Custom Font.
- */
-@property (copy, nonatomic) CustomFont * _Nullable customFont;
 
 @end
 #endif /* ConfigStructures_h */

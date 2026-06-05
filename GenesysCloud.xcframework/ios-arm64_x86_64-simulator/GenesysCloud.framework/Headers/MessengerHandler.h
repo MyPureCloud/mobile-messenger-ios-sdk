@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.13.0
+// GenesysCloud version number: v1.14.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -22,7 +22,7 @@ static NSString * const LastIncomingMessageID = @"LastIncomingMessageID";
 + (id<ChatHandler>)createChatHandlerForAccount:(Account *)account
                                  withViewModel:(ChatUIViewModel *)UIViewModel;
 
-- (void)attachmentRefresh:(DownloadableFile *)file;
+//- (void)attachmentRefresh:(DownloadableFile *)file;
 - (void)clearConversation;
 - (ContentChatElement *)createChatElement:(ChatStatement *)chatStatement isLastStatement:(BOOL)isLastStatement;
 

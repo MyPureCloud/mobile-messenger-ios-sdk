@@ -19,14 +19,35 @@
     "attachPhoto": "Take a Photo",
     "attachVideo": "Take a Video",
     "attachMedia": "Media Library",
-    "attachFile": "File"
+    "attachFile": "File",
+    "attachButton": "Attach file",
+    "attachMediaButton": "Attach media",
+    "attachError": "attach error",
+    "image": "image",
+    "audio": "audio",
+    "video": "video",
+    "document": "document",
+    "file": "file",
+    "attaching": "attaching",
+    "attached": "attached",
+    "removeFile": "Remove file",
+    "retryDownload" "retry download"
   },
   "commons": {
     "cancel": "Cancel",
     "settings": "Settings",
-    "preparing": "Preparing..."
+    "preparing": "Preparing...",
+    "send": "send",
+    "pending": "pending",
+    "sent": "sent",
+    "delivered": "delivered",
+    "deliveryError": "delivery error",
+    "scrollToTheBottom": "Scroll to the bottom",
+    "agentMessageAccessibilityPrefix": "Message:",
+    "userMessageAccessibilityPrefix": "Your message:",
+    "typingIndicator": "Typing"
   },
-  "permissions" : {
+  "permissions": {
     "cameraPermissionsDialogTitle": "\"%s\" Would Like to Access the Camera",
     "cameraPermissionsDialogBody": "This app requires access to the camera"
   }

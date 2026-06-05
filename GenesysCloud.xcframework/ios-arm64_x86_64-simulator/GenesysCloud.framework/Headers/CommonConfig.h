@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.13.0
+// GenesysCloud version number: v1.14.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -7,7 +7,6 @@
 // ===================================================================================================
 
 #import <UIKit/UIKit.h>
-#import <GenesysCloud/CustomFont.h>
 #import <GenesysCloud/ConfigStructures.h>
 #import <GenesysCloud/UIColor+Utility.h>
 
@@ -31,19 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) UIColor * _Nullable textColor;
 
 /**
- Chat Custom Font.
- */
-@property (copy, nonatomic) CustomFont * _Nullable customFont;
-
-/**
  Chat Text Timestamp Color
  */
 @property (copy, nonatomic) UIColor * _Nullable timestampColor;
-
-/**
- Chat Timestamp Custom Font.
- */
-@property (strong, nonatomic) CustomFont * _Nullable timestampCustomFont;
 
 @end
 

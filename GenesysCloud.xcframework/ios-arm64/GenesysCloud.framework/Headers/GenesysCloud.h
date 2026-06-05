@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.13.0
+// GenesysCloud version number: v1.14.0
 #import <GenesysCloud/InfoView.h>
 #import <GenesysCloud/ViewConfiguration.h>
 #import <GenesysCloud/CustomLabel.h>
@@ -31,7 +31,6 @@
 #import <GenesysCloud/ChatEventHandler.h>
 #import <GenesysCloud/ChatElementDelegate.h>
 #import <GenesysCloud/MessengerHandler.h>
-#import <GenesysCloud/CustomFont.h>
 
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).

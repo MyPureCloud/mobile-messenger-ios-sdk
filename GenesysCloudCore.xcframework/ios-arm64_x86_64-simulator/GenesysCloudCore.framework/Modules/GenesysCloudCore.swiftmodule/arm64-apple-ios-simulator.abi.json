@@ -872,6 +872,70 @@
         "printedName": "AttachmentFetcherProtocol",
         "children": [
           {
+            "kind": "Var",
+            "name": "currentFileToUpload",
+            "printedName": "currentFileToUpload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudCore.UploadableFile?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadableFile",
+                    "printedName": "GenesysCloudCore.UploadableFile",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)UploadableFile"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)AttachmentFetcherProtocol(py)currentFileToUpload",
+            "mangledName": "$s16GenesysCloudCore25AttachmentFetcherProtocolP19currentFileToUploadAA010UploadableH0CSgvp",
+            "moduleName": "GenesysCloudCore",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloudCore.UploadableFile?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UploadableFile",
+                        "printedName": "GenesysCloudCore.UploadableFile",
+                        "usr": "c:@M@GenesysCloudCore@objc(cs)UploadableFile"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(pl)AttachmentFetcherProtocol(im)currentFileToUpload",
+                "mangledName": "$s16GenesysCloudCore25AttachmentFetcherProtocolP19currentFileToUploadAA010UploadableH0CSgvg",
+                "moduleName": "GenesysCloudCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.AttachmentFetcherProtocol>",
+                "sugared_genericSig": "<Self where Self : GenesysCloudCore.AttachmentFetcherProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "fetch",
             "printedName": "fetch(_:)",
@@ -1138,6 +1202,198 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "storeFile",
+            "printedName": "storeFile(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UploadableFile",
+                "printedName": "GenesysCloudCore.UploadableFile",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)UploadableFile"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)AttachmentFetcherProtocol(im)storeFile:",
+            "mangledName": "$s16GenesysCloudCore25AttachmentFetcherProtocolP9storeFileyyAA010UploadableH0CF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeFile",
+            "printedName": "removeFile()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)AttachmentFetcherProtocol(im)removeFile",
+            "mangledName": "$s16GenesysCloudCore25AttachmentFetcherProtocolP10removeFileSSSgyF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateStatus",
+            "printedName": "updateStatus(status:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UploadableFileStatus",
+                "printedName": "GenesysCloudCore.UploadableFileStatus",
+                "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)AttachmentFetcherProtocol(im)updateStatusWithStatus:",
+            "mangledName": "$s16GenesysCloudCore25AttachmentFetcherProtocolP12updateStatus6statusyAA014UploadableFileH0O_tF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateDownloadUrl",
+            "printedName": "updateDownloadUrl(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)AttachmentFetcherProtocol(im)updateDownloadUrl:",
+            "mangledName": "$s16GenesysCloudCore25AttachmentFetcherProtocolP17updateDownloadUrlyySSF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertCurrentFileToDownloadable",
+            "printedName": "convertCurrentFileToDownloadable(messageId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudCore.DownloadableFile?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DownloadableFile",
+                    "printedName": "GenesysCloudCore.DownloadableFile",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)AttachmentFetcherProtocol(im)convertCurrentFileToDownloadableWithMessageId:",
+            "mangledName": "$s16GenesysCloudCore25AttachmentFetcherProtocolP32convertCurrentFileToDownloadable9messageIdAA0kI0CSgSS_tF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUploadProgress",
+            "printedName": "updateUploadProgress(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)AttachmentFetcherProtocol(im)updateUploadProgress:",
+            "mangledName": "$s16GenesysCloudCore25AttachmentFetcherProtocolP20updateUploadProgressyySdF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.AttachmentFetcherProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -1148,7 +1404,8 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -1172,6 +1429,157 @@
         "name": "AttachmentFetcher",
         "printedName": "AttachmentFetcher",
         "children": [
+          {
+            "kind": "Var",
+            "name": "currentFileToUpload",
+            "printedName": "currentFileToUpload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudCore.UploadableFile?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadableFile",
+                    "printedName": "GenesysCloudCore.UploadableFile",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)UploadableFile"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher(py)currentFileToUpload",
+            "mangledName": "$s16GenesysCloudCore17AttachmentFetcherC19currentFileToUploadAA010UploadableG0CSgvp",
+            "moduleName": "GenesysCloudCore",
+            "objc_name": "currentFileToUpload",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloudCore.UploadableFile?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UploadableFile",
+                        "printedName": "GenesysCloudCore.UploadableFile",
+                        "usr": "c:@M@GenesysCloudCore@objc(cs)UploadableFile"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher(im)currentFileToUpload",
+                "mangledName": "$s16GenesysCloudCore17AttachmentFetcherC19currentFileToUploadAA010UploadableG0CSgvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "objc_name": "currentFileToUpload",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloudCore.UploadableFile?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UploadableFile",
+                        "printedName": "GenesysCloudCore.UploadableFile",
+                        "usr": "c:@M@GenesysCloudCore@objc(cs)UploadableFile"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher(im)setCurrentFileToUpload:",
+                "mangledName": "$s16GenesysCloudCore17AttachmentFetcherC19currentFileToUploadAA010UploadableG0CSgvs",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore17AttachmentFetcherC19currentFileToUploadAA010UploadableG0CSgvM",
+                "mangledName": "$s16GenesysCloudCore17AttachmentFetcherC19currentFileToUploadAA010UploadableG0CSgvM",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AttachmentFetcher",
+                "printedName": "GenesysCloudCore.AttachmentFetcher",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher(im)init",
+            "mangledName": "$s16GenesysCloudCore17AttachmentFetcherCACycfc",
+            "moduleName": "GenesysCloudCore",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
           {
             "kind": "Function",
             "name": "getPreview",
@@ -1200,32 +1608,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AttachmentFetcher",
-                "printedName": "GenesysCloudCore.AttachmentFetcher",
-                "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher(im)init",
-            "mangledName": "$s16GenesysCloudCore17AttachmentFetcherCACycfc",
-            "moduleName": "GenesysCloudCore",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -1459,6 +1841,192 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "storeFile",
+            "printedName": "storeFile(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UploadableFile",
+                "printedName": "GenesysCloudCore.UploadableFile",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)UploadableFile"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher(im)storeFile:",
+            "mangledName": "$s16GenesysCloudCore17AttachmentFetcherC9storeFileyyAA010UploadableG0CF",
+            "moduleName": "GenesysCloudCore",
+            "objc_name": "storeFile:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeFile",
+            "printedName": "removeFile()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher(im)removeFile",
+            "mangledName": "$s16GenesysCloudCore17AttachmentFetcherC10removeFileSSSgyF",
+            "moduleName": "GenesysCloudCore",
+            "objc_name": "removeFile",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateStatus",
+            "printedName": "updateStatus(status:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UploadableFileStatus",
+                "printedName": "GenesysCloudCore.UploadableFileStatus",
+                "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher(im)updateStatusWithStatus:",
+            "mangledName": "$s16GenesysCloudCore17AttachmentFetcherC12updateStatus6statusyAA014UploadableFileG0O_tF",
+            "moduleName": "GenesysCloudCore",
+            "objc_name": "updateStatusWithStatus:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateDownloadUrl",
+            "printedName": "updateDownloadUrl(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher(im)updateDownloadUrl:",
+            "mangledName": "$s16GenesysCloudCore17AttachmentFetcherC17updateDownloadUrlyySSF",
+            "moduleName": "GenesysCloudCore",
+            "objc_name": "updateDownloadUrl:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertCurrentFileToDownloadable",
+            "printedName": "convertCurrentFileToDownloadable(messageId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudCore.DownloadableFile?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DownloadableFile",
+                    "printedName": "GenesysCloudCore.DownloadableFile",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher(im)convertCurrentFileToDownloadableWithMessageId:",
+            "mangledName": "$s16GenesysCloudCore17AttachmentFetcherC32convertCurrentFileToDownloadable9messageIdAA0jH0CSgSS_tF",
+            "moduleName": "GenesysCloudCore",
+            "objc_name": "convertCurrentFileToDownloadableWithMessageId:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUploadProgress",
+            "printedName": "updateUploadProgress(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)AttachmentFetcher(im)updateUploadProgress:",
+            "mangledName": "$s16GenesysCloudCore17AttachmentFetcherC20updateUploadProgressyySdF",
+            "moduleName": "GenesysCloudCore",
+            "objc_name": "updateUploadProgress:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1564,6 +2132,864 @@
         "printedName": "AVKit",
         "declKind": "Import",
         "moduleName": "GenesysCloudCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BaseFile",
+        "printedName": "BaseFile",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "previewImage",
+            "printedName": "previewImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore8BaseFileC12previewImageSo7UIImageCSgvp",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC12previewImageSo7UIImageCSgvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC12previewImageSo7UIImageCSgvg",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC12previewImageSo7UIImageCSgvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "downloadURL",
+            "printedName": "downloadURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore8BaseFileC11downloadURLSSSgvp",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC11downloadURLSSSgvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC11downloadURLSSSgvg",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC11downloadURLSSSgvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fileData",
+            "printedName": "fileData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore8BaseFileC8fileData10Foundation0G0VSgvp",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC8fileData10Foundation0G0VSgvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC8fileData10Foundation0G0VSgvg",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC8fileData10Foundation0G0VSgvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fileSizeInBytes",
+            "printedName": "fileSizeInBytes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore8BaseFileC15fileSizeInBytesSiSgvp",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC15fileSizeInBytesSiSgvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC15fileSizeInBytesSiSgvg",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC15fileSizeInBytesSiSgvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fileName",
+            "printedName": "fileName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore8BaseFileC8fileNameSSvp",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC8fileNameSSvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC8fileNameSSvg",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC8fileNameSSvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requiresPreview",
+            "printedName": "requiresPreview",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore8BaseFileC15requiresPreviewSbvp",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC15requiresPreviewSbvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC15requiresPreviewSbvg",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC15requiresPreviewSbvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC15requiresPreviewSbvs",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC15requiresPreviewSbvs",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC15requiresPreviewSbvM",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC15requiresPreviewSbvM",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "previewFailed",
+            "printedName": "previewFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore8BaseFileC13previewFailedSbvp",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC13previewFailedSbvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC13previewFailedSbvg",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC13previewFailedSbvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC13previewFailedSbvs",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC13previewFailedSbvs",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC13previewFailedSbvM",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC13previewFailedSbvM",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isFlexibleSize",
+            "printedName": "isFlexibleSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore8BaseFileC14isFlexibleSizeSbvp",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC14isFlexibleSizeSbvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC14isFlexibleSizeSbvg",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC14isFlexibleSizeSbvg",
+                "moduleName": "GenesysCloudCore",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportsStreaming",
+            "printedName": "supportsStreaming",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore8BaseFileC17supportsStreamingSbvp",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC17supportsStreamingSbvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC17supportsStreamingSbvg",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC17supportsStreamingSbvg",
+                "moduleName": "GenesysCloudCore",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fileMimeType",
+            "printedName": "fileMimeType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudCore.MimeType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MimeType",
+                    "printedName": "GenesysCloudCore.MimeType",
+                    "usr": "s:16GenesysCloudCore8MimeTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore8BaseFileC12fileMimeTypeAA0gH0OSgvp",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC12fileMimeTypeAA0gH0OSgvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloudCore.MimeType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MimeType",
+                        "printedName": "GenesysCloudCore.MimeType",
+                        "usr": "s:16GenesysCloudCore8MimeTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC12fileMimeTypeAA0gH0OSgvg",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC12fileMimeTypeAA0gH0OSgvg",
+                "moduleName": "GenesysCloudCore",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "progressSubject",
+            "printedName": "progressSubject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CurrentValueSubject",
+                "printedName": "Combine.CurrentValueSubject<Swift.Double, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine19CurrentValueSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore8BaseFileC15progressSubject7Combine012CurrentValueG0CySds5NeverOGvp",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC15progressSubject7Combine012CurrentValueG0CySds5NeverOGvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrentValueSubject",
+                    "printedName": "Combine.CurrentValueSubject<Swift.Double, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine19CurrentValueSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore8BaseFileC15progressSubject7Combine012CurrentValueG0CySds5NeverOGvg",
+                "mangledName": "$s16GenesysCloudCore8BaseFileC15progressSubject7Combine012CurrentValueG0CySds5NeverOGvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(fileName:fileSizeInBytes:downloadUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BaseFile",
+                "printedName": "GenesysCloudCore.BaseFile",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)BaseFile"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenesysCloudCore8BaseFileC8fileName0F11SizeInBytes11downloadUrlACSS_SiSgSSSgtcfc",
+            "mangledName": "$s16GenesysCloudCore8BaseFileC8fileName0F11SizeInBytes11downloadUrlACSS_SiSgSSSgtcfc",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BaseFile",
+                "printedName": "GenesysCloudCore.BaseFile",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)BaseFile"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)BaseFile(im)init",
+            "mangledName": "$s16GenesysCloudCore8BaseFileCACycfc",
+            "moduleName": "GenesysCloudCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloudCore@objc(cs)BaseFile",
+        "mangledName": "$s16GenesysCloudCore8BaseFileC",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1848,6 +3274,7 @@
                 "usr": "s:SS"
               }
             ],
+            "hasDefaultArg": true,
             "usr": "s:Sq"
           },
           {
@@ -1891,7 +3318,7 @@
       {
         "kind": "Function",
         "name": "printLog",
-        "printedName": "printLog(_:logType:file:function:line:)",
+        "printedName": "printLog(_:context:logType:file:function:line:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -1903,6 +3330,21 @@
             "name": "Error",
             "printedName": "any Swift.Error",
             "usr": "s:s5ErrorP"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
           },
           {
             "kind": "TypeNominal",
@@ -1934,8 +3376,77 @@
           }
         ],
         "declKind": "Func",
-        "usr": "s:16GenesysCloudCore8printLog_7logType4file8function4lineys5Error_p_AA0eG0OS2SSitF",
-        "mangledName": "$s16GenesysCloudCore8printLog_7logType4file8function4lineys5Error_p_AA0eG0OS2SSitF",
+        "usr": "s:16GenesysCloudCore8printLog_7context7logType4file8function4lineys5Error_p_SSSgAA0eH0OS2SSitF",
+        "mangledName": "$s16GenesysCloudCore8printLog_7context7logType4file8function4lineys5Error_p_SSSgAA0eH0OS2SSitF",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "printLog",
+        "printedName": "printLog(_:context:logType:file:function:line:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "DownloadableFile",
+            "printedName": "GenesysCloudCore.DownloadableFile",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "LogType",
+            "printedName": "GenesysCloudCore.LogType",
+            "hasDefaultArg": true,
+            "usr": "s:16GenesysCloudCore7LogTypeO"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:16GenesysCloudCore8printLog_7context7logType4file8function4lineyAA16DownloadableFileC_SSSgAA0eH0OS2SSitF",
+        "mangledName": "$s16GenesysCloudCore8printLog_7context7logType4file8function4lineyAA16DownloadableFileC_SSSgAA0eH0OS2SSitF",
         "moduleName": "GenesysCloudCore",
         "declAttributes": [
           "AccessControl"
@@ -2281,6 +3792,204 @@
             "declKind": "Func",
             "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate(im)didRefreshAttachmentWithAttachmentId:downloadUrl:",
             "mangledName": "$s16GenesysCloudCore18ChatEngineDelegateP20didRefreshAttachment12attachmentId11downloadUrlySS_SStF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngineDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngineDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceiveAttachmentId",
+            "printedName": "didReceiveAttachmentId(_:fileURL:fileData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate(im)didReceiveAttachmentId:fileURL:fileData:",
+            "mangledName": "$s16GenesysCloudCore18ChatEngineDelegateP22didReceiveAttachmentId_7fileURL0K4DataySS_10Foundation0L0VAG0M0VtF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngineDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngineDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didUploadAttachment",
+            "printedName": "didUploadAttachment(attachmentId:downloadUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate(im)didUploadAttachmentWithAttachmentId:downloadUrl:",
+            "mangledName": "$s16GenesysCloudCore18ChatEngineDelegateP19didUploadAttachment12attachmentId11downloadUrlySS_SStF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngineDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngineDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateAttachmentStatus",
+            "printedName": "updateAttachmentStatus(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UploadableFileStatus",
+                "printedName": "GenesysCloudCore.UploadableFileStatus",
+                "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate(im)updateAttachmentStatus:",
+            "mangledName": "$s16GenesysCloudCore18ChatEngineDelegateP22updateAttachmentStatusyyAA014UploadableFileI0OF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngineDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngineDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didUpdateUploadProgress",
+            "printedName": "didUpdateUploadProgress(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate(im)didUpdateUploadProgress:",
+            "mangledName": "$s16GenesysCloudCore18ChatEngineDelegateP23didUpdateUploadProgressyySdF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngineDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngineDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didDelayAttachment",
+            "printedName": "didDelayAttachment(fileData:fileURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate(im)didDelayAttachmentWithFileData:fileURL:",
+            "mangledName": "$s16GenesysCloudCore18ChatEngineDelegateP18didDelayAttachment8fileData0J3URLy10Foundation0K0V_AG0L0VtF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngineDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngineDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didEnableFileUpload",
+            "printedName": "didEnableFileUpload()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloudCore@objc(pl)ChatEngineDelegate(im)didEnableFileUpload",
+            "mangledName": "$s16GenesysCloudCore18ChatEngineDelegateP19didEnableFileUploadyyF",
             "moduleName": "GenesysCloudCore",
             "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngineDelegate>",
             "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngineDelegate>",
@@ -2848,6 +4557,72 @@
             "declKind": "Func",
             "usr": "s:16GenesysCloudCore10ChatEngineP30logoutFromAuthenticatedSessionyyF",
             "mangledName": "$s16GenesysCloudCore10ChatEngineP30logoutFromAuthenticatedSessionyyF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngine>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngine>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "attach",
+            "printedName": "attach(fileData:fileName:fileURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenesysCloudCore10ChatEngineP6attach8fileData0G4Name0G3URLy10Foundation0H0V_SSAH0J0VtF",
+            "mangledName": "$s16GenesysCloudCore10ChatEngineP6attach8fileData0G4Name0G3URLy10Foundation0H0V_SSAH0J0VtF",
+            "moduleName": "GenesysCloudCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngine>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngine>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "detach",
+            "printedName": "detach(attachmentId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenesysCloudCore10ChatEngineP6detach12attachmentIdySS_tF",
+            "mangledName": "$s16GenesysCloudCore10ChatEngineP6detach12attachmentIdySS_tF",
             "moduleName": "GenesysCloudCore",
             "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudCore.ChatEngine>",
             "sugared_genericSig": "<Self where Self : GenesysCloudCore.ChatEngine>",
@@ -4166,6 +5941,88 @@
           },
           {
             "kind": "Var",
+            "name": "attachmentValidationError",
+            "printedName": "attachmentValidationError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatError.Type) -> GenesysCloudCore.ChatError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatError",
+                    "printedName": "GenesysCloudCore.ChatError",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatError",
+                        "printedName": "GenesysCloudCore.ChatError",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatError@ChatErrorAttachmentValidationError",
+            "mangledName": "$s16GenesysCloudCore9ChatErrorO020attachmentValidationE0yA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 22
+          },
+          {
+            "kind": "Var",
+            "name": "attachmentUploadError",
+            "printedName": "attachmentUploadError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.ChatError.Type) -> GenesysCloudCore.ChatError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatError",
+                    "printedName": "GenesysCloudCore.ChatError",
+                    "usr": "c:@M@GenesysCloudCore@E@ChatError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.ChatError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatError",
+                        "printedName": "GenesysCloudCore.ChatError",
+                        "usr": "c:@M@GenesysCloudCore@E@ChatError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@ChatError@ChatErrorAttachmentUploadError",
+            "mangledName": "$s16GenesysCloudCore9ChatErrorO016attachmentUploadE0yA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 23
+          },
+          {
+            "kind": "Var",
             "name": "clearConversationDisabled",
             "printedName": "clearConversationDisabled",
             "children": [
@@ -4203,7 +6060,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 22
+            "fixedbinaryorder": 24
           },
           {
             "kind": "Var",
@@ -4244,7 +6101,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 23
+            "fixedbinaryorder": 25
           },
           {
             "kind": "Var",
@@ -4718,6 +6575,128 @@
             ]
           },
           {
+            "kind": "Function",
+            "name": "AttachmentSizeValidationErrorDescription",
+            "printedName": "AttachmentSizeValidationErrorDescription(limit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenesysCloudCore9ChatErrorO024AttachmentSizeValidationE11Description5limitS2S_tFZ",
+            "mangledName": "$s16GenesysCloudCore9ChatErrorO024AttachmentSizeValidationE11Description5limitS2S_tFZ",
+            "moduleName": "GenesysCloudCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "AttachmentTypeValidationErrorDescription",
+            "printedName": "AttachmentTypeValidationErrorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore9ChatErrorO024AttachmentTypeValidationE11DescriptionSSvpZ",
+            "mangledName": "$s16GenesysCloudCore9ChatErrorO024AttachmentTypeValidationE11DescriptionSSvpZ",
+            "moduleName": "GenesysCloudCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore9ChatErrorO024AttachmentTypeValidationE11DescriptionSSvgZ",
+                "mangledName": "$s16GenesysCloudCore9ChatErrorO024AttachmentTypeValidationE11DescriptionSSvgZ",
+                "moduleName": "GenesysCloudCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AttachmentGeneralValidationErrorDescription",
+            "printedName": "AttachmentGeneralValidationErrorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore9ChatErrorO027AttachmentGeneralValidationE11DescriptionSSvpZ",
+            "mangledName": "$s16GenesysCloudCore9ChatErrorO027AttachmentGeneralValidationE11DescriptionSSvpZ",
+            "moduleName": "GenesysCloudCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore9ChatErrorO027AttachmentGeneralValidationE11DescriptionSSvgZ",
+                "mangledName": "$s16GenesysCloudCore9ChatErrorO027AttachmentGeneralValidationE11DescriptionSSvgZ",
+                "moduleName": "GenesysCloudCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Var",
             "name": "ClearConversationDisabledDescription",
             "printedName": "ClearConversationDisabledDescription",
@@ -4737,7 +6716,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -8427,6 +10407,871 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UploadableFileStatus",
+        "printedName": "UploadableFileStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.UploadableFileStatus.Type) -> GenesysCloudCore.UploadableFileStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadableFileStatus",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus",
+                    "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UploadableFileStatus",
+                        "printedName": "GenesysCloudCore.UploadableFileStatus",
+                        "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus@UploadableFileStatusNone",
+            "mangledName": "$s16GenesysCloudCore20UploadableFileStatusO4noneyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "uploadDelayed",
+            "printedName": "uploadDelayed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.UploadableFileStatus.Type) -> GenesysCloudCore.UploadableFileStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadableFileStatus",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus",
+                    "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UploadableFileStatus",
+                        "printedName": "GenesysCloudCore.UploadableFileStatus",
+                        "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus@UploadableFileStatusUploadDelayed",
+            "mangledName": "$s16GenesysCloudCore20UploadableFileStatusO13uploadDelayedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "validated",
+            "printedName": "validated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.UploadableFileStatus.Type) -> GenesysCloudCore.UploadableFileStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadableFileStatus",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus",
+                    "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UploadableFileStatus",
+                        "printedName": "GenesysCloudCore.UploadableFileStatus",
+                        "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus@UploadableFileStatusValidated",
+            "mangledName": "$s16GenesysCloudCore20UploadableFileStatusO9validatedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "preSigned",
+            "printedName": "preSigned",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.UploadableFileStatus.Type) -> GenesysCloudCore.UploadableFileStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadableFileStatus",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus",
+                    "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UploadableFileStatus",
+                        "printedName": "GenesysCloudCore.UploadableFileStatus",
+                        "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus@UploadableFileStatusPreSigned",
+            "mangledName": "$s16GenesysCloudCore20UploadableFileStatusO9preSignedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "uploading",
+            "printedName": "uploading",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.UploadableFileStatus.Type) -> GenesysCloudCore.UploadableFileStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadableFileStatus",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus",
+                    "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UploadableFileStatus",
+                        "printedName": "GenesysCloudCore.UploadableFileStatus",
+                        "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus@UploadableFileStatusUploading",
+            "mangledName": "$s16GenesysCloudCore20UploadableFileStatusO9uploadingyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "uploaded",
+            "printedName": "uploaded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.UploadableFileStatus.Type) -> GenesysCloudCore.UploadableFileStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadableFileStatus",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus",
+                    "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UploadableFileStatus",
+                        "printedName": "GenesysCloudCore.UploadableFileStatus",
+                        "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus@UploadableFileStatusUploaded",
+            "mangledName": "$s16GenesysCloudCore20UploadableFileStatusO8uploadedyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudCore.UploadableFileStatus.Type) -> GenesysCloudCore.UploadableFileStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadableFileStatus",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus",
+                    "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UploadableFileStatus",
+                        "printedName": "GenesysCloudCore.UploadableFileStatus",
+                        "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus@UploadableFileStatusFailure",
+            "mangledName": "$s16GenesysCloudCore20UploadableFileStatusO7failureyA2CmF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudCore.UploadableFileStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadableFileStatus",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus",
+                    "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenesysCloudCore20UploadableFileStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16GenesysCloudCore20UploadableFileStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "GenesysCloudCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore20UploadableFileStatusO8rawValueSivp",
+            "mangledName": "$s16GenesysCloudCore20UploadableFileStatusO8rawValueSivp",
+            "moduleName": "GenesysCloudCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore20UploadableFileStatusO8rawValueSivg",
+                "mangledName": "$s16GenesysCloudCore20UploadableFileStatusO8rawValueSivg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus",
+        "mangledName": "$s16GenesysCloudCore20UploadableFileStatusO",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UploadableFile",
+        "printedName": "UploadableFile",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "localUrl",
+            "printedName": "localUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore14UploadableFileC8localUrl10Foundation3URLVvp",
+            "mangledName": "$s16GenesysCloudCore14UploadableFileC8localUrl10Foundation3URLVvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore14UploadableFileC8localUrl10Foundation3URLVvg",
+                "mangledName": "$s16GenesysCloudCore14UploadableFileC8localUrl10Foundation3URLVvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CurrentValueSubject",
+                "printedName": "Combine.CurrentValueSubject<GenesysCloudCore.UploadableFileStatus, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UploadableFileStatus",
+                    "printedName": "GenesysCloudCore.UploadableFileStatus",
+                    "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine19CurrentValueSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore14UploadableFileC6status7Combine19CurrentValueSubjectCyAA0dE6StatusOs5NeverOGvp",
+            "mangledName": "$s16GenesysCloudCore14UploadableFileC6status7Combine19CurrentValueSubjectCyAA0dE6StatusOs5NeverOGvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CurrentValueSubject",
+                    "printedName": "Combine.CurrentValueSubject<GenesysCloudCore.UploadableFileStatus, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UploadableFileStatus",
+                        "printedName": "GenesysCloudCore.UploadableFileStatus",
+                        "usr": "c:@M@GenesysCloudCore@E@UploadableFileStatus"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine19CurrentValueSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore14UploadableFileC6status7Combine19CurrentValueSubjectCyAA0dE6StatusOs5NeverOGvg",
+                "mangledName": "$s16GenesysCloudCore14UploadableFileC6status7Combine19CurrentValueSubjectCyAA0dE6StatusOs5NeverOGvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fileId",
+            "printedName": "fileId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore14UploadableFileC6fileIdSSSgvp",
+            "mangledName": "$s16GenesysCloudCore14UploadableFileC6fileIdSSSgvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore14UploadableFileC6fileIdSSSgvg",
+                "mangledName": "$s16GenesysCloudCore14UploadableFileC6fileIdSSSgvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore14UploadableFileC6fileIdSSSgvs",
+                "mangledName": "$s16GenesysCloudCore14UploadableFileC6fileIdSSSgvs",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore14UploadableFileC6fileIdSSSgvM",
+                "mangledName": "$s16GenesysCloudCore14UploadableFileC6fileIdSSSgvM",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:fileId:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UploadableFile",
+                "printedName": "GenesysCloudCore.UploadableFile",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)UploadableFile"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenesysCloudCore14UploadableFileC4from6fileId4dataAC10Foundation3URLV_SSSgAG4DataVtcfc",
+            "mangledName": "$s16GenesysCloudCore14UploadableFileC4from6fileId4dataAC10Foundation3URLV_SSSgAG4DataVtcfc",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(fileName:fileSizeInBytes:downloadUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UploadableFile",
+                "printedName": "GenesysCloudCore.UploadableFile",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)UploadableFile"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenesysCloudCore14UploadableFileC8fileName0F11SizeInBytes11downloadUrlACSS_SiSgSSSgtcfc",
+            "mangledName": "$s16GenesysCloudCore14UploadableFileC8fileName0F11SizeInBytes11downloadUrlACSS_SiSgSSSgtcfc",
+            "moduleName": "GenesysCloudCore",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloudCore@objc(cs)UploadableFile",
+        "mangledName": "$s16GenesysCloudCore14UploadableFileC",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@GenesysCloudCore@objc(cs)BaseFile",
+        "superclassNames": [
+          "GenesysCloudCore.BaseFile",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -8669,20 +11514,13 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "GenesysCloudCore",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "GenesysCloudCore"
       },
       {
         "kind": "Import",
@@ -9060,6 +11898,91 @@
         "children": [
           {
             "kind": "Var",
+            "name": "parentMessageId",
+            "printedName": "parentMessageId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvp",
+            "mangledName": "$s16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvp",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvg",
+                "mangledName": "$s16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvg",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvs",
+                "mangledName": "$s16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvs",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvM",
+                "mangledName": "$s16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvM",
+                "moduleName": "GenesysCloudCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "fileId",
             "printedName": "fileId",
             "children": [
@@ -9108,700 +12031,6 @@
           },
           {
             "kind": "Var",
-            "name": "parentMessageId",
-            "printedName": "parentMessageId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC15parentMessageIdSSvg",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "previewImage",
-            "printedName": "previewImage",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIImage?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC12previewImageSo7UIImageCSgvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC12previewImageSo7UIImageCSgvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIImage?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIImage",
-                        "printedName": "UIKit.UIImage",
-                        "usr": "c:objc(cs)UIImage"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC12previewImageSo7UIImageCSgvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC12previewImageSo7UIImageCSgvg",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "fileData",
-            "printedName": "fileData",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Data?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC8fileData10Foundation0G0VSgvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC8fileData10Foundation0G0VSgvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Data?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Data",
-                        "printedName": "Foundation.Data",
-                        "usr": "s:10Foundation4DataV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC8fileData10Foundation0G0VSgvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC8fileData10Foundation0G0VSgvg",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "downloadURL",
-            "printedName": "downloadURL",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC11downloadURLSSvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC11downloadURLSSvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC11downloadURLSSvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC11downloadURLSSvg",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "fileSizeInBytes",
-            "printedName": "fileSizeInBytes",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC15fileSizeInBytesSiSgvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC15fileSizeInBytesSiSgvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC15fileSizeInBytesSiSgvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC15fileSizeInBytesSiSgvg",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "fileName",
-            "printedName": "fileName",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC8fileNameSSvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC8fileNameSSvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC8fileNameSSvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC8fileNameSSvg",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "requiresPreview",
-            "printedName": "requiresPreview",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC15requiresPreviewSbvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC15requiresPreviewSbvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC15requiresPreviewSbvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC15requiresPreviewSbvg",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC15requiresPreviewSbvs",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC15requiresPreviewSbvs",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC15requiresPreviewSbvM",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC15requiresPreviewSbvM",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "previewFailed",
-            "printedName": "previewFailed",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC13previewFailedSbvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC13previewFailedSbvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC13previewFailedSbvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC13previewFailedSbvg",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC13previewFailedSbvs",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC13previewFailedSbvs",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC13previewFailedSbvM",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC13previewFailedSbvM",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isFlexibleSize",
-            "printedName": "isFlexibleSize",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC14isFlexibleSizeSbvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC14isFlexibleSizeSbvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC14isFlexibleSizeSbvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC14isFlexibleSizeSbvg",
-                "moduleName": "GenesysCloudCore",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "supportsStreaming",
-            "printedName": "supportsStreaming",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC17supportsStreamingSbvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC17supportsStreamingSbvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC17supportsStreamingSbvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC17supportsStreamingSbvg",
-                "moduleName": "GenesysCloudCore",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "fileMimeType",
-            "printedName": "fileMimeType",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "GenesysCloudCore.MimeType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MimeType",
-                    "printedName": "GenesysCloudCore.MimeType",
-                    "usr": "s:16GenesysCloudCore8MimeTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC12fileMimeTypeAA0gH0OSgvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC12fileMimeTypeAA0gH0OSgvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "GenesysCloudCore.MimeType?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MimeType",
-                        "printedName": "GenesysCloudCore.MimeType",
-                        "usr": "s:16GenesysCloudCore8MimeTypeO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC12fileMimeTypeAA0gH0OSgvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC12fileMimeTypeAA0gH0OSgvg",
-                "moduleName": "GenesysCloudCore",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "progressSubject",
-            "printedName": "progressSubject",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CurrentValueSubject",
-                "printedName": "Combine.CurrentValueSubject<Swift.Double, Swift.Never>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ],
-                "usr": "s:7Combine19CurrentValueSubjectC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC15progressSubject7Combine012CurrentValueG0CySds5NeverOGvp",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC15progressSubject7Combine012CurrentValueG0CySds5NeverOGvp",
-            "moduleName": "GenesysCloudCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CurrentValueSubject",
-                    "printedName": "Combine.CurrentValueSubject<Swift.Double, Swift.Never>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Never",
-                        "printedName": "Swift.Never",
-                        "usr": "s:s5NeverO"
-                      }
-                    ],
-                    "usr": "s:7Combine19CurrentValueSubjectC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16GenesysCloudCore16DownloadableFileC15progressSubject7Combine012CurrentValueG0CySds5NeverOGvg",
-                "mangledName": "$s16GenesysCloudCore16DownloadableFileC15progressSubject7Combine012CurrentValueG0CySds5NeverOGvg",
-                "moduleName": "GenesysCloudCore",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "status",
             "printedName": "status",
             "children": [
@@ -9834,8 +12063,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -9909,9 +12137,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -9929,8 +12165,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16GenesysCloudCore16DownloadableFileC15parentMessageId8fileName0iH011downloadURL0I11SizeInBytesACSS_S3SSiSgtcfc",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileC15parentMessageId8fileName0iH011downloadURL0I11SizeInBytesACSS_S3SSiSgtcfc",
+            "usr": "s:16GenesysCloudCore16DownloadableFileC15parentMessageId8fileName0iH011downloadURL0I11SizeInBytesACSS_S3SSgSiSgtcfc",
+            "mangledName": "$s16GenesysCloudCore16DownloadableFileC15parentMessageId8fileName0iH011downloadURL0I11SizeInBytesACSS_S3SSgSiSgtcfc",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "AccessControl"
@@ -9940,25 +12176,99 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init()",
+            "printedName": "init(from:messageId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudCore.DownloadableFile?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DownloadableFile",
+                    "printedName": "GenesysCloudCore.DownloadableFile",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UploadableFile",
+                "printedName": "GenesysCloudCore.UploadableFile",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)UploadableFile"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16GenesysCloudCore16DownloadableFileC4from9messageIdACSgAA010UploadableE0C_SStcfc",
+            "mangledName": "$s16GenesysCloudCore16DownloadableFileC4from9messageIdACSgAA010UploadableE0C_SStcfc",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(fileName:fileSizeInBytes:downloadUrl:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "DownloadableFile",
                 "printedName": "GenesysCloudCore.DownloadableFile",
                 "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile(im)init",
-            "mangledName": "$s16GenesysCloudCore16DownloadableFileCACycfc",
+            "usr": "s:16GenesysCloudCore16DownloadableFileC8fileName0F11SizeInBytes11downloadUrlACSS_SiSgSSSgtcfc",
+            "mangledName": "$s16GenesysCloudCore16DownloadableFileC8fileName0F11SizeInBytes11downloadUrlACSS_SiSgSSSgtcfc",
             "moduleName": "GenesysCloudCore",
             "overriding": true,
             "implicit": true,
-            "objc_name": "init",
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
               "Override"
             ],
             "init_kind": "Designated"
@@ -9972,8 +12282,9 @@
           "AccessControl",
           "ObjC"
         ],
-        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassUsr": "c:@M@GenesysCloudCore@objc(cs)BaseFile",
         "superclassNames": [
+          "GenesysCloudCore.BaseFile",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -14547,7 +16858,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(text:elementId:)",
+            "printedName": "init(text:elementId:attachments:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14574,13 +16885,28 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloudCore.DownloadableFile]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DownloadableFile",
+                    "printedName": "GenesysCloudCore.DownloadableFile",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStatement(im)initWithText:elementId:",
-            "mangledName": "$s16GenesysCloudCore13ChatStatementC4text9elementIdACSSSg_SStcfc",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)ChatStatement(im)initWithText:elementId:attachments:",
+            "mangledName": "$s16GenesysCloudCore13ChatStatementC4text9elementId11attachmentsACSSSg_SSSayAA16DownloadableFileCGtcfc",
             "moduleName": "GenesysCloudCore",
-            "objc_name": "initWithText:elementId:",
+            "objc_name": "initWithText:elementId:attachments:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -14700,7 +17026,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(text:elementId:)",
+            "printedName": "init(text:elementId:attachments:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14727,14 +17053,29 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloudCore.DownloadableFile]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DownloadableFile",
+                    "printedName": "GenesysCloudCore.DownloadableFile",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@GenesysCloudCore@objc(cs)EventStatement(im)initWithText:elementId:",
-            "mangledName": "$s16GenesysCloudCore14EventStatementC4text9elementIdACSSSg_SStcfc",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)EventStatement(im)initWithText:elementId:attachments:",
+            "mangledName": "$s16GenesysCloudCore14EventStatementC4text9elementId11attachmentsACSSSg_SSSayAA16DownloadableFileCGtcfc",
             "moduleName": "GenesysCloudCore",
             "overriding": true,
-            "objc_name": "initWithText:elementId:",
+            "objc_name": "initWithText:elementId:attachments:",
             "declAttributes": [
               "ObjC",
               "Override",
@@ -14831,7 +17172,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(text:elementId:)",
+            "printedName": "init(text:elementId:attachments:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14858,14 +17199,29 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloudCore.DownloadableFile]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DownloadableFile",
+                    "printedName": "GenesysCloudCore.DownloadableFile",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@GenesysCloudCore@objc(cs)AutostartEventStatement(im)initWithText:elementId:",
-            "mangledName": "$s16GenesysCloudCore23AutostartEventStatementC4text9elementIdACSSSg_SStcfc",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)AutostartEventStatement(im)initWithText:elementId:attachments:",
+            "mangledName": "$s16GenesysCloudCore23AutostartEventStatementC4text9elementId11attachmentsACSSSg_SSSayAA16DownloadableFileCGtcfc",
             "moduleName": "GenesysCloudCore",
             "overriding": true,
-            "objc_name": "initWithText:elementId:",
+            "objc_name": "initWithText:elementId:attachments:",
             "declAttributes": [
               "ObjC",
               "Override",
@@ -14963,7 +17319,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(text:elementId:)",
+            "printedName": "init(text:elementId:attachments:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14990,15 +17346,30 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloudCore.DownloadableFile]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DownloadableFile",
+                    "printedName": "GenesysCloudCore.DownloadableFile",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@GenesysCloudCore@objc(cs)ConversationDisconnectEventStatement(im)initWithText:elementId:",
-            "mangledName": "$s16GenesysCloudCore36ConversationDisconnectEventStatementC4text9elementIdACSSSg_SStcfc",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)ConversationDisconnectEventStatement(im)initWithText:elementId:attachments:",
+            "mangledName": "$s16GenesysCloudCore36ConversationDisconnectEventStatementC4text9elementId11attachmentsACSSSg_SSSayAA16DownloadableFileCGtcfc",
             "moduleName": "GenesysCloudCore",
             "overriding": true,
             "implicit": true,
-            "objc_name": "initWithText:elementId:",
+            "objc_name": "initWithText:elementId:attachments:",
             "declAttributes": [
               "ObjC",
               "Override"
@@ -15169,7 +17540,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(text:elementId:)",
+            "printedName": "init(text:elementId:attachments:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15196,15 +17567,30 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloudCore.DownloadableFile]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DownloadableFile",
+                    "printedName": "GenesysCloudCore.DownloadableFile",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@GenesysCloudCore@objc(cs)TypingEventStatement(im)initWithText:elementId:",
-            "mangledName": "$s16GenesysCloudCore20TypingEventStatementC4text9elementIdACSSSg_SStcfc",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)TypingEventStatement(im)initWithText:elementId:attachments:",
+            "mangledName": "$s16GenesysCloudCore20TypingEventStatementC4text9elementId11attachmentsACSSSg_SSSayAA16DownloadableFileCGtcfc",
             "moduleName": "GenesysCloudCore",
             "overriding": true,
             "implicit": true,
-            "objc_name": "initWithText:elementId:",
+            "objc_name": "initWithText:elementId:attachments:",
             "declAttributes": [
               "ObjC",
               "Override"
@@ -15828,7 +18214,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(text:elementId:)",
+            "printedName": "init(text:elementId:attachments:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15855,15 +18241,30 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloudCore.DownloadableFile]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DownloadableFile",
+                    "printedName": "GenesysCloudCore.DownloadableFile",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)DownloadableFile"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@GenesysCloudCore@objc(cs)TimedChatStatement(im)initWithText:elementId:",
-            "mangledName": "$s16GenesysCloudCore18TimedChatStatementC4text9elementIdACSSSg_SStcfc",
+            "usr": "c:@M@GenesysCloudCore@objc(cs)TimedChatStatement(im)initWithText:elementId:attachments:",
+            "mangledName": "$s16GenesysCloudCore18TimedChatStatementC4text9elementId11attachmentsACSSSg_SSSayAA16DownloadableFileCGtcfc",
             "moduleName": "GenesysCloudCore",
             "overriding": true,
             "implicit": true,
-            "objc_name": "initWithText:elementId:",
+            "objc_name": "initWithText:elementId:attachments:",
             "declAttributes": [
               "ObjC",
               "Override"
@@ -16222,6 +18623,16 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudCore",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -19263,6 +21674,70 @@
           },
           {
             "kind": "Function",
+            "name": "attach",
+            "printedName": "attach(fileData:fileName:fileURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenesysCloudCore14BaseChatEngineC6attach8fileData0H4Name0H3URLy10Foundation0I0V_SSAH0K0VtF",
+            "mangledName": "$s16GenesysCloudCore14BaseChatEngineC6attach8fileData0H4Name0H3URLy10Foundation0I0V_SSAH0K0VtF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "detach",
+            "printedName": "detach(attachmentId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16GenesysCloudCore14BaseChatEngineC6detach12attachmentIdySS_tF",
+            "mangledName": "$s16GenesysCloudCore14BaseChatEngineC6detach12attachmentIdySS_tF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "clearConversation",
             "printedName": "clearConversation()",
             "children": [
@@ -19457,6 +21932,50 @@
             "declKind": "Func",
             "usr": "s:SS16GenesysCloudCoreE8mimeTypeAA04MimeE0OSgyF",
             "mangledName": "$sSS16GenesysCloudCoreE8mimeTypeAA04MimeE0OSgyF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fileExtension",
+            "printedName": "fileExtension()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS16GenesysCloudCoreE13fileExtensionSSyF",
+            "mangledName": "$sSS16GenesysCloudCoreE13fileExtensionSSyF",
+            "moduleName": "GenesysCloudCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "withoutFileExtension",
+            "printedName": "withoutFileExtension()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS16GenesysCloudCoreE20withoutFileExtensionSSyF",
+            "mangledName": "$sSS16GenesysCloudCoreE20withoutFileExtensionSSyF",
             "moduleName": "GenesysCloudCore",
             "declAttributes": [
               "AccessControl"
@@ -20293,30 +22812,51 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/AttachmentFetcher.swift",
       "kind": "IntegerLiteral",
-      "offset": 2075,
+      "offset": 2068,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/AttachmentFetcher.swift",
       "kind": "Array",
-      "offset": 2183,
+      "offset": 2176,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/VideoFrameFetcher.swift",
       "kind": "StringLiteral",
-      "offset": 240,
+      "offset": 502,
       "length": 16,
       "value": "\"FrameTaskQueue\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/VideoFrameFetcher.swift",
       "kind": "Dictionary",
-      "offset": 315,
+      "offset": 569,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/VideoFrameFetcher.swift",
+      "kind": "BooleanLiteral",
+      "offset": 856,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/BaseFile.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1379,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/BaseFile.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1666,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Helper\/printLog.swift",
@@ -20489,91 +23029,119 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
-      "offset": 1283,
+      "offset": 1280,
       "length": 4,
       "value": "5024"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1322,
+      "length": 4,
+      "value": "5025"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1363,
+      "length": 4,
+      "value": "5026"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1433,
+      "offset": 1554,
       "length": 20,
       "value": "\"Failed to connect.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1516,
+      "offset": 1637,
       "length": 71,
       "value": "\"Unable to reconnect. Messenger state is not valid for this operation.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1646,
+      "offset": 1767,
       "length": 42,
       "value": "\"Failed to fetch Messenger configuration.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1743,
+      "offset": 1864,
       "length": 20,
       "value": "\"Failed to connect.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1826,
+      "offset": 1947,
       "length": 35,
       "value": "\"Failed to autostart conversation.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 1923,
+      "offset": 2044,
       "length": 64,
       "value": "\"We are unable to start a conversation. Please try again later.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 2047,
+      "offset": 2168,
       "length": 31,
       "value": "\"Failed to download attachment\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 2137,
+      "offset": 2258,
       "length": 30,
       "value": "\"Failed to refresh attachment\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 2268,
+      "offset": 2389,
       "length": 114,
       "value": "\"Authentication cannot proceed because no authentication information was provided in the MessengerAccount object.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 2456,
+      "offset": 2577,
       "length": 19,
       "value": "\"Failed to logout.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 2537,
+      "offset": 2805,
+      "length": 26,
+      "value": "\"File type not supported.\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "kind": "StringLiteral",
+      "offset": 2900,
+      "length": 39,
+      "value": "\"Something happened. Please try again.\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "kind": "StringLiteral",
+      "offset": 3041,
       "length": 110,
       "value": "\"Failed to clear and leave the conversation. This option is disabled for the current Messenger configuration.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
-      "offset": 2708,
+      "offset": 3212,
       "length": 31,
       "value": "\"Failed to clear conversation.\""
     },
@@ -20718,18 +23286,46 @@
       "value": "7"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
       "kind": "IntegerLiteral",
-      "offset": 1274,
-      "length": 1,
-      "value": "0"
+      "offset": 199,
+      "length": 13,
+      "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
       "kind": "IntegerLiteral",
-      "offset": 1561,
-      "length": 1,
-      "value": "0"
+      "offset": 222,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
+      "kind": "IntegerLiteral",
+      "offset": 241,
+      "length": 9,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
+      "kind": "IntegerLiteral",
+      "offset": 260,
+      "length": 9,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
+      "kind": "IntegerLiteral",
+      "offset": 279,
+      "length": 8,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
+      "kind": "IntegerLiteral",
+      "offset": 297,
+      "length": 7,
+      "value": "6"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/StatementScope.swift",
@@ -20804,21 +23400,21 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/NetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 563,
+      "offset": 518,
       "length": 19,
       "value": "\"downloadTaskQueue\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/NetworkService.swift",
       "kind": "Dictionary",
-      "offset": 743,
+      "offset": 698,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/NetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1399,
+      "offset": 1354,
       "length": 5,
       "value": "false"
     },
@@ -20929,22 +23525,43 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
+      "kind": "Array",
+      "offset": 2008,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
+      "kind": "Array",
+      "offset": 2293,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
+      "kind": "Array",
+      "offset": 2541,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "StringLiteral",
-      "offset": 2609,
+      "offset": 2814,
       "length": 18,
       "value": "\"typing_indicator\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "Array",
-      "offset": 2843,
+      "offset": 3048,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-core-standalone\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStatement.swift",
       "kind": "IntegerLiteral",
-      "offset": 3263,
+      "offset": 3468,
       "length": 2,
       "value": "35"
     },

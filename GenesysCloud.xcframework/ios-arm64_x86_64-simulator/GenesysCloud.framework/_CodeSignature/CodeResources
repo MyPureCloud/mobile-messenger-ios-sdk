@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		kcIXHZmjEgy3e7+Rlu9NiJ2Av64=
+		h4SralB8J4Z6xyCJOheWNP1lBa4=
 		</data>
 		<key>AttachmentTableViewCell.nib</key>
 		<data>
-		zMCnvTbNBAY26R3qx0hIPab82Ro=
+		gbu0Frouqg+f+xSuYuP8TTRixWE=
 		</data>
 		<key>ButtonResponseTableViewCell.nib</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>GenesysCloud.storyboardc/MMQ-qY-Lto-view-VfP-cD-GIo.nib</key>
 		<data>
-		GkMoFEx+tTggLhro3ZX6tZ/kxqo=
+		9dXfhNUoNsaefWYH63bYPBo3c3c=
 		</data>
 		<key>Headers/ApplicationHandler.h</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Headers/BaseChatHandler.h</key>
 		<data>
-		XO3sZoMuFJnnvJ0ThUZOrh58fyI=
+		ny74MN7myScyLe8ujDn/szGwkM0=
 		</data>
 		<key>Headers/ChatAvailabilityChecker.h</key>
 		<data>
-		9oNDUhllGimD7sbf5CUKAdfdlBs=
+		okVwrCCwSyzoDPkvz9WqVDgeN6Y=
 		</data>
 		<key>Headers/ChatConfiguration.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/ChatHandler.h</key>
 		<data>
-		Cj3al6REp+1SCScgH4HDoE2OCs8=
+		7Qj31ELLlvhN0BCtXFsn33CeZko=
 		</data>
 		<key>Headers/ChatViewConfiguration.h</key>
 		<data>
@@ -94,19 +94,15 @@
 		</data>
 		<key>Headers/CommonConfig.h</key>
 		<data>
-		Dbf92imBZlC2JWvmVTvrvgdIExs=
+		A8oRKJPz4KJ5PelmEJ4pNVgtpbc=
 		</data>
 		<key>Headers/ConfigStructures.h</key>
 		<data>
-		B0nRpDPbpcU9ItAdF0V2UeL83AI=
+		YGblEpnyEnijN0youzo06d2nuMQ=
 		</data>
 		<key>Headers/ContentChatElement.h</key>
 		<data>
 		j/nz8JXrt9e8jOA/x2fW4AVyM8o=
-		</data>
-		<key>Headers/CustomFont.h</key>
-		<data>
-		0rZJW0sIpggFeGh+G2c4AzGmZKY=
 		</data>
 		<key>Headers/CustomLabel.h</key>
 		<data>
@@ -122,11 +118,11 @@
 		</data>
 		<key>Headers/GenesysCloud-Swift.h</key>
 		<data>
-		iumCAT/g5OhiKanqrcIh1PPesJc=
+		bYIeau1T/yIn3CAbx/1GS4RPnPo=
 		</data>
 		<key>Headers/GenesysCloud.h</key>
 		<data>
-		ezl1lnfGPQfMIZgQldlPGb6YLoo=
+		OxOUB3S15RjBBREDbuY1gMIwRlo=
 		</data>
 		<key>Headers/IncomingBotConfiguration.h</key>
 		<data>
@@ -154,7 +150,7 @@
 		</data>
 		<key>Headers/MessengerHandler.h</key>
 		<data>
-		3gMpL26E0VFL/tg8ljRlPp3qlnk=
+		HLxFG5C7maXwHdhkViMiZGj+WI0=
 		</data>
 		<key>Headers/NSBundle+UIBundle.h</key>
 		<data>
@@ -186,7 +182,7 @@
 		</data>
 		<key>Headers/TextConfiguration.h</key>
 		<data>
-		Ymlz+0H4ShTk5RFYW1JSuU5tiLo=
+		8+dNGYOopVnl+HEmPdk9z7VmR58=
 		</data>
 		<key>Headers/UIColor+Utility.h</key>
 		<data>
@@ -202,51 +198,51 @@
 		</data>
 		<key>InputView.nib</key>
 		<data>
-		7ruK8hDYJKHBe2XcOcP+21nZgaU=
+		BWxDvmORnIxIZmw74dkfmgEW690=
 		</data>
 		<key>MediaTableViewCell.nib</key>
 		<data>
-		nQP3n0xnQ3fLdeeZB2uyB42tz98=
+		gO0UrCAoIQ0AAYwEhjqVQ21njK0=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		caF/w/Db48Db9khDWdpi538LWLg=
+		35F6MFLXUb/C0TqJ4AJVjaX9aRs=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		wPUU0NGF9w1S89IKuR/oDrjZCz8=
+		frc51S0ryMNx64I1b4SwGFs6tMg=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Vy34q1K/qq3REpvX6EfwC/sFSvs=
+		Wh80dRSey72+XYUnMmfFy+DcD08=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wPUU0NGF9w1S89IKuR/oDrjZCz8=
+		frc51S0ryMNx64I1b4SwGFs6tMg=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3vHZtpVnQdvTagrmt7K5Ec8+IHo=
+		3RAUJDNNXkdDV4bQYV+CBfiAXOc=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		caF/w/Db48Db9khDWdpi538LWLg=
+		35F6MFLXUb/C0TqJ4AJVjaX9aRs=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		UmpN8peQQsxzmustxKd0I2C8YmI=
+		jOiplnZwnoC4/0+FDtqEpNiOQfo=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		sV16tS7La9cD8gVF6+A6zDHKIBk=
+		l4MsHZunrZqNBzrEC2n+9sDhUXk=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UmpN8peQQsxzmustxKd0I2C8YmI=
+		jOiplnZwnoC4/0+FDtqEpNiOQfo=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kerQbMzvRv2iGwGFhAZEXCMv4/U=
+		6OJL9FntRCoARu49nDcORmqhi7I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -258,7 +254,7 @@
 		</data>
 		<key>TextMessageCell.nib</key>
 		<data>
-		e87L9pCPDGF3oUKl7YmlY9vaZzI=
+		RcULPhC8hFd9WE2JC23VjKUtyZU=
 		</data>
 		<key>TypingIndicatorTableViewCell.nib</key>
 		<data>
@@ -280,14 +276,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H4B/s4wJMbYcf4ogn7QZPP6nhs4WMk/k1rVEg9/E0Sg=
+			OTerNQw6DD4FKuGieZKZmaiL5Xcotq8NwSSkrq735ZI=
 			</data>
 		</dict>
 		<key>AttachmentTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oO8iLaUYKa0IXaX+uo5aI5nakoxFz8A36WSNQJBahF4=
+			9KSFkX+v49okNvMePHyXsCpwhfe+pdDEOM+Hru0rvfA=
 			</data>
 		</dict>
 		<key>ButtonResponseTableViewCell.nib</key>
@@ -343,7 +339,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YQvdJorTMUnpR02CTm3zLDKZUVVz1Hz/+beV0XXHuUY=
+			jYi55G9Au3RwCBkWUCe9kIQQCLWfmO/XIIFPBfbf8kA=
 			</data>
 		</dict>
 		<key>Headers/ApplicationHandler.h</key>
@@ -364,14 +360,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T2XiRHWQAa06OTf48x3YOTeuJ8H5cqdgIuEXVnOgU6w=
+			O32eE0wgIjTITfR6Y01fkMm9Ckilw3GFjrT593gS9JY=
 			</data>
 		</dict>
 		<key>Headers/ChatAvailabilityChecker.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p+RDU6cdtrSywMjDwRNrsvYuJpR0xP07SlOGtdKSIpQ=
+			gOYf4VVGSbuV9nZIJXi95FxqaP3kLOyEfTY3dKXHH4U=
 			</data>
 		</dict>
 		<key>Headers/ChatConfiguration.h</key>
@@ -420,7 +416,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vAyL0DTriOMpRrBgztslB4W+VWFNuXFSIARdeYYHRwk=
+			Cn7anjrBBkTI5xeJdD7dIFk2JVwCSQK4PzIkwCBLSNE=
 			</data>
 		</dict>
 		<key>Headers/ChatViewConfiguration.h</key>
@@ -434,14 +430,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ABRBUhNNQrnz6FiszKK3J85b5gv9unmoah9xC42b2AQ=
+			Oyqhzt3sDkaeSBLB33dj/4yQZW+X4pzBxCOXtE5iZy0=
 			</data>
 		</dict>
 		<key>Headers/ConfigStructures.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t201AbNXarZBzq86HOOmIEAYdj2b3eRw3GdxS1Tuqro=
+			Td3B5ATI5b+KFi5S6NjOGyhclbfB9sr99DCYqX7fkIA=
 			</data>
 		</dict>
 		<key>Headers/ContentChatElement.h</key>
@@ -449,13 +445,6 @@
 			<key>hash2</key>
 			<data>
 			v3FzCfgXznmCPJyA52MEMF6IqMpL4gaAAMUyoVnw4GA=
-			</data>
-		</dict>
-		<key>Headers/CustomFont.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OQfeg0NVXkYb/fknn6Wp3hkZDqn1BwJcfkJ0IZGjEQs=
 			</data>
 		</dict>
 		<key>Headers/CustomLabel.h</key>
@@ -483,14 +472,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			toCZUxyDqg3bxRafAJgPPrNkFIoJUMoN/IVO1FBz9iI=
+			RWbjoPLHL16IuyOSbfAxnL9RAcsFHQph7GnauJ7Q444=
 			</data>
 		</dict>
 		<key>Headers/GenesysCloud.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DhY8uCOWG+P4LcTudHZOfoa2iujthgdmLtosVRYdMdw=
+			vbXJYOWCQjcUtcXWC7sI+DgbHJr/lK3gL/ByrVGVsCY=
 			</data>
 		</dict>
 		<key>Headers/IncomingBotConfiguration.h</key>
@@ -539,7 +528,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kc1B1F+uAeIzF8k1Ct1n8wxB85rKVFNCKwGns8j3lyY=
+			E2mDQj7yvDHXJSnwHkIwfP9/jJWyw+9PiWg9pF15TjA=
 			</data>
 		</dict>
 		<key>Headers/NSBundle+UIBundle.h</key>
@@ -595,7 +584,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LPtEkbytp2CrPtEbWa7NxkW4CGWbUVk4G9nQWUldVDA=
+			g9xLV9ocZQcAOcYbC5BRBxJiHiGWj2BEh+x20rIuy2w=
 			</data>
 		</dict>
 		<key>Headers/UIColor+Utility.h</key>
@@ -616,84 +605,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BrfNhsavJANjgIR89jP53s+R23OBN2fQdPyz9gyc+Io=
+			ogkHhtX/JOTe173oGPoBhw/eemAjSeaJhyy/VJaIAGQ=
 			</data>
 		</dict>
 		<key>MediaTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vHZyEHGoaSWFONbiqHKTAKApY+jiHlmvlQMu6aJa4Kc=
+			ZO71B7T7Yk00O4qlcPSPTYRLAylJYnkydc9aazTNmuA=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W/M44HFv+VPZhwYKu1HeaLZEJFNcglFAIirMoao7iWc=
+			HgeKhAZMtKF0O8nbaiKWgQMXVftL4k86xY5oZriJCt0=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xtMGsypEpaxzGRh0+kmBaKM/6yJUR/nJmKralU5BuE4=
+			tkdeqgLYDBNifDfEbN/uR6Qn1x1svzoTmXAIRUdD2O4=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZX3Agzg+QUZLm9kCOFq+qL+xYSPdV5I7FhjzcX4zWK0=
+			jH+oI2KMOszXBupoKi47kPv5gxXZ035mNnKdXFJJ9Qw=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xtMGsypEpaxzGRh0+kmBaKM/6yJUR/nJmKralU5BuE4=
+			tkdeqgLYDBNifDfEbN/uR6Qn1x1svzoTmXAIRUdD2O4=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9fKi7aNJmHBWf+lk04DT8D3sazVnV3CWLNzirwCFYRM=
+			mpmioS81CZeR2D3nlrGYTHVuyJITkjJw+YPCh+V9fos=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W/M44HFv+VPZhwYKu1HeaLZEJFNcglFAIirMoao7iWc=
+			HgeKhAZMtKF0O8nbaiKWgQMXVftL4k86xY5oZriJCt0=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3gr67ZonhmfNVH74rKQxFm6aWVztlmVC9OXqjFZg7Dw=
+			xwaGvT+yopDT04UVIaDca5RoLAmwgUltnyAaeA96580=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3mDejz63VjjRXfTbzfuePNPgrRyH6v1284l6g/TCu0Y=
+			mSJglIjy/8yw7lbn/EiMelChnuR7ZO7SYkZ2n5Zs6CE=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3gr67ZonhmfNVH74rKQxFm6aWVztlmVC9OXqjFZg7Dw=
+			xwaGvT+yopDT04UVIaDca5RoLAmwgUltnyAaeA96580=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N0ynN5pvU7YJnGvOgJl2YQRbfxL1KIiCjDcTRAgf5lk=
+			WjUIegqE6tlkfr8ZUk8n7scf6xTv9K2EQ9PMb9xhPKM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -714,7 +703,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zosd5qEehwy595vfi8fHkfjIahfYWlItGRjnjg0J6FM=
+			dpBYRlSHnum30OrY+3pLekKXY8U60c1m+2c8ez+EcIo=
 			</data>
 		</dict>
 		<key>TypingIndicatorTableViewCell.nib</key>

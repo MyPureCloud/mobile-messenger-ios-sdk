@@ -12,6 +12,7 @@ import Foundation
 import GenesysCloudCore
 import GenesysCloudMessenger
 import MobileCoreServices
+import PhotosUI
 import QuickLook
 import Swift
 import SwiftUI
@@ -70,7 +71,6 @@ public protocol GroupedDataProtocol : AnyObject {
   func getGroupHeader(as template: Swift.String, withLocale locale: Swift.String?) -> Swift.String
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency final public class ChatUIViewController : UIKit.UIViewController {
-  @objc @_Concurrency.MainActor @preconcurrency final public var viewModel: GenesysCloud.ChatUIViewModel?
   @objc @_Concurrency.MainActor @preconcurrency final public var viewConfiguration: (any GenesysCloud.ViewConfiguration)?
   @objc @_Concurrency.MainActor @preconcurrency final public var configurationRepository: GenesysCloud.ConfigurationRepository? {
     get
@@ -87,10 +87,10 @@ public protocol GroupedDataProtocol : AnyObject {
 }
 extension GenesysCloud.ChatUIViewController : UIKit.UITableViewDelegate, UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc final public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
-  @_Concurrency.MainActor @preconcurrency @objc final public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
-  @_Concurrency.MainActor @preconcurrency @objc final public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
   @_Concurrency.MainActor @preconcurrency @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc final public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc final public func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreFoundation.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreFoundation.CGPoint>)
 }
 extension GenesysCloud.ChatUIViewController : QuickLook.QLPreviewControllerDataSource {
   @_Concurrency.MainActor @preconcurrency @objc final public func numberOfPreviewItems(in controller: QuickLook.QLPreviewController) -> Swift.Int
@@ -103,6 +103,16 @@ extension GenesysCloud.ChatUIViewController {
   @_Concurrency.MainActor @preconcurrency final public func userDidType()
   @_Concurrency.MainActor @preconcurrency final public func didSubmit(text: Swift.String)
 }
+extension GenesysCloud.ChatUIViewController : PhotosUI.PHPickerViewControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency final public func picker(_ picker: PhotosUI.PHPickerViewController, didFinishPicking results: [PhotosUI.PHPickerResult])
+}
+extension GenesysCloud.ChatUIViewController : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc final public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+  @_Concurrency.MainActor @preconcurrency @objc final public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
+}
+extension GenesysCloud.ChatUIViewController : UIKit.UIDocumentPickerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc final public func documentPicker(_ controller: UIKit.UIDocumentPickerViewController, didPickDocumentsAt urls: [Foundation.URL])
+}
 @_inheritsConvenienceInitializers @objc public class ChatUIViewModel : ObjectiveC.NSObject {
   @objc public var hasMoreHistory: Swift.Bool
   @objc public var chatHandlerProvider: (any GenesysCloud.ChatHandlerProvider)?
@@ -110,6 +120,7 @@ extension GenesysCloud.ChatUIViewController {
   public func removeLastElement(updateUI: Swift.Bool = false, with predicate: (GenesysCloud.ContentChatElement) throws -> Swift.Bool) throws
   @objc public func updateConfiguration(with repository: GenesysCloud.ConfigurationRepository)
   @objc public func showErrorView(errorMessage: Swift.String, image: UIKit.UIImage? = nil, buttonImage: UIKit.UIImage? = nil)
+  @objc public func showAttachmentComponent(file: GenesysCloudCore.UploadableFile)
   @objc deinit
 }
 extension GenesysCloud.ChatUIViewModel : GenesysCloud.ChatHandlerDelegate {
@@ -128,10 +139,17 @@ extension GenesysCloud.ChatUIViewModel : GenesysCloud.ChatHandlerDelegate {
   @objc dynamic public func resetChatUI(completionHandler: @escaping () -> Swift.Void)
   @objc dynamic public func didFailWithError(_ error: GenesysCloudCore.GCError?)
 }
+extension GenesysCloud.ChatUIViewModel {
+  public func attachmentValidationFailed()
+}
 @objc public class ConfigurationRepository : ObjectiveC.NSObject {
-  @objc public var chatSettings: GenesysCloudCore.ChatSettings
+  @objc public var chatSettings: GenesysCloudMessenger.MessengerChatSettings
   @objc public var uiConfig: GenesysCloud.ChatConfiguration
-  @objc public init(settings: GenesysCloudCore.ChatSettings, config: GenesysCloud.ChatConfiguration)
+  @objc public init(settings: GenesysCloudMessenger.MessengerChatSettings, config: GenesysCloud.ChatConfiguration)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class CameraAvailabilityChecker : ObjectiveC.NSObject {
+  @objc override dynamic public init()
   @objc deinit
 }
 public protocol FileSystemManaging {
@@ -147,15 +165,32 @@ public class DownloadableFileHandler {
   public init(fileManager: any GenesysCloud.FileSystemManaging)
   @objc deinit
 }
+extension GenesysCloudCore.MimeType {
+  public static func generateFileImage(from fileName: Swift.String, shouldBeGray: Swift.Bool = false) -> UIKit.UIImage
+  public static func getAccessibilityBrandingKey(from fileName: Swift.String) -> Swift.String
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class InputViewConfiguration : GenesysCloud.TextConfiguration {
   @objc override dynamic public init()
   @objc deinit
 }
+public enum LoadingViewStateAfterCompletion {
+  case hide
+  case showStatic
+  case showInterminate
+  public static func == (a: GenesysCloud.LoadingViewStateAfterCompletion, b: GenesysCloud.LoadingViewStateAfterCompletion) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct LoadingIndicatorModel {
+}
 @objc public enum PresentationState : Swift.Int {
-  case none = 0
+  case none
   case typingPlaceholder
   case typingSendDisabled
   case typingSendEnabled
+  case attachmentNoText
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -163,8 +198,20 @@ public class DownloadableFileHandler {
   }
 }
 extension GenesysCloud.MessengerHandler {
-  @objc override dynamic public func updateFileProfile(_ settings: GenesysCloudCore.ChatSettings, profile: GenesysCloudMessenger.AttachmentProfile?)
-  public func subscribeToAttachmentFetcher()
+  @objc override dynamic public func updateFileProfile(_ profile: GenesysCloudMessenger.AttachmentProfile?)
+  @objc override dynamic public func subscribeToAttachmentFetcher()
+  @objc override dynamic open func didReceiveAttachmentId(_ attachmentId: Swift.String, fileURL: Foundation.URL, fileData: Foundation.Data)
+  @objc override dynamic open func didUploadAttachment(withAttachmentId attachmentId: Swift.String, downloadUrl: Swift.String)
+  @objc override dynamic open func updateAttachmentStatus(_ status: GenesysCloudCore.UploadableFileStatus)
+  @objc override dynamic open func didUpdateUploadProgress(_ progress: Swift.Double)
+  @objc override dynamic open func handleSelectedFile(_ localUrl: Foundation.URL)
+  @objc override dynamic open func postStatement(_ statement: any GenesysCloud.StorableChatElement)
+  @objc dynamic public func didFailAttachmentValidation()
+  @objc override dynamic open func didDelayAttachment(withFileData fileData: Foundation.Data, fileURL: Foundation.URL)
+  @objc override dynamic open func didEnableFileUpload()
+  @objc override dynamic open func didRefreshAttachment(withAttachmentId attachmentId: Swift.String, downloadUrl: Swift.String)
+  @objc override dynamic open func attachmentRefresh(_ file: GenesysCloudCore.DownloadableFile)
+  @objc override dynamic open func detach()
   @objc override dynamic public func clearConversationIfEnabled()
   @objc override dynamic open func agentDidType(_ params: [Swift.String : Any]?)
 }
@@ -172,9 +219,8 @@ extension GenesysCloud.MessengerHandler {
   @objc override dynamic public init()
   @objc deinit
 }
-extension Swift.String {
-  public func fileExtension() -> Swift.String
-  public func withoutFileExtension() -> Swift.String
+@_hasMissingDesignatedInitializers public class DefaultRotationAnimator {
+  @objc deinit
 }
 extension GenesysCloud.TagCellLayout {
   public enum LayoutAlignment : Swift.Int {
@@ -206,6 +252,47 @@ public protocol TagCellLayoutDelegate : ObjectiveC.NSObjectProtocol {
   }
   @objc deinit
 }
+@objc public protocol GrowingTextViewDelegate : UIKit.UITextViewDelegate {
+  @objc optional func textViewDidChangeHeight(_ textView: GenesysCloud.GrowingTextView, height: CoreFoundation.CGFloat)
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class GrowingTextView : UIKit.UITextView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var text: Swift.String! {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var maxLength: Swift.Int
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var trimWhiteSpaceWhenEndEditing: Swift.Bool
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var minHeight: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var maxHeight: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholder: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholderFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency open var attributedPlaceholder: Foundation.NSAttributedString? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect, textContainer: UIKit.NSTextContainer?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func traitCollectionDidChange(_ previous: UIKit.UITraitCollection?)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+}
 @objc public enum InputType : Swift.Int {
   case conversationVoice = 0
   case botAutoComplete
@@ -230,6 +317,8 @@ extension UIKit.UIView {
                                                                     .layerMinXMaxYCorner,
                                                                     .layerMaxXMaxYCorner])
 }
+extension GenesysCloud.LoadingViewStateAfterCompletion : Swift.Equatable {}
+extension GenesysCloud.LoadingViewStateAfterCompletion : Swift.Hashable {}
 extension GenesysCloud.PresentationState : Swift.Equatable {}
 extension GenesysCloud.PresentationState : Swift.Hashable {}
 extension GenesysCloud.PresentationState : Swift.RawRepresentable {}

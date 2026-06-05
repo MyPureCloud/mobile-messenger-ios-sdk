@@ -33,6 +33,35 @@ extension UIKit.UIColor {
   @objc public static let startNew: Swift.String
   @objc public static let resumeConversation: Swift.String
   @objc public static let startNewConversationError: Swift.String
+  @objc public static let attachCamera: Swift.String
+  @objc public static let attachMedia: Swift.String
+  @objc public static let attachFile: Swift.String
+  @objc public static let attachButton: Swift.String
+  @objc public static let attachMediaButton: Swift.String
+  @objc public static let attachError: Swift.String
+  @objc public static let image: Swift.String
+  @objc public static let audio: Swift.String
+  @objc public static let video: Swift.String
+  @objc public static let document: Swift.String
+  @objc public static let file: Swift.String
+  @objc public static let attaching: Swift.String
+  @objc public static let attached: Swift.String
+  @objc public static let removeFile: Swift.String
+  @objc public static let retryDownload: Swift.String
+  @objc public static let cancel: Swift.String
+  @objc public static let settings: Swift.String
+  @objc public static let preparing: Swift.String
+  @objc public static let send: Swift.String
+  @objc public static let pending: Swift.String
+  @objc public static let sent: Swift.String
+  @objc public static let delivered: Swift.String
+  @objc public static let deliveryError: Swift.String
+  @objc public static let scrollToTheBottom: Swift.String
+  @objc public static let agentMessageAccessibilityPrefix: Swift.String
+  @objc public static let userMessageAccessibilityPrefix: Swift.String
+  @objc public static let typingIndicator: Swift.String
+  @objc public static let cameraPermissionsDialogTitle: Swift.String
+  @objc public static let cameraPermissionsDialogBody: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -57,18 +86,10 @@ extension UIKit.UIColor {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MessengerUIConfig : ObjectiveC.NSObject {
-  @objc public var outgoingUI: GenesysCloudMessenger.MessageConfig {
-    @objc get
-    @objc set
-  }
-  @objc public var incomingUI: GenesysCloudMessenger.MessageConfig {
-    @objc get
-    @objc set
-  }
-  @objc public var systemUI: GenesysCloudMessenger.MessageConfig {
-    @objc get
-    @objc set
-  }
+  @objc override dynamic public init()
+  @objc public var outgoingUI: GenesysCloudMessenger.MessageConfig
+  @objc public var incomingUI: GenesysCloudMessenger.MessageConfig
+  @objc public var systemUI: GenesysCloudMessenger.MessageConfig
   @objc public var dateSeparatorColor: UIKit.UIColor
   @objc public var dateSeparatorFontSize: Swift.Double
   @objc public var dateSeparatorAlignment: UIKit.NSTextAlignment
@@ -79,18 +100,14 @@ extension UIKit.UIColor {
   @objc public var locale: Swift.String?
   @objc public var errorViewTextColor: UIKit.UIColor
   @objc public var errorViewBackgroundColor: UIKit.UIColor
-  @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class MessageConfig : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc public class MessageConfig : ObjectiveC.NSObject {
   @objc public var messageColor: UIKit.UIColor?
   @objc public var messageFontColor: UIKit.UIColor?
-  @objc public var messageFontSize: Swift.Double
   @objc public var messageTimeFontColor: UIKit.UIColor?
-  @objc public var messageTimeFontSize: Swift.Double
   @objc public var enableAvatar: Swift.Bool
   @objc public var iconBackground: UIKit.UIColor?
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol TranslationsRepositoryProtocol {
@@ -137,12 +154,14 @@ extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatEngin
   @objc dynamic public func endChat(forceClose: Swift.Bool = false)
   @objc dynamic public func resume()
   @objc dynamic public func logoutFromAuthenticatedSession()
+  @objc dynamic public func attach(fileData: Foundation.Data, fileName: Swift.String, fileURL: Foundation.URL)
+  @objc dynamic public func detach(attachmentId: Swift.String)
   @objc dynamic public func clearConversation()
   @objc dynamic public func indicateTyping()
 }
 extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ConfigurationLoaderDelegate {
   @objc dynamic public func didFetchChatSettings(settings: GenesysCloudCore.ChatSettings)
-  public func isEnableToAuthenticate(chatSettings: GenesysCloudCore.ChatSettings, account: GenesysCloudCore.Account) -> Swift.Bool
+  public func checkAuthenticationValidity(chatSettings: GenesysCloudCore.ChatSettings, account: GenesysCloudCore.Account) -> Swift.Bool
   @objc dynamic public func didFailLoad(error: (any Swift.Error)?)
 }
 extension GenesysCloudMessenger.MessengerChatEngine : GenesysCloudCore.ChatDataProducer {
@@ -187,7 +206,26 @@ public struct DataLoader : GenesysCloudMessenger.DataLoading {
 extension GenesysCloudMessenger.MessengerConfigurationLoader {
   public func parse(_ profile: MessengerTransport.FileAttachmentProfile?) -> GenesysCloudMessenger.AttachmentProfile?
 }
-@_hasMissingDesignatedInitializers @objc public class AttachmentProfile : ObjectiveC.NSObject {
+public enum PickerMode : Swift.String {
+  case image
+  case video
+  case file
+  case cameraPhoto
+  case cameraVideo
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc public class AttachmentProfile : ObjectiveC.NSObject {
+  public init(allowedFiles: [Swift.String] = [], blockedFiles: [Swift.String] = [], enabled: Swift.Bool? = nil, hasWildCard: Swift.Bool? = nil, maxFileSizeKB: Swift.Int64 = 0, pickerModes: Swift.Set<GenesysCloudMessenger.PickerMode> = [])
+  public var allowedFiles: [Swift.String]
+  public var blockedFiles: [Swift.String]
+  public var enabled: Swift.Bool?
+  public var hasWildCard: Swift.Bool?
+  public var maxFileSizeKB: Swift.Int64
+  public var pickerModes: Swift.Set<GenesysCloudMessenger.PickerMode>
   public func isEnabled() -> Swift.Bool
   @objc deinit
 }
@@ -196,3 +234,6 @@ extension GenesysCloudMessenger.MessengerConfigurationLoader {
   @objc override dynamic public init()
   @objc deinit
 }
+extension GenesysCloudMessenger.PickerMode : Swift.Equatable {}
+extension GenesysCloudMessenger.PickerMode : Swift.Hashable {}
+extension GenesysCloudMessenger.PickerMode : Swift.RawRepresentable {}
