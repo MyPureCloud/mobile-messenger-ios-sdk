@@ -13,6 +13,24 @@ import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public enum PushProvider {
+  case apns
+  case fcm
+  public static func == (a: GenesysCloudMessenger.PushProvider, b: GenesysCloudMessenger.PushProvider) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol PushHandlerProtocol : AnyObject {
+  func setPushToken(deviceToken: Swift.String, pushProvider: GenesysCloudMessenger.PushProvider, account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers public class PushHandler : GenesysCloudMessenger.PushHandlerProtocol {
+  public init?(account: GenesysCloudCore.Account)
+  public func setPushToken(deviceToken: Swift.String, pushProvider: GenesysCloudMessenger.PushProvider, account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
+  public func removePushToken(account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
+  @objc deinit
+}
 public class TranslationsRepositoryImplementation : GenesysCloudMessenger.TranslationsRepositoryProtocol {
   public init(fileDataSource: any GenesysCloudMessenger.TranslationsDataSourceDelegate, remoteDataSource: any GenesysCloudMessenger.TranslationsDataSourceDelegate, parser: GenesysCloudMessenger.TranslationsParser)
   public func load(language: Swift.String, fallbackLanguage: Swift.String? = nil, completion: @escaping (GenesysCloudMessenger.TranslationsResponse?) -> Swift.Void)
@@ -172,7 +190,9 @@ public protocol AuthenticationHandlerProtocol : AnyObject {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class TranslationsLocaleParser : ObjectiveC.NSObject {
-  @objc public func parse(locale: Swift.String) -> Swift.String
+  @objc public func parse(locale: Swift.String?) -> Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
+extension GenesysCloudMessenger.PushProvider : Swift.Equatable {}
+extension GenesysCloudMessenger.PushProvider : Swift.Hashable {}

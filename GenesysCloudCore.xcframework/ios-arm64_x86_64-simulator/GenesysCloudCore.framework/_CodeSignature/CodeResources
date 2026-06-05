@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/GenesysCloudCore-Swift.h</key>
 		<data>
-		AxYiTWecTPiJgFXvZaPJdXWv18U=
+		heB5kBnnTmXu6UgSAAKyocFDfrU=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		L71og0UIqtVmenc5u6awnooCnNY=
+		jxmMCMv/hczW2ueOKcJMeCshnps=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/dFW2802pSXFxnf/upvMbRnvXAo=
+		NxFd6cB/D/y96RvemozSwcau0tc=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/dFW2802pSXFxnf/upvMbRnvXAo=
+		NxFd6cB/D/y96RvemozSwcau0tc=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aOCdVa20ag0SMr/Y6KvfO+oOfiM=
+		jR1F7snwIzSrA+DW+M2TaqpMkhI=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		L71og0UIqtVmenc5u6awnooCnNY=
+		jxmMCMv/hczW2ueOKcJMeCshnps=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aLq7kieJu78iAE/oKengUOXs5xM=
+		aTjqlRFSQ7efEndjzzNekRSyI5Q=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aLq7kieJu78iAE/oKengUOXs5xM=
+		aTjqlRFSQ7efEndjzzNekRSyI5Q=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OAjUdE3YzRfWP8Hm7CKCCPyOWXY=
+		0O2LSs8WTPBBETrN3jEyIUJ6x5M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,21 +63,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qMPCpjWTxngBDr9ThHtAPjr2n98Y8+x+L0JNBxEEhGk=
+			1AEC9HoLbLaszm+70ioLI5TsIdt4l5kbWLIokv38ZI0=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sw0n5Y/MasE6VQAioLFKj/S26v+lMV64N1O6GiXkoSU=
+			zLEsaBKLneAE1v35ywo6A+j8+uPkSI/w5OmYtMxQJnE=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KY/ZObXeG0jwlrXDms8k1mifzVBjeBuzuomxulf8Qvk=
+			6yFPNEm3IrhxSAzJgLk9QmCMXfYWVr89mQc1HcdJSKE=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KY/ZObXeG0jwlrXDms8k1mifzVBjeBuzuomxulf8Qvk=
+			6yFPNEm3IrhxSAzJgLk9QmCMXfYWVr89mQc1HcdJSKE=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K04WbFvYnUDczF7enpMtlP+4ED1UEpcvYu1UsScdAyI=
+			mO/t/hDUQOXeEmdhkNYkNcnkNrWXEpYktqz5ltyWsYQ=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sw0n5Y/MasE6VQAioLFKj/S26v+lMV64N1O6GiXkoSU=
+			zLEsaBKLneAE1v35ywo6A+j8+uPkSI/w5OmYtMxQJnE=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FsqRRfONsLwVcKTDra+jh/1kIxcgmai29AhUZILg0DA=
+			xllerNduBP2A2Te6tQHMYMxUidqrcSq+z3JbqaN8EdI=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FsqRRfONsLwVcKTDra+jh/1kIxcgmai29AhUZILg0DA=
+			xllerNduBP2A2Te6tQHMYMxUidqrcSq+z3JbqaN8EdI=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t6pLxW84SAJpesg7TtgGRETrlCjL9bA+jDcLJieCkD8=
+			qB6m6KX8oIQbmQDo1KLJP9Z272kelZ7/a3xnJ/V3upQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

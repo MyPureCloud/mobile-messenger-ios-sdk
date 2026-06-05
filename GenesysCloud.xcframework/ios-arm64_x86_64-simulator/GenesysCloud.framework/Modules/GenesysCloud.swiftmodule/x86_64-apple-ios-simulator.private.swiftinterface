@@ -115,6 +115,22 @@ extension GenesysCloudCore.MimeType {
   @objc public init(type: GenesysCloud.ChatElementType, content: Swift.String, elementId: Swift.String)
   @objc deinit
 }
+@objc public enum PushProvider : Swift.Int {
+  case apns
+  case fcm
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ChatPushNotificationIntegration : ObjectiveC.NSObject {
+  public static func setPushToken(deviceToken: Swift.String, pushProvider: GenesysCloud.PushProvider, account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
+  @objc public static func setPushTokenForObjectiveC(deviceToken: Swift.String, pushProvider: GenesysCloud.PushProvider, account: GenesysCloudCore.Account, completion: @escaping (GenesysCloudCore.GCError?) -> Swift.Void)
+  public static func removePushToken(account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
+  @objc public static func removePushToken(account: GenesysCloudCore.Account, completion: @escaping (GenesysCloudCore.GCError?) -> Swift.Void)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc final public class AvailabilityResult : ObjectiveC.NSObject {
   @objc final public let isAvailable: Swift.Bool
   @objc final public let reason: GenesysCloudCore.UnavailableReason
@@ -240,6 +256,9 @@ extension GenesysCloud.StatementStatus : Swift.Equatable {}
 extension GenesysCloud.StatementStatus : Swift.Hashable {}
 @available(*, deprecated, message: "Replaced by new ChatElelement structure")
 extension GenesysCloud.StatementStatus : Swift.RawRepresentable {}
+extension GenesysCloud.PushProvider : Swift.Equatable {}
+extension GenesysCloud.PushProvider : Swift.Hashable {}
+extension GenesysCloud.PushProvider : Swift.RawRepresentable {}
 @available(*, deprecated, message: "Replaced by new ChatElelement structure")
 extension GenesysCloud.RemoteMessageType : Swift.Equatable {}
 @available(*, deprecated, message: "Replaced by new ChatElelement structure")

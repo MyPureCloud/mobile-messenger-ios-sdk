@@ -208,6 +208,7 @@ final public class LanguageConfiguration {
   case attachmentUploadError = 5024
   case clearConversationDisabled = 5025
   case clearConversationFailure = 5026
+  case pushDeploymentIdMismatch = 5027
   public static let ClientErrorReconnectDescription: Swift.String
   public static let IllegalStateErrorReconnectDescription: Swift.String
   public static let ConfigurationLoadErrorDescription: Swift.String
@@ -229,7 +230,7 @@ final public class LanguageConfiguration {
     get
   }
 }
-@objc final public class GCError : ObjectiveC.NSObject {
+@objc final public class GCError : ObjectiveC.NSObject, Swift.Error {
   @objc final public var error: (any Swift.Error)?
   @objc final public var errorType: GenesysCloudCore.ChatError
   @objc final public var errorDescription: Swift.String?
@@ -621,9 +622,9 @@ final public class SessionInfo : Swift.Equatable {
   @objc public init(state: GenesysCloudCore.ChatState)
   @objc deinit
 }
-final public class LanguageUtility {
-  public init()
-  final public func getDeviceLanguage() -> Swift.String
+@_inheritsConvenienceInitializers @objc public class LanguageUtility : ObjectiveC.NSObject {
+  @objc public func getDeviceLanguage() -> Swift.String?
+  @objc override dynamic public init()
   @objc deinit
 }
 public enum PickerMode : Swift.String {

@@ -22,6 +22,545 @@
         "moduleName": "GenesysCloudMessenger"
       },
       {
+        "kind": "Import",
+        "name": "MessengerTransport",
+        "printedName": "MessengerTransport",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudMessenger"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PushProvider",
+        "printedName": "PushProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "apns",
+            "printedName": "apns",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudMessenger.PushProvider.Type) -> GenesysCloudMessenger.PushProvider",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PushProvider",
+                    "printedName": "GenesysCloudMessenger.PushProvider",
+                    "usr": "s:21GenesysCloudMessenger12PushProviderO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudMessenger.PushProvider.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PushProvider",
+                        "printedName": "GenesysCloudMessenger.PushProvider",
+                        "usr": "s:21GenesysCloudMessenger12PushProviderO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21GenesysCloudMessenger12PushProviderO4apnsyA2CmF",
+            "mangledName": "$s21GenesysCloudMessenger12PushProviderO4apnsyA2CmF",
+            "moduleName": "GenesysCloudMessenger"
+          },
+          {
+            "kind": "Var",
+            "name": "fcm",
+            "printedName": "fcm",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudMessenger.PushProvider.Type) -> GenesysCloudMessenger.PushProvider",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PushProvider",
+                    "printedName": "GenesysCloudMessenger.PushProvider",
+                    "usr": "s:21GenesysCloudMessenger12PushProviderO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenesysCloudMessenger.PushProvider.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PushProvider",
+                        "printedName": "GenesysCloudMessenger.PushProvider",
+                        "usr": "s:21GenesysCloudMessenger12PushProviderO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21GenesysCloudMessenger12PushProviderO3fcmyA2CmF",
+            "mangledName": "$s21GenesysCloudMessenger12PushProviderO3fcmyA2CmF",
+            "moduleName": "GenesysCloudMessenger"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PushProvider",
+                "printedName": "GenesysCloudMessenger.PushProvider",
+                "usr": "s:21GenesysCloudMessenger12PushProviderO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PushProvider",
+                "printedName": "GenesysCloudMessenger.PushProvider",
+                "usr": "s:21GenesysCloudMessenger12PushProviderO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger12PushProviderO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s21GenesysCloudMessenger12PushProviderO2eeoiySbAC_ACtFZ",
+            "moduleName": "GenesysCloudMessenger",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21GenesysCloudMessenger12PushProviderO9hashValueSivp",
+            "mangledName": "$s21GenesysCloudMessenger12PushProviderO9hashValueSivp",
+            "moduleName": "GenesysCloudMessenger",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GenesysCloudMessenger12PushProviderO9hashValueSivg",
+                "mangledName": "$s21GenesysCloudMessenger12PushProviderO9hashValueSivg",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger12PushProviderO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s21GenesysCloudMessenger12PushProviderO4hash4intoys6HasherVz_tF",
+            "moduleName": "GenesysCloudMessenger",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:21GenesysCloudMessenger12PushProviderO",
+        "mangledName": "$s21GenesysCloudMessenger12PushProviderO",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PushHandlerProtocol",
+        "printedName": "PushHandlerProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setPushToken",
+            "printedName": "setPushToken(deviceToken:pushProvider:account:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PushProvider",
+                "printedName": "GenesysCloudMessenger.PushProvider",
+                "usr": "s:21GenesysCloudMessenger12PushProviderO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "GenesysCloudCore.Account",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)Account"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), GenesysCloudCore.GCError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), GenesysCloudCore.GCError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GCError",
+                        "printedName": "GenesysCloudCore.GCError",
+                        "usr": "c:@M@GenesysCloudCore@objc(cs)GCError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger19PushHandlerProtocolP03setD5Token06deviceH012pushProvider7account10completionySS_AA0dK0O0aB4Core7AccountCys6ResultOyytAK7GCErrorCGctF",
+            "mangledName": "$s21GenesysCloudMessenger19PushHandlerProtocolP03setD5Token06deviceH012pushProvider7account10completionySS_AA0dK0O0aB4Core7AccountCys6ResultOyytAK7GCErrorCGctF",
+            "moduleName": "GenesysCloudMessenger",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudMessenger.PushHandlerProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudMessenger.PushHandlerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:21GenesysCloudMessenger19PushHandlerProtocolP",
+        "mangledName": "$s21GenesysCloudMessenger19PushHandlerProtocolP",
+        "moduleName": "GenesysCloudMessenger",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PushHandler",
+        "printedName": "PushHandler",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(account:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudMessenger.PushHandler?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PushHandler",
+                    "printedName": "GenesysCloudMessenger.PushHandler",
+                    "usr": "s:21GenesysCloudMessenger11PushHandlerC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "GenesysCloudCore.Account",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)Account"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21GenesysCloudMessenger11PushHandlerC7accountACSg0aB4Core7AccountC_tcfc",
+            "mangledName": "$s21GenesysCloudMessenger11PushHandlerC7accountACSg0aB4Core7AccountC_tcfc",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setPushToken",
+            "printedName": "setPushToken(deviceToken:pushProvider:account:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PushProvider",
+                "printedName": "GenesysCloudMessenger.PushProvider",
+                "usr": "s:21GenesysCloudMessenger12PushProviderO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "GenesysCloudCore.Account",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)Account"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), GenesysCloudCore.GCError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), GenesysCloudCore.GCError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GCError",
+                        "printedName": "GenesysCloudCore.GCError",
+                        "usr": "c:@M@GenesysCloudCore@objc(cs)GCError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger11PushHandlerC03setD5Token06deviceG012pushProvider7account10completionySS_AA0dJ0O0aB4Core7AccountCys6ResultOyytAK7GCErrorCGctF",
+            "mangledName": "$s21GenesysCloudMessenger11PushHandlerC03setD5Token06deviceG012pushProvider7account10completionySS_AA0dJ0O0aB4Core7AccountCys6ResultOyytAK7GCErrorCGctF",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removePushToken",
+            "printedName": "removePushToken(account:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Account",
+                "printedName": "GenesysCloudCore.Account",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)Account"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), GenesysCloudCore.GCError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), GenesysCloudCore.GCError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GCError",
+                        "printedName": "GenesysCloudCore.GCError",
+                        "usr": "c:@M@GenesysCloudCore@objc(cs)GCError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger11PushHandlerC06removeD5Token7account10completiony0aB4Core7AccountC_ys6ResultOyytAG7GCErrorCGctF",
+            "mangledName": "$s21GenesysCloudMessenger11PushHandlerC06removeD5Token7account10completiony0aB4Core7AccountC_ys6ResultOyytAG7GCErrorCGctF",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:21GenesysCloudMessenger11PushHandlerC",
+        "mangledName": "$s21GenesysCloudMessenger11PushHandlerC",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PushHandlerProtocol",
+            "printedName": "PushHandlerProtocol",
+            "usr": "s:21GenesysCloudMessenger19PushHandlerProtocolP",
+            "mangledName": "$s21GenesysCloudMessenger19PushHandlerProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GenesysCloudCore",
+        "printedName": "GenesysCloudCore",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudMessenger"
+      },
+      {
         "kind": "TypeDecl",
         "name": "TranslationsRepositoryImplementation",
         "printedName": "TranslationsRepositoryImplementation",
@@ -5481,16 +6020,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "GenesysCloudMessenger",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "GenesysCloudCore",
         "printedName": "GenesysCloudCore",
         "declKind": "Import",
@@ -5828,20 +6357,36 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsLocaleParser(im)parseWithLocale:",
-            "mangledName": "$s21GenesysCloudMessenger24TranslationsLocaleParserC5parse6localeS2S_tF",
+            "mangledName": "$s21GenesysCloudMessenger24TranslationsLocaleParserC5parse6localeSSSgAF_tF",
             "moduleName": "GenesysCloudMessenger",
             "objc_name": "parseWithLocale:",
             "declAttributes": [
@@ -6632,7 +7177,7 @@
       "kind": "StringLiteral",
       "offset": 435,
       "length": 8,
-      "value": "\"1.15.0\""
+      "value": "\"1.16.0\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
@@ -6651,9 +7196,9 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-messenger-standalone\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsLocaleParser.swift",
       "kind": "Dictionary",
-      "offset": 444,
-      "length": 2379,
-      "value": "[(\"zh-cn\", \"zh-cn\"), (\"zh-hans\", \"zh-cn\"), (\"zh-tw\", \"zh-tw\"), (\"zh-hant\", \"zh-tw\"), (\"pt-BR\", \"pt-br\"), (\"pt-PT\", \"pt-pt\"), (\"fr-ca\", \"fr-ca\"), (\"fr\", \"fr\"), (\"en-us\", \"en-us\"), (\"en\", \"en-us\"), (\"ar\", \"ar\"), (\"cs\", \"cs\"), (\"da\", \"da\"), (\"nl\", \"nl\"), (\"fi\", \"fi\"), (\"de\", \"de\"), (\"he\", \"he\"), (\"it\", \"it\"), (\"ja\", \"ja\"), (\"ko\", \"ko\"), (\"nb\", \"no\"), (\"pl\", \"pl\"), (\"ru\", \"ru\"), (\"es\", \"es\"), (\"sv\", \"sv\"), (\"th\", \"th\"), (\"tr\", \"tr\"), (\"et\", \"et\"), (\"lt\", \"lt\"), (\"lv\", \"lv\"), (\"uk\", \"uk\"), (\"hu\", \"hu\"), (\"vi\", \"vi\"), (\"hi\", \"hi\"), (\"el\", \"el\")]"
+      "offset": 534,
+      "length": 869,
+      "value": "[(\"zh-cn\", \"zh-cn\"), (\"zh-hans\", \"zh-cn\"), (\"zh-tw\", \"zh-tw\"), (\"zh-hant\", \"zh-tw\"), (\"pt-BR\", \"pt-br\"), (\"pt-PT\", \"pt-pt\"), (\"fr-ca\", \"fr-ca\"), (\"es-ES\", \"es-es\"), (\"en-us\", \"en-us\"), (\"en\", \"en-us\"), (\"fr\", \"fr\"), (\"ar\", \"ar\"), (\"cs\", \"cs\"), (\"da\", \"da\"), (\"nl\", \"nl\"), (\"fi\", \"fi\"), (\"de\", \"de\"), (\"he\", \"he\"), (\"it\", \"it\"), (\"ja\", \"ja\"), (\"ko\", \"ko\"), (\"nb\", \"no\"), (\"pl\", \"pl\"), (\"ru\", \"ru\"), (\"es\", \"es\"), (\"sv\", \"sv\"), (\"th\", \"th\"), (\"tr\", \"tr\"), (\"et\", \"et\"), (\"lt\", \"lt\"), (\"lv\", \"lv\"), (\"uk\", \"uk\"), (\"hu\", \"hu\"), (\"vi\", \"vi\"), (\"hi\", \"hi\"), (\"el\", \"el\"), (\"ro\", \"ro\"), (\"fil\", \"fil\"), (\"ms\", \"ms\"), (\"id\", \"id\")]"
     }
   ]
 }
