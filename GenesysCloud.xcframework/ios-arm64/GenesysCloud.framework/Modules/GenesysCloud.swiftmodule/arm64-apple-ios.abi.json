@@ -1,0 +1,1898 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChatRepositoryDelegate",
+        "printedName": "ChatRepositoryDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "chatRepository",
+            "printedName": "chatRepository(didAppendElement:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorableChatElement",
+                "printedName": "GenesysCloud.StorableChatElement",
+                "usr": "c:objc(pl)StorableChatElement"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate(im)chatRepositoryWithDidAppendElement:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryDelegateP04chatD016didAppendElementySo08StorablecI0_p_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryDelegate>",
+            "protocolReq": true,
+            "objc_name": "chatRepositoryWithDidAppendElement:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "chatRepository",
+            "printedName": "chatRepository(didAppendElements:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloud.StorableChatElement]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate(im)chatRepositoryWithDidAppendElements:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryDelegateP04chatD017didAppendElementsySaySo08StorableC7Element_pG_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryDelegate>",
+            "protocolReq": true,
+            "objc_name": "chatRepositoryWithDidAppendElements:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "chatRepository",
+            "printedName": "chatRepository(didAppendHistoryElement:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorableChatElement",
+                "printedName": "GenesysCloud.StorableChatElement",
+                "usr": "c:objc(pl)StorableChatElement"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate(im)chatRepositoryWithDidAppendHistoryElement:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryDelegateP04chatD023didAppendHistoryElementySo08StorablecJ0_p_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryDelegate>",
+            "protocolReq": true,
+            "objc_name": "chatRepositoryWithDidAppendHistoryElement:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "chatRepository",
+            "printedName": "chatRepository(didAppendHistoryElements:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloud.StorableChatElement]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate(im)chatRepositoryWithDidAppendHistoryElements:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryDelegateP04chatD024didAppendHistoryElementsySaySo08StorableC7Element_pG_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryDelegate>",
+            "protocolReq": true,
+            "objc_name": "chatRepositoryWithDidAppendHistoryElements:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "chatRepository",
+            "printedName": "chatRepository(didAddToTop:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloud.StorableChatElement]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate(im)chatRepositoryWithDidAddToTop:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryDelegateP04chatD011didAddToTopySaySo08StorableC7Element_pG_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryDelegate>",
+            "protocolReq": true,
+            "objc_name": "chatRepositoryWithDidAddToTop:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "chatRepository",
+            "printedName": "chatRepository(didReplaceElement:originalId:originalElement:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloud.StorableChatElement?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloud.StorableChatElement?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate(im)chatRepositoryWithDidReplaceElement:originalId:originalElement:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryDelegateP04chatD017didReplaceElement10originalId0jI0ySo08StorablecI0_pSg_SSAItF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryDelegate>",
+            "protocolReq": true,
+            "objc_name": "chatRepositoryWithDidReplaceElement:originalId:originalElement:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "chatRepository",
+            "printedName": "chatRepository(didUpdateElementStatus:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloud.StorableChatElement?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate(im)chatRepositoryWithDidUpdateElementStatus:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryDelegateP04chatD022didUpdateElementStatusySo08StorablecI0_pSg_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryDelegate>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryDelegate>",
+            "protocolReq": true,
+            "objc_name": "chatRepositoryWithDidUpdateElementStatus:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate",
+        "mangledName": "$s12GenesysCloud22ChatRepositoryDelegateP",
+        "moduleName": "GenesysCloud",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChatRepositoryProtocol",
+        "printedName": "ChatRepositoryProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloud.ChatRepositoryDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatRepositoryDelegate",
+                    "printedName": "GenesysCloud.ChatRepositoryDelegate",
+                    "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(py)delegate",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP8delegateAA0cD8Delegate_pSgvp",
+            "moduleName": "GenesysCloud",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloud.ChatRepositoryDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatRepositoryDelegate",
+                        "printedName": "GenesysCloud.ChatRepositoryDelegate",
+                        "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)delegate",
+                "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP8delegateAA0cD8Delegate_pSgvg",
+                "moduleName": "GenesysCloud",
+                "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+                "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloud.ChatRepositoryDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatRepositoryDelegate",
+                        "printedName": "GenesysCloud.ChatRepositoryDelegate",
+                        "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)setDelegate:",
+                "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP8delegateAA0cD8Delegate_pSgvs",
+                "moduleName": "GenesysCloud",
+                "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+                "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "elements",
+            "printedName": "elements",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[GenesysCloud.StorableChatElement]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[GenesysCloud.StorableChatElement]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorableChatElement",
+                        "printedName": "GenesysCloud.StorableChatElement",
+                        "usr": "c:objc(pl)StorableChatElement"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(py)elements",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP8elementsSaySo08StorableC7Element_pGSgvp",
+            "moduleName": "GenesysCloud",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[GenesysCloud.StorableChatElement]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[GenesysCloud.StorableChatElement]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StorableChatElement",
+                            "printedName": "GenesysCloud.StorableChatElement",
+                            "usr": "c:objc(pl)StorableChatElement"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)elements",
+                "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP8elementsSaySo08StorableC7Element_pGSgvg",
+                "moduleName": "GenesysCloud",
+                "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+                "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[GenesysCloud.StorableChatElement]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[GenesysCloud.StorableChatElement]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StorableChatElement",
+                            "printedName": "GenesysCloud.StorableChatElement",
+                            "usr": "c:objc(pl)StorableChatElement"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)setElements:",
+                "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP8elementsSaySo08StorableC7Element_pGSgvs",
+                "moduleName": "GenesysCloud",
+                "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+                "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "append",
+            "printedName": "append(newElement:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorableChatElement",
+                "printedName": "GenesysCloud.StorableChatElement",
+                "usr": "c:objc(pl)StorableChatElement"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)appendWithNewElement:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP6append10newElementySo08StorablecH0_p_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "append",
+            "printedName": "append(contentsOf:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloud.StorableChatElement]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)appendWithContentsOf:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP6append10contentsOfySaySo08StorableC7Element_pG_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "append",
+            "printedName": "append(historyElement:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorableChatElement",
+                "printedName": "GenesysCloud.StorableChatElement",
+                "usr": "c:objc(pl)StorableChatElement"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)appendWithHistoryElement:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP6append14historyElementySo08StorablecH0_p_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "append",
+            "printedName": "append(historyElements:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloud.StorableChatElement]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)appendWithHistoryElements:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP6append15historyElementsySaySo08StorableC7Element_pG_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addToTop",
+            "printedName": "addToTop(elements:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloud.StorableChatElement]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)addToTopWithElements:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP8addToTop8elementsySaySo08StorableC7Element_pG_tF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAll",
+            "printedName": "removeAll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)removeAll",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP9removeAllyyF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "replace",
+            "printedName": "replace(newElement:using:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorableChatElement",
+                "printedName": "GenesysCloud.StorableChatElement",
+                "usr": "c:objc(pl)StorableChatElement"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)replaceWithNewElement:using:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP7replace10newElement5usingySo08StorablecH0_p_SStF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateStatus",
+            "printedName": "updateStatus(element:newStatus:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorableChatElement",
+                "printedName": "GenesysCloud.StorableChatElement",
+                "usr": "c:objc(pl)StorableChatElement"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatStatementStates",
+                "printedName": "GenesysCloudCore.ChatStatementStates",
+                "usr": "c:@M@GenesysCloudCore@E@ChatStatementStates"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol(im)updateStatusWithElement:newStatus:",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP12updateStatus7element03newG0ySo08StorableC7Element_p_0aB4Core0C15StatementStatesOtF",
+            "moduleName": "GenesysCloud",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloud.ChatRepositoryProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloud.ChatRepositoryProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol",
+        "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP",
+        "moduleName": "GenesysCloud",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChatRepository",
+        "printedName": "ChatRepository",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "GenesysCloud.ChatRepositoryDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(py)delegate",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryC8delegateAA0cD8Delegate_pSgvp",
+            "moduleName": "GenesysCloud",
+            "objc_name": "delegate",
+            "declAttributes": [
+              "HasInitialValue",
+              "ObjC",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloud.ChatRepositoryDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatRepositoryDelegate",
+                        "printedName": "GenesysCloud.ChatRepositoryDelegate",
+                        "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)delegate",
+                "mangledName": "$s12GenesysCloud14ChatRepositoryC8delegateAA0cD8Delegate_pSgvg",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "objc_name": "delegate",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloud.ChatRepositoryDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatRepositoryDelegate",
+                        "printedName": "GenesysCloud.ChatRepositoryDelegate",
+                        "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)setDelegate:",
+                "mangledName": "$s12GenesysCloud14ChatRepositoryC8delegateAA0cD8Delegate_pSgvs",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "objc_name": "setDelegate:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12GenesysCloud14ChatRepositoryC8delegateAA0cD8Delegate_pSgvM",
+                "mangledName": "$s12GenesysCloud14ChatRepositoryC8delegateAA0cD8Delegate_pSgvM",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "elements",
+            "printedName": "elements",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[GenesysCloud.StorableChatElement]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[GenesysCloud.StorableChatElement]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorableChatElement",
+                        "printedName": "GenesysCloud.StorableChatElement",
+                        "usr": "c:objc(pl)StorableChatElement"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(py)elements",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryC8elementsSaySo08StorableC7Element_pGSgvp",
+            "moduleName": "GenesysCloud",
+            "objc_name": "elements",
+            "declAttributes": [
+              "HasInitialValue",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[GenesysCloud.StorableChatElement]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[GenesysCloud.StorableChatElement]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StorableChatElement",
+                            "printedName": "GenesysCloud.StorableChatElement",
+                            "usr": "c:objc(pl)StorableChatElement"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)elements",
+                "mangledName": "$s12GenesysCloud14ChatRepositoryC8elementsSaySo08StorableC7Element_pGSgvg",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "objc_name": "elements",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[GenesysCloud.StorableChatElement]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[GenesysCloud.StorableChatElement]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StorableChatElement",
+                            "printedName": "GenesysCloud.StorableChatElement",
+                            "usr": "c:objc(pl)StorableChatElement"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)setElements:",
+                "mangledName": "$s12GenesysCloud14ChatRepositoryC8elementsSaySo08StorableC7Element_pGSgvs",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "objc_name": "setElements:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12GenesysCloud14ChatRepositoryC8elementsSaySo08StorableC7Element_pGSgvM",
+                "mangledName": "$s12GenesysCloud14ChatRepositoryC8elementsSaySo08StorableC7Element_pGSgvM",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChatRepository",
+                "printedName": "GenesysCloud.ChatRepository",
+                "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)init",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryCACycfc",
+            "moduleName": "GenesysCloud",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "append",
+            "printedName": "append(newElement:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorableChatElement",
+                "printedName": "GenesysCloud.StorableChatElement",
+                "usr": "c:objc(pl)StorableChatElement"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)appendWithNewElement:",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryC6append10newElementySo08StorablecG0_p_tF",
+            "moduleName": "GenesysCloud",
+            "objc_name": "appendWithNewElement:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "append",
+            "printedName": "append(contentsOf:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloud.StorableChatElement]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)appendWithContentsOf:",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryC6append10contentsOfySaySo08StorableC7Element_pG_tF",
+            "moduleName": "GenesysCloud",
+            "objc_name": "appendWithContentsOf:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "append",
+            "printedName": "append(historyElement:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorableChatElement",
+                "printedName": "GenesysCloud.StorableChatElement",
+                "usr": "c:objc(pl)StorableChatElement"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)appendWithHistoryElement:",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryC6append14historyElementySo08StorablecG0_p_tF",
+            "moduleName": "GenesysCloud",
+            "objc_name": "appendWithHistoryElement:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "append",
+            "printedName": "append(historyElements:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloud.StorableChatElement]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)appendWithHistoryElements:",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryC6append15historyElementsySaySo08StorableC7Element_pG_tF",
+            "moduleName": "GenesysCloud",
+            "objc_name": "appendWithHistoryElements:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addToTop",
+            "printedName": "addToTop(elements:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[GenesysCloud.StorableChatElement]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StorableChatElement",
+                    "printedName": "GenesysCloud.StorableChatElement",
+                    "usr": "c:objc(pl)StorableChatElement"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)addToTopWithElements:",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryC8addToTop8elementsySaySo08StorableC7Element_pG_tF",
+            "moduleName": "GenesysCloud",
+            "objc_name": "addToTopWithElements:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "replace",
+            "printedName": "replace(newElement:using:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorableChatElement",
+                "printedName": "GenesysCloud.StorableChatElement",
+                "usr": "c:objc(pl)StorableChatElement"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)replaceWithNewElement:using:",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryC7replace10newElement5usingySo08StorablecG0_p_SStF",
+            "moduleName": "GenesysCloud",
+            "objc_name": "replaceWithNewElement:using:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateStatus",
+            "printedName": "updateStatus(element:newStatus:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StorableChatElement",
+                "printedName": "GenesysCloud.StorableChatElement",
+                "usr": "c:objc(pl)StorableChatElement"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatStatementStates",
+                "printedName": "GenesysCloudCore.ChatStatementStates",
+                "usr": "c:@M@GenesysCloudCore@E@ChatStatementStates"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)updateStatusWithElement:newStatus:",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryC12updateStatus7element03newF0ySo08StorableC7Element_p_0aB4Core0C15StatementStatesOtF",
+            "moduleName": "GenesysCloud",
+            "objc_name": "updateStatusWithElement:newStatus:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAll",
+            "printedName": "removeAll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository(im)removeAll",
+            "mangledName": "$s12GenesysCloud14ChatRepositoryC9removeAllyyF",
+            "moduleName": "GenesysCloud",
+            "objc_name": "removeAll",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloud@objc(cs)ChatRepository",
+        "mangledName": "$s12GenesysCloud14ChatRepositoryC",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ChatRepositoryProtocol",
+            "printedName": "ChatRepositoryProtocol",
+            "usr": "c:@M@GenesysCloud@objc(pl)ChatRepositoryProtocol",
+            "mangledName": "$s12GenesysCloud22ChatRepositoryProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GenesysCloudCore",
+        "printedName": "GenesysCloudCore",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ConfigurationRepository",
+        "printedName": "ConfigurationRepository",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "chatSettings",
+            "printedName": "chatSettings",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChatSettings",
+                "printedName": "GenesysCloudCore.ChatSettings",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatSettings"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloud@objc(cs)ConfigurationRepository(py)chatSettings",
+            "mangledName": "$s12GenesysCloud23ConfigurationRepositoryC12chatSettings0aB4Core04ChatF0Cvp",
+            "moduleName": "GenesysCloud",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatSettings",
+                    "printedName": "GenesysCloudCore.ChatSettings",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)ChatSettings"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(cs)ConfigurationRepository(im)chatSettings",
+                "mangledName": "$s12GenesysCloud23ConfigurationRepositoryC12chatSettings0aB4Core04ChatF0Cvg",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatSettings",
+                    "printedName": "GenesysCloudCore.ChatSettings",
+                    "usr": "c:@M@GenesysCloudCore@objc(cs)ChatSettings"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(cs)ConfigurationRepository(im)setChatSettings:",
+                "mangledName": "$s12GenesysCloud23ConfigurationRepositoryC12chatSettings0aB4Core04ChatF0Cvs",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12GenesysCloud23ConfigurationRepositoryC12chatSettings0aB4Core04ChatF0CvM",
+                "mangledName": "$s12GenesysCloud23ConfigurationRepositoryC12chatSettings0aB4Core04ChatF0CvM",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uiConfig",
+            "printedName": "uiConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChatConfiguration",
+                "printedName": "GenesysCloud.ChatConfiguration",
+                "usr": "c:objc(cs)ChatConfiguration"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@GenesysCloud@objc(cs)ConfigurationRepository(py)uiConfig",
+            "mangledName": "$s12GenesysCloud23ConfigurationRepositoryC8uiConfigSo04ChatC0Cvp",
+            "moduleName": "GenesysCloud",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatConfiguration",
+                    "printedName": "GenesysCloud.ChatConfiguration",
+                    "usr": "c:objc(cs)ChatConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(cs)ConfigurationRepository(im)uiConfig",
+                "mangledName": "$s12GenesysCloud23ConfigurationRepositoryC8uiConfigSo04ChatC0Cvg",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatConfiguration",
+                    "printedName": "GenesysCloud.ChatConfiguration",
+                    "usr": "c:objc(cs)ChatConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@GenesysCloud@objc(cs)ConfigurationRepository(im)setUiConfig:",
+                "mangledName": "$s12GenesysCloud23ConfigurationRepositoryC8uiConfigSo04ChatC0Cvs",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12GenesysCloud23ConfigurationRepositoryC8uiConfigSo04ChatC0CvM",
+                "mangledName": "$s12GenesysCloud23ConfigurationRepositoryC8uiConfigSo04ChatC0CvM",
+                "moduleName": "GenesysCloud",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(settings:config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConfigurationRepository",
+                "printedName": "GenesysCloud.ConfigurationRepository",
+                "usr": "c:@M@GenesysCloud@objc(cs)ConfigurationRepository"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatSettings",
+                "printedName": "GenesysCloudCore.ChatSettings",
+                "usr": "c:@M@GenesysCloudCore@objc(cs)ChatSettings"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatConfiguration",
+                "printedName": "GenesysCloud.ChatConfiguration",
+                "usr": "c:objc(cs)ChatConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloud@objc(cs)ConfigurationRepository(im)initWithSettings:config:",
+            "mangledName": "$s12GenesysCloud23ConfigurationRepositoryC8settings6configAC0aB4Core12ChatSettingsC_So0hC0Ctcfc",
+            "moduleName": "GenesysCloud",
+            "objc_name": "initWithSettings:config:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConfigurationRepository",
+                "printedName": "GenesysCloud.ConfigurationRepository",
+                "usr": "c:@M@GenesysCloud@objc(cs)ConfigurationRepository"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloud@objc(cs)ConfigurationRepository(im)init",
+            "mangledName": "$s12GenesysCloud23ConfigurationRepositoryCACycfc",
+            "moduleName": "GenesysCloud",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloud@objc(cs)ConfigurationRepository",
+        "mangledName": "$s12GenesysCloud23ConfigurationRepositoryC",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloud",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChatConfiguration",
+        "printedName": "ChatConfiguration",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "updateSettings",
+            "printedName": "updateSettings(uiSettings:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MessengerUIConfig",
+                "printedName": "GenesysCloudMessenger.MessengerUIConfig",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerUIConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GenesysCloud@@objc(cs)ChatConfiguration(im)updateSettingsWithUiSettings:",
+            "mangledName": "$sSo17ChatConfigurationC12GenesysCloudE14updateSettings02uiF0y0cD9Messenger0H8UIConfigC_tF",
+            "moduleName": "GenesysCloud",
+            "objc_name": "updateSettingsWithUiSettings:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)ChatConfiguration",
+        "moduleName": "GenesysCloud",
+        "isOpen": true,
+        "objc_name": "ChatConfiguration",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Live\/MessengerHandler\/ChatRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2873,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mobiledeploy\/jenkins-agent\/workspace\/workspace\/DXMobileSDK\/mobiledx-ios-sdk-ui-standalone\/mobiledx-ios-sdk-ui\/GenesysCloud\/Global\/ConfigurationRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 23,
+      "value": "\"GenesysCloud.ConfigurationRepository\""
+    }
+  ]
+}

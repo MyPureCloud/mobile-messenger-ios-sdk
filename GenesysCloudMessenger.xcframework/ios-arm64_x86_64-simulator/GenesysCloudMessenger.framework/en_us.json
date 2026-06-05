@@ -1,0 +1,9 @@
+{
+  "language": "en-us",
+  "conversations": {
+    "inputMessagePlaceholder": "Send a message…",
+    "inputMessageSpeechPlaceholder": "Listening…",
+    "startConversationMessage": "This is the beginning of your conversation with us. Please send a message to get started.",
+    "conversationRecoveryFailure": "We're sorry, but we are unable to restore your conversation."
+  }
+}

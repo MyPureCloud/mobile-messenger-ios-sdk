@@ -1,0 +1,54 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GenesysCloud
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import GenesysCloud
+import GenesysCloudCore
+import Swift
+import _Concurrency
+import _StringProcessing
+@objc public protocol ChatRepositoryDelegate {
+  @objc func chatRepository(didAppendElement element: any GenesysCloud.StorableChatElement)
+  @objc func chatRepository(didAppendElements elements: [any GenesysCloud.StorableChatElement])
+  @objc func chatRepository(didAppendHistoryElement element: any GenesysCloud.StorableChatElement)
+  @objc func chatRepository(didAppendHistoryElements elements: [any GenesysCloud.StorableChatElement])
+  @objc func chatRepository(didAddToTop elements: [any GenesysCloud.StorableChatElement])
+  @objc func chatRepository(didReplaceElement newElement: (any GenesysCloud.StorableChatElement)?, originalId: Swift.String, originalElement: (any GenesysCloud.StorableChatElement)?)
+  @objc func chatRepository(didUpdateElementStatus element: (any GenesysCloud.StorableChatElement)?)
+}
+@objc public protocol ChatRepositoryProtocol {
+  @objc var delegate: (any GenesysCloud.ChatRepositoryDelegate)? { get set }
+  @objc var elements: [any GenesysCloud.StorableChatElement]? { get set }
+  @objc func append(newElement: any GenesysCloud.StorableChatElement)
+  @objc func append(contentsOf newElements: [any GenesysCloud.StorableChatElement])
+  @objc func append(historyElement: any GenesysCloud.StorableChatElement)
+  @objc func append(historyElements: [any GenesysCloud.StorableChatElement])
+  @objc func addToTop(elements: [any GenesysCloud.StorableChatElement])
+  @objc func removeAll()
+  @objc func replace(newElement: any GenesysCloud.StorableChatElement, using elementId: Swift.String)
+  @objc func updateStatus(element: any GenesysCloud.StorableChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
+}
+@_inheritsConvenienceInitializers @objc public class ChatRepository : ObjectiveC.NSObject, GenesysCloud.ChatRepositoryProtocol {
+  @objc weak public var delegate: (any GenesysCloud.ChatRepositoryDelegate)?
+  @objc public var elements: [any GenesysCloud.StorableChatElement]?
+  @objc override dynamic public init()
+  @objc public func append(newElement: any GenesysCloud.StorableChatElement)
+  @objc public func append(contentsOf newElements: [any GenesysCloud.StorableChatElement])
+  @objc public func append(historyElement: any GenesysCloud.StorableChatElement)
+  @objc public func append(historyElements: [any GenesysCloud.StorableChatElement])
+  @objc public func addToTop(elements: [any GenesysCloud.StorableChatElement])
+  @objc public func replace(newElement: any GenesysCloud.StorableChatElement, using elementId: Swift.String)
+  @objc public func updateStatus(element: any GenesysCloud.StorableChatElement, newStatus: GenesysCloudCore.ChatStatementStates)
+  @objc public func removeAll()
+  @objc deinit
+}
+@objc public class ConfigurationRepository : ObjectiveC.NSObject {
+  @objc public var chatSettings: GenesysCloudCore.ChatSettings
+  @objc public var uiConfig: GenesysCloud.ChatConfiguration
+  @objc public init(settings: GenesysCloudCore.ChatSettings, config: GenesysCloud.ChatConfiguration)
+  @objc deinit
+}
+extension GenesysCloud.ChatConfiguration {
+  @objc dynamic public func updateSettings(uiSettings: GenesysCloudMessenger.MessengerUIConfig)
+}
