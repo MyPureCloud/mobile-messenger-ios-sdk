@@ -6,15 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		AoBppubzEsWeIx1QJ/2CnRrkj20=
+		hBjp3hMw+7sLhP6fVBW97G8l4Ow=
 		</data>
 		<key>AttachmentTableViewCell.nib</key>
 		<data>
-		gbu0Frouqg+f+xSuYuP8TTRixWE=
+		ADhIDogghXjs13ebAXPMKZ+vY5o=
 		</data>
 		<key>ButtonResponseTableViewCell.nib</key>
 		<data>
-		KNAND8N45yMT32H7l7bbUu2M1kg=
+		N81oUEE0k3lWK5oH9ADNkjaCcXc=
 		</data>
 		<key>ButtonResponseViewCell.nib</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>GenesysCloud.storyboardc/GenesysCloudNavigationController.nib</key>
 		<data>
-		04kxO5yaZMLLzSM2b37fFJOI3Ho=
+		VUxNizgHmd6kUFR+n9rL2yMl7aA=
 		</data>
 		<key>GenesysCloud.storyboardc/Info.plist</key>
 		<data>
@@ -42,63 +42,63 @@
 		</data>
 		<key>GenesysCloud.storyboardc/MMQ-qY-Lto-view-VfP-cD-GIo.nib</key>
 		<data>
-		k4gwEpkfLuVvDg8oUw3q+YzVpks=
+		ZGZiOJQ9R4w3vm+TWnsZvIskTE0=
 		</data>
 		<key>Headers/GenesysCloud-Swift.h</key>
 		<data>
-		w+SmxOetraKzclPLFzp/LBf0bE4=
+		hgz43Ukl0DT7Wamhfqy+mF60/zs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SOdEJbypH8xkIcuLuI+hUi93fRA=
+		uvYRv2SiZZ+StNn6aSfUDVxxNRw=
 		</data>
 		<key>InputView.nib</key>
 		<data>
-		r/r7o82nXCKgZJsFM5POleSIx9o=
+		DG2E3tK5cizDPalKmcSYEFm6rp8=
 		</data>
 		<key>MediaTableViewCell.nib</key>
 		<data>
-		cHOqaNbyqhdrGsuQi2f31m2J1no=
+		g7FnOiytH2Fg1wZKxaXrAf/eVb0=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		gdIUNywT63W39ot4K4vM3GpNLeU=
+		askeVYWBfLyRd4ribxSlvIp4s3s=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		h7otjkgtXp5Zf+ASQAPItgWpi4U=
+		YSuTH/L+5K0Qe/ruC8Vzz2QogCw=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		uCvqwhHPwxoo2bMar4/mcCXbQEk=
+		UX7zTKDpdZ5j73lXIaj8bymCzdw=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		h7otjkgtXp5Zf+ASQAPItgWpi4U=
+		YSuTH/L+5K0Qe/ruC8Vzz2QogCw=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		B7XjyhCkZ0f3vSJ6inUI/vybV08=
+		ve0AGSXENnVPsxDwoQ1+XdHo6AU=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		gdIUNywT63W39ot4K4vM3GpNLeU=
+		askeVYWBfLyRd4ribxSlvIp4s3s=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bKCnpWYpCjn8YbUSFKPn8L9piPo=
+		lli5J/2eh9yJWpGHAXEOb5QJGYw=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+DxwIIWJjbuPrTDBKIW+75lm7xA=
+		PuV/2BPE3lVb3qSfdhXyoBi7IEk=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bKCnpWYpCjn8YbUSFKPn8L9piPo=
+		lli5J/2eh9yJWpGHAXEOb5QJGYw=
 		</data>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		T4P3gmQyL2P2HPzhYKMO5MRWiCY=
+		BbRUpHeBI6OsDq8Zd+RHmGb6keo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,15 +106,15 @@
 		</data>
 		<key>SystemMessageCell.nib</key>
 		<data>
-		vfztBbab8z5la1BuCEhMxB7cDag=
+		p/ZfsATAQJvMQnUTapGqct/b8dE=
 		</data>
 		<key>TextMessageCell.nib</key>
 		<data>
-		RcULPhC8hFd9WE2JC23VjKUtyZU=
+		bUx391isK9wmw4Gmo3lV6WvAlCE=
 		</data>
 		<key>TypingIndicatorTableViewCell.nib</key>
 		<data>
-		VyiHENCmPeYKddXI7vwugJD+Cbk=
+		SjZzuF9clvkq9Il+hESfiqFG0Ic=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -123,21 +123,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozhWIEOxC5XHyipr4Z0qkUajLkj2MG0b5cC/UbrOMlQ=
+			5tSupyPBbJCVHri1p53nnxPcDfSFhsToMBc5txbvfRc=
 			</data>
 		</dict>
 		<key>AttachmentTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9KSFkX+v49okNvMePHyXsCpwhfe+pdDEOM+Hru0rvfA=
+			KRT31xMNKXwCl9TVgnwpMmEnhNOlqQcub6DypaE8yNI=
 			</data>
 		</dict>
 		<key>ButtonResponseTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+vgFpHsUNG5lHYa9xk/epf7v32DRnqB38dxXUcrq3+E=
+			C50m6Q4t3Sn+pxdWhyj1bzEojRgtEiK+I3HY0llx9P4=
 			</data>
 		</dict>
 		<key>ButtonResponseViewCell.nib</key>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UyctCN92sGGi/5yJOohl7AFQoqZc+0g3Tmmxx9STf68=
+			Pj9VAECaMqyB41W4geJvqtOzFU428x8iqikcKsaLs6g=
 			</data>
 		</dict>
 		<key>GenesysCloud.storyboardc/Info.plist</key>
@@ -186,98 +186,98 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fJsEl/g0JAF9SEwCXephQsWZl8ckISqUixOEO2ldb/s=
+			Q2Obyqx7NMeIuHfBu0zfftqOzIWzOHi1Mqvt1vof/OY=
 			</data>
 		</dict>
 		<key>Headers/GenesysCloud-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oAZCQojASCgtRCVmwJsWCtTPGRbSL2kVqBN2sIr43E=
+			hmdsl9Lz2MYSyj81CfUD3M7s8cMAs1kv90QnHn8msME=
 			</data>
 		</dict>
 		<key>InputView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZwvvrqHCHNBjNVv5sT50Gnqz0qEZKpc/oJbxh4teMBc=
+			8daDSmC3BkZh74WMG9AVgIszyvcGmOp426fUeOEINdo=
 			</data>
 		</dict>
 		<key>MediaTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DK2x/CVykF1yAALrOxBIJJkdvRamLI3HI/BU6udMxzc=
+			kpNVGzQwbW71Q7Fgt32ahOkBEQFOBM64q9FDBwzGJOU=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BKFosemY6a9dsRWg6vakQp2CXzKfkpHGm/3AxZ/SJ3M=
+			guvsz6k2Z7AtXW9alK5kg7rnWqQvxuEPdrVxDwYQ7Tg=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8LPhZFOTm0qPOl7q4cNn7os8dq7e4dl3oU+fYJXDDhM=
+			Dt9yM1LDnWM9b5qCYU2C49VFQtctrxVh5xOZa2xc8vU=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AfHLpCy4TD7hX9i/GizxAI1zl4Sw6X8QxkwyUYjyc7E=
+			e1kJGmOONgDokH+U0PC2/CTYMdBEb9r4oZACLzCggDc=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8LPhZFOTm0qPOl7q4cNn7os8dq7e4dl3oU+fYJXDDhM=
+			Dt9yM1LDnWM9b5qCYU2C49VFQtctrxVh5xOZa2xc8vU=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4fqH9+Hx6wW44hqILkPPYmszMoDMUe0jukrXpm9G44Q=
+			a//nt1pDCypdcQZV98GnQlrfQitoG7NcUI7sOILzXuQ=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BKFosemY6a9dsRWg6vakQp2CXzKfkpHGm/3AxZ/SJ3M=
+			guvsz6k2Z7AtXW9alK5kg7rnWqQvxuEPdrVxDwYQ7Tg=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NCEIONJn4sgKXBmXR2/RqaeIjSilsVhnSgJei0LX/Zo=
+			QD402+Xf5kWcBtxGnMjcvdOOV4f/d0A8tpL+zPwzsHU=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j+KTOih1SJ806NSntrniwJfGBIRWSBnzZNuq1NHkgB4=
+			fu/ENxijlc7ABa81CfLecDWl/g6OrbaJy1dA5MjrxVU=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NCEIONJn4sgKXBmXR2/RqaeIjSilsVhnSgJei0LX/Zo=
+			QD402+Xf5kWcBtxGnMjcvdOOV4f/d0A8tpL+zPwzsHU=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloud.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5EnjhMPN5iOFWjqRm/c6gGzS6gSozS6gb0VByV44k28=
+			neRXfCLO2B5mbZA//p/6BLLiKQxIVuAIbOzCrS9foYo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -291,21 +291,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vbtjW7F6eKr1MGzCGY8h/d4XjHS5/ipFXij+0tRlsQs=
+			76MlD7jYhhzc7YOjSZcO9fbQF4nfz+tbjCKQVHW8Fwo=
 			</data>
 		</dict>
 		<key>TextMessageCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dpBYRlSHnum30OrY+3pLekKXY8U60c1m+2c8ez+EcIo=
+			Uw0w0OAxZ8a5k1EZSbiVZ+nXDSPjCQDou0oqtGIjRhw=
 			</data>
 		</dict>
 		<key>TypingIndicatorTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+fPsB1CWx48iJoAvTzxJdoFXEWmDN5Xid/jkERjRgGk=
+			ahY49387AzOn5J3YyaBz90M0EWTJ9Nbyc1FaQID8vR4=
 			</data>
 		</dict>
 	</dict>

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-bare-slash-regex -module-name GenesysCloudCore
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GenesysCloudCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVKit
 import Combine
 import CryptoKit
@@ -14,43 +14,63 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public protocol AttachmentFetcherProtocol : Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
   var currentFileToUpload: GenesysCloudCore.UploadableFile? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var fetchStream: _Concurrency.AsyncStream<Swift.Result<GenesysCloudCore.DownloadableFile, any Swift.Error>> { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var refreshStream: _Concurrency.AsyncStream<Swift.Result<GenesysCloudCore.DownloadableFile, any Swift.Error>> { get }
+  #endif
   func fetch(_ file: GenesysCloudCore.DownloadableFile)
   func getPreview(_ file: GenesysCloudCore.DownloadableFile)
   func getFileSize(_ file: GenesysCloudCore.DownloadableFile)
   func updateRefreshedFile(fileId: Swift.String, newDownloadUrl: Swift.String)
   func storeFile(_ file: GenesysCloudCore.UploadableFile)
+  #if compiler(>=5.3) && $NonescapableTypes
   func removeFile() -> Swift.String?
+  #endif
   func updateStatus(status: GenesysCloudCore.UploadableFileStatus)
   func updateDownloadUrl(_ downloadUrl: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   func convertCurrentFileToDownloadable(messageId: Swift.String) async -> GenesysCloudCore.DownloadableFile?
+  #endif
   func updateUploadProgress(_ progress: Swift.Double)
+  #if compiler(>=5.3) && $NonescapableTypes
   func setCurrentFileToUpload(file: GenesysCloudCore.UploadableFile?)
+  #endif
 }
 final public class AttachmentFetcher : GenesysCloudCore.AttachmentFetcherProtocol, @unchecked Swift.Sendable {
   final public let fetchStream: _Concurrency.AsyncStream<Swift.Result<GenesysCloudCore.DownloadableFile, any Swift.Error>>
   final public let refreshStream: _Concurrency.AsyncStream<Swift.Result<GenesysCloudCore.DownloadableFile, any Swift.Error>>
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var currentFileToUpload: GenesysCloudCore.UploadableFile? {
     get
     set
     _modify
   }
+  #endif
   public init()
   final public func getPreview(_ file: GenesysCloudCore.DownloadableFile)
   final public func fetch(_ file: GenesysCloudCore.DownloadableFile)
   final public func updateRefreshedFile(fileId: Swift.String, newDownloadUrl: Swift.String)
   final public func getFileSize(_ file: GenesysCloudCore.DownloadableFile)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func removeFile() -> Swift.String?
+  #endif
   final public func updateStatus(status: GenesysCloudCore.UploadableFileStatus)
   final public func updateDownloadUrl(_ downloadUrl: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func convertCurrentFileToDownloadable(messageId: Swift.String) async -> GenesysCloudCore.DownloadableFile?
+  #endif
   final public func updateUploadProgress(_ progress: Swift.Double)
   @objc deinit
 }
 extension GenesysCloudCore.AttachmentFetcher {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func setCurrentFileToUpload(file: GenesysCloudCore.UploadableFile?)
+  #endif
   final public func storeFile(_ file: GenesysCloudCore.UploadableFile)
 }
 public enum DownloadableFileStatus : Swift.Sendable {
@@ -72,14 +92,18 @@ public enum DownloadableFileStatus : Swift.Sendable {
     set
     _modify
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var fileData: Foundation.Data? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var fileSizeInBytes: Swift.Int? {
     get
     set
     _modify
   }
+  #endif
   @GenesysCloudCore.Locked final public var refreshAttempts: Swift.Int {
     get
     set
@@ -90,49 +114,65 @@ public enum DownloadableFileStatus : Swift.Sendable {
     set
     _modify
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var previewImage: UIKit.UIImage? {
     get
     set
     _modify
   }
+  #endif
   @GenesysCloudCore.Locked final public var previewFailed: Swift.Bool {
     get
     set
     _modify
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var downloadURL: Swift.String? {
     get
     set
     _modify
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var downloadTask: Foundation.URLSessionDataTask? {
     get
     set
     _modify
   }
+  #endif
   @GenesysCloudCore.Locked final public var parentMessageId: Swift.String {
     get
     set
     _modify
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var fileId: Swift.String? {
     get
     set
     _modify
   }
+  #endif
   @GenesysCloudCore.Locked final public var currentStatus: GenesysCloudCore.DownloadableFileStatus {
     get
     set
     _modify
   }
   final public let status: _Concurrency.AsyncStream<GenesysCloudCore.DownloadableFileStatus>
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(fileName: Swift.String, fileSizeInBytes: Swift.Int?, downloadUrl: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(parentMessageId: Swift.String, fileName: Swift.String, fileId: Swift.String, downloadURL: Swift.String?, fileSizeInBytes: Swift.Int?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(from uploadableFile: GenesysCloudCore.UploadableFile, messageId: Swift.String) async
+  #endif
   final public func updateStatus(_ newStatus: GenesysCloudCore.DownloadableFileStatus)
   final public func updateDownloadProgress(_ progress: Swift.Double)
   final public func setPreviewImage(_ image: UIKit.UIImage)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func setFileData(_ data: Foundation.Data?) async
+  #endif
   final public var downloadProgress: _Concurrency.AsyncStream<Swift.Double> {
     get
   }
@@ -140,14 +180,20 @@ public enum DownloadableFileStatus : Swift.Sendable {
 }
 public protocol PreviewGenerating {
   var videoFrameFetcher: any GenesysCloudCore.VideoFrameFetching { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   var previewImage: UIKit.UIImage? { get set }
+  #endif
   var requiresPreview: Swift.Bool { get }
   var previewFailed: Swift.Bool { get set }
   func setPreviewImage(_ image: UIKit.UIImage)
 }
 public protocol DownloadManaging {
+  #if compiler(>=5.3) && $NonescapableTypes
   var downloadURL: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var downloadTask: Foundation.URLSessionDataTask? { get set }
+  #endif
   var downloadProgress: _Concurrency.AsyncStream<Swift.Double> { get }
 }
 public protocol UploadManaging {
@@ -156,12 +202,22 @@ public protocol UploadManaging {
 }
 public protocol FileRepresentable : AnyObject, GenesysCloudCore.DownloadManaging, GenesysCloudCore.PreviewGenerating, Swift.Equatable, Swift.Sendable {
   var fileName: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var fileData: Foundation.Data? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var fileSizeInBytes: Swift.Int? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var fileId: Swift.String? { get set }
+  #endif
   var refreshAttempts: Swift.Int { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   func setFileData(_ data: Foundation.Data?) async
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   init(fileName: Swift.String, fileSizeInBytes: Swift.Int?, downloadUrl: Swift.String?)
+  #endif
 }
 extension GenesysCloudCore.FileRepresentable {
   public var isFlexibleSize: Swift.Bool {
@@ -170,9 +226,11 @@ extension GenesysCloudCore.FileRepresentable {
   public var supportsStreaming: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var fileMimeType: GenesysCloudCore.MimeType? {
     get
   }
+  #endif
   public var requiresPreview: Swift.Bool {
     get
   }
@@ -188,7 +246,9 @@ public enum MimeType : Swift.String, Swift.Sendable {
   case video
   case audio
   case file
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -214,34 +274,42 @@ public enum UploadableFileStatus : Swift.Sendable {
   }
 }
 final public class UploadableFile : GenesysCloudCore.FileRepresentable, GenesysCloudCore.UploadManaging, @unchecked Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var localUrl: Foundation.URL! {
     get
     set
     _modify
   }
+  #endif
   @GenesysCloudCore.Locked final public var fileName: Swift.String {
     get
     set
     _modify
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var fileData: Foundation.Data? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var fileSizeInBytes: Swift.Int? {
     get
     set
     _modify
   }
+  #endif
   @GenesysCloudCore.Locked final public var refreshAttempts: Swift.Int {
     get
     set
     _modify
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var fileId: Swift.String? {
     get
     set
     _modify
   }
+  #endif
   @GenesysCloudCore.Locked final public var currentStatus: GenesysCloudCore.UploadableFileStatus {
     get
     set
@@ -252,26 +320,32 @@ final public class UploadableFile : GenesysCloudCore.FileRepresentable, GenesysC
     set
     _modify
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var downloadTask: Foundation.URLSessionDataTask? {
     get
     set
     _modify
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var downloadURL: Swift.String? {
     get
     set
     _modify
   }
+  #endif
   @GenesysCloudCore.Locked final public var videoFrameFetcher: any GenesysCloudCore.VideoFrameFetching {
     get
     set
     _modify
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var previewImage: UIKit.UIImage? {
     get
     set
     _modify
   }
+  #endif
   @GenesysCloudCore.Locked final public var previewFailed: Swift.Bool {
     get
     set
@@ -279,20 +353,30 @@ final public class UploadableFile : GenesysCloudCore.FileRepresentable, GenesysC
   }
   final public let status: _Concurrency.AsyncStream<GenesysCloudCore.UploadableFileStatus>
   final public let uploadProgress: _Concurrency.AsyncStream<Swift.Double>
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(fileName: Swift.String, fileSizeInBytes: Swift.Int?, downloadUrl: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(from url: Foundation.URL, fileId: Swift.String?, data: Foundation.Data) async
+  #endif
   final public func updateStatus(_ newStatus: GenesysCloudCore.UploadableFileStatus)
   final public func updateUploadProgress(_ progress: Swift.Double)
   final public func setPreviewImage(_ image: UIKit.UIImage)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func setFileData(_ data: Foundation.Data?) async
+  #endif
   @objc deinit
 }
 extension GenesysCloudCore.UploadableFile {
   public static func == (lhs: GenesysCloudCore.UploadableFile, rhs: GenesysCloudCore.UploadableFile) -> Swift.Bool
 }
 public protocol VideoFrameFetching : Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
   func getThumbnailImage(from videoData: Foundation.Data) async -> UIKit.UIImage?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func getThumbnailImage(for file: any GenesysCloudCore.FileRepresentable) async -> (any GenesysCloudCore.FileRepresentable)?
+  #endif
 }
 @objc final public class Card : ObjectiveC.NSObject {
   @objc final public let title: Swift.String
@@ -300,14 +384,18 @@ public protocol VideoFrameFetching : Swift.Sendable {
   @objc final public let imageUrl: Swift.String?
   @objc final public let actions: [GenesysCloudCore.CardAction]
   final public var image: Combine.CurrentValueSubject<UIKit.UIImage?, any Swift.Error>
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(title: Swift.String, cardDescription: Swift.String, imageUrl: Swift.String?, image: UIKit.UIImage? = nil, actions: [GenesysCloudCore.CardAction])
+  #endif
   @objc deinit
 }
 @objc final public class CardAction : ObjectiveC.NSObject {
   @objc final public let text: Swift.String
   @objc final public let url: Foundation.URL?
   @objc final public let payload: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(text: Swift.String, url: Foundation.URL?, payload: Swift.String)
+  #endif
   @objc deinit
 }
 @objc final public class CarouselChatElement : GenesysCloudCore.ChatElement {
@@ -322,7 +410,9 @@ public protocol VideoFrameFetching : Swift.Sendable {
   case inProcess
   case success
   case error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -332,7 +422,9 @@ public protocol VideoFrameFetching : Swift.Sendable {
   case agent
   case system
   case user
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -348,14 +440,18 @@ public protocol VideoFrameFetching : Swift.Sendable {
   @objc deinit
 }
 extension GenesysCloudCore.ChatElement {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getText() -> Swift.String?
+  #endif
   public func setText(_ text: Swift.String)
   public func convertToFileElement(file: GenesysCloudCore.DownloadableFile) -> GenesysCloudCore.ChatElement
 }
 @objc final public class FileChatElement : GenesysCloudCore.ChatElement {
   final public var file: GenesysCloudCore.DownloadableFile
   final public var text: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind, file: GenesysCloudCore.DownloadableFile, text: Swift.String? = nil)
+  #endif
   @objc deinit
 }
 @objc final public class QuickRepliesChatElement : GenesysCloudCore.ChatElement {
@@ -366,7 +462,9 @@ extension GenesysCloudCore.ChatElement {
 @objc final public class SystemChatElement : GenesysCloudCore.ChatElement {
   final public var type: GenesysCloudCore.SystemChatElementType
   final public var text: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, type: GenesysCloudCore.SystemChatElementType, text: Swift.String? = nil)
+  #endif
   @objc deinit
 }
 @objc public enum SystemChatElementType : Swift.Int {
@@ -377,7 +475,9 @@ extension GenesysCloudCore.ChatElement {
   case conversationEnded
   case conversationResumed
   case conversationDisconnect
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -403,7 +503,9 @@ public enum TextChatElementType : Swift.Equatable {
   @objc deinit
 }
 @objc final public class AttachmentProfile : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(allowedFiles: [Swift.String] = [], blockedFiles: [Swift.String] = [], enabled: Swift.Bool? = nil, hasWildCard: Swift.Bool? = nil, maxFileSizeKB: Swift.Int64 = 0, pickerModes: Swift.Set<GenesysCloudCore.PickerMode> = [])
+  #endif
   final public var allowedFiles: [Swift.String]
   final public var blockedFiles: [Swift.String]
   final public var enabled: Swift.Bool?
@@ -443,7 +545,9 @@ public enum PickerMode : Swift.String {
   case cameraPhoto
   case cameraVideo
   public static func from(mimeType: Swift.String) -> [GenesysCloudCore.PickerMode]
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -455,7 +559,9 @@ public enum PickerMode : Swift.String {
   final public let uiConfig: GenesysCloudCore.UIConfiguration
   final public let languageConfig: GenesysCloudCore.LanguageConfiguration
   final public var fileAttachmentProfile: GenesysCloudCore.AttachmentProfile?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(isChatEnabled: Swift.Bool, featureFlags: [GenesysCloudCore.Feature : Swift.Bool], uiConfig: GenesysCloudCore.UIConfiguration, languageConfig: GenesysCloudCore.LanguageConfiguration, fileAttachmentProfile: GenesysCloudCore.AttachmentProfile? = nil)
+  #endif
   final public func isFeatureEnabled(name: GenesysCloudCore.Feature, defaultValue: Swift.Bool) -> Swift.Bool
   final public func addFeature(_ feature: GenesysCloudCore.Feature, enabled: Swift.Bool)
   @objc deinit
@@ -467,12 +573,20 @@ final public class UIConfiguration {
   @objc deinit
 }
 public protocol ConnectionHandler {
+  #if compiler(>=5.3) && $NonescapableTypes
   func open(request: Foundation.URLRequest, completion: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func open(request: Foundation.URLRequest, progress: ((Swift.Float) -> Swift.Void)?, completion: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+  #endif
 }
 @objc @_inheritsConvenienceInitializers final public class DefaultConnectionHandler : ObjectiveC.NSObject, @unchecked Swift.Sendable, GenesysCloudCore.ConnectionHandler {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func open(request: Foundation.URLRequest, completion: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func open(request: Foundation.URLRequest, progress: ((Swift.Float) -> Swift.Void)?, completion: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -524,37 +638,51 @@ public enum LogFlow : Swift.CaseIterable {
   case configuration
   case session
   public static func == (a: GenesysCloudCore.LogFlow, b: GenesysCloudCore.LogFlow) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [GenesysCloudCore.LogFlow]
   nonisolated public static var allCases: [GenesysCloudCore.LogFlow] {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
 @_hasMissingDesignatedInitializers final public class GCLogger {
   public static var isLoggingEnabled: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func info(_ message: GenesysCloudCore.LogMessage, fileName: Swift.String = #fileID, lineNumber: Swift.UInt = #line, flows: [GenesysCloudCore.LogFlow]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func warning(_ message: GenesysCloudCore.LogMessage, fileName: Swift.String = #fileID, lineNumber: Swift.UInt = #line, flows: [GenesysCloudCore.LogFlow]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func error(_ message: GenesysCloudCore.LogMessage, fileName: Swift.String = #fileID, lineNumber: Swift.UInt = #line, flows: [GenesysCloudCore.LogFlow]? = nil)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class LanguageUtility : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getDeviceLanguage() -> Swift.String?
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
 extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func mimeType() -> GenesysCloudCore.MimeType?
+  #endif
 }
 extension Swift.String {
   public func fileExtension() -> Swift.String
   public func withoutFileExtension() -> Swift.String
 }
 extension Foundation.Locale {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func localizeSessionExpirationNotice(_ interval: Foundation.TimeInterval, languageConfig: GenesysCloudCore.LanguageConfiguration) -> Swift.String?
-  public static func localizeTimeInterval(language: Swift.String?, interval: Foundation.TimeInterval) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func localizeTimeInterval(language: Swift.String?, interval: Foundation.TimeInterval, allowedUnits: Foundation.NSCalendar.Unit) -> Swift.String?
+  #endif
 }
 public enum TranslationKey {
   case startConversationMessage
@@ -674,8 +802,12 @@ public protocol ChatEngineDelegate : AnyObject {
   func messageDidArrive(chatElement: GenesysCloudCore.ChatElement)
   func didFail(error: GenesysCloudCore.GCError)
   func didFetchConfiguration(remoteConfig: GenesysCloudCore.RemoteConfiguration)
+  #if compiler(>=5.3) && $NonescapableTypes
   func event(with chatState: GenesysCloudCore.ChatState, withParams params: [Swift.String : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func didReceiveChatData(_ request: GenesysCloudCore.ChatDataRequest, completion: (() -> Swift.Void)?)
+  #endif
   func shouldNotifyIndicator(isActive: Swift.Bool)
   func didRefreshAttachment(attachmentId: Swift.String, downloadUrl: Swift.String)
   func didReceiveAttachmentId(_ attachmentId: Swift.String, fileURL: Foundation.URL, fileData: Foundation.Data)
@@ -689,7 +821,9 @@ public protocol ChatEngineDelegate : AnyObject {
   func didReceiveRemoveSessionExpirationNotice()
 }
 public protocol ChatEngineProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   var delegate: (any GenesysCloudCore.ChatEngineDelegate)? { get set }
+  #endif
   var configurationLoader: any GenesysCloudCore.ConfigurationLoader { get set }
   func prepare(account: GenesysCloudCore.Account)
   func create()
@@ -728,7 +862,9 @@ public protocol ChatEngineProtocol {
   case endTyping
   case unavailable
   case agentTyping
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -737,21 +873,29 @@ public protocol ChatEngineProtocol {
 @objc final public class ChatStateEvent : ObjectiveC.NSObject {
   @objc final public var state: GenesysCloudCore.ChatState
   @objc final public var dataMsg: Any?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(state: GenesysCloudCore.ChatState, dataMsg: Any?)
+  #endif
   @objc public init(state: GenesysCloudCore.ChatState)
   @objc deinit
 }
 public protocol ConfigurationLoaderDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func didFailLoad(error: (any Swift.Error)?)
+  #endif
   func didFetchChatSettings(remoteConfig: GenesysCloudCore.RemoteConfiguration)
 }
 public protocol ConfigurationLoader {
   var parser: any GenesysCloudCore.ConfigurationParser { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   var delegate: (any GenesysCloudCore.ConfigurationLoaderDelegate)? { get set }
+  #endif
   func load(account: GenesysCloudCore.Account)
 }
 public protocol ConfigurationParser {
+  #if compiler(>=5.3) && $NonescapableTypes
   func parse(data: Any?) -> GenesysCloudCore.RemoteConfiguration?
+  #endif
 }
 @objc public enum EndedReason : Swift.Int {
   public static let endedReasonKey: Swift.String
@@ -764,7 +908,9 @@ public protocol ConfigurationParser {
   case conversationCleared
   case logout
   case sessionExpired
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -816,7 +962,9 @@ public protocol ConfigurationParser {
   public static let ClearConversationDisabledDescription: Swift.String
   public static let ClearConversationFailureDescription: Swift.String
   public static let AuthorizationRequiredDescription: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -827,9 +975,13 @@ public protocol ConfigurationParser {
   @objc final public var error: (any Swift.Error)?
   @objc final public var errorType: GenesysCloudCore.ChatError
   @objc final public var errorDescription: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use init(errorType:errorDescription:) instead. Will be removed in 3.0.0.")
   @objc public init(error: (any Swift.Error)? = nil, errorType: GenesysCloudCore.ChatError, errorDescription: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(errorType: GenesysCloudCore.ChatError, errorDescription: Swift.String? = nil)
+  #endif
   @objc deinit
 }
 final public class EventData {
@@ -879,11 +1031,13 @@ public enum MessageSendingError : Swift.Error {
 }
 @_hasMissingDesignatedInitializers final public class SessionDurationStorage {
   public static let shared: GenesysCloudCore.SessionDurationStorage
+  #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var sessionDuration: Foundation.TimeInterval? {
     get
     set
     _modify
   }
+  #endif
   final public func reset()
   @objc deinit
 }
@@ -891,7 +1045,9 @@ final public class SessionInfo : Swift.Equatable {
   public init(id: Swift.String = "")
   public init(info: GenesysCloudCore.SessionInfo)
   final public func addExtraData(data: [Swift.String : Any])
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func getExtraData(key: Swift.String) -> Any?
+  #endif
   public static func == (lhs: GenesysCloudCore.SessionInfo, rhs: GenesysCloudCore.SessionInfo) -> Swift.Bool
   @objc deinit
 }
@@ -908,7 +1064,9 @@ public enum StatementType {
 }
 @objc public enum UnavailableReason : Swift.Int {
   case queueFull, noOperators, visitorBlocked, outsideHours, unknown, answerTimeout, unsecure, error, noConnection, serviceUnavailable, serviceDisabled, noReason
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
