@@ -159,6 +159,7 @@ public protocol ChatEngineProtocol {
   func updateCustomAttributes(_: [Swift.String : Swift.String])
   func resume()
   func produceChatData(_ request: GenesysCloudCore.ChatDataRequest) -> Swift.Bool
+  func authorize()
   init(configLoader: any GenesysCloudCore.ConfigurationLoader)
   @available(*, deprecated, message: "Function not utilized, will be removed. Use reconnect instead.")
   func clearConversationConnect()
@@ -246,6 +247,7 @@ final public class LanguageConfiguration {
   case clearConversationFailure = 5026
   case pushDeploymentIdMismatch = 5027
   case deviceAlreadyRegistered = 5028
+  case authorizationRequired = 5029
   public static let ClientErrorReconnectDescription: Swift.String
   public static let IllegalStateErrorReconnectDescription: Swift.String
   public static let ConfigurationLoadErrorDescription: Swift.String
@@ -261,6 +263,7 @@ final public class LanguageConfiguration {
   public static let AttachmentGeneralValidationErrorDescription: Swift.String
   public static let ClearConversationDisabledDescription: Swift.String
   public static let ClearConversationFailureDescription: Swift.String
+  public static let AuthorizationRequiredDescription: Swift.String
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

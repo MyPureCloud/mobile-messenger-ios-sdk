@@ -2214,6 +2214,41 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "reauthorizeImplicitFlow",
+            "printedName": "reauthorizeImplicitFlow(idToken:nonce:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenesysCloud@objc(cs)ChatController(im)reauthorizeImplicitFlowWithIdToken:nonce:",
+            "mangledName": "$s12GenesysCloud14ChatControllerC23reauthorizeImplicitFlow7idToken5nonceySS_SStF",
+            "moduleName": "GenesysCloud",
+            "objc_name": "reauthorizeImplicitFlowWithIdToken:nonce:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -10610,7 +10645,7 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DK_mobile-messenger-ios-sdk_main\/mobiledx-ios-sdk-ui\/GenesysCloud\/Common\/Repository\/ChatRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 1817,
+      "offset": 1559,
       "length": 1,
       "value": "0"
     },
@@ -11079,7 +11114,7 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DK_mobile-messenger-ios-sdk_main\/mobiledx-ios-sdk-ui\/GenesysCloud\/UIKit\/Controllers\/ChatController.swift",
       "kind": "BooleanLiteral",
-      "offset": 924,
+      "offset": 925,
       "length": 5,
       "value": "false"
     },

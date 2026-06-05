@@ -66,6 +66,7 @@ public protocol GroupedDataProtocol : AnyObject {
   @objc public func terminate()
   @objc public func updateCustomAttributes(_ customAttributes: [Swift.String : Swift.String])
   @objc public static func checkAvailability(_ account: GenesysCloudCore.Account, completion: @escaping ((GenesysCloud.AvailabilityResult?) -> Swift.Void))
+  @objc public func reauthorizeImplicitFlow(idToken: Swift.String, nonce: Swift.String)
   @objc deinit
 }
 extension Foundation.FileManager {

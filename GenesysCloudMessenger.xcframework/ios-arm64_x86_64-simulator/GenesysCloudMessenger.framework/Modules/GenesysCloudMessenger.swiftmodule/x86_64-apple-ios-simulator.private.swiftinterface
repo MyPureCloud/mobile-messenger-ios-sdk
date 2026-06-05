@@ -79,6 +79,7 @@ public class TranslationsParser {
 extension GenesysCloudMessenger.MessengerChatEngine {
   @objc dynamic public func disconnect()
   @objc dynamic public func connectFromBackground()
+  public func authorize()
 }
 extension GenesysCloudMessenger.MessengerChatEngine {
   @objc dynamic public func updateCustomAttributes(_ newValue: [Swift.String : Swift.String])
@@ -116,6 +117,9 @@ public protocol DataLoading {
   final public var authenticationInfo: GenesysCloudMessenger.AuthenticationInfo? {
     get
   }
+  final public var implicitAuthenticationInfo: GenesysCloudMessenger.ImplicitAuthenticationInfo? {
+    get
+  }
   @objc final public var customAttributes: [Swift.String : Swift.String] {
     @objc get
     @objc set
@@ -123,12 +127,19 @@ public protocol DataLoading {
   @objc override dynamic public init()
   @objc public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool)
   final public func setAuthenticationInfo(authCode: Swift.String, redirectUri: Swift.String, codeVerifier: Swift.String?)
+  final public func setImplicitAuthenticationInfo(idToken: Swift.String, nonce: Swift.String)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class TranslationsResponse : Swift.Codable {
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class ImplicitAuthenticationInfo : ObjectiveC.NSObject {
+  final public let idToken: Swift.String
+  final public let nonce: Swift.String
+  public init(idToken: Swift.String, nonce: Swift.String)
+  @objc deinit
 }
 public class MessengerConfigurationLoader : GenesysCloudCore.ConfigurationLoader {
   @objc weak public var delegate: (any GenesysCloudCore.ConfigurationLoaderDelegate)?

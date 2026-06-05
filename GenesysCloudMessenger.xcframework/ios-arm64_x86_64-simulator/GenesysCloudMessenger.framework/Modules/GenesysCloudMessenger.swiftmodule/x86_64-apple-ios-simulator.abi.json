@@ -1967,6 +1967,27 @@
           },
           {
             "kind": "Function",
+            "name": "authorize",
+            "printedName": "authorize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger0C10ChatEngineC9authorizeyyF",
+            "mangledName": "$s21GenesysCloudMessenger0C10ChatEngineC9authorizeyyF",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "updateCustomAttributes",
             "printedName": "updateCustomAttributes(_:)",
             "children": [
@@ -2875,6 +2896,71 @@
           },
           {
             "kind": "Var",
+            "name": "implicitAuthenticationInfo",
+            "printedName": "implicitAuthenticationInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudMessenger.ImplicitAuthenticationInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitAuthenticationInfo",
+                    "printedName": "GenesysCloudMessenger.ImplicitAuthenticationInfo",
+                    "usr": "c:@M@GenesysCloudMessenger@objc(cs)ImplicitAuthenticationInfo"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21GenesysCloudMessenger0C7AccountC26implicitAuthenticationInfoAA08ImplicitfG0CSgvp",
+            "mangledName": "$s21GenesysCloudMessenger0C7AccountC26implicitAuthenticationInfoAA08ImplicitfG0CSgvp",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloudMessenger.ImplicitAuthenticationInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImplicitAuthenticationInfo",
+                        "printedName": "GenesysCloudMessenger.ImplicitAuthenticationInfo",
+                        "usr": "c:@M@GenesysCloudMessenger@objc(cs)ImplicitAuthenticationInfo"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GenesysCloudMessenger0C7AccountC26implicitAuthenticationInfoAA08ImplicitfG0CSgvg",
+                "mangledName": "$s21GenesysCloudMessenger0C7AccountC26implicitAuthenticationInfoAA08ImplicitfG0CSgvg",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "customAttributes",
             "printedName": "customAttributes",
             "children": [
@@ -3116,6 +3202,39 @@
             "declKind": "Func",
             "usr": "s:21GenesysCloudMessenger0C7AccountC21setAuthenticationInfo8authCode11redirectUri12codeVerifierySS_S2SSgtF",
             "mangledName": "$s21GenesysCloudMessenger0C7AccountC21setAuthenticationInfo8authCode11redirectUri12codeVerifierySS_S2SSgtF",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setImplicitAuthenticationInfo",
+            "printedName": "setImplicitAuthenticationInfo(idToken:nonce:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger0C7AccountC29setImplicitAuthenticationInfo7idToken5nonceySS_SStF",
+            "mangledName": "$s21GenesysCloudMessenger0C7AccountC29setImplicitAuthenticationInfo7idToken5nonceySS_SStF",
             "moduleName": "GenesysCloudMessenger",
             "declAttributes": [
               "Final",
@@ -3444,6 +3563,255 @@
         "printedName": "MessengerTransport",
         "declKind": "Import",
         "moduleName": "GenesysCloudMessenger"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImplicitAuthenticationInfo",
+        "printedName": "ImplicitAuthenticationInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "idToken",
+            "printedName": "idToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21GenesysCloudMessenger26ImplicitAuthenticationInfoC7idTokenSSvp",
+            "mangledName": "$s21GenesysCloudMessenger26ImplicitAuthenticationInfoC7idTokenSSvp",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GenesysCloudMessenger26ImplicitAuthenticationInfoC7idTokenSSvg",
+                "mangledName": "$s21GenesysCloudMessenger26ImplicitAuthenticationInfoC7idTokenSSvg",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nonce",
+            "printedName": "nonce",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21GenesysCloudMessenger26ImplicitAuthenticationInfoC5nonceSSvp",
+            "mangledName": "$s21GenesysCloudMessenger26ImplicitAuthenticationInfoC5nonceSSvp",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GenesysCloudMessenger26ImplicitAuthenticationInfoC5nonceSSvg",
+                "mangledName": "$s21GenesysCloudMessenger26ImplicitAuthenticationInfoC5nonceSSvg",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(idToken:nonce:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitAuthenticationInfo",
+                "printedName": "GenesysCloudMessenger.ImplicitAuthenticationInfo",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)ImplicitAuthenticationInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21GenesysCloudMessenger26ImplicitAuthenticationInfoC7idToken5nonceACSS_SStcfc",
+            "mangledName": "$s21GenesysCloudMessenger26ImplicitAuthenticationInfoC7idToken5nonceACSS_SStcfc",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitAuthenticationInfo",
+                "printedName": "GenesysCloudMessenger.ImplicitAuthenticationInfo",
+                "usr": "c:@M@GenesysCloudMessenger@objc(cs)ImplicitAuthenticationInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GenesysCloudMessenger@objc(cs)ImplicitAuthenticationInfo(im)init",
+            "mangledName": "$s21GenesysCloudMessenger26ImplicitAuthenticationInfoCACycfc",
+            "moduleName": "GenesysCloudMessenger",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GenesysCloudMessenger@objc(cs)ImplicitAuthenticationInfo",
+        "mangledName": "$s21GenesysCloudMessenger26ImplicitAuthenticationInfoC",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -4613,7 +4981,7 @@
       "kind": "StringLiteral",
       "offset": 136,
       "length": 8,
-      "value": "\"1.20.0\""
+      "value": "\"1.21.0\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DK_mobile-messenger-ios-sdk_main\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
@@ -4660,7 +5028,7 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DK_mobile-messenger-ios-sdk_main\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 16786,
+      "offset": 17054,
       "length": 5,
       "value": "false"
     },
@@ -4688,7 +5056,7 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/workspace\/DK_mobile-messenger-ios-sdk_main\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "IntegerLiteral",
-      "offset": 651,
+      "offset": 735,
       "length": 3,
       "value": "300"
     },
