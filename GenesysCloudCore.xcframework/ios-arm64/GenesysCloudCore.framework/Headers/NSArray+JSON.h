@@ -1,5 +1,5 @@
 
-// GenesysCloudCore version number: v1.8.0
+// GenesysCloudCore version number: v1.8.1
 // ===================================================================================================
 // Copyright © 2022 GenesysCloud(Genesys).
 // GenesysCloud SDK.
