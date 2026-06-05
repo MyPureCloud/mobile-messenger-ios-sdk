@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.5.0
+// GenesysCloud version number: v1.6.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -267,4 +267,10 @@ The Text To Speech Parser
 The placeholder text.
 */
 @property(nonatomic, copy, readonly) NSString *_Nonnull placeholderText;
+
+/**
+Updating custom attributes
+*/
+- (void)updateCustomAttributes:(NSDictionary<NSString *, NSString *> *_Nonnull)customAttributes;
+
 @end

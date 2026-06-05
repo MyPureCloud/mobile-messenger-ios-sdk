@@ -5,6 +5,7 @@
 import Foundation
 @_exported import GenesysCloud
 import GenesysCloudCore
+import GenesysCloudMessenger
 import Swift
 import _Concurrency
 import _StringProcessing

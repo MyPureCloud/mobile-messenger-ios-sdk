@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.5.0
+// GenesysCloud version number: v1.6.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -27,6 +27,7 @@
 - (void)didClickApplicationQuickOption:(NRQuickOption *)quickOption;
 - (BOOL)shouldPresentWelcomeMessage;
 - (BOOL)shouldHandleFormPresentation:(UIViewController *)formController;
+- (void)updateCustomAttributes:(NSDictionary<NSString *, NSString *> *)customAttributes;
 
 /**
  Updates when chat state was changed (chat lifecycle).

@@ -1,5 +1,5 @@
 
-// GenesysCloudCore version number: v1.5.0
+// GenesysCloudCore version number: v1.6.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -17,7 +17,6 @@ FOUNDATION_EXPORT const unsigned char GenesysCloudCoreVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <GenesysCloudCore/PublicHeader.h>
 
 
-#import <GenesysCloudCore/Account.h>
 #import <GenesysCloudCore/NSString+BLDUtilities.h>
 #import <GenesysCloudCore/NRConstants.h>
 #import <GenesysCloudCore/NRDefaultConnectionHandler.h>

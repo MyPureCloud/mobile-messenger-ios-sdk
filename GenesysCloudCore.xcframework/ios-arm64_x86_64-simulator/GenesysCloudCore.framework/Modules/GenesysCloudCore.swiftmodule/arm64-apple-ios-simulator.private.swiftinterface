@@ -83,6 +83,7 @@ public protocol ChatEngine {
   case connectionError = 5015
   case failedToReconnect = 5016
   case failedToAutostartConversation = 5017
+  case failedToSendCustomAttributes = 5018
   public static let ClientErrorReconnectDescription: Swift.String
   public static let IllegalStateErrorReconnectDescription: Swift.String
   public static let ConfigurationLoadErrorDescription: Swift.String
@@ -156,6 +157,13 @@ public protocol ChatEngine {
 @objc public protocol ConfigurationParser {
   @objc func parse(data: Any?) -> GenesysCloudCore.ChatSettings?
 }
+@_inheritsConvenienceInitializers @objc open class Account : ObjectiveC.NSObject {
+  @objc public var apiKey: Swift.String?
+  @objc public var info: [Swift.String : [Swift.String : Swift.String]]?
+  @objc public var sessionInfo: GenesysCloudCore.SessionInfo
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc open class ChatSettings : ObjectiveC.NSObject {
   open var features: [GenesysCloudCore.Feature : Swift.Bool]
   @objc open var enabled: Swift.Bool
@@ -180,6 +188,7 @@ public enum ChatStatementsError : Swift.Error {
   case timeout
   case sendFailure
   case messageInvalid
+  case customAttributesTooLarge
   case unknown
   public typealias RawValue = Swift.String
   public var rawValue: GenesysCloudCore.ChatStatementsError.RawValue {
@@ -228,6 +237,14 @@ public enum ChatStatementsError : Swift.Error {
   public init(copy: GenesysCloudCore.ChatStatement)
   public func startTimer(timeInterval: Foundation.TimeInterval = TimedChatStatement.expirationTimeInterval, completion: @escaping () -> Swift.Void)
   public func stopTimer()
+  @objc deinit
+}
+@objc public class SessionInfo : ObjectiveC.NSObject {
+  public init(id: Swift.String = "")
+  public init(info: GenesysCloudCore.SessionInfo)
+  public func removeExtraData(dataKey: Swift.String)
+  public func addExtraData(data: [Swift.String : Any])
+  public func getExtraData(key: Swift.String) -> Any?
   @objc deinit
 }
 @objc public enum UnavailableReason : Swift.Int {

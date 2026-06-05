@@ -1,5 +1,5 @@
 
-// GenesysCloud version number: v1.5.0
+// GenesysCloud version number: v1.6.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -20,7 +20,6 @@
 #import <GenesysCloud/AvailabilityResult.h>
 #import <GenesysCloud/HandOver.h>
 #import <GenesysCloud/ProactiveChatElementHandler.h>
-#import <GenesysCloudMessenger/MessengerAccount.h>
 
 /************************************************************/
 // MARK: - ChatController
@@ -161,5 +160,10 @@ clear cache
  */
 + (void)fetchDepartments:(Account *_Nonnull)account
               completion:(void(^_Nonnull)(DepartmentResult * _Nonnull result))completion;
+
+/**
+Updating custom attributes
+*/
+- (void)updateCustomAttributes:(NSDictionary<NSString *, NSString *> *_Nonnull)customAttributes;
 
 @end

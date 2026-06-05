@@ -6,15 +6,7 @@
 	<dict>
 		<key>Headers/GenesysCloudMessenger-Swift.h</key>
 		<data>
-		1ujoUXqg+yLUT0wpRPLgGC5htnA=
-		</data>
-		<key>Headers/GenesysCloudMessenger.h</key>
-		<data>
-		ArmKgKxA/DKp+xep8Cd5zVDmk94=
-		</data>
-		<key>Headers/MessengerAccount.h</key>
-		<data>
-		VRH8n8z267p84OBMzxuDiHUh1z8=
+		d/GaERFAOl7JyEmmPVdQSxj5q9c=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -22,11 +14,11 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		NfJrQf/ksm6J5LVFThD0m1aNXxM=
+		PMQaXLBUg3H0nVwaJ95YmDxoD/w=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cYbdtXE5/IhSEBMTRzV5l6G2Kr8=
+		fP4eK+ZDaUfubmicz0BaCDWjNEs=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +26,19 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cYbdtXE5/IhSEBMTRzV5l6G2Kr8=
+		fP4eK+ZDaUfubmicz0BaCDWjNEs=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WUc2HdICbHyKJiBFeH6ZIPg3vXo=
+		7aWLFuH71LdRqOnhFYUrYk9t4ZQ=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		NfJrQf/ksm6J5LVFThD0m1aNXxM=
+		PMQaXLBUg3H0nVwaJ95YmDxoD/w=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iaLlkcPxrbK64dPBi7b+coBDKKE=
+		VBLKb8Dk4i7HCqj57Et1EfE4TEU=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,19 +46,15 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iaLlkcPxrbK64dPBi7b+coBDKKE=
+		VBLKb8Dk4i7HCqj57Et1EfE4TEU=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Sfu82MEZ0xhAvYRgEKWT4mvBCa0=
+		T/+o/r8aCq60d9ZWdyrV//HuXnw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Ha9lSw0hzxZcQzDOqyttGZzk2jw=
-		</data>
-		<key>en_us.json</key>
-		<data>
-		ewf4EBM/af2Mm6+T546x/5+fhrM=
+		Z72ILKNuAKRjsu2sSFZpGRHJRN4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,35 +63,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2PcqemHcbKhambtQePFuzo2xlWXZDB070JhhuEiIZXo=
-			</data>
-		</dict>
-		<key>Headers/GenesysCloudMessenger.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			B6//qjwrZ5MhmCfyceb93m/a+XVD9wCDd8szS8iIZck=
-			</data>
-		</dict>
-		<key>Headers/MessengerAccount.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TXs3og8hM2i4qJouLqZArg17CIGTVnIJnOcj/TzJRBE=
+			iTaxYufV7HrLhe2uRAJOL5fw3aTC/M47dk9BQyA4Ra0=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3XrcuwELjcfKMvfz7jtREn1LlTnc9iIONsCsstzY3kc=
+			aL/Jx9h7rJfJ6abXRxlVZ8yiBXJ6KDHGsWojEfDu1jQ=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ItwwEsT3oUtjpMvCfzvsnRo6MXeYkRQ0yh5C6OXD+Fc=
+			AgMxviplXXqLNXUA4jnVnBIIDgIxdNhdHZuPMlyiwx4=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -117,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ItwwEsT3oUtjpMvCfzvsnRo6MXeYkRQ0yh5C6OXD+Fc=
+			AgMxviplXXqLNXUA4jnVnBIIDgIxdNhdHZuPMlyiwx4=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xSJQh+Vmwv2kmsu9QeJck4PeubllJjUDepBMIkti2GI=
+			RW5OgQZMxDqwcWNcgelxFky02VQ+QQoFdknkkAU+q3g=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3XrcuwELjcfKMvfz7jtREn1LlTnc9iIONsCsstzY3kc=
+			aL/Jx9h7rJfJ6abXRxlVZ8yiBXJ6KDHGsWojEfDu1jQ=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iwfSJmQi4fCMcVEzR4K9ySdPcxwn1lFsHlfKwTFyYQY=
+			E+uNMmg5UMGUpBu4bOvkE4cHOLXIg1m5iLKjAFM2wV4=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -152,28 +126,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iwfSJmQi4fCMcVEzR4K9ySdPcxwn1lFsHlfKwTFyYQY=
+			E+uNMmg5UMGUpBu4bOvkE4cHOLXIg1m5iLKjAFM2wV4=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b44FWrlgLOHdi+LDUEIVAY2j1YaJPoioAl2M8W5ZaZ4=
+			TqyHgQYcwNAQPhPyIPd+GN435Gu0iolZghz0AZiE6xQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3KioRL2RLiimG8b+iAjuRzMfryhPT5d16kLOiBKVSi4=
-			</data>
-		</dict>
-		<key>en_us.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kY41/8zNAIQcJewYUlrMeweCTle9SHJHO7bk9n1r2RU=
+			IIa1DsYx1sMoJz5CfJitAc0V8HSgoY6yzSK5eQ3b8nI=
 			</data>
 		</dict>
 	</dict>

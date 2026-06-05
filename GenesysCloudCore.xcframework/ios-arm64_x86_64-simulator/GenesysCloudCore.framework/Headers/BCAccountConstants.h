@@ -1,5 +1,5 @@
 
-// GenesysCloudCore version number: v1.5.0
+// GenesysCloudCore version number: v1.6.0
 // ===================================================================================================
 // Copyright © 2021 GenesysCloud(Genesys).
 // GenesysCloud SDK.
@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** A dictionary to hold account's extra data*/
 extern NSString *const BCFormFieldExtraData;
+
+/** A dictionary to hold account's custom attributes*/
+extern NSString *const BCFormFieldCustomAttributes;
 
 /** Language of the visitor (e.g., en-US). If the window does not support the language, it will fallback to the default language of the window. String value required. @since Version 1.0 */
 extern NSString *const BCFormFieldLanguage;

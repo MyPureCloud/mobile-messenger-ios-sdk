@@ -1,11 +1,4 @@
 framework module GenesysCloudMessenger {
-  umbrella header "GenesysCloudMessenger.h"
-
-  export *
-  module * { export * }
-}
-
-module GenesysCloudMessenger.Swift {
   header "GenesysCloudMessenger-Swift.h"
   requires objc
 }
