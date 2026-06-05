@@ -31,6 +31,7 @@ import _StringProcessing
     @objc get
     @objc set
   }
+  @objc override public func isFeatureEnabled(name: GenesysCloudCore.Feature, defaultValue: Swift.Bool, data: Any?) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -84,6 +85,7 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @objc public class TranslationsKeys : ObjectiveC.NSObject {
   @objc public static let startConversationMessage: Swift.String
+  @objc public static let conversationStartedMessage: Swift.String
   @objc public static let inputMessagePlaceholder: Swift.String
   @objc public static let inputMessageSpeechPlaceholder: Swift.String
   @objc public static let conversationRecoveryFailure: Swift.String
