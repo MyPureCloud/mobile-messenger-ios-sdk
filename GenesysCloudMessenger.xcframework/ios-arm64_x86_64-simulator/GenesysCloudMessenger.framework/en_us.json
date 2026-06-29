@@ -62,5 +62,16 @@
   "permissions": {
     "cameraPermissionsDialogTitle": "\"%s\" Would Like to Access the Camera",
     "cameraPermissionsDialogBody": "This app requires access to the camera"
+  },
+  "timeSlotPicker": {
+    "startSelectionButton": "Select a time",
+    "pickerScreenTitle": "Schedule an appointment",
+    "showMoreButton": "Show more",
+    "showLessButton": "Show less",
+    "submitTimeSlotButton": "Send",
+    "timeSlotCount": "%s slots",
+    "slotsSectionTitle": "Appointments",
+    "noSlotsAvailableTitle": "No time slots are currently available.",
+    "noSlotsAvailableButton": "Return to chat"
   }
 }

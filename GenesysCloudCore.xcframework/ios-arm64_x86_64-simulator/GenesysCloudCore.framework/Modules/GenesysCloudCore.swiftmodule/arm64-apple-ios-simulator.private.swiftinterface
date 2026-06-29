@@ -13,6 +13,7 @@ import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@available(*, deprecated, message: "Not intended for external use. Public access will be removed in 3.0.0.")
 public protocol AttachmentFetcherProtocol : Swift.Sendable {
   #if compiler(>=5.3) && $NonescapableTypes
   var currentFileToUpload: GenesysCloudCore.UploadableFile? { get }
@@ -41,13 +42,16 @@ public protocol AttachmentFetcherProtocol : Swift.Sendable {
   func setCurrentFileToUpload(file: GenesysCloudCore.UploadableFile?)
   #endif
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 final public class AttachmentFetcher : GenesysCloudCore.AttachmentFetcherProtocol, @unchecked Swift.Sendable {
   final public let fetchStream: _Concurrency.AsyncStream<Swift.Result<GenesysCloudCore.DownloadableFile, any Swift.Error>>
   final public let refreshStream: _Concurrency.AsyncStream<Swift.Result<GenesysCloudCore.DownloadableFile, any Swift.Error>>
   #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var currentFileToUpload: GenesysCloudCore.UploadableFile? {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #endif
@@ -73,6 +77,7 @@ extension GenesysCloudCore.AttachmentFetcher {
   #endif
   final public func storeFile(_ file: GenesysCloudCore.UploadableFile)
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public enum DownloadableFileStatus : Swift.Sendable {
   case none
   case downloading
@@ -87,9 +92,12 @@ public enum DownloadableFileStatus : Swift.Sendable {
   }
 }
 @objc final public class DownloadableFile : ObjectiveC.NSObject, GenesysCloudCore.FileRepresentable, @unchecked Swift.Sendable {
+  @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
   @GenesysCloudCore.Locked final public var fileName: Swift.String {
     get
+    @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
     _modify
   }
   #if compiler(>=5.3) && $NonescapableTypes
@@ -98,86 +106,126 @@ public enum DownloadableFileStatus : Swift.Sendable {
   }
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
   @GenesysCloudCore.Locked final public var fileSizeInBytes: Swift.Int? {
     get
+    @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
     _modify
   }
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @GenesysCloudCore.Locked final public var refreshAttempts: Swift.Int {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @GenesysCloudCore.Locked final public var videoFrameFetcher: any GenesysCloudCore.VideoFrameFetching {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @GenesysCloudCore.Locked final public var previewImage: UIKit.UIImage? {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @GenesysCloudCore.Locked final public var previewFailed: Swift.Bool {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
   @GenesysCloudCore.Locked final public var downloadURL: Swift.String? {
     get
+    @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
     _modify
   }
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @GenesysCloudCore.Locked final public var downloadTask: Foundation.URLSessionDataTask? {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @GenesysCloudCore.Locked final public var parentMessageId: Swift.String {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
   @GenesysCloudCore.Locked final public var fileId: Swift.String? {
     get
+    @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Should not be modified by external users. Public setter will be removed in 3.0.0.")
     _modify
   }
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @GenesysCloudCore.Locked final public var currentStatus: GenesysCloudCore.DownloadableFileStatus {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   final public let status: _Concurrency.AsyncStream<GenesysCloudCore.DownloadableFileStatus>
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   required public init(fileName: Swift.String, fileSizeInBytes: Swift.Int?, downloadUrl: Swift.String?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   convenience public init(parentMessageId: Swift.String, fileName: Swift.String, fileId: Swift.String, downloadURL: Swift.String?, fileSizeInBytes: Swift.Int?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   convenience public init?(from uploadableFile: GenesysCloudCore.UploadableFile, messageId: Swift.String) async
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   final public func updateStatus(_ newStatus: GenesysCloudCore.DownloadableFileStatus)
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   final public func updateDownloadProgress(_ progress: Swift.Double)
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   final public func setPreviewImage(_ image: UIKit.UIImage)
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   final public func setFileData(_ data: Foundation.Data?) async
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   final public var downloadProgress: _Concurrency.AsyncStream<Swift.Double> {
     get
   }
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol PreviewGenerating {
   var videoFrameFetcher: any GenesysCloudCore.VideoFrameFetching { get set }
   #if compiler(>=5.3) && $NonescapableTypes
@@ -187,6 +235,7 @@ public protocol PreviewGenerating {
   var previewFailed: Swift.Bool { get set }
   func setPreviewImage(_ image: UIKit.UIImage)
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol DownloadManaging {
   #if compiler(>=5.3) && $NonescapableTypes
   var downloadURL: Swift.String? { get }
@@ -196,10 +245,12 @@ public protocol DownloadManaging {
   #endif
   var downloadProgress: _Concurrency.AsyncStream<Swift.Double> { get }
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol UploadManaging {
   var uploadProgress: _Concurrency.AsyncStream<Swift.Double> { get }
   func updateUploadProgress(_ progress: Swift.Double)
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol FileRepresentable : AnyObject, GenesysCloudCore.DownloadManaging, GenesysCloudCore.PreviewGenerating, Swift.Equatable, Swift.Sendable {
   var fileName: Swift.String { get }
   #if compiler(>=5.3) && $NonescapableTypes
@@ -241,6 +292,7 @@ extension GenesysCloudCore.DownloadManaging {
     get
   }
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public enum MimeType : Swift.String, Swift.Sendable {
   case image
   case video
@@ -249,16 +301,19 @@ public enum MimeType : Swift.String, Swift.Sendable {
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol URLSessionProtocol : Swift.Sendable {
   func data(for request: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.URLResponse)
 }
 extension Foundation.URLSession : GenesysCloudCore.URLSessionProtocol {
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public enum UploadableFileStatus : Swift.Sendable {
   case none
   case uploadDelayed
@@ -273,17 +328,22 @@ public enum UploadableFileStatus : Swift.Sendable {
     get
   }
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 final public class UploadableFile : GenesysCloudCore.FileRepresentable, GenesysCloudCore.UploadManaging, @unchecked Swift.Sendable {
   #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var localUrl: Foundation.URL! {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #endif
   @GenesysCloudCore.Locked final public var fileName: Swift.String {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #if compiler(>=5.3) && $NonescapableTypes
@@ -294,61 +354,81 @@ final public class UploadableFile : GenesysCloudCore.FileRepresentable, GenesysC
   #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var fileSizeInBytes: Swift.Int? {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #endif
   @GenesysCloudCore.Locked final public var refreshAttempts: Swift.Int {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var fileId: Swift.String? {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #endif
   @GenesysCloudCore.Locked final public var currentStatus: GenesysCloudCore.UploadableFileStatus {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   @GenesysCloudCore.Locked final public var currentUploadProgress: Swift.Double {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var downloadTask: Foundation.URLSessionDataTask? {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var downloadURL: Swift.String? {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #endif
   @GenesysCloudCore.Locked final public var videoFrameFetcher: any GenesysCloudCore.VideoFrameFetching {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #if compiler(>=5.3) && $NonescapableTypes
   @GenesysCloudCore.Locked final public var previewImage: UIKit.UIImage? {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   #endif
   @GenesysCloudCore.Locked final public var previewFailed: Swift.Bool {
     get
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     set
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     _modify
   }
   final public let status: _Concurrency.AsyncStream<GenesysCloudCore.UploadableFileStatus>
@@ -370,6 +450,7 @@ final public class UploadableFile : GenesysCloudCore.FileRepresentable, GenesysC
 extension GenesysCloudCore.UploadableFile {
   public static func == (lhs: GenesysCloudCore.UploadableFile, rhs: GenesysCloudCore.UploadableFile) -> Swift.Bool
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol VideoFrameFetching : Swift.Sendable {
   #if compiler(>=5.3) && $NonescapableTypes
   func getThumbnailImage(from videoData: Foundation.Data) async -> UIKit.UIImage?
@@ -383,8 +464,10 @@ public protocol VideoFrameFetching : Swift.Sendable {
   @objc final public let cardDescription: Swift.String
   @objc final public let imageUrl: Swift.String?
   @objc final public let actions: [GenesysCloudCore.CardAction]
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   final public var image: Combine.CurrentValueSubject<UIKit.UIImage?, any Swift.Error>
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(title: Swift.String, cardDescription: Swift.String, imageUrl: Swift.String?, image: UIKit.UIImage? = nil, actions: [GenesysCloudCore.CardAction])
   #endif
   @objc deinit
@@ -394,14 +477,50 @@ public protocol VideoFrameFetching : Swift.Sendable {
   @objc final public let url: Foundation.URL?
   @objc final public let payload: Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(text: Swift.String, url: Foundation.URL?, payload: Swift.String)
   #endif
   @objc deinit
 }
 @objc final public class CarouselChatElement : GenesysCloudCore.ChatElement {
   @objc final public let cards: [GenesysCloudCore.Card]
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   final public var scrollOffset: CoreFoundation.CGFloat
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, cards: [GenesysCloudCore.Card])
+  @objc deinit
+}
+@objc final public class TimeSlot : ObjectiveC.NSObject {
+  @objc final public let dateTime: Foundation.Date
+  @objc final public let payload: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  public init(dateTime: Foundation.Date, payload: Swift.String)
+  @objc deinit
+}
+@objc final public class TimeSlotConfirmationChatElement : GenesysCloudCore.ChatElement {
+  @objc final public var text: Swift.String
+  @objc final public let payload: Swift.String
+  @objc final public let originatingMessageId: Swift.String?
+  @objc final public var imageUrl: Swift.String?
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  final public let image: Combine.CurrentValueSubject<UIKit.UIImage?, any Swift.Error>
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, text: Swift.String, payload: Swift.String, originatingMessageId: Swift.String?, imageUrl: Swift.String? = nil)
+  #endif
+  @objc deinit
+}
+@objc final public class TimeSlotPickerChatElement : GenesysCloudCore.ChatElement {
+  @objc final public let title: Swift.String
+  @objc final public let subtitle: Swift.String?
+  @objc final public let imageUrl: Swift.String?
+  @objc final public let availableTimes: [GenesysCloudCore.TimeSlot]
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  final public let image: Combine.CurrentValueSubject<UIKit.UIImage?, any Swift.Error>
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, title: Swift.String, subtitle: Swift.String?, imageUrl: Swift.String?, availableTimes: [GenesysCloudCore.TimeSlot])
+  #endif
   @objc deinit
 }
 @objc public enum UserChatElementState : Swift.Int {
@@ -430,12 +549,14 @@ public protocol VideoFrameFetching : Swift.Sendable {
     get
   }
 }
+@available(*, deprecated, message: "Should not be subclassed by external users. Will be changed from open to public in 3.0.0.")
 @objc open class ChatElement : ObjectiveC.NSObject {
   @objc public var id: Swift.String
   @objc public var isLoadedFromHistory: Swift.Bool
   @objc public var timestamp: Foundation.Date
   @objc public var kind: GenesysCloudCore.ChatElementKind
   @objc dynamic public var userState: GenesysCloudCore.UserChatElementState
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind)
   @objc deinit
 }
@@ -443,19 +564,23 @@ extension GenesysCloudCore.ChatElement {
   #if compiler(>=5.3) && $NonescapableTypes
   public func getText() -> Swift.String?
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public func setText(_ text: Swift.String)
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public func convertToFileElement(file: GenesysCloudCore.DownloadableFile) -> GenesysCloudCore.ChatElement
 }
 @objc final public class FileChatElement : GenesysCloudCore.ChatElement {
   final public var file: GenesysCloudCore.DownloadableFile
   final public var text: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind, file: GenesysCloudCore.DownloadableFile, text: Swift.String? = nil)
   #endif
   @objc deinit
 }
 @objc final public class QuickRepliesChatElement : GenesysCloudCore.ChatElement {
   final public var quickReplies: [Swift.String]
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, quickReplies: [Swift.String])
   @objc deinit
 }
@@ -463,6 +588,7 @@ extension GenesysCloudCore.ChatElement {
   final public var type: GenesysCloudCore.SystemChatElementType
   final public var text: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, type: GenesysCloudCore.SystemChatElementType, text: Swift.String? = nil)
   #endif
   @objc deinit
@@ -486,9 +612,11 @@ extension GenesysCloudCore.ChatElement {
 @objc final public class TextChatElement : GenesysCloudCore.ChatElement {
   @objc final public var text: Swift.String
   final public var type: GenesysCloudCore.TextChatElementType
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind, text: Swift.String)
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public enum TextChatElementType : Swift.Equatable {
   case normal
   case quickReplyResponse
@@ -499,10 +627,12 @@ public enum TextChatElementType : Swift.Equatable {
   public static func == (a: GenesysCloudCore.TextChatElementType, b: GenesysCloudCore.TextChatElementType) -> Swift.Bool
 }
 @objc final public class TypingIndicatorChatElement : GenesysCloudCore.ChatElement {
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init()
   @objc deinit
 }
-@objc final public class AttachmentProfile : ObjectiveC.NSObject {
+@objc @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+final public class AttachmentProfile : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
   public init(allowedFiles: [Swift.String] = [], blockedFiles: [Swift.String] = [], enabled: Swift.Bool? = nil, hasWildCard: Swift.Bool? = nil, maxFileSizeKB: Swift.Int64 = 0, pickerModes: Swift.Set<GenesysCloudCore.PickerMode> = [])
   #endif
@@ -515,6 +645,7 @@ public enum TextChatElementType : Swift.Equatable {
   final public func isEnabled() -> Swift.Bool
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public enum Feature {
   case autostart
   case conversationDisconnect
@@ -530,6 +661,7 @@ public enum Feature {
     get
   }
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 final public class LanguageConfiguration {
   final public var translations: [GenesysCloudCore.TranslationKey : Swift.String]
   final public var supportedLanguages: [Swift.String]
@@ -538,6 +670,7 @@ final public class LanguageConfiguration {
   public init(translations: [GenesysCloudCore.TranslationKey : Swift.String] = [:], supportedLanguages: [Swift.String], defaultLanguage: Swift.String, activeLanguage: Swift.String)
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public enum PickerMode : Swift.String {
   case image
   case video
@@ -548,11 +681,13 @@ public enum PickerMode : Swift.String {
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 @objc final public class RemoteConfiguration : ObjectiveC.NSObject {
   final public let isChatEnabled: Swift.Bool
   final public var featureFlags: [GenesysCloudCore.Feature : Swift.Bool]
@@ -566,12 +701,14 @@ public enum PickerMode : Swift.String {
   final public func addFeature(_ feature: GenesysCloudCore.Feature, enabled: Swift.Bool)
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 final public class UIConfiguration {
   final public let primaryColor: UIKit.UIColor
   final public let secondaryColor: UIKit.UIColor
   public init(primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor)
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol ConnectionHandler {
   #if compiler(>=5.3) && $NonescapableTypes
   func open(request: Foundation.URLRequest, completion: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
@@ -580,7 +717,8 @@ public protocol ConnectionHandler {
   func open(request: Foundation.URLRequest, progress: ((Swift.Float) -> Swift.Void)?, completion: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
   #endif
 }
-@objc @_inheritsConvenienceInitializers final public class DefaultConnectionHandler : ObjectiveC.NSObject, @unchecked Swift.Sendable, GenesysCloudCore.ConnectionHandler {
+@objc @_inheritsConvenienceInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+final public class DefaultConnectionHandler : ObjectiveC.NSObject, @unchecked Swift.Sendable, GenesysCloudCore.ConnectionHandler {
   #if compiler(>=5.3) && $NonescapableTypes
   final public func open(request: Foundation.URLRequest, completion: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void)
   #endif
@@ -600,9 +738,11 @@ extension GenesysCloudCore.DefaultConnectionHandler : Foundation.URLSessionDataD
     set
   }
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol LogOutputProtocol {
   func write(_ message: Swift.String)
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public struct LogMessage : Swift.ExpressibleByStringInterpolation, Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
@@ -614,12 +754,17 @@ public struct LogMessage : Swift.ExpressibleByStringInterpolation, Swift.CustomS
     public mutating func appendLiteral(_ literal: Swift.String)
     public mutating func appendInterpolation<T>(public value: T)
     public mutating func appendInterpolation<T>(private value: T)
+    @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
     public typealias StringLiteralType = Swift.String
   }
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public typealias StringLiteralType = Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public typealias UnicodeScalarLiteralType = Swift.String
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public enum LogFlow : Swift.CaseIterable {
   case authentication
   case autostart
@@ -628,6 +773,7 @@ public enum LogFlow : Swift.CaseIterable {
   case typingIndicator
   case markdown
   case contentProfiles
+  case timeSlotPicker
   case messaging
   case attachment
   case quickReply
@@ -638,6 +784,7 @@ public enum LogFlow : Swift.CaseIterable {
   case configuration
   case session
   public static func == (a: GenesysCloudCore.LogFlow, b: GenesysCloudCore.LogFlow) -> Swift.Bool
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public typealias AllCases = [GenesysCloudCore.LogFlow]
   nonisolated public static var allCases: [GenesysCloudCore.LogFlow] {
     get
@@ -647,7 +794,8 @@ public enum LogFlow : Swift.CaseIterable {
     get
   }
 }
-@_hasMissingDesignatedInitializers final public class GCLogger {
+@_hasMissingDesignatedInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+final public class GCLogger {
   public static var isLoggingEnabled: Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   public static func info(_ message: GenesysCloudCore.LogMessage, fileName: Swift.String = #fileID, lineNumber: Swift.UInt = #line, flows: [GenesysCloudCore.LogFlow]? = nil)
@@ -660,7 +808,8 @@ public enum LogFlow : Swift.CaseIterable {
   #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class LanguageUtility : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+@objc public class LanguageUtility : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getDeviceLanguage() -> Swift.String?
   #endif
@@ -669,22 +818,28 @@ public enum LogFlow : Swift.CaseIterable {
 }
 extension Swift.String {
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public func mimeType() -> GenesysCloudCore.MimeType?
   #endif
 }
 extension Swift.String {
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public func fileExtension() -> Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public func withoutFileExtension() -> Swift.String
 }
 extension Foundation.Locale {
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static func localizeSessionExpirationNotice(_ interval: Foundation.TimeInterval, languageConfig: GenesysCloudCore.LanguageConfiguration) -> Swift.String?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static func localizeTimeInterval(language: Swift.String?, interval: Foundation.TimeInterval, allowedUnits: Foundation.NSCalendar.Unit) -> Swift.String?
   #endif
 }
-public enum TranslationKey {
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+public enum TranslationKey : Swift.CaseIterable {
   case startConversationMessage
   case conversationStartedMessage
   case inputMessagePlaceholder
@@ -737,7 +892,21 @@ public enum TranslationKey {
   case close
   case cameraPermissionsDialogTitle
   case cameraPermissionsDialogBody
+  case timeSlotPickerStartSelectionButton
+  case timeSlotPickerPickerScreenTitle
+  case timeSlotPickerShowMoreButton
+  case timeSlotPickerShowLessButton
+  case timeSlotPickerSubmitTimeSlotButton
+  case timeSlotPickerTimeSlotCount
+  case timeSlotPickerSlotsSectionTitle
+  case timeSlotPickerNoSlotsAvailableTitle
+  case timeSlotPickerNoSlotsAvailableButton
   public static func == (a: GenesysCloudCore.TranslationKey, b: GenesysCloudCore.TranslationKey) -> Swift.Bool
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  public typealias AllCases = [GenesysCloudCore.TranslationKey]
+  nonisolated public static var allCases: [GenesysCloudCore.TranslationKey] {
+    get
+  }
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -746,20 +915,23 @@ public enum TranslationKey {
 extension GenesysCloudCore.TranslationKey {
   public static func from(systemChatElementType: GenesysCloudCore.SystemChatElementType) -> GenesysCloudCore.TranslationKey
 }
-@objc @_inheritsConvenienceInitializers open class Account : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @available(*, deprecated, message: "Should not be subclassed by external users. Will be changed from open to public in 3.0.0.")
+open class Account : ObjectiveC.NSObject {
   public var apiKey: Swift.String?
   public var info: [Swift.String : [Swift.String : Swift.String]]?
   public var sessionInfo: GenesysCloudCore.SessionInfo
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class FormField {
+@_hasMissingDesignatedInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+final public class FormField {
   public static let extraData: Swift.String
   public static let customAttributes: Swift.String
   public static let language: Swift.String
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc final public class ChatDataRequest : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+@objc final public class ChatDataRequest : ObjectiveC.NSObject {
   final public var id: Foundation.UUID
   final public var reason: GenesysCloudCore.RequestReason
   final public var requestStatus: GenesysCloudCore.RequestStatus
@@ -767,12 +939,14 @@ extension GenesysCloudCore.TranslationKey {
   @objc override dynamic public init()
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 final public class ChatDataResponse {
   final public var elements: [GenesysCloudCore.ChatElement]
   final public var hasMore: Swift.Bool
   public init()
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public enum RequestReason {
   case initialRequest
   case reconnectionRequest
@@ -783,6 +957,7 @@ public enum RequestReason {
     get
   }
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public enum RequestStatus {
   case idle
   case canLoad
@@ -798,6 +973,7 @@ public enum RequestStatus {
     get
   }
 }
+@available(*, deprecated, message: "Not intended for external use. Public access will be removed in 3.0.0.")
 public protocol ChatEngineDelegate : AnyObject {
   func messageDidArrive(chatElement: GenesysCloudCore.ChatElement)
   func didFail(error: GenesysCloudCore.GCError)
@@ -820,6 +996,7 @@ public protocol ChatEngineDelegate : AnyObject {
   func didReceiveSessionExpirationNotice(_ interval: Foundation.TimeInterval)
   func didReceiveRemoveSessionExpirationNotice()
 }
+@available(*, deprecated, message: "Not intended for external use. Public access will be removed in 3.0.0.")
 public protocol ChatEngineProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
   var delegate: (any GenesysCloudCore.ChatEngineDelegate)? { get set }
@@ -858,7 +1035,9 @@ public protocol ChatEngineProtocol {
   case chatClosed
   case config
   case endQueue
+  @available(*, deprecated, message: "Not used, will be removed in 3.0.0.")
   case typing
+  @available(*, deprecated, message: "Not used, will be removed in 3.0.0.")
   case endTyping
   case unavailable
   case agentTyping
@@ -874,17 +1053,21 @@ public protocol ChatEngineProtocol {
   @objc final public var state: GenesysCloudCore.ChatState
   @objc final public var dataMsg: Any?
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(state: GenesysCloudCore.ChatState, dataMsg: Any?)
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(state: GenesysCloudCore.ChatState)
   @objc deinit
 }
+@available(*, deprecated, message: "Not intended for external use. Public access will be removed in 3.0.0.")
 public protocol ConfigurationLoaderDelegate : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   func didFailLoad(error: (any Swift.Error)?)
   #endif
   func didFetchChatSettings(remoteConfig: GenesysCloudCore.RemoteConfiguration)
 }
+@available(*, deprecated, message: "Not intended for external use. Public access will be removed in 3.0.0.")
 public protocol ConfigurationLoader {
   var parser: any GenesysCloudCore.ConfigurationParser { get set }
   #if compiler(>=5.3) && $NonescapableTypes
@@ -892,12 +1075,14 @@ public protocol ConfigurationLoader {
   #endif
   func load(account: GenesysCloudCore.Account)
 }
+@available(*, deprecated, message: "Not intended for external use. Public access will be removed in 3.0.0.")
 public protocol ConfigurationParser {
   #if compiler(>=5.3) && $NonescapableTypes
   func parse(data: Any?) -> GenesysCloudCore.RemoteConfiguration?
   #endif
 }
 @objc public enum EndedReason : Swift.Int {
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let endedReasonKey: Swift.String
   case unknown = 0
   case `operator`
@@ -918,19 +1103,28 @@ public protocol ConfigurationParser {
 }
 @objc public enum ChatError : Swift.Int {
   case failedToLoad = 5001
+  @available(*, deprecated, message: "Not used, will be removed in 3.0.0.")
   case failedToEnd = 5002
+  @available(*, deprecated, message: "Not used, will be removed in 3.0.0.")
   case accountIsNotValid = 5003
   case chatGeneralError = 5004
   case failedToLoadData = 5005
+  @available(*, deprecated, message: "Not used, will be removed in 3.0.0.")
   case failedToFetchAccountConfiguration = 5006
   case failedToSendMessage = 5007
+  @available(*, deprecated, message: "Not used, will be removed in 3.0.0.")
   case failedToLoadHistory = 5008
+  @available(*, deprecated, message: "Not used, will be removed in 3.0.0.")
   case failedNoAccessKeyForLiveChat = 5009
+  @available(*, deprecated, message: "Not used, will be removed in 3.0.0.")
   case failedNoImplementationForHandOver = 5010
   case failedMessengerChatErrorDisableState = 5011
+  @available(*, deprecated, message: "Not used, will be removed in 3.0.0.")
   case failedToChangeLanguage = 5012
   case failedGeneralErrorType = 5013
+  @available(*, deprecated, message: "Not used, will be removed in 3.0.0.")
   case sessionExpiration = 5014
+  @available(*, deprecated, message: "Not used, will be removed in 3.0.0.")
   case connectionError = 5015
   case failedToReconnect = 5016
   case failedToAutostartConversation = 5017
@@ -946,21 +1140,37 @@ public protocol ConfigurationParser {
   case pushDeploymentIdMismatch = 5027
   case deviceAlreadyRegistered = 5028
   case authorizationRequired = 5029
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let ClientErrorReconnectDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let IllegalStateErrorReconnectDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let ConfigurationLoadErrorDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let ClientConnectErrorDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let conversationAutostartErrorDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let ConversationCreationErrorDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let AttachmentDownloadErrorDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let AttachmentRefreshErrorDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let ClientNotAuthenticatedErrorAuthenticatedMessagesDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let AuthLogoutFailedAuthenticatedMessagesDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static func AttachmentSizeValidationErrorDescription(limit: Swift.String) -> Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let AttachmentTypeValidationErrorDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let AttachmentGeneralValidationErrorDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let ClearConversationDisabledDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let ClearConversationFailureDescription: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static let AuthorizationRequiredDescription: Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
@@ -984,6 +1194,7 @@ public protocol ConfigurationParser {
   #endif
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 final public class EventData {
   final public var chatState: GenesysCloudCore.ChatState
   final public var isNewSession: Swift.Bool
@@ -992,6 +1203,7 @@ final public class EventData {
   public init(state: GenesysCloudCore.ChatState, isNewSession: Swift.Bool = false, isAutostart: Swift.Bool = false, isResumed: Swift.Bool = false)
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public enum DownloadError : Swift.Error {
   case invalidUrl
   case generalError
@@ -1002,14 +1214,17 @@ public enum DownloadError : Swift.Error {
     get
   }
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol FileDownloaderProtocol : AnyObject {
   func download(from urlString: Swift.String) async throws -> Foundation.Data
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 final public actor FileDownloader : GenesysCloudCore.FileDownloaderProtocol {
   public init(session: any GenesysCloudCore.URLSessionProtocol = URLSession.shared)
   final public func download(from urlString: Swift.String) async throws -> Foundation.Data
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
     get
   }
@@ -1029,18 +1244,6 @@ public enum MessageSendingError : Swift.Error {
     get
   }
 }
-@_hasMissingDesignatedInitializers final public class SessionDurationStorage {
-  public static let shared: GenesysCloudCore.SessionDurationStorage
-  #if compiler(>=5.3) && $NonescapableTypes
-  @GenesysCloudCore.Locked final public var sessionDuration: Foundation.TimeInterval? {
-    get
-    set
-    _modify
-  }
-  #endif
-  final public func reset()
-  @objc deinit
-}
 final public class SessionInfo : Swift.Equatable {
   public init(id: Swift.String = "")
   public init(info: GenesysCloudCore.SessionInfo)
@@ -1051,6 +1254,7 @@ final public class SessionInfo : Swift.Equatable {
   public static func == (lhs: GenesysCloudCore.SessionInfo, rhs: GenesysCloudCore.SessionInfo) -> Swift.Bool
   @objc deinit
 }
+@available(*, deprecated, message: "Unused. Will be removed in 3.0.0.")
 public enum StatementType {
   case outgoing
   case incoming
@@ -1062,22 +1266,31 @@ public enum StatementType {
     get
   }
 }
+@available(*, deprecated, message: "Unused. Will be removed in 3.0.0.")
 @objc public enum UnavailableReason : Swift.Int {
   case queueFull, noOperators, visitorBlocked, outsideHours, unknown, answerTimeout, unsecure, error, noConnection, serviceUnavailable, serviceDisabled, noReason
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
+  @available(*, deprecated, message: "Unused. Will be removed in 3.0.0.")
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.DownloadableFileStatus : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.DownloadableFileStatus : Swift.Hashable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.MimeType : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.MimeType : Swift.Hashable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.MimeType : Swift.RawRepresentable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.UploadableFileStatus : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.UploadableFileStatus : Swift.Hashable {}
 extension GenesysCloudCore.UserChatElementState : Swift.Equatable {}
 extension GenesysCloudCore.UserChatElementState : Swift.Hashable {}
@@ -1088,18 +1301,31 @@ extension GenesysCloudCore.ChatElementKind : Swift.RawRepresentable {}
 extension GenesysCloudCore.SystemChatElementType : Swift.Equatable {}
 extension GenesysCloudCore.SystemChatElementType : Swift.Hashable {}
 extension GenesysCloudCore.SystemChatElementType : Swift.RawRepresentable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.Feature : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.Feature : Swift.Hashable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.PickerMode : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.PickerMode : Swift.Hashable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.PickerMode : Swift.RawRepresentable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.LogFlow : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.LogFlow : Swift.Hashable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.TranslationKey : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.TranslationKey : Swift.Hashable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.RequestReason : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.RequestReason : Swift.Hashable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.RequestStatus : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.RequestStatus : Swift.Hashable {}
 extension GenesysCloudCore.ChatState : Swift.Equatable {}
 extension GenesysCloudCore.ChatState : Swift.Hashable {}
@@ -1110,12 +1336,19 @@ extension GenesysCloudCore.EndedReason : Swift.RawRepresentable {}
 extension GenesysCloudCore.ChatError : Swift.Equatable {}
 extension GenesysCloudCore.ChatError : Swift.Hashable {}
 extension GenesysCloudCore.ChatError : Swift.RawRepresentable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.DownloadError : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.DownloadError : Swift.Hashable {}
 extension GenesysCloudCore.MessageSendingError : Swift.Equatable {}
 extension GenesysCloudCore.MessageSendingError : Swift.Hashable {}
+@available(*, deprecated, message: "Unused. Will be removed in 3.0.0.")
 extension GenesysCloudCore.StatementType : Swift.Equatable {}
+@available(*, deprecated, message: "Unused. Will be removed in 3.0.0.")
 extension GenesysCloudCore.StatementType : Swift.Hashable {}
+@available(*, deprecated, message: "Unused. Will be removed in 3.0.0.")
 extension GenesysCloudCore.UnavailableReason : Swift.Equatable {}
+@available(*, deprecated, message: "Unused. Will be removed in 3.0.0.")
 extension GenesysCloudCore.UnavailableReason : Swift.Hashable {}
+@available(*, deprecated, message: "Unused. Will be removed in 3.0.0.")
 extension GenesysCloudCore.UnavailableReason : Swift.RawRepresentable {}

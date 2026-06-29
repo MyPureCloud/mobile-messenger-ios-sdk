@@ -19,6 +19,7 @@ import _SwiftConcurrencyShims
 @objc public class ImplicitAuthenticationInfo : ObjectiveC.NSObject {
   final public let idToken: Swift.String
   final public let nonce: Swift.String
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public init(idToken: Swift.String, nonce: Swift.String)
   @objc deinit
 }
@@ -37,7 +38,9 @@ import _SwiftConcurrencyShims
     @objc set
   }
   @objc override dynamic public init()
+  @available(*, deprecated, message: "This convenience init will be removed in 3.0.0, use other initializer.")
   @objc convenience public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool)
+  @available(*, deprecated, message: "This convenience init will be removed in 3.0.0, use other initializer.")
   @objc convenience public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool, sessionExpirationNoticeInterval: Swift.Int)
   @objc public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool, sessionExpirationNoticeInterval: Swift.Int, minimumWebSocketTlsVersion: MessengerTransport.TlsVersion = .systemDefault)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -47,34 +50,41 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 extension UIKit.UIColor {
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   convenience public init(_ hex: Swift.String, alpha: CoreFoundation.CGFloat = 1.0)
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public class TranslationsParser {
   public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class TranslationsResponse : Swift.Codable {
+@_hasMissingDesignatedInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+final public class TranslationsResponse : Swift.Codable {
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public struct DataLoader : GenesysCloudMessenger.DataLoading {
   public init()
   #if compiler(>=5.3) && $NonescapableTypes
   public func load(contentsOf url: Foundation.URL) throws -> Foundation.Data?
   #endif
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol DataLoading {
   #if compiler(>=5.3) && $NonescapableTypes
   func load(contentsOf: Foundation.URL) throws -> Foundation.Data?
   #endif
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 @objc public protocol TranslationsDataSourceDelegate {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc func fetch(language: Swift.String, completion: @escaping (Foundation.Data?) -> Swift.Void)
   #endif
 }
-@objc @_inheritsConvenienceInitializers public class TranslationsFileDataSource : ObjectiveC.NSObject, GenesysCloudMessenger.TranslationsDataSourceDelegate {
+@objc @_inheritsConvenienceInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+public class TranslationsFileDataSource : ObjectiveC.NSObject, GenesysCloudMessenger.TranslationsDataSourceDelegate {
   @objc override dynamic public init()
   public init(dataProvider: any GenesysCloudMessenger.DataLoading = DataLoader())
   #if compiler(>=5.3) && $NonescapableTypes
@@ -82,13 +92,15 @@ public protocol DataLoading {
   #endif
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class TranslationsLocaleParser : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+public class TranslationsLocaleParser : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public func parse(locale: Swift.String?) -> Swift.String?
   #endif
   @objc override dynamic public init()
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public class TranslationsRemoteDataSource : GenesysCloudMessenger.TranslationsDataSourceDelegate {
   convenience public init(domain: Swift.String)
   public init(domain: Swift.String, handler: any GenesysCloudCore.ConnectionHandler = DefaultConnectionHandler())
@@ -97,19 +109,35 @@ public class TranslationsRemoteDataSource : GenesysCloudMessenger.TranslationsDa
   #endif
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+public struct TranslationsLoadResult {
+  public let remote: GenesysCloudMessenger.TranslationsResponse
+  public let local: GenesysCloudMessenger.TranslationsResponse?
+}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public class TranslationsRepositoryImplementation : GenesysCloudMessenger.TranslationsRepositoryProtocol {
   public init(fileDataSource: any GenesysCloudMessenger.TranslationsDataSourceDelegate, remoteDataSource: any GenesysCloudMessenger.TranslationsDataSourceDelegate, parser: GenesysCloudMessenger.TranslationsParser)
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public func load(language: Swift.String, fallbackLanguage: Swift.String? = nil, completion: @escaping (GenesysCloudMessenger.TranslationsResponse?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  public func loadWithFallbackData(language: Swift.String, fallbackLanguage: Swift.String?, completion: @escaping (GenesysCloudMessenger.TranslationsLoadResult?) -> Swift.Void)
   #endif
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol TranslationsRepositoryProtocol : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   func load(language: Swift.String, fallbackLanguage: Swift.String?, completion: @escaping (GenesysCloudMessenger.TranslationsResponse?) -> Swift.Void)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func loadWithFallbackData(language: Swift.String, fallbackLanguage: Swift.String?, completion: @escaping (GenesysCloudMessenger.TranslationsLoadResult?) -> Swift.Void)
+  #endif
 }
-@objc public class MessengerChatEngine : ObjectiveC.NSObject {
+@objc @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+public class MessengerChatEngine : ObjectiveC.NSObject {
   public var account: GenesysCloudMessenger.MessengerChatEngine.AccountType {
     get
     set
@@ -152,16 +180,19 @@ extension GenesysCloudMessenger.MessengerChatEngine {
   @discardableResult
   @objc dynamic public func produceChatData(_ request: GenesysCloudCore.ChatDataRequest) -> Swift.Bool
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol AuthenticationHandlerProtocol : AnyObject {
   func shouldAuthorize(completion: @escaping (Swift.Bool) -> Swift.Void)
 }
-@_hasMissingDesignatedInitializers public class AuthenticationHandler : GenesysCloudMessenger.AuthenticationHandlerProtocol {
+@_hasMissingDesignatedInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+public class AuthenticationHandler : GenesysCloudMessenger.AuthenticationHandlerProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(account: GenesysCloudCore.Account)
   #endif
   public func shouldAuthorize(completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public class MessengerConfigurationLoader : GenesysCloudCore.ConfigurationLoader {
   weak public var delegate: (any GenesysCloudCore.ConfigurationLoaderDelegate)?
   public var parser: any GenesysCloudCore.ConfigurationParser
@@ -171,6 +202,7 @@ public class MessengerConfigurationLoader : GenesysCloudCore.ConfigurationLoader
   public func load(account: GenesysCloudCore.Account)
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public enum PushProvider {
   case apns
   case fcm
@@ -180,12 +212,14 @@ public enum PushProvider {
     get
   }
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol PushHandlerProtocol : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   func setPushToken(deviceToken: Swift.String, pushProvider: GenesysCloudMessenger.PushProvider, account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
   #endif
 }
-@_hasMissingDesignatedInitializers public class PushHandler : GenesysCloudMessenger.PushHandlerProtocol {
+@_hasMissingDesignatedInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+public class PushHandler : GenesysCloudMessenger.PushHandlerProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(account: GenesysCloudCore.Account)
   #endif
@@ -197,5 +231,7 @@ public protocol PushHandlerProtocol : AnyObject {
   #endif
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudMessenger.PushProvider : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudMessenger.PushProvider : Swift.Hashable {}

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/GenesysCloudCore-Swift.h</key>
 		<data>
-		3qZDbIUYdeBrRdZH7pU6BghFRd8=
+		mjIurEs6wdyzOXArGS+H+jfI52w=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,43 +14,43 @@
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		8byeEHrSH9+f6fJc/aIWuML9GTk=
+		1G6Hxn2qLDJikdFwGQBurwgxWWM=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ddMk5NAMHZmWKF32mIawC+7A4qw=
+		326SynSY+JakaK5nQsC/FHpf7bo=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		RbnobHgOYgt9WdI2VnF+W0vgGzk=
+		PlXfpUw1gal/s3/h2KzQN1xlC2A=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ddMk5NAMHZmWKF32mIawC+7A4qw=
+		326SynSY+JakaK5nQsC/FHpf7bo=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kyEEd7azQrpcSEj3pMdwokt0848=
+		MrMJtqXQya5cZoYhaUv4Tb9sH7o=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8byeEHrSH9+f6fJc/aIWuML9GTk=
+		1G6Hxn2qLDJikdFwGQBurwgxWWM=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hoxPrpoD1Ok0Wjq2OW/qipwUYB0=
+		i5g9xA8gTWU6WDpccAKgpyU143M=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		A3lwpiDV6oM9jaHd0UNltqCn354=
+		oeL9MXLg2gA0KSKyV2SLWR7JHFE=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hoxPrpoD1Ok0Wjq2OW/qipwUYB0=
+		i5g9xA8gTWU6WDpccAKgpyU143M=
 		</data>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PulnhgU1Tiur0nTZOkpu9W0VUwc=
+		Xs3oz3hXvoKnJvwylQUO7q3NInI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,77 +63,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JA7ZnLCY47cnrPK4WfWsC/4DsA3gOlOpDj1LUGrVxjk=
+			PTn59gd7Sj8tpbdUTLB1M1JDDxtama3m3YoZ/M348JQ=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2NYkxrcCyU7ZleSocgcl0z6Qs2w9zgF5b85/uDW4YMM=
+			wlJSdRg2SjyRpraq1nCDGnAxFNtfUxWqpObtjhRpks4=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oy72ifxO5Hojr/HIFLD/yAz5KLk9NN2hWenC2gr1zMk=
+			HHcTXmn0eDW251++pZXydhXNyhNOb52HBfomOgoLKjc=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JBCBYWrMgMLAUqntKfVrhzVPttIndGrzGiHc3VJLrVc=
+			k2g1Nuv8IYLKA4ckq4n4QWh/NLbEvtANx+vPNmweQaU=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oy72ifxO5Hojr/HIFLD/yAz5KLk9NN2hWenC2gr1zMk=
+			HHcTXmn0eDW251++pZXydhXNyhNOb52HBfomOgoLKjc=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5wgq+U3v64/f+6nIZvJwWiZe3DUvxxHqABs/BvobZMs=
+			tLVxFEalRRYNcBgdWTTrTTj3eIzWPDJGf+bOfkfZ4Qk=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2NYkxrcCyU7ZleSocgcl0z6Qs2w9zgF5b85/uDW4YMM=
+			wlJSdRg2SjyRpraq1nCDGnAxFNtfUxWqpObtjhRpks4=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4IE1dIVhL5wbQTcUil9wkW60HvY2SMxBxnyspGtuysI=
+			DJHS/UQ+VIIwJMXkJ3v2Hg6W9p22KregTgOqIPIHk2w=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HQVHO1F5zVMvpRUX01NfrMw4YN/IGomDgzUxN1whfDA=
+			5IERuh/ccLyz91IMFdihfq5HINp0Ud9V+rGOm3hbhHg=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4IE1dIVhL5wbQTcUil9wkW60HvY2SMxBxnyspGtuysI=
+			DJHS/UQ+VIIwJMXkJ3v2Hg6W9p22KregTgOqIPIHk2w=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uDrEFigTY4MhgtgMhVeruAv2z1gVQoqhoXCL7BEJgHY=
+			7MhUq7Ku3NlnB+RpReBuouAP8amQw73WI3FJh+8g5CM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

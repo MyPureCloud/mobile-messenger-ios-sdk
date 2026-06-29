@@ -24,7 +24,8 @@
         "moduleName": "GenesysCloudMessenger",
         "declAttributes": [
           "Final",
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -78,7 +79,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -126,7 +128,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -183,8 +186,10 @@
             "usr": "s:21GenesysCloudMessenger26ImplicitAuthenticationInfoC7idToken5nonceACSS_SStcfc",
             "mangledName": "$s21GenesysCloudMessenger26ImplicitAuthenticationInfoC7idToken5nonceACSS_SStcfc",
             "moduleName": "GenesysCloudMessenger",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "init_kind": "Designated"
           },
@@ -221,6 +226,7 @@
         "moduleName": "GenesysCloudMessenger",
         "declAttributes": [
           "AccessControl",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -344,7 +350,8 @@
               "Final",
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -409,7 +416,8 @@
               "Final",
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -474,7 +482,8 @@
               "Final",
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -543,7 +552,8 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -706,11 +716,13 @@
             "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerAccount(im)initWithDeploymentId:domain:logging:",
             "mangledName": "$s21GenesysCloudMessenger0C7AccountC12deploymentId6domain7loggingACSS_SSSbtcfc",
             "moduleName": "GenesysCloudMessenger",
+            "deprecated": true,
             "objc_name": "initWithDeploymentId:domain:logging:",
             "declAttributes": [
               "Convenience",
               "AccessControl",
               "ObjC",
+              "Available",
               "RawDocComment"
             ],
             "init_kind": "Convenience"
@@ -755,11 +767,13 @@
             "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerAccount(im)initWithDeploymentId:domain:logging:sessionExpirationNoticeInterval:",
             "mangledName": "$s21GenesysCloudMessenger0C7AccountC12deploymentId6domain7logging31sessionExpirationNoticeIntervalACSS_SSSbSitcfc",
             "moduleName": "GenesysCloudMessenger",
+            "deprecated": true,
             "objc_name": "initWithDeploymentId:domain:logging:sessionExpirationNoticeInterval:",
             "declAttributes": [
               "Convenience",
               "AccessControl",
               "ObjC",
+              "Available",
               "RawDocComment"
             ],
             "init_kind": "Convenience"
@@ -814,7 +828,8 @@
             "objc_name": "initWithDeploymentId:domain:logging:sessionExpirationNoticeInterval:minimumWebSocketTlsVersion:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -861,7 +876,8 @@
             "moduleName": "GenesysCloudMessenger",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -894,7 +910,8 @@
             "moduleName": "GenesysCloudMessenger",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -906,7 +923,8 @@
         "declAttributes": [
           "Final",
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:@M@GenesysCloudCore@objc(cs)Account",
         "inheritsConvenienceInitializers": true,
@@ -1014,6 +1032,16 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MessengerTransport",
+        "printedName": "MessengerTransport",
         "declKind": "Import",
         "moduleName": "GenesysCloudMessenger",
         "declAttributes": [
@@ -1172,8 +1200,10 @@
         "usr": "s:21GenesysCloudMessenger18TranslationsParserC",
         "mangledName": "$s21GenesysCloudMessenger18TranslationsParserC",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Available"
         ],
         "conformances": [
           {
@@ -1266,9 +1296,11 @@
         "usr": "s:21GenesysCloudMessenger20TranslationsResponseC",
         "mangledName": "$s21GenesysCloudMessenger20TranslationsResponseC",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
           "Final",
-          "AccessControl"
+          "AccessControl",
+          "Available"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -1379,8 +1411,10 @@
         "usr": "s:21GenesysCloudMessenger10DataLoaderV",
         "mangledName": "$s21GenesysCloudMessenger10DataLoaderV",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Available"
         ],
         "conformances": [
           {
@@ -1463,8 +1497,10 @@
         "usr": "s:21GenesysCloudMessenger11DataLoadingP",
         "mangledName": "$s21GenesysCloudMessenger11DataLoadingP",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
+          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -1482,6 +1518,16 @@
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GenesysCloudCore",
+        "printedName": "GenesysCloudCore",
+        "declKind": "Import",
+        "moduleName": "GenesysCloudMessenger",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -1562,9 +1608,11 @@
         "moduleName": "GenesysCloudMessenger",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
           "ObjC",
+          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -1719,8 +1767,10 @@
         "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsFileDataSource",
         "mangledName": "$s21GenesysCloudMessenger26TranslationsFileDataSourceC",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
+          "Available",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -1892,8 +1942,10 @@
         "usr": "c:@M@GenesysCloudMessenger@objc(cs)TranslationsLocaleParser",
         "mangledName": "$s21GenesysCloudMessenger24TranslationsLocaleParserC",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
+          "Available",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -2110,8 +2162,10 @@
         "usr": "s:21GenesysCloudMessenger28TranslationsRemoteDataSourceC",
         "mangledName": "$s21GenesysCloudMessenger28TranslationsRemoteDataSourceC",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Available"
         ],
         "conformances": [
           {
@@ -2153,6 +2207,142 @@
         "printedName": "GenesysCloudCore",
         "declKind": "Import",
         "moduleName": "GenesysCloudMessenger"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TranslationsLoadResult",
+        "printedName": "TranslationsLoadResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "remote",
+            "printedName": "remote",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TranslationsResponse",
+                "printedName": "GenesysCloudMessenger.TranslationsResponse",
+                "usr": "s:21GenesysCloudMessenger20TranslationsResponseC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21GenesysCloudMessenger22TranslationsLoadResultV6remoteAA0D8ResponseCvp",
+            "mangledName": "$s21GenesysCloudMessenger22TranslationsLoadResultV6remoteAA0D8ResponseCvp",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TranslationsResponse",
+                    "printedName": "GenesysCloudMessenger.TranslationsResponse",
+                    "usr": "s:21GenesysCloudMessenger20TranslationsResponseC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GenesysCloudMessenger22TranslationsLoadResultV6remoteAA0D8ResponseCvg",
+                "mangledName": "$s21GenesysCloudMessenger22TranslationsLoadResultV6remoteAA0D8ResponseCvg",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "local",
+            "printedName": "local",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GenesysCloudMessenger.TranslationsResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TranslationsResponse",
+                    "printedName": "GenesysCloudMessenger.TranslationsResponse",
+                    "usr": "s:21GenesysCloudMessenger20TranslationsResponseC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21GenesysCloudMessenger22TranslationsLoadResultV5localAA0D8ResponseCSgvp",
+            "mangledName": "$s21GenesysCloudMessenger22TranslationsLoadResultV5localAA0D8ResponseCSgvp",
+            "moduleName": "GenesysCloudMessenger",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloudMessenger.TranslationsResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TranslationsResponse",
+                        "printedName": "GenesysCloudMessenger.TranslationsResponse",
+                        "usr": "s:21GenesysCloudMessenger20TranslationsResponseC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21GenesysCloudMessenger22TranslationsLoadResultV5localAA0D8ResponseCSgvg",
+                "mangledName": "$s21GenesysCloudMessenger22TranslationsLoadResultV5localAA0D8ResponseCSgvg",
+                "moduleName": "GenesysCloudMessenger",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:21GenesysCloudMessenger22TranslationsLoadResultV",
+        "mangledName": "$s21GenesysCloudMessenger22TranslationsLoadResultV",
+        "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
+        "declAttributes": [
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -2260,8 +2450,79 @@
             "usr": "s:21GenesysCloudMessenger36TranslationsRepositoryImplementationC4load8language16fallbackLanguage10completionySS_SSSgyAA0D8ResponseCSgctF",
             "mangledName": "$s21GenesysCloudMessenger36TranslationsRepositoryImplementationC4load8language16fallbackLanguage10completionySS_SSSgyAA0D8ResponseCSgctF",
             "moduleName": "GenesysCloudMessenger",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadWithFallbackData",
+            "printedName": "loadWithFallbackData(language:fallbackLanguage:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudMessenger.TranslationsLoadResult?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloudMessenger.TranslationsLoadResult?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TranslationsLoadResult",
+                        "printedName": "GenesysCloudMessenger.TranslationsLoadResult",
+                        "usr": "s:21GenesysCloudMessenger22TranslationsLoadResultV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger36TranslationsRepositoryImplementationC20loadWithFallbackData8language16fallbackLanguage10completionySS_SSSgyAA0D10LoadResultVSgctF",
+            "mangledName": "$s21GenesysCloudMessenger36TranslationsRepositoryImplementationC20loadWithFallbackData8language16fallbackLanguage10completionySS_SSSgyAA0D10LoadResultVSgctF",
+            "moduleName": "GenesysCloudMessenger",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -2270,8 +2531,10 @@
         "usr": "s:21GenesysCloudMessenger36TranslationsRepositoryImplementationC",
         "mangledName": "$s21GenesysCloudMessenger36TranslationsRepositoryImplementationC",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Available"
         ],
         "conformances": [
           {
@@ -2378,6 +2641,73 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadWithFallbackData",
+            "printedName": "loadWithFallbackData(language:fallbackLanguage:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenesysCloudMessenger.TranslationsLoadResult?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GenesysCloudMessenger.TranslationsLoadResult?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TranslationsLoadResult",
+                        "printedName": "GenesysCloudMessenger.TranslationsLoadResult",
+                        "usr": "s:21GenesysCloudMessenger22TranslationsLoadResultV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21GenesysCloudMessenger30TranslationsRepositoryProtocolP20loadWithFallbackData8language16fallbackLanguage10completionySS_SSSgyAA0D10LoadResultVSgctF",
+            "mangledName": "$s21GenesysCloudMessenger30TranslationsRepositoryProtocolP20loadWithFallbackData8language16fallbackLanguage10completionySS_SSSgyAA0D10LoadResultVSgctF",
+            "moduleName": "GenesysCloudMessenger",
+            "genericSig": "<τ_0_0 where τ_0_0 : GenesysCloudMessenger.TranslationsRepositoryProtocol>",
+            "sugared_genericSig": "<Self where Self : GenesysCloudMessenger.TranslationsRepositoryProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -2386,8 +2716,10 @@
         "moduleName": "GenesysCloudMessenger",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
+          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -2703,7 +3035,11 @@
                 "usr": "s:21GenesysCloudMessenger0C10ChatEngineC7accountAA0C7AccountCvM",
                 "mangledName": "$s21GenesysCloudMessenger0C10ChatEngineC7accountAA0C7AccountCvM",
                 "moduleName": "GenesysCloudMessenger",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -2806,7 +3142,11 @@
                 "usr": "s:21GenesysCloudMessenger0C10ChatEngineC8delegate0aB4Core0dE8Delegate_pSgvM",
                 "mangledName": "$s21GenesysCloudMessenger0C10ChatEngineC8delegate0aB4Core0dE8Delegate_pSgvM",
                 "moduleName": "GenesysCloudMessenger",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -2891,7 +3231,11 @@
                 "usr": "s:21GenesysCloudMessenger0C10ChatEngineC19configurationLoader0aB4Core013ConfigurationG0_pvM",
                 "mangledName": "$s21GenesysCloudMessenger0C10ChatEngineC19configurationLoader0aB4Core013ConfigurationG0_pvM",
                 "moduleName": "GenesysCloudMessenger",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -3489,8 +3833,10 @@
         "usr": "c:@M@GenesysCloudMessenger@objc(cs)MessengerChatEngine",
         "mangledName": "$s21GenesysCloudMessenger0C10ChatEngineC",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
+          "Available",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -3645,8 +3991,10 @@
         "moduleName": "GenesysCloudMessenger",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
+          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -3749,8 +4097,10 @@
         "usr": "s:21GenesysCloudMessenger21AuthenticationHandlerC",
         "mangledName": "$s21GenesysCloudMessenger21AuthenticationHandlerC",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Available"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -3949,7 +4299,11 @@
                 "usr": "s:21GenesysCloudMessenger0C19ConfigurationLoaderC8delegate0aB4Core0dE8Delegate_pSgvM",
                 "mangledName": "$s21GenesysCloudMessenger0C19ConfigurationLoaderC8delegate0aB4Core0dE8Delegate_pSgvM",
                 "moduleName": "GenesysCloudMessenger",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -4035,7 +4389,11 @@
                 "usr": "s:21GenesysCloudMessenger0C19ConfigurationLoaderC6parser0aB4Core0D6Parser_pvM",
                 "mangledName": "$s21GenesysCloudMessenger0C19ConfigurationLoaderC6parser0aB4Core0D6Parser_pvM",
                 "moduleName": "GenesysCloudMessenger",
+                "deprecated": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -4107,8 +4465,10 @@
         "usr": "s:21GenesysCloudMessenger0C19ConfigurationLoaderC",
         "mangledName": "$s21GenesysCloudMessenger0C19ConfigurationLoaderC",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Available"
         ],
         "conformances": [
           {
@@ -4355,8 +4715,10 @@
         "usr": "s:21GenesysCloudMessenger12PushProviderO",
         "mangledName": "$s21GenesysCloudMessenger12PushProviderO",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Available"
         ],
         "conformances": [
           {
@@ -4471,8 +4833,10 @@
         "moduleName": "GenesysCloudMessenger",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
+        "deprecated": true,
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Available"
         ],
         "conformances": [
           {
@@ -4662,8 +5026,10 @@
         "usr": "s:21GenesysCloudMessenger11PushHandlerC",
         "mangledName": "$s21GenesysCloudMessenger11PushHandlerC",
         "moduleName": "GenesysCloudMessenger",
+        "deprecated": true,
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Available"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -4826,9 +5192,11 @@
             "usr": "s:So7UIColorC21GenesysCloudMessengerE_5alphaABSS_14CoreFoundation7CGFloatVtcfc",
             "mangledName": "$sSo7UIColorC21GenesysCloudMessengerE_5alphaABSS_12CoreGraphics7CGFloatVtcfc",
             "moduleName": "GenesysCloudMessenger",
+            "deprecated": true,
             "declAttributes": [
               "Convenience",
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "isFromExtension": true,
             "init_kind": "Convenience"
@@ -4946,182 +5314,182 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Data\/MessengerAccount.swift",
       "kind": "IntegerLiteral",
-      "offset": 781,
+      "offset": 2316,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Generated\/Version.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Generated\/Version.swift",
       "kind": "StringLiteral",
       "offset": 136,
       "length": 7,
-      "value": "\"2.2.0\""
+      "value": "\"2.3.1\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Extensions\/UIColor+Extensions.swift",
       "kind": "FloatLiteral",
-      "offset": 437,
+      "offset": 541,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/DelayedOperation.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/DelayedOperation.swift",
       "kind": "StringLiteral",
       "offset": 495,
       "length": 23,
       "value": "\"delayedOperationQueue\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/GenericRequestHandler.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/GenericRequestHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 531,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/GenericRequestHandler.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/GenericRequestHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 572,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/GenericRequestHandler.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/GenericRequestHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 612,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "IntegerLiteral",
       "offset": 591,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "StringLiteral",
       "offset": 729,
       "length": 25,
       "value": "\"operationsDispatchQueue\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "Array",
       "offset": 788,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Helper\/Queue.swift",
       "kind": "FloatLiteral",
       "offset": 891,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsFileDataSource.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsFileDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 465,
+      "offset": 565,
       "length": 7,
       "value": "\"en_us\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsLocaleParser.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsLocaleParser.swift",
       "kind": "Dictionary",
-      "offset": 534,
-      "length": 869,
-      "value": "[(\"zh-cn\", \"zh-cn\"), (\"zh-hans\", \"zh-cn\"), (\"zh-tw\", \"zh-tw\"), (\"zh-hant\", \"zh-tw\"), (\"pt-BR\", \"pt-br\"), (\"pt-PT\", \"pt-pt\"), (\"fr-ca\", \"fr-ca\"), (\"es-ES\", \"es-es\"), (\"en-us\", \"en-us\"), (\"en\", \"en-us\"), (\"fr\", \"fr\"), (\"ar\", \"ar\"), (\"cs\", \"cs\"), (\"da\", \"da\"), (\"nl\", \"nl\"), (\"fi\", \"fi\"), (\"de\", \"de\"), (\"he\", \"he\"), (\"it\", \"it\"), (\"ja\", \"ja\"), (\"ko\", \"ko\"), (\"nb\", \"no\"), (\"pl\", \"pl\"), (\"ru\", \"ru\"), (\"es\", \"es\"), (\"sv\", \"sv\"), (\"th\", \"th\"), (\"tr\", \"tr\"), (\"et\", \"et\"), (\"lt\", \"lt\"), (\"lv\", \"lv\"), (\"uk\", \"uk\"), (\"hu\", \"hu\"), (\"vi\", \"vi\"), (\"hi\", \"hi\"), (\"el\", \"el\"), (\"ro\", \"ro\"), (\"fil\", \"fil\"), (\"ms\", \"ms\"), (\"id\", \"id\")]"
+      "offset": 634,
+      "length": 1016,
+      "value": "[(\"zh-cn\", \"zh-cn\"), (\"zh-hans\", \"zh-cn\"), (\"zh-tw\", \"zh-tw\"), (\"zh-hant\", \"zh-tw\"), (\"pt-BR\", \"pt-br\"), (\"pt-PT\", \"pt-pt\"), (\"fr-ca\", \"fr-ca\"), (\"es-ES\", \"es-es\"), (\"en-us\", \"en-us\"), (\"en\", \"en-us\"), (\"fr\", \"fr\"), (\"ar\", \"ar\"), (\"cs\", \"cs\"), (\"da\", \"da\"), (\"nl\", \"nl\"), (\"fi\", \"fi\"), (\"de\", \"de\"), (\"he\", \"he\"), (\"it\", \"it\"), (\"ja\", \"ja\"), (\"ko\", \"ko\"), (\"nb\", \"no\"), (\"pl\", \"pl\"), (\"ru\", \"ru\"), (\"es\", \"es\"), (\"sv\", \"sv\"), (\"th\", \"th\"), (\"tr\", \"tr\"), (\"et\", \"et\"), (\"lt\", \"lt\"), (\"lv\", \"lv\"), (\"uk\", \"uk\"), (\"hu\", \"hu\"), (\"vi\", \"vi\"), (\"hi\", \"hi\"), (\"el\", \"el\"), (\"ro\", \"ro\"), (\"fil\", \"fil\"), (\"ms\", \"ms\"), (\"id\", \"id\"), (\"de-CH\", \"de-ch\"), (\"en-GB\", \"en-gb\"), (\"en-AU\", \"en-au\"), (\"en-IE\", \"en-ie\"), (\"sk\", \"sk\"), (\"sk-SK\", \"sk\")]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsRemoteDataSource.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsRemoteDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 445,
+      "offset": 541,
       "length": 48,
       "value": "\"https:\/\/api-cdn.%@\/mobile-sdk-translations\/%@\/\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsRemoteDataSource.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/Localization\/TranslationsRemoteDataSource.swift",
       "kind": "StringLiteral",
-      "offset": 520,
+      "offset": 616,
       "length": 4,
       "value": "\"v7\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/ChatMessageListener.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/ChatMessageListener.swift",
       "kind": "IntegerLiteral",
       "offset": 558,
       "length": 2,
       "value": "35"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/ChatMessageListener.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/ChatMessageListener.swift",
       "kind": "IntegerLiteral",
       "offset": 576,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/ChatMessageListener.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/ChatMessageListener.swift",
       "kind": "BooleanLiteral",
-      "offset": 14226,
+      "offset": 14473,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1030,
+      "offset": 1130,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 1067,
+      "offset": 1167,
       "length": 14,
       "value": "\"isNewSession\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
       "kind": "StringLiteral",
-      "offset": 1115,
+      "offset": 1215,
       "length": 13,
       "value": "\"isAutostart\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 1319,
+      "offset": 1419,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1460,
+      "offset": 1560,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
       "kind": "Dictionary",
-      "offset": 1554,
+      "offset": 1654,
       "length": 8,
       "value": "[(\"\", \"\")]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/MessengerChatEngine\/MessengerChatEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 16816,
+      "offset": 16955,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2375551b-e060-4a27-bdf4-172af84f9788\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/TimedChatElementQueue.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-9a820d3d-2c11-41ad-a3da-a202e49228f7\/mobiledx-ios-sdk-messenger\/GenesysCloudMessenger\/TimedChatElementQueue.swift",
       "kind": "FloatLiteral",
       "offset": 573,
       "length": 3,

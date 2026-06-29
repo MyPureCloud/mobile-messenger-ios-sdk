@@ -47,12 +47,14 @@ import _SwiftConcurrencyShims
   @objc optional func didFailWithError(_ error: GenesysCloudCore.GCError?)
   #endif
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol GroupedDataProtocol : AnyObject {
   var elements: [GenesysCloudCore.ChatElement] { get set }
   #if compiler(>=5.3) && $NonescapableTypes
   func getGroupHeader(as template: Swift.String, withLocale locale: Swift.String?) -> Swift.String
   #endif
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 @objc public enum PresentationState : Swift.Int {
   case none
   case typingPlaceholder
@@ -62,6 +64,7 @@ public protocol GroupedDataProtocol : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -71,13 +74,16 @@ public protocol GroupedDataProtocol : AnyObject {
   @objc func didReceive(chatElement: GenesysCloudCore.ChatElement)
 }
 extension UIKit.UIView {
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @_Concurrency.MainActor @preconcurrency public func anchorToSuperview()
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @_Concurrency.MainActor @preconcurrency public func setCornerRadius(radius: CoreFoundation.CGFloat, corners: QuartzCore.CACornerMask = [.layerMinXMinYCorner,
                                                                     .layerMaxXMinYCorner,
                                                                     .layerMinXMaxYCorner,
                                                                     .layerMaxXMaxYCorner])
 }
-@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class GrowingTextView : UIKit.UITextView {
+@objc @_inheritsConvenienceInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+@IBDesignable @_Concurrency.MainActor @preconcurrency open class GrowingTextView : UIKit.UITextView {
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var text: Swift.String! {
     @objc get
@@ -124,10 +130,13 @@ extension UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
 }
 extension GenesysCloudCore.MimeType {
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static func generateFileImage(from fileName: Swift.String, shouldBeGray: Swift.Bool = false) -> UIKit.UIImage
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public static func getAccessibilityBrandingKey(from fileName: Swift.String) -> GenesysCloudCore.TranslationKey
 }
 extension Foundation.FileManager {
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public func write(_ data: Foundation.Data, to url: Foundation.URL, options: Foundation.Data.WritingOptions) throws
 }
 @_inheritsConvenienceInitializers @objc public class AuthenticationStatus : ObjectiveC.NSObject {
@@ -138,12 +147,15 @@ extension Foundation.FileManager {
 @_inheritsConvenienceInitializers @objc final public class ChatAvailabilityChecker : ObjectiveC.NSObject, GenesysCloudCore.ConfigurationLoaderDelegate {
   @objc public static func checkAvailability(_ account: GenesysCloudCore.Account, completion: @escaping (Swift.Bool) -> Swift.Void)
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   final public func didFailLoad(error: (any Swift.Error)?)
   #endif
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   final public func didFetchChatSettings(remoteConfig: GenesysCloudCore.RemoteConfiguration)
   @objc override dynamic public init()
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol TextFormatterProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
   func applyFormat(originalText: Swift.String) -> Foundation.NSAttributedString?
@@ -175,8 +187,11 @@ public protocol TextFormatterProtocol {
   #endif
   @objc deinit
 }
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloud.PresentationState : Swift.Equatable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloud.PresentationState : Swift.Hashable {}
+@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloud.PresentationState : Swift.RawRepresentable {}
 extension GenesysCloud.PushProvider : Swift.Equatable {}
 extension GenesysCloud.PushProvider : Swift.Hashable {}
