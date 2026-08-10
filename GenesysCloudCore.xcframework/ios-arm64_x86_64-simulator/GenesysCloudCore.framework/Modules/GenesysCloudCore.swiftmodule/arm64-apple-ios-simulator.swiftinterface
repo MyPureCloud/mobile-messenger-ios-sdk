@@ -556,6 +556,11 @@ public protocol VideoFrameFetching : Swift.Sendable {
   @objc public var timestamp: Foundation.Date
   @objc public var kind: GenesysCloudCore.ChatElementKind
   @objc dynamic public var userState: GenesysCloudCore.UserChatElementState
+  @objc public var participantInfo: GenesysCloudCore.ParticipantInfo
+  @available(*, deprecated, message: "Becomes internal in 3.0.0 — message display state is UI logic, exposed publicly only for cross-module use.")
+  @objc public var messageDisplayInfo: GenesysCloudCore.MessageDisplayInfo?
+  @available(*, deprecated, message: "Becomes internal in 3.0.0 — tap-to-reveal state is UI logic, exposed for cross-module use.")
+  @objc dynamic public var isMetadataExpanded: Swift.Bool
   @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind)
   @objc deinit
@@ -577,6 +582,87 @@ extension GenesysCloudCore.ChatElement {
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind, file: GenesysCloudCore.DownloadableFile, text: Swift.String? = nil)
   #endif
   @objc deinit
+}
+@available(*, deprecated, message: "Becomes internal in 3.0.0 — message grouping is UI logic, exposed publicly only for cross-module use.")
+public enum GroupAssigner {
+  public static func assign(_ groups: [[GenesysCloudCore.ChatElement]]) -> [Swift.ObjectIdentifier : GenesysCloudCore.MessageGroupPosition]
+}
+@available(*, deprecated, message: "Becomes internal in 3.0.0 — message grouping is UI logic, exposed publicly only for cross-module use.")
+public enum GroupDivider {
+  public static func divide(_ elements: [GenesysCloudCore.ChatElement]) -> [[GenesysCloudCore.ChatElement]]
+}
+@available(*, deprecated, message: "Becomes internal in 3.0.0 — message grouping is UI logic, exposed publicly only for cross-module use.")
+final public class GroupResolver {
+  final public var lastGroupStart: Swift.Int {
+    get
+  }
+  public init()
+  @discardableResult
+  final public func resolve(_ elements: [GenesysCloudCore.ChatElement], humanizeEnabled: Swift.Bool, isAppend: Swift.Bool) -> [GenesysCloudCore.ChatElement]
+  @discardableResult
+  final public func resolveAll(_ elements: [GenesysCloudCore.ChatElement], humanizeEnabled: Swift.Bool) -> [GenesysCloudCore.ChatElement]
+  final public func reset()
+  @objc deinit
+}
+@available(*, deprecated, message: "Becomes internal in 3.0.0 — message display state is UI logic, exposed publicly only for cross-module use.")
+@objc final public class MessageDisplayInfo : ObjectiveC.NSObject {
+  @objc final public var position: GenesysCloudCore.MessageGroupPosition
+  @objc final public var shouldShowAvatar: Swift.Bool
+  @objc final public var shouldShowName: Swift.Bool
+  @objc final public var shouldShowMetadata: Swift.Bool
+  @objc final public var shouldReserveAvatarSpace: Swift.Bool
+  @objc final public var isNameRevealable: Swift.Bool
+  @objc public init(position: GenesysCloudCore.MessageGroupPosition = .single, shouldShowAvatar: Swift.Bool = false, shouldShowName: Swift.Bool = false, shouldShowMetadata: Swift.Bool = true, shouldReserveAvatarSpace: Swift.Bool = false, isNameRevealable: Swift.Bool = false)
+  @objc deinit
+}
+@available(*, deprecated, message: "Becomes internal in 3.0.0 — grouping display computation is UI logic, exposed publicly only for cross-module use.")
+public enum MessageDisplayInfoComputer {
+  public static func compute(humanizeEnabled: Swift.Bool, participantInfo: GenesysCloudCore.ParticipantInfo, isOutgoing: Swift.Bool, userState: GenesysCloudCore.UserChatElementState = .none, position: GenesysCloudCore.MessageGroupPosition = .single) -> GenesysCloudCore.MessageDisplayInfo
+}
+@available(*, deprecated, message: "Becomes internal in 3.0.0 — visual message grouping is UI logic, exposed publicly only for cross-module use.")
+@objc public enum MessageGroupPosition : Swift.Int {
+  case single
+  case first
+  case middle
+  case last
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  @available(*, deprecated, message: "Becomes internal in 3.0.0 — visual message grouping is UI logic, exposed publicly only for cross-module use.")
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc final public class ParticipantInfo : ObjectiveC.NSObject {
+  @objc final public let name: Swift.String?
+  @objc final public let imageUrl: Swift.String?
+  @objc final public let participantType: GenesysCloudCore.ParticipantType
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  @objc public init(name: Swift.String?, imageUrl: Swift.String?, participantType: GenesysCloudCore.ParticipantType)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Becomes internal in 3.0.0 — participant equality is an implementation detail, exposed publicly only for cross-module use.")
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
+  @available(*, deprecated, message: "Becomes internal in 3.0.0 — participant equality is an implementation detail, exposed publicly only for cross-module use.")
+  @objc override final public var hash: Swift.Int {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum ParticipantType : Swift.Int {
+  case bot
+  case human
+  case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @objc final public class QuickRepliesChatElement : GenesysCloudCore.ChatElement {
   final public var quickReplies: [Swift.String]
@@ -655,6 +741,7 @@ public enum Feature {
   case agentTypingIndicator
   case userTypingIndicator
   case markdown
+  case humanize
   public static func == (a: GenesysCloudCore.Feature, b: GenesysCloudCore.Feature) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -772,12 +859,14 @@ public enum LogFlow : Swift.CaseIterable {
   case conversationClear
   case typingIndicator
   case markdown
+  case humanize
   case contentProfiles
   case timeSlotPicker
   case messaging
   case attachment
   case quickReply
   case carousel
+  case grouping
   case push
   case connection
   case api
@@ -890,6 +979,7 @@ public enum TranslationKey : Swift.CaseIterable {
   case participantTyping
   case selectOption
   case close
+  case you
   case cameraPermissionsDialogTitle
   case cameraPermissionsDialogBody
   case timeSlotPickerStartSelectionButton
@@ -1217,10 +1307,16 @@ public enum DownloadError : Swift.Error {
 @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol FileDownloaderProtocol : AnyObject {
   func download(from urlString: Swift.String) async throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
+  func cachedData(for urlString: Swift.String) async -> Foundation.Data?
+  #endif
 }
 @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 final public actor FileDownloader : GenesysCloudCore.FileDownloaderProtocol {
   public init(session: any GenesysCloudCore.URLSessionProtocol = URLSession.shared)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func cachedData(for urlString: Swift.String) -> Foundation.Data?
+  #endif
   final public func download(from urlString: Swift.String) async throws -> Foundation.Data
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -1298,6 +1394,15 @@ extension GenesysCloudCore.UserChatElementState : Swift.RawRepresentable {}
 extension GenesysCloudCore.ChatElementKind : Swift.Equatable {}
 extension GenesysCloudCore.ChatElementKind : Swift.Hashable {}
 extension GenesysCloudCore.ChatElementKind : Swift.RawRepresentable {}
+@available(*, deprecated, message: "Becomes internal in 3.0.0 — visual message grouping is UI logic, exposed publicly only for cross-module use.")
+extension GenesysCloudCore.MessageGroupPosition : Swift.Equatable {}
+@available(*, deprecated, message: "Becomes internal in 3.0.0 — visual message grouping is UI logic, exposed publicly only for cross-module use.")
+extension GenesysCloudCore.MessageGroupPosition : Swift.Hashable {}
+@available(*, deprecated, message: "Becomes internal in 3.0.0 — visual message grouping is UI logic, exposed publicly only for cross-module use.")
+extension GenesysCloudCore.MessageGroupPosition : Swift.RawRepresentable {}
+extension GenesysCloudCore.ParticipantType : Swift.Equatable {}
+extension GenesysCloudCore.ParticipantType : Swift.Hashable {}
+extension GenesysCloudCore.ParticipantType : Swift.RawRepresentable {}
 extension GenesysCloudCore.SystemChatElementType : Swift.Equatable {}
 extension GenesysCloudCore.SystemChatElementType : Swift.Hashable {}
 extension GenesysCloudCore.SystemChatElementType : Swift.RawRepresentable {}

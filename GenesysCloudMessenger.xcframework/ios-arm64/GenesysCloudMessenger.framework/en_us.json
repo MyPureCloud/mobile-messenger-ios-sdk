@@ -57,7 +57,8 @@
     "messageDelivered": "Message delivered.",
     "participantTyping": "Participant is typing.",
     "selectOption": "Please select an option:",
-    "close": "Close"
+    "close": "Close",
+    "you": "You"
   },
   "permissions": {
     "cameraPermissionsDialogTitle": "\"%s\" Would Like to Access the Camera",

@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Pb6wXF2cmuubugRDiIJ2g6+qejg=
+		YK/b/WTuDBNX20lIDfFOfb9hqKk=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		o8F2F8zUO0VSEKlUlSjIWeI4vqg=
+		Exv1AdRoHEqe1+t+1mf0bpkQOmk=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Pb6wXF2cmuubugRDiIJ2g6+qejg=
+		YK/b/WTuDBNX20lIDfFOfb9hqKk=
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Vyyrrvjh9NvblhSPjgvwOQ5mQ1M=
+		Gl2boYKiUBaS+uBVBB7FKJIG9vc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>en_us.json</key>
 		<data>
-		gvBoRXk4t3VSTifQN3CjtX72tlA=
+		uOWm7EFreLzpUur8xvkkXRT2qUY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KFcMfZMJKQ1tVGX+QVLhb7LKmdx0Fo6JLILU+CBtQC4=
+			/dlgRddwl0yw1Owp7Pi1FGMyFBJsQUQXf3xzYnyCMO8=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nfAUQPWM7I0YzEoh2FVGFVKZ0ByRacX0M/5xlTRyln0=
+			QDLXd+wROq+v5eYYcI9WXZuGa1B1VrfikOsDFT/TAkg=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KFcMfZMJKQ1tVGX+QVLhb7LKmdx0Fo6JLILU+CBtQC4=
+			/dlgRddwl0yw1Owp7Pi1FGMyFBJsQUQXf3xzYnyCMO8=
 			</data>
 		</dict>
 		<key>Modules/GenesysCloudMessenger.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UX+L/SUu7zGQauJ1ZUk7HO+Apj5A16BNEONDFdpvtU0=
+			IZNVu4LzohtMDBGr0UGLvTY5qJ+uL5rvjX2/Yg2ZGy8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -151,7 +151,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DH9ih6awFCyb7kZTJ4niWIr2SLz10MUWIOm5UtLej80=
+			lbY8hUxb/I7pp/j4A++8H9ohy/clR3JLLqjBCwJM9Dc=
 			</data>
 		</dict>
 	</dict>

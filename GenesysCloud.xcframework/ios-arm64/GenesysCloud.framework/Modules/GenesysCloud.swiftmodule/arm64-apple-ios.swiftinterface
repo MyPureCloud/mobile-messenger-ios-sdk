@@ -5,6 +5,7 @@
 import AVFoundation
 import AVKit
 import Combine
+import CoreGraphics
 import CoreImage
 import DeveloperToolsSupport
 import Foundation
