@@ -5,6 +5,7 @@
 import Darwin
 import Foundation
 import GenesysCloudCore
+import GenesysCloudMobileUserTracking
 import MessengerTransport
 import MobileCoreServices
 import Swift
@@ -33,6 +34,11 @@ import _SwiftConcurrencyShims
   final public var implicitAuthenticationInfo: GenesysCloudMessenger.ImplicitAuthenticationInfo? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public var tracking: GenesysCloudMessenger.MessengerTracking? {
+    @objc get
+  }
+  #endif
   @objc final public var customAttributes: [Swift.String : Swift.String] {
     @objc get
     @objc set
@@ -47,6 +53,8 @@ import _SwiftConcurrencyShims
   final public func setAuthenticationInfo(authCode: Swift.String, redirectUri: Swift.String, codeVerifier: Swift.String?)
   #endif
   final public func setImplicitAuthenticationInfo(idToken: Swift.String, nonce: Swift.String)
+  @objc final public func initiateTracking(config: GenesysCloudMessenger.TrackingConfig)
+  @objc final public func resetTrackingIdentity()
   @objc deinit
 }
 extension UIKit.UIColor {
@@ -180,6 +188,100 @@ extension GenesysCloudMessenger.MessengerChatEngine {
   @discardableResult
   @objc dynamic public func produceChatData(_ request: GenesysCloudCore.ChatDataRequest) -> Swift.Bool
 }
+@objc public enum DeviceCategory : Swift.Int {
+  case mobile
+  case desktop
+  case tablet
+  case other
+  public var apiValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc final public class MessengerTracking : ObjectiveC.NSObject, @unchecked Swift.Sendable {
+  @objc final public func setAppName(_ name: Swift.String)
+  @objc final public func setAppNamespace(_ namespace: Swift.String)
+  @objc final public func setAppVersion(_ version: Swift.String)
+  @objc final public func setAppBuildNumber(_ buildNumber: Swift.String)
+  @objc final public func setDeviceCategory(_ category: GenesysCloudMessenger.DeviceCategory)
+  @objc final public func setDeviceType(_ type: Swift.String)
+  @objc final public func setOsFamily(_ osFamily: Swift.String)
+  @objc final public func setOsVersion(_ osVersion: Swift.String)
+  @objc final public func setIsMobile(_ isMobile: Swift.Bool)
+  @objc final public func setScreenHeight(_ screenHeight: Swift.Int)
+  @objc final public func setScreenWidth(_ screenWidth: Swift.Int)
+  @objc final public func setScreenDensity(_ screenDensity: Swift.Int)
+  @objc final public func setFingerprint(_ fingerprint: Swift.String)
+  @objc final public func setManufacturer(_ manufacturer: Swift.String)
+  @objc final public func setCarrier(_ carrier: Swift.String)
+  @objc final public func setBluetoothEnabled(_ bluetoothEnabled: Swift.Bool)
+  @objc final public func setCellularEnabled(_ cellularEnabled: Swift.Bool)
+  @objc final public func setWifiEnabled(_ wifiEnabled: Swift.Bool)
+  @objc final public func setExternalId(_ externalId: Swift.String)
+  @objc final public func setTraits(_ traits: GenesysCloudMessenger.TrackingTraits)
+  @objc final public func clearUserIdentifiers()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func screenViewed(screenName: Swift.String, attributes: [Swift.String : Any]? = nil, searchQuery: Swift.String? = nil, traits: GenesysCloudMessenger.TrackingTraits? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func searchPerformed(screenName: Swift.String, attributes: [Swift.String : Any]? = nil, traits: GenesysCloudMessenger.TrackingTraits? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func customEvent(eventName: Swift.String, screenName: Swift.String, attributes: [Swift.String : Any]? = nil, traits: GenesysCloudMessenger.TrackingTraits? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getSessionId() -> Swift.String?
+  #endif
+  @objc deinit
+}
+@objc final public class TrackingConfig : ObjectiveC.NSObject {
+  @objc final public let appName: Swift.String
+  @objc final public let appNamespace: Swift.String
+  @objc final public let appVersion: Swift.String
+  @objc final public let appBuildNumber: Swift.String
+  @objc final public let deviceCategory: GenesysCloudMessenger.DeviceCategory
+  @objc final public let deviceType: Swift.String
+  @objc final public let osFamily: Swift.String
+  @objc final public let osVersion: Swift.String
+  @objc final public let isMobile: Foundation.NSNumber?
+  @objc final public let screenHeight: Foundation.NSNumber?
+  @objc final public let screenWidth: Foundation.NSNumber?
+  @objc final public let screenDensity: Foundation.NSNumber?
+  @objc final public let fingerprint: Swift.String?
+  @objc final public let manufacturer: Swift.String?
+  @objc final public let carrier: Swift.String?
+  @objc final public let bluetoothEnabled: Foundation.NSNumber?
+  @objc final public let cellularEnabled: Foundation.NSNumber?
+  @objc final public let wifiEnabled: Foundation.NSNumber?
+  @objc final public let externalId: Swift.String?
+  @objc final public let traits: GenesysCloudMessenger.TrackingTraits?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(appName: Swift.String, appNamespace: Swift.String, appVersion: Swift.String, appBuildNumber: Swift.String, deviceCategory: GenesysCloudMessenger.DeviceCategory, deviceType: Swift.String, osFamily: Swift.String, osVersion: Swift.String, isMobile: Foundation.NSNumber? = nil, screenHeight: Foundation.NSNumber? = nil, screenWidth: Foundation.NSNumber? = nil, screenDensity: Foundation.NSNumber? = nil, fingerprint: Swift.String? = nil, manufacturer: Swift.String? = nil, carrier: Swift.String? = nil, bluetoothEnabled: Foundation.NSNumber? = nil, cellularEnabled: Foundation.NSNumber? = nil, wifiEnabled: Foundation.NSNumber? = nil, externalId: Swift.String? = nil, traits: GenesysCloudMessenger.TrackingTraits? = nil)
+  #endif
+  @objc deinit
+}
+@objc final public class TrackingTraits : ObjectiveC.NSObject {
+  @objc final public let email: Swift.String?
+  @objc final public let cellPhone: Swift.String?
+  @objc final public let homePhone: Swift.String?
+  @objc final public let otherPhone: Swift.String?
+  @objc final public let workPhone: Swift.String?
+  @objc final public let salutation: Swift.String?
+  @objc final public let jobTitle: Swift.String?
+  @objc final public let givenName: Swift.String?
+  @objc final public let middleName: Swift.String?
+  @objc final public let familyName: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(email: Swift.String? = nil, cellPhone: Swift.String? = nil, homePhone: Swift.String? = nil, otherPhone: Swift.String? = nil, workPhone: Swift.String? = nil, salutation: Swift.String? = nil, jobTitle: Swift.String? = nil, givenName: Swift.String? = nil, middleName: Swift.String? = nil, familyName: Swift.String? = nil)
+  #endif
+  @objc deinit
+}
 @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public protocol AuthenticationHandlerProtocol : AnyObject {
   func shouldAuthorize(completion: @escaping (Swift.Bool) -> Swift.Void)
@@ -217,6 +319,9 @@ public protocol PushHandlerProtocol : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   func setPushToken(deviceToken: Swift.String, pushProvider: GenesysCloudMessenger.PushProvider, account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func removePushToken(account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
+  #endif
 }
 @_hasMissingDesignatedInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 public class PushHandler : GenesysCloudMessenger.PushHandlerProtocol {
@@ -231,6 +336,9 @@ public class PushHandler : GenesysCloudMessenger.PushHandlerProtocol {
   #endif
   @objc deinit
 }
+extension GenesysCloudMessenger.DeviceCategory : Swift.Equatable {}
+extension GenesysCloudMessenger.DeviceCategory : Swift.Hashable {}
+extension GenesysCloudMessenger.DeviceCategory : Swift.RawRepresentable {}
 @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudMessenger.PushProvider : Swift.Equatable {}
 @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")

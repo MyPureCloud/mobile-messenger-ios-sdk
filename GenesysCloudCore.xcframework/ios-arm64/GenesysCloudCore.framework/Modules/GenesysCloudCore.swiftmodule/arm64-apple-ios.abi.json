@@ -38205,1092 +38205,1092 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/AttachmentFetcher.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/AttachmentFetcher.swift",
       "kind": "IntegerLiteral",
       "offset": 2597,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
       "kind": "StringLiteral",
       "offset": 1120,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
       "kind": "IntegerLiteral",
       "offset": 1654,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
       "kind": "BooleanLiteral",
       "offset": 2146,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
       "kind": "StringLiteral",
       "offset": 2634,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/DownloadableFile.swift",
       "kind": "IntegerLiteral",
       "offset": 3127,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/NetworkService.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/NetworkService.swift",
       "kind": "Dictionary",
       "offset": 485,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/NetworkService.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/NetworkService.swift",
       "kind": "BooleanLiteral",
       "offset": 1279,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
       "kind": "IntegerLiteral",
       "offset": 938,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
       "kind": "IntegerLiteral",
       "offset": 1101,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/UploadableFile.swift",
       "kind": "BooleanLiteral",
       "offset": 1382,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/VideoFrameFetcher.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/VideoFrameFetcher.swift",
       "kind": "Dictionary",
       "offset": 628,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/VideoFrameFetcher.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AttachmentFetcher\/VideoFrameFetcher.swift",
       "kind": "BooleanLiteral",
       "offset": 913,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/CarouselChatElement\/CarouselChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/CarouselChatElement\/CarouselChatElement.swift",
       "kind": "IntegerLiteral",
       "offset": 1032,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/CarouselChatElement\/CarouselChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/CarouselChatElement\/CarouselChatElement.swift",
       "kind": "BooleanLiteral",
       "offset": 1243,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/TimeSlotPicker\/TimeSlotConfirmationChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/TimeSlotPicker\/TimeSlotConfirmationChatElement.swift",
       "kind": "BooleanLiteral",
       "offset": 1320,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/TimeSlotPicker\/TimeSlotPickerChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/TimeSlotPicker\/TimeSlotPickerChatElement.swift",
       "kind": "BooleanLiteral",
       "offset": 1383,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
       "kind": "IntegerLiteral",
       "offset": 561,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
       "kind": "IntegerLiteral",
       "offset": 655,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
       "kind": "IntegerLiteral",
       "offset": 722,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
       "kind": "IntegerLiteral",
       "offset": 775,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
       "kind": "IntegerLiteral",
       "offset": 1054,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
       "kind": "IntegerLiteral",
       "offset": 1112,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
       "kind": "BooleanLiteral",
       "offset": 3623,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ChatElement.swift",
       "kind": "BooleanLiteral",
       "offset": 3833,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/FileChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/FileChatElement.swift",
       "kind": "BooleanLiteral",
       "offset": 1225,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/GroupDivider.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/GroupDivider.swift",
       "kind": "IntegerLiteral",
       "offset": 378,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/GroupResolver.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/GroupResolver.swift",
       "kind": "IntegerLiteral",
       "offset": 577,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageDisplayInfo.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageDisplayInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 1364,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageDisplayInfo.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageDisplayInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 1402,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageDisplayInfo.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageDisplayInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 1444,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageDisplayInfo.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageDisplayInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 1491,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageDisplayInfo.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageDisplayInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 1531,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageGroupPosition.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageGroupPosition.swift",
       "kind": "IntegerLiteral",
       "offset": 386,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageGroupPosition.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageGroupPosition.swift",
       "kind": "IntegerLiteral",
       "offset": 401,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageGroupPosition.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/MessageGroupPosition.swift",
       "kind": "IntegerLiteral",
       "offset": 417,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ParticipantType.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ParticipantType.swift",
       "kind": "IntegerLiteral",
       "offset": 363,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ParticipantType.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/ParticipantType.swift",
       "kind": "IntegerLiteral",
       "offset": 434,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/QuickRepliesChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/QuickRepliesChatElement.swift",
       "kind": "BooleanLiteral",
       "offset": 960,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElement.swift",
       "kind": "BooleanLiteral",
       "offset": 865,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
       "kind": "IntegerLiteral",
       "offset": 443,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
       "kind": "IntegerLiteral",
       "offset": 520,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
       "kind": "IntegerLiteral",
       "offset": 617,
       "length": 19,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
       "kind": "IntegerLiteral",
       "offset": 682,
       "length": 17,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
       "kind": "IntegerLiteral",
       "offset": 774,
       "length": 19,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/SystemChatElementType.swift",
       "kind": "IntegerLiteral",
       "offset": 859,
       "length": 22,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/TextChatElement.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatElement\/TextChatElement.swift",
       "kind": "BooleanLiteral",
       "offset": 849,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
       "kind": "Array",
       "offset": 367,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
       "kind": "Array",
       "offset": 412,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
       "kind": "IntegerLiteral",
       "offset": 535,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
       "kind": "Array",
       "offset": 585,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
       "kind": "Array",
       "offset": 872,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
       "kind": "Array",
       "offset": 915,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
       "kind": "IntegerLiteral",
       "offset": 1020,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/AttachmentProfile.swift",
       "kind": "Array",
       "offset": 1068,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/LanguageConfiguration.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Configuration\/LanguageConfiguration.swift",
       "kind": "Dictionary",
       "offset": 557,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Helper\/GCLogger.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Helper\/GCLogger.swift",
       "kind": "StringLiteral",
       "offset": 1768,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Helper\/GCLogger.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Helper\/GCLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 5236,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Helper\/GCLogger.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/Helper\/GCLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 5809,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AccountConstants.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AccountConstants.swift",
       "kind": "StringLiteral",
       "offset": 482,
       "length": 11,
       "value": "\"extraData\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AccountConstants.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AccountConstants.swift",
       "kind": "StringLiteral",
       "offset": 535,
       "length": 18,
       "value": "\"customAttributes\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AccountConstants.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/AccountConstants.swift",
       "kind": "StringLiteral",
       "offset": 587,
       "length": 10,
       "value": "\"language\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatDataProducer.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatDataProducer.swift",
       "kind": "Array",
       "offset": 873,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatDataProducer.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatDataProducer.swift",
       "kind": "BooleanLiteral",
       "offset": 907,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 1324,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 1420,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 1507,
       "length": 11,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 1613,
       "length": 13,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 1714,
       "length": 12,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 1792,
       "length": 16,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 1880,
       "length": 16,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 1986,
       "length": 15,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2095,
       "length": 10,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2222,
       "length": 9,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2388,
       "length": 10,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2503,
       "length": 6,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2582,
       "length": 8,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2678,
       "length": 6,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2772,
       "length": 9,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2878,
       "length": 11,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ChatStateEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2949,
       "length": 11,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "StringLiteral",
       "offset": 694,
       "length": 13,
       "value": "\"EndedReason\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
       "offset": 788,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
       "offset": 852,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
       "offset": 958,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1011,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1094,
       "length": 3,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1213,
       "length": 19,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1340,
       "length": 19,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1465,
       "length": 6,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EndedReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1535,
       "length": 14,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 1410,
       "length": 4,
       "value": "5001"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 1516,
       "length": 4,
       "value": "5002"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 1628,
       "length": 4,
       "value": "5003"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 1726,
       "length": 4,
       "value": "5004"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 1817,
       "length": 4,
       "value": "5005"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 1945,
       "length": 4,
       "value": "5006"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 2015,
       "length": 4,
       "value": "5007"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 2129,
       "length": 4,
       "value": "5008"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 2252,
       "length": 4,
       "value": "5009"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 2380,
       "length": 4,
       "value": "5010"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 2520,
       "length": 4,
       "value": "5011"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 2637,
       "length": 4,
       "value": "5012"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 2738,
       "length": 4,
       "value": "5013"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 2850,
       "length": 4,
       "value": "5014"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 2960,
       "length": 4,
       "value": "5015"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 3051,
       "length": 4,
       "value": "5016"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 3149,
       "length": 4,
       "value": "5017"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 3253,
       "length": 4,
       "value": "5018"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 3344,
       "length": 4,
       "value": "5019"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 3426,
       "length": 4,
       "value": "5020"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 3563,
       "length": 4,
       "value": "5021"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 3649,
       "length": 4,
       "value": "5022"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 3775,
       "length": 4,
       "value": "5023"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 3853,
       "length": 4,
       "value": "5024"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 3967,
       "length": 4,
       "value": "5025"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 4057,
       "length": 4,
       "value": "5026"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 4183,
       "length": 4,
       "value": "5027"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 4288,
       "length": 4,
       "value": "5028"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "IntegerLiteral",
       "offset": 4490,
       "length": 4,
       "value": "5029"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 4785,
       "length": 20,
       "value": "\"Failed to connect.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 4972,
       "length": 71,
       "value": "\"Unable to reconnect. Messenger state is not valid for this operation.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 5206,
       "length": 42,
       "value": "\"Failed to fetch Messenger configuration.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 5407,
       "length": 20,
       "value": "\"Failed to connect.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 5594,
       "length": 35,
       "value": "\"Failed to autostart conversation.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 5795,
       "length": 64,
       "value": "\"We are unable to start a conversation. Please try again later.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 6023,
       "length": 31,
       "value": "\"Failed to download attachment\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 6217,
       "length": 30,
       "value": "\"Failed to refresh attachment\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 6440,
       "length": 114,
       "value": "\"Authentication cannot proceed because no authentication information was provided in the MessengerAccount object.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 6732,
       "length": 19,
       "value": "\"Failed to logout.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 7168,
       "length": 26,
       "value": "\"File type not supported.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 7367,
       "length": 39,
       "value": "\"Something happened. Please try again.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 7612,
       "length": 110,
       "value": "\"Failed to clear and leave the conversation. This option is disabled for the current Messenger configuration.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 7887,
       "length": 31,
       "value": "\"Failed to clear conversation.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/ErrorStates.swift",
       "kind": "StringLiteral",
       "offset": 8080,
       "length": 25,
       "value": "\"Authorization required.\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
       "kind": "BooleanLiteral",
       "offset": 512,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
       "kind": "BooleanLiteral",
       "offset": 547,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
       "kind": "BooleanLiteral",
       "offset": 580,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
       "kind": "BooleanLiteral",
       "offset": 642,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
       "kind": "BooleanLiteral",
       "offset": 669,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/EventData.swift",
       "kind": "BooleanLiteral",
       "offset": 694,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/FileDownloader.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/FileDownloader.swift",
       "kind": "Dictionary",
       "offset": 1026,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/FileDownloader.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/FileDownloader.swift",
       "kind": "Dictionary",
       "offset": 1080,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/SessionInfo.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/SessionInfo.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/SessionInfo.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/SessionInfo.swift",
       "kind": "StringLiteral",
       "offset": 413,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
       "kind": "IntegerLiteral",
       "offset": 625,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
       "kind": "IntegerLiteral",
       "offset": 710,
       "length": 14,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
       "kind": "IntegerLiteral",
       "offset": 822,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
       "kind": "IntegerLiteral",
       "offset": 922,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
       "kind": "IntegerLiteral",
       "offset": 936,
       "length": 13,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1082,
       "length": 8,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1097,
       "length": 5,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1109,
       "length": 12,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1128,
       "length": 18,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1153,
       "length": 15,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-8a974bb3-0e91-4ec3-b4d7-9ba016d19f40\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
+      "filePath": "\/Users\/ec2-user\/jenkins-agent\/workspace\/mdx-ios-2fd4c1b9-1b5a-4fbe-abce-013242993a1e\/mobiledx-ios-sdk-core\/GenesysCloudCore\/UnavailableReason.swift",
       "kind": "IntegerLiteral",
       "offset": 1175,
       "length": 8,
