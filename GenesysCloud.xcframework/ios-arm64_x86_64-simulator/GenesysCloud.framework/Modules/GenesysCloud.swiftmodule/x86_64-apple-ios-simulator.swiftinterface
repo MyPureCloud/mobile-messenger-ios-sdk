@@ -11,6 +11,7 @@ import DeveloperToolsSupport
 import Foundation
 @_exported import GenesysCloudCore
 @_exported import GenesysCloudMessenger
+import ImageIO
 import MobileCoreServices
 import PhotosUI
 import QuickLook

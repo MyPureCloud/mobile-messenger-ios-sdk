@@ -490,6 +490,63 @@ public protocol VideoFrameFetching : Swift.Sendable {
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, cards: [GenesysCloudCore.Card])
   @objc deinit
 }
+@objc final public class ListPickerChatElement : GenesysCloudCore.ChatElement {
+  @objc final public let title: Swift.String
+  @objc final public let subtitle: Swift.String?
+  @objc final public let imageUrl: Swift.String?
+  @objc final public let sections: [GenesysCloudCore.ListPickerSection]
+  @objc final public var isReadOnly: Swift.Bool
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  final public let image: Combine.CurrentValueSubject<UIKit.UIImage?, any Swift.Error>
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, title: Swift.String, subtitle: Swift.String?, imageUrl: Swift.String?, sections: [GenesysCloudCore.ListPickerSection], isReadOnly: Swift.Bool = false)
+  #endif
+  @objc deinit
+}
+@objc final public class ListPickerConfirmationChatElement : GenesysCloudCore.ChatElement {
+  @objc final public let selectedItems: [GenesysCloudCore.ListPickerItem]
+  @objc final public let originatingMessageId: Swift.String?
+  @objc final public var imageUrl: Swift.String?
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  final public let image: Combine.CurrentValueSubject<UIKit.UIImage?, any Swift.Error>
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, selectedItems: [GenesysCloudCore.ListPickerItem], originatingMessageId: Swift.String?, imageUrl: Swift.String? = nil)
+  #endif
+  @objc deinit
+}
+@objc final public class ListPickerItem : ObjectiveC.NSObject {
+  @objc final public let id: Swift.String
+  @objc final public let title: Swift.String
+  @objc final public let subtitle: Swift.String?
+  @objc final public let imageUrl: Swift.String?
+  @objc final public var isSelected: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  public init(id: Swift.String, title: Swift.String, subtitle: Swift.String? = nil, imageUrl: Swift.String? = nil, isSelected: Swift.Bool = false)
+  #endif
+  @objc deinit
+}
+@objc final public class ListPickerSection : ObjectiveC.NSObject {
+  @objc final public let type: GenesysCloudCore.ListPickerSectionType
+  @objc final public let title: Swift.String
+  @objc final public let items: [GenesysCloudCore.ListPickerItem]
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  public init(type: GenesysCloudCore.ListPickerSectionType, title: Swift.String, items: [GenesysCloudCore.ListPickerItem])
+  @objc deinit
+}
+@objc public enum ListPickerSectionType : Swift.Int {
+  case singleSelect
+  case multiSelect
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc final public class TimeSlot : ObjectiveC.NSObject {
   @objc final public let dateTime: Foundation.Date
   @objc final public let payload: Swift.String
@@ -562,6 +619,10 @@ public protocol VideoFrameFetching : Swift.Sendable {
   @available(*, deprecated, message: "Becomes internal in 3.0.0 — tap-to-reveal state is UI logic, exposed for cross-module use.")
   @objc dynamic public var isMetadataExpanded: Swift.Bool
   @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  public var isServerHistoryBacked: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, kind: GenesysCloudCore.ChatElementKind)
   @objc deinit
 }
@@ -607,12 +668,24 @@ final public class GroupResolver {
 @available(*, deprecated, message: "Becomes internal in 3.0.0 — message display state is UI logic, exposed publicly only for cross-module use.")
 @objc final public class MessageDisplayInfo : ObjectiveC.NSObject {
   @objc final public var position: GenesysCloudCore.MessageGroupPosition
-  @objc final public var shouldShowAvatar: Swift.Bool
   @objc final public var shouldShowName: Swift.Bool
   @objc final public var shouldShowMetadata: Swift.Bool
-  @objc final public var shouldReserveAvatarSpace: Swift.Bool
   @objc final public var isNameRevealable: Swift.Bool
-  @objc public init(position: GenesysCloudCore.MessageGroupPosition = .single, shouldShowAvatar: Swift.Bool = false, shouldShowName: Swift.Bool = false, shouldShowMetadata: Swift.Bool = true, shouldReserveAvatarSpace: Swift.Bool = false, isNameRevealable: Swift.Bool = false)
+  @objc final public var humanizeEnabled: Swift.Bool
+  @objc final public var participantKind: GenesysCloudCore.ParticipantType
+  @available(*, deprecated, message: "Derived from humanizeEnabled/participantKind/position now; use those instead. Removed in 3.0.0.")
+  @objc final public var shouldShowAvatar: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @available(*, deprecated, message: "Derived from humanizeEnabled/participantKind now; use those instead. Removed in 3.0.0.")
+  @objc final public var shouldReserveAvatarSpace: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public init(position: GenesysCloudCore.MessageGroupPosition = .single, shouldShowName: Swift.Bool = false, shouldShowMetadata: Swift.Bool = true, isNameRevealable: Swift.Bool = false, humanizeEnabled: Swift.Bool = false, participantKind: GenesysCloudCore.ParticipantType = .unknown)
+  @available(*, deprecated, message: "Pass humanizeEnabled/participantKind instead. Removed in 3.0.0.")
+  @objc convenience public init(position: GenesysCloudCore.MessageGroupPosition = .single, shouldShowAvatar: Swift.Bool, shouldShowName: Swift.Bool = false, shouldShowMetadata: Swift.Bool = true, shouldReserveAvatarSpace: Swift.Bool, isNameRevealable: Swift.Bool = false)
   @objc deinit
 }
 @available(*, deprecated, message: "Becomes internal in 3.0.0 — grouping display computation is UI logic, exposed publicly only for cross-module use.")
@@ -667,12 +740,20 @@ public enum MessageDisplayInfoComputer {
 @objc final public class QuickRepliesChatElement : GenesysCloudCore.ChatElement {
   final public var quickReplies: [Swift.String]
   @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  override final public var isServerHistoryBacked: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, quickReplies: [Swift.String])
   @objc deinit
 }
 @objc final public class SystemChatElement : GenesysCloudCore.ChatElement {
   final public var type: GenesysCloudCore.SystemChatElementType
   final public var text: Swift.String?
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  override final public var isServerHistoryBacked: Swift.Bool {
+    get
+  }
   #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init(id: Swift.String = UUID().uuidString, isLoadedFromHistory: Swift.Bool = false, timestamp: Foundation.Date = .now, type: GenesysCloudCore.SystemChatElementType, text: Swift.String? = nil)
@@ -713,6 +794,10 @@ public enum TextChatElementType : Swift.Equatable {
   public static func == (a: GenesysCloudCore.TextChatElementType, b: GenesysCloudCore.TextChatElementType) -> Swift.Bool
 }
 @objc final public class TypingIndicatorChatElement : GenesysCloudCore.ChatElement {
+  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
+  override final public var isServerHistoryBacked: Swift.Bool {
+    get
+  }
   @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   @objc public init()
   @objc deinit
@@ -862,6 +947,7 @@ public enum LogFlow : Swift.CaseIterable {
   case humanize
   case contentProfiles
   case timeSlotPicker
+  case listPicker
   case messaging
   case attachment
   case quickReply
@@ -991,6 +1077,18 @@ public enum TranslationKey : Swift.CaseIterable {
   case timeSlotPickerSlotsSectionTitle
   case timeSlotPickerNoSlotsAvailableTitle
   case timeSlotPickerNoSlotsAvailableButton
+  case listPickerStartSelectionButton
+  case listPickerViewSelectionButton
+  case listPickerSubmitSelectionButton
+  case listPickerDoneButton
+  case listPickerCloseButton
+  case listPickerDiscardSelectionTitle
+  case listPickerDiscardSelectionBody
+  case listPickerKeepEditingButton
+  case listPickerDiscardButton
+  case listPickerConfirmationMessage
+  case listPickerNoItemsAvailableTitle
+  case listPickerNoItemsAvailableButton
   public static func == (a: GenesysCloudCore.TranslationKey, b: GenesysCloudCore.TranslationKey) -> Swift.Bool
   @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public typealias AllCases = [GenesysCloudCore.TranslationKey]
@@ -1388,6 +1486,9 @@ extension GenesysCloudCore.MimeType : Swift.RawRepresentable {}
 extension GenesysCloudCore.UploadableFileStatus : Swift.Equatable {}
 @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
 extension GenesysCloudCore.UploadableFileStatus : Swift.Hashable {}
+extension GenesysCloudCore.ListPickerSectionType : Swift.Equatable {}
+extension GenesysCloudCore.ListPickerSectionType : Swift.Hashable {}
+extension GenesysCloudCore.ListPickerSectionType : Swift.RawRepresentable {}
 extension GenesysCloudCore.UserChatElementState : Swift.Equatable {}
 extension GenesysCloudCore.UserChatElementState : Swift.Hashable {}
 extension GenesysCloudCore.UserChatElementState : Swift.RawRepresentable {}

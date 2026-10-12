@@ -74,5 +74,19 @@
     "slotsSectionTitle": "Appointments",
     "noSlotsAvailableTitle": "No time slots are currently available.",
     "noSlotsAvailableButton": "Return to chat"
+  },
+  "listPicker": {
+    "startSelectionButton": "Get Started",
+    "viewSelectionButton": "View Selection",
+    "submitSelectionButton": "Send",
+    "doneButton": "Done",
+    "closeButton": "Close",
+    "discardSelectionTitle": "Discard selection?",
+    "discardSelectionBody": "Your current selections won’t be saved if you leave now.",
+    "keepEditingButton": "Keep editing",
+    "discardButton": "Discard",
+    "confirmationMessage": "Thank you for your submission.",
+    "noItemsAvailableTitle": "No items are currently available.",
+    "noItemsAvailableButton": "Return to chat"
   }
 }
