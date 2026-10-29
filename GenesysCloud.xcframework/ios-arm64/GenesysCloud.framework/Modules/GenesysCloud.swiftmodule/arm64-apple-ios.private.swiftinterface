@@ -7,11 +7,13 @@ import AVKit
 import Combine
 import CoreGraphics
 import CoreImage
+import CryptoKit
+import Darwin
 import DeveloperToolsSupport
 import Foundation
-@_exported import GenesysCloudCore
-@_exported import GenesysCloudMessenger
+import GenesysCloudMobileUserTracking
 import ImageIO
+import MessengerTransport
 import MobileCoreServices
 import PhotosUI
 import QuickLook
@@ -22,146 +24,313 @@ import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers @objc public class ChatController : ObjectiveC.NSObject {
-  @objc weak public var chatElementDelegate: (any GenesysCloud.ChatElementDelegate)?
-  @objc weak public var delegate: (any GenesysCloud.ChatControllerDelegate)? {
-    @objc get
-    @objc set
+@objc @_hasMissingDesignatedInitializers final public class DownloadableFile : ObjectiveC.NSObject, @unchecked Swift.Sendable {
+  final public var fileName: Swift.String {
+    get
   }
-  @objc public init(account: GenesysCloudCore.Account)
-  @objc public func endChat(_ forceClose: Swift.Bool)
-  @objc public func reconnectChat()
-  @objc public func clearConversation()
-  @objc public func logoutFromAuthenticatedSession()
-  @objc public func terminate()
-  @objc public func updateCustomAttributes(_ customAttributes: [Swift.String : Swift.String])
-  @objc public static func checkAvailability(_ account: GenesysCloudCore.Account, completion: @escaping (Swift.Bool) -> Swift.Void)
-  @objc public func reauthorizeImplicitFlow(idToken: Swift.String, nonce: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var fileData: Foundation.Data? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var fileSizeInBytes: Swift.Int? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var downloadURL: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var fileId: Swift.String? {
+    get
+  }
+  #endif
   @objc deinit
 }
-@objc public protocol ChatControllerDelegate : ObjectiveC.NSObjectProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc func shouldPresentChatViewController(_ viewController: UIKit.UINavigationController!)
-  #endif
-  @objc optional func didClickLink(_ url: Swift.String)
-  @objc optional func didUpdateState(_ event: GenesysCloudCore.ChatStateEvent)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc optional func didFailWithError(_ error: GenesysCloudCore.GCError?)
-  #endif
+@_hasMissingDesignatedInitializers @objc final public class Card : ObjectiveC.NSObject {
+  @objc final public let title: Swift.String
+  @objc final public let cardDescription: Swift.String
+  @objc final public let imageUrl: Swift.String?
+  @objc final public let actions: [GenesysCloud.CardAction]
+  @objc deinit
 }
-@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-public protocol GroupedDataProtocol : AnyObject {
-  var elements: [GenesysCloudCore.ChatElement] { get set }
-  #if compiler(>=5.3) && $NonescapableTypes
-  func getGroupHeader(as template: Swift.String, withLocale locale: Swift.String?) -> Swift.String
-  #endif
+@_hasMissingDesignatedInitializers @objc final public class CardAction : ObjectiveC.NSObject {
+  @objc final public let text: Swift.String
+  @objc final public let url: Foundation.URL?
+  @objc final public let payload: Swift.String
+  @objc deinit
 }
-@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-@objc public enum PresentationState : Swift.Int {
-  case none
-  case typingPlaceholder
-  case typingSendDisabled
-  case typingSendEnabled
-  case attachmentNoText
+@_hasMissingDesignatedInitializers @objc final public class CarouselChatElement : GenesysCloud.ChatElement {
+  @objc final public let cards: [GenesysCloud.Card]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class ListPickerChatElement : GenesysCloud.ChatElement {
+  @objc final public let title: Swift.String
+  @objc final public let subtitle: Swift.String?
+  @objc final public let imageUrl: Swift.String?
+  @objc final public let sections: [GenesysCloud.ListPickerSection]
+  @objc final public var isReadOnly: Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class ListPickerConfirmationChatElement : GenesysCloud.ChatElement {
+  @objc final public let selectedItems: [GenesysCloud.ListPickerItem]
+  @objc final public let originatingMessageId: Swift.String?
+  @objc final public var imageUrl: Swift.String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class ListPickerItem : ObjectiveC.NSObject {
+  @objc final public let id: Swift.String
+  @objc final public let title: Swift.String
+  @objc final public let subtitle: Swift.String?
+  @objc final public let imageUrl: Swift.String?
+  @objc final public var isSelected: Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class ListPickerSection : ObjectiveC.NSObject {
+  @objc final public let type: GenesysCloud.ListPickerSectionType
+  @objc final public let title: Swift.String
+  @objc final public let items: [GenesysCloud.ListPickerItem]
+  @objc deinit
+}
+@objc public enum ListPickerSectionType : Swift.Int {
+  case singleSelect
+  case multiSelect
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
-  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-@objc public protocol ChatElementDelegate {
-  @objc func didReceive(chatElement: GenesysCloudCore.ChatElement)
+@_hasMissingDesignatedInitializers @objc final public class TimeSlot : ObjectiveC.NSObject {
+  @objc final public let dateTime: Foundation.Date
+  @objc final public let payload: Swift.String
+  @objc deinit
 }
-extension UIKit.UIView {
-  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-  @_Concurrency.MainActor @preconcurrency public func anchorToSuperview()
-  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-  @_Concurrency.MainActor @preconcurrency public func setCornerRadius(radius: CoreFoundation.CGFloat, corners: QuartzCore.CACornerMask = [.layerMinXMinYCorner,
-                                                                    .layerMaxXMinYCorner,
-                                                                    .layerMinXMaxYCorner,
-                                                                    .layerMaxXMaxYCorner])
+@_hasMissingDesignatedInitializers @objc final public class TimeSlotConfirmationChatElement : GenesysCloud.ChatElement {
+  @objc final public var text: Swift.String
+  @objc final public let payload: Swift.String
+  @objc final public let originatingMessageId: Swift.String?
+  @objc final public var imageUrl: Swift.String?
+  @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-@IBDesignable @_Concurrency.MainActor @preconcurrency open class GrowingTextView : UIKit.UITextView {
+@_hasMissingDesignatedInitializers @objc final public class TimeSlotPickerChatElement : GenesysCloud.ChatElement {
+  @objc final public let title: Swift.String
+  @objc final public let subtitle: Swift.String?
+  @objc final public let imageUrl: Swift.String?
+  @objc final public let availableTimes: [GenesysCloud.TimeSlot]
+  @objc deinit
+}
+@objc public enum UserChatElementState : Swift.Int {
+  case none
+  case pending
+  case inProcess
+  case success
+  case error
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var text: Swift.String! {
-    @objc get
-    @objc set
-  }
+  public init?(rawValue: Swift.Int)
   #endif
-  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var maxLength: Swift.Int
-  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var trimWhiteSpaceWhenEndEditing: Swift.Bool
-  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var minHeight: CoreFoundation.CGFloat {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var maxHeight: CoreFoundation.CGFloat {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholder: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholderColor: UIKit.UIColor {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var placeholderFont: UIKit.UIFont {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor @preconcurrency open var attributedPlaceholder: Foundation.NSAttributedString? {
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
-    set
   }
+}
+@objc public enum ChatElementKind : Swift.Int {
+  case agent
+  case system
+  case user
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect, textContainer: UIKit.NSTextContainer?)
+  public init?(rawValue: Swift.Int)
   #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func traitCollectionDidChange(_ previous: UIKit.UITraitCollection?)
-  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class ChatElement : ObjectiveC.NSObject {
+  @objc public var id: Swift.String
+  @objc public var isLoadedFromHistory: Swift.Bool
+  @objc public var timestamp: Foundation.Date
+  @objc public var kind: GenesysCloud.ChatElementKind
+  @objc dynamic public var userState: GenesysCloud.UserChatElementState
+  @objc public var participantInfo: GenesysCloud.ParticipantInfo
   @objc deinit
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
 }
-extension GenesysCloudCore.MimeType {
-  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-  public static func generateFileImage(from fileName: Swift.String, shouldBeGray: Swift.Bool = false) -> UIKit.UIImage
-  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-  public static func getAccessibilityBrandingKey(from fileName: Swift.String) -> GenesysCloudCore.TranslationKey
+extension GenesysCloud.ChatElement {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getText() -> Swift.String?
+  #endif
 }
-extension Foundation.FileManager {
-  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-  public func write(_ data: Foundation.Data, to url: Foundation.URL, options: Foundation.Data.WritingOptions) throws
+@_hasMissingDesignatedInitializers @objc final public class FileChatElement : GenesysCloud.ChatElement {
+  final public var file: GenesysCloud.DownloadableFile
+  final public var text: Swift.String?
+  @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class AuthenticationStatus : ObjectiveC.NSObject {
-  @objc public static func shouldAuthorize(account: GenesysCloudCore.Account, completion: @escaping (Swift.Bool) -> Swift.Void)
+@_hasMissingDesignatedInitializers @objc final public class ParticipantInfo : ObjectiveC.NSObject {
+  @objc final public let name: Swift.String?
+  @objc final public let imageUrl: Swift.String?
+  @objc final public let participantType: GenesysCloud.ParticipantType
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
+  @objc override final public var hash: Swift.Int {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum ParticipantType : Swift.Int {
+  case bot
+  case human
+  case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc final public class QuickRepliesChatElement : GenesysCloud.ChatElement {
+  final public var quickReplies: [Swift.String]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class SystemChatElement : GenesysCloud.ChatElement {
+  final public var type: GenesysCloud.SystemChatElementType
+  final public var text: Swift.String?
+  @objc deinit
+}
+@objc public enum SystemChatElementType : Swift.Int {
+  case autoStart
+  case newConversation
+  case startConversation
+  case conversationStarted
+  case conversationEnded
+  case conversationResumed
+  case conversationDisconnect
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc final public class TextChatElement : GenesysCloud.ChatElement {
+  @objc final public var text: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class TypingIndicatorChatElement : GenesysCloud.ChatElement {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class Account : ObjectiveC.NSObject {
+  public var apiKey: Swift.String?
+  public var info: [Swift.String : [Swift.String : Swift.String]]?
+  public var sessionInfo: GenesysCloud.SessionInfo
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc final public class ChatAvailabilityChecker : ObjectiveC.NSObject, GenesysCloudCore.ConfigurationLoaderDelegate {
-  @objc public static func checkAvailability(_ account: GenesysCloudCore.Account, completion: @escaping (Swift.Bool) -> Swift.Void)
+@objc public enum ChatState : Swift.Int {
+  case unknown = 0
+  case chatCreated
+  case chatStarted
+  case chatPreparing
+  case chatPrepared
+  case chatDisconnected
+  case chatReconnecting
+  case chatReconnected
+  case chatEnding
+  case chatEnded
+  case chatClosed
+  case config
+  case endQueue
+  case unavailable = 15
+  case agentTyping = 16
   #if compiler(>=5.3) && $NonescapableTypes
-  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-  final public func didFailLoad(error: (any Swift.Error)?)
+  public init?(rawValue: Swift.Int)
   #endif
-  @available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-  final public func didFetchChatSettings(remoteConfig: GenesysCloudCore.RemoteConfiguration)
-  @objc override dynamic public init()
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc final public class ChatStateEvent : ObjectiveC.NSObject {
+  @objc final public var state: GenesysCloud.ChatState
+  @objc final public var dataMsg: Any?
   @objc deinit
 }
-@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-public protocol TextFormatterProtocol {
+@objc public enum EndedReason : Swift.Int {
+  case unknown = 0
+  case `operator`
+  case visitor
+  case disconnected
+  case app
+  case sessionLimitReached
+  case conversationCleared
+  case logout
+  case sessionExpired
   #if compiler(>=5.3) && $NonescapableTypes
-  func applyFormat(originalText: Swift.String) -> Foundation.NSAttributedString?
+  public init?(rawValue: Swift.Int)
   #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum ChatError : Swift.Int {
+  case failedToLoad = 5001
+  case chatGeneralError = 5004
+  case failedToLoadData = 5005
+  case failedToSendMessage = 5007
+  case failedMessengerChatErrorDisableState = 5011
+  case failedGeneralErrorType = 5013
+  case failedToReconnect = 5016
+  case failedToAutostartConversation = 5017
+  case failedToSendCustomAttributes = 5018
+  case conversationCreationError = 5019
+  case attachmentDownloadError = 5020
+  case clientNotAuthenticatedError = 5021
+  case authLogoutFailed = 5022
+  case attachmentValidationError = 5023
+  case attachmentUploadError = 5024
+  case clearConversationDisabled = 5025
+  case clearConversationFailure = 5026
+  case pushDeploymentIdMismatch = 5027
+  case deviceAlreadyRegistered = 5028
+  case authorizationRequired = 5029
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc final public class GCError : ObjectiveC.NSObject, Swift.Error {
+  @objc final public var errorType: GenesysCloud.ChatError
+  @objc final public var errorDescription: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(errorType: GenesysCloud.ChatError, errorDescription: Swift.String? = nil)
+  #endif
+  @objc deinit
+}
+public enum MessageSendingError : Swift.Error {
+  case timeout
+  case sendFailure
+  case customAttributesTooLarge
+  case invalidElement
+  case customAttributesMissing
+  public var rawValue: Swift.String {
+    get
+  }
+  public static func == (a: GenesysCloud.MessageSendingError, b: GenesysCloud.MessageSendingError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 @objc public enum PushProvider : Swift.Int {
   case apns
@@ -174,27 +343,232 @@ public protocol TextFormatterProtocol {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ChatPushNotificationIntegration : ObjectiveC.NSObject {
+final public class SessionInfo : Swift.Equatable {
+  public init(id: Swift.String = "")
+  public init(info: GenesysCloud.SessionInfo)
+  final public func addExtraData(data: [Swift.String : Any])
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func setPushToken(deviceToken: Swift.String, pushProvider: GenesysCloud.PushProvider, account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
+  final public func getExtraData(key: Swift.String) -> Any?
+  #endif
+  public static func == (lhs: GenesysCloud.SessionInfo, rhs: GenesysCloud.SessionInfo) -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class AuthenticationInfo {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ImplicitAuthenticationInfo : ObjectiveC.NSObject {
+  final public let idToken: Swift.String
+  final public let nonce: Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class MessengerAccount : GenesysCloud.Account {
+  final public var domain: Swift.String? {
+    get
+  }
+  final public var authenticationInfo: GenesysCloud.AuthenticationInfo? {
+    get
+  }
+  final public var implicitAuthenticationInfo: GenesysCloud.ImplicitAuthenticationInfo? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public var tracking: GenesysCloud.MessengerTracking? {
+    @objc get
+  }
+  #endif
+  @objc final public var customAttributes: [Swift.String : Swift.String] {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init()
+  @objc convenience public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool, sessionExpirationNoticeInterval: Swift.Int)
+  @objc public init(deploymentId: Swift.String, domain: Swift.String, logging: Swift.Bool, sessionExpirationNoticeInterval: Swift.Int, minimumWebSocketTlsVersion: MessengerTransport.TlsVersion = .systemDefault)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setAuthenticationInfo(authCode: Swift.String, redirectUri: Swift.String, codeVerifier: Swift.String?)
+  #endif
+  final public func setImplicitAuthenticationInfo(idToken: Swift.String, nonce: Swift.String)
+  @objc final public func initiateTracking(config: GenesysCloud.TrackingConfig)
+  @objc final public func resetTrackingIdentity()
+  @objc deinit
+}
+@objc public enum DeviceCategory : Swift.Int {
+  case mobile
+  case desktop
+  case tablet
+  case other
+  public var apiValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc final public class MessengerTracking : ObjectiveC.NSObject, @unchecked Swift.Sendable {
+  @objc final public func setAppName(_ name: Swift.String)
+  @objc final public func setAppNamespace(_ namespace: Swift.String)
+  @objc final public func setAppVersion(_ version: Swift.String)
+  @objc final public func setAppBuildNumber(_ buildNumber: Swift.String)
+  @objc final public func setDeviceCategory(_ category: GenesysCloud.DeviceCategory)
+  @objc final public func setDeviceType(_ type: Swift.String)
+  @objc final public func setOsFamily(_ osFamily: Swift.String)
+  @objc final public func setOsVersion(_ osVersion: Swift.String)
+  @objc final public func setIsMobile(_ isMobile: Swift.Bool)
+  @objc final public func setScreenHeight(_ screenHeight: Swift.Int)
+  @objc final public func setScreenWidth(_ screenWidth: Swift.Int)
+  @objc final public func setScreenDensity(_ screenDensity: Swift.Int)
+  @objc final public func setFingerprint(_ fingerprint: Swift.String)
+  @objc final public func setManufacturer(_ manufacturer: Swift.String)
+  @objc final public func setCarrier(_ carrier: Swift.String)
+  @objc final public func setBluetoothEnabled(_ bluetoothEnabled: Swift.Bool)
+  @objc final public func setCellularEnabled(_ cellularEnabled: Swift.Bool)
+  @objc final public func setWifiEnabled(_ wifiEnabled: Swift.Bool)
+  @objc final public func setExternalId(_ externalId: Swift.String)
+  @objc final public func setTraits(_ traits: GenesysCloud.TrackingTraits)
+  @objc final public func clearUserIdentifiers()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func screenViewed(screenName: Swift.String, attributes: [Swift.String : Any]? = nil, searchQuery: Swift.String? = nil, traits: GenesysCloud.TrackingTraits? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func setPushTokenForObjectiveC(deviceToken: Swift.String, pushProvider: GenesysCloud.PushProvider, account: GenesysCloudCore.Account, completion: @escaping (GenesysCloudCore.GCError?) -> Swift.Void)
+  @objc final public func searchPerformed(screenName: Swift.String, attributes: [Swift.String : Any]? = nil, traits: GenesysCloud.TrackingTraits? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func removePushToken(account: GenesysCloudCore.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloudCore.GCError>) -> Swift.Void)
+  @objc final public func customEvent(eventName: Swift.String, screenName: Swift.String, attributes: [Swift.String : Any]? = nil, traits: GenesysCloud.TrackingTraits? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func removePushToken(account: GenesysCloudCore.Account, completion: @escaping (GenesysCloudCore.GCError?) -> Swift.Void)
+  @objc final public func getSessionId() -> Swift.String?
   #endif
   @objc deinit
 }
-@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-extension GenesysCloud.PresentationState : Swift.Equatable {}
-@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-extension GenesysCloud.PresentationState : Swift.Hashable {}
-@available(*, deprecated, message: "Not for external use. Public access will be removed in 3.0.0.")
-extension GenesysCloud.PresentationState : Swift.RawRepresentable {}
+@objc final public class TrackingConfig : ObjectiveC.NSObject {
+  @objc final public let appName: Swift.String
+  @objc final public let appNamespace: Swift.String
+  @objc final public let appVersion: Swift.String
+  @objc final public let appBuildNumber: Swift.String
+  @objc final public let deviceCategory: GenesysCloud.DeviceCategory
+  @objc final public let deviceType: Swift.String
+  @objc final public let osFamily: Swift.String
+  @objc final public let osVersion: Swift.String
+  @objc final public let isMobile: Foundation.NSNumber?
+  @objc final public let screenHeight: Foundation.NSNumber?
+  @objc final public let screenWidth: Foundation.NSNumber?
+  @objc final public let screenDensity: Foundation.NSNumber?
+  @objc final public let fingerprint: Swift.String?
+  @objc final public let manufacturer: Swift.String?
+  @objc final public let carrier: Swift.String?
+  @objc final public let bluetoothEnabled: Foundation.NSNumber?
+  @objc final public let cellularEnabled: Foundation.NSNumber?
+  @objc final public let wifiEnabled: Foundation.NSNumber?
+  @objc final public let externalId: Swift.String?
+  @objc final public let traits: GenesysCloud.TrackingTraits?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(appName: Swift.String, appNamespace: Swift.String, appVersion: Swift.String, appBuildNumber: Swift.String, deviceCategory: GenesysCloud.DeviceCategory, deviceType: Swift.String, osFamily: Swift.String, osVersion: Swift.String, isMobile: Foundation.NSNumber? = nil, screenHeight: Foundation.NSNumber? = nil, screenWidth: Foundation.NSNumber? = nil, screenDensity: Foundation.NSNumber? = nil, fingerprint: Swift.String? = nil, manufacturer: Swift.String? = nil, carrier: Swift.String? = nil, bluetoothEnabled: Foundation.NSNumber? = nil, cellularEnabled: Foundation.NSNumber? = nil, wifiEnabled: Foundation.NSNumber? = nil, externalId: Swift.String? = nil, traits: GenesysCloud.TrackingTraits? = nil)
+  #endif
+  @objc deinit
+}
+@objc final public class TrackingTraits : ObjectiveC.NSObject {
+  @objc final public let email: Swift.String?
+  @objc final public let cellPhone: Swift.String?
+  @objc final public let homePhone: Swift.String?
+  @objc final public let otherPhone: Swift.String?
+  @objc final public let workPhone: Swift.String?
+  @objc final public let salutation: Swift.String?
+  @objc final public let jobTitle: Swift.String?
+  @objc final public let givenName: Swift.String?
+  @objc final public let middleName: Swift.String?
+  @objc final public let familyName: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(email: Swift.String? = nil, cellPhone: Swift.String? = nil, homePhone: Swift.String? = nil, otherPhone: Swift.String? = nil, workPhone: Swift.String? = nil, salutation: Swift.String? = nil, jobTitle: Swift.String? = nil, givenName: Swift.String? = nil, middleName: Swift.String? = nil, familyName: Swift.String? = nil)
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ChatController : ObjectiveC.NSObject {
+  @objc weak public var chatElementDelegate: (any GenesysCloud.ChatElementDelegate)?
+  @objc weak public var delegate: (any GenesysCloud.ChatControllerDelegate)? {
+    @objc get
+    @objc set
+  }
+  @objc public init(account: GenesysCloud.Account)
+  @objc public func endChat(_ forceClose: Swift.Bool)
+  @objc public func reconnectChat()
+  @objc public func clearConversation()
+  @objc public func logoutFromAuthenticatedSession()
+  @objc public func terminate()
+  @objc public func updateCustomAttributes(_ customAttributes: [Swift.String : Swift.String])
+  @objc public static func checkAvailability(_ account: GenesysCloud.Account, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc public func reauthorizeImplicitFlow(idToken: Swift.String, nonce: Swift.String)
+  @objc deinit
+}
+@objc public protocol ChatControllerDelegate : ObjectiveC.NSObjectProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func shouldPresentChatViewController(_ viewController: UIKit.UINavigationController!)
+  #endif
+  @objc optional func didClickLink(_ url: Swift.String)
+  @objc optional func didUpdateState(_ event: GenesysCloud.ChatStateEvent)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc optional func didFailWithError(_ error: GenesysCloud.GCError?)
+  #endif
+}
+@objc public protocol ChatElementDelegate {
+  @objc func didReceive(chatElement: GenesysCloud.ChatElement)
+}
+@_inheritsConvenienceInitializers @objc public class AuthenticationStatus : ObjectiveC.NSObject {
+  @objc public static func shouldAuthorize(account: GenesysCloud.Account, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class ChatAvailabilityChecker : ObjectiveC.NSObject {
+  @objc public static func checkAvailability(_ account: GenesysCloud.Account, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ChatPushNotificationIntegration : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func setPushToken(deviceToken: Swift.String, pushProvider: GenesysCloud.PushProvider, account: GenesysCloud.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloud.GCError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func setPushTokenForObjectiveC(deviceToken: Swift.String, pushProvider: GenesysCloud.PushProvider, account: GenesysCloud.Account, completion: @escaping (GenesysCloud.GCError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func removePushToken(account: GenesysCloud.Account, completion: @escaping (Swift.Result<Swift.Void, GenesysCloud.GCError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func removePushToken(account: GenesysCloud.Account, completion: @escaping (GenesysCloud.GCError?) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+extension GenesysCloud.ListPickerSectionType : Swift.Equatable {}
+extension GenesysCloud.ListPickerSectionType : Swift.Hashable {}
+extension GenesysCloud.ListPickerSectionType : Swift.RawRepresentable {}
+extension GenesysCloud.UserChatElementState : Swift.Equatable {}
+extension GenesysCloud.UserChatElementState : Swift.Hashable {}
+extension GenesysCloud.UserChatElementState : Swift.RawRepresentable {}
+extension GenesysCloud.ChatElementKind : Swift.Equatable {}
+extension GenesysCloud.ChatElementKind : Swift.Hashable {}
+extension GenesysCloud.ChatElementKind : Swift.RawRepresentable {}
+extension GenesysCloud.ParticipantType : Swift.Equatable {}
+extension GenesysCloud.ParticipantType : Swift.Hashable {}
+extension GenesysCloud.ParticipantType : Swift.RawRepresentable {}
+extension GenesysCloud.SystemChatElementType : Swift.Equatable {}
+extension GenesysCloud.SystemChatElementType : Swift.Hashable {}
+extension GenesysCloud.SystemChatElementType : Swift.RawRepresentable {}
+extension GenesysCloud.ChatState : Swift.Equatable {}
+extension GenesysCloud.ChatState : Swift.Hashable {}
+extension GenesysCloud.ChatState : Swift.RawRepresentable {}
+extension GenesysCloud.EndedReason : Swift.Equatable {}
+extension GenesysCloud.EndedReason : Swift.Hashable {}
+extension GenesysCloud.EndedReason : Swift.RawRepresentable {}
+extension GenesysCloud.ChatError : Swift.Equatable {}
+extension GenesysCloud.ChatError : Swift.Hashable {}
+extension GenesysCloud.ChatError : Swift.RawRepresentable {}
+extension GenesysCloud.MessageSendingError : Swift.Equatable {}
+extension GenesysCloud.MessageSendingError : Swift.Hashable {}
 extension GenesysCloud.PushProvider : Swift.Equatable {}
 extension GenesysCloud.PushProvider : Swift.Hashable {}
 extension GenesysCloud.PushProvider : Swift.RawRepresentable {}
+extension GenesysCloud.DeviceCategory : Swift.Equatable {}
+extension GenesysCloud.DeviceCategory : Swift.Hashable {}
+extension GenesysCloud.DeviceCategory : Swift.RawRepresentable {}

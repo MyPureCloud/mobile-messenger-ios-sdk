@@ -1,4 +1,0 @@
-framework module GenesysCloudCore {
-  header "GenesysCloudCore-Swift.h"
-  requires objc
-}
